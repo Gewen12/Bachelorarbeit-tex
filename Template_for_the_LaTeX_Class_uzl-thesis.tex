@@ -1,0 +1,534 @@
+\documentclass[german,version-2020-11]{uzl-thesis}
+% !TeX program = lualatex
+
+\UzLThesisSetup{
+  Logo-Dateiname        = {uzl-thesis-logo-itcs.pdf},
+  Verfasst              = {am}{Institut für Informationssysteme},
+  Titel auf Deutsch = { Evaluierung eines Algorithmus zur Absicherung von Datenbanken },
+  Titel auf Englisch = { Evaluation of an Algorithm for Securing Databases },
+  Autor                 = {Kevin Schmelzer},
+  Betreuerin            = {Prof. Dr. Ralf Möller},
+  Mit Unterstützung von = {Simon Schiff},
+  Bachelorarbeit,
+  Studiengang           = {IT-Sicherheit},
+  Datum                 = {18. August 2020},
+  Abstract              = {
+    It is not easy to write a thesis that does not only advance
+    science, but that is also a pleasure to read. While the scientific
+    contribution of a thesis is undoubtedly of greater importance, the
+    impact of \emph{writing well} should not be underestimated: If
+    the person who grades a thesis finds no pleasure in the reading,
+    that person are also unlikely to find pleasure in giving outstanding
+    grades. A well-written text uses good German or English phrasing with a clear and correct 
+    sentence structure and language rhythm, there are no spelling
+    mistakes and the author's arguments are presented in a
+    clear, logical and understandable manner using well-chosen
+    examples and explanations. In addition, a nice-to-read font and a
+    pleasing layout are also helpful. The \LaTeX\ class presented in
+    this document helps with the latter: It contains a number of
+    ready-to-use designs and 
+    takes care of many small typographical chores.
+  },
+  Zusammenfassung       = {
+  	Datenbanken mit sensiblen Daten sollten einen hohen Sicherheitsstrandard erfüllen. Dabei geht es in dieser Arbeit besonders um die Zugangsrechte auf einer Datenbank ohne einen großen Informationsverlust zu verursachen und dabei trotzdem die sensiblen Daten zu schützen und auf den Datenschutz zu achten. \\ In dieser Arbeit wird dabei der provably secure enforcement mechanisms Angerona evaluiert,  that prevents information leakage in the presence of probabilistic dependencie. Es wird gezeigt welche Vor- und Nachteile dieser Algorithmus aufweist und welche Performance dieser liefert, wenn man diesen auf echte Patientendaten anwendet.
+  },
+  Alphabetische Bibliographie,
+  % Alternatively:
+  % Numerische Bibliographie
+}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%
+%
+% Styling the thesis
+%
+%%%%%%%%%%%%%%%%%%%%
+%
+% Creating a visually pleasing layout and choosing fonts is not
+% easy. Furthermore, different people have different preferences. Of
+% course, for the University of Lübeck, the dean of studies could just
+% force everyone to use one specific layout and font, but that seems a
+% bit drastic and, also, it seems nice that thesis by different people
+% have an individual style even though they all stick to the same
+% overall structure.
+%
+% For these reasons, I (Till Tantau) have spend quite some time on
+% designing a flexible layout and styling mechanism for theses.
+%
+% Basically, the overall structure of the thesis is fixed by the
+% thesis class and so are many structural elements. For instance, you
+% cannot change the order in which the abstract and table of contents
+% are shown, you cannot move the bibliography elsewhere, indeed, the
+% bibliography style is also fixed. Likewise, the text on the title
+% page is fixed.
+%
+% Although many things are fixed, you *can* change several other
+% things. For instance, you can change the font used for the main
+% text, you can change which font is used for titles and headings or
+% you can change whether titles and headlines are centered or flushed
+% left.
+%
+% There are many LaTeX packages for changing such things. You are
+% kindly asked *not to use them*. Rather, use (only) the options
+% offered by the thesis class. All possible choices and combinations
+% there have been tested by me and produce nice results; what happens
+% with other packages no one knows and might no longer conform to what
+% is expected by the university. As you will see, you still have a
+% lot of options.
+%
+%
+% Technical note: All styling is done via the command
+%
+% \UzLStyle{...}
+%
+% where ... is a key-value list just as for \UzLThesisSetup. The
+% difference is just that everything having to do with styling as
+% controlled by \UzLStyle, while the more “formal” setup keys are
+% controlled by \UzLThesisSetup.
+%
+%%%
+%
+% Designs
+%
+%
+% A \emph{design} is a whole set of font and layout options bundled
+% together. They have been chosen in such a way that a visually
+% pleasing “overall appearance” results.
+%
+%
+% \UzLStyle{computer modern oldschool design}
+%
+% The look of this design mimics the “classical” way a paper or report
+% created with \LaTeX\ looks like: The Computer Modern font is used,
+% bold face fonts are used for headlines, only black and white are
+% used as colors. This design reminds me of older scientific
+% documents, especially from the computer science community where
+% \LaTeX\ was used very early.
+%
+%
+% \UzLStyle{computer modern basic design}
+%
+% A slightly less “oldschool” version of the previous design. It is
+% still a classic design in the sense that it uses the Computer Modern
+% font and that it still has this “good old \LaTeX” look, but some
+% more modern aspects (like colors!) have been added.
+%
+% Note that this design uses Myriad for the title page (one of the
+% “modern aspect”), which means that his font must be installed.
+%
+%
+% \UzLStyle{computer modern scholary design}
+%
+% In my opinion, this is the ultimate “scholary design”: The thesis
+% will look like it has been typeset by hand some 150 years ago and
+% then printed by a university press. There is really nothing “modern”
+% about it and the word in the name of the design is just part of the
+% name of the “Computer Modern” font.
+%
+%
+% \UzLStyle{pagella basic design}
+%
+% A, well, basic design that uses the Pagella font rather than the
+% Computer Modern font. Especially the bold face version of this font
+% looks nicer than the Computer Modern counterpart. Also, Pagella,
+% while still having a “bookish” look, still feels a bit fresher than
+% Computer Modern. 
+%
+%
+% \UzLStyle{pagella centered design}
+%
+% A variant of the basic Pagella design that centers all
+% headlines. A nice alternative to the basic version.
+%
+%
+% \UzLStyle{pagella contrast design}
+%
+% This design tries to create some visual friction by contrasting the
+% sans serif headline font (in bold!) with the main text. I find it a
+% visually very interesting combination.
+%
+%
+% \UzLStyle{alegrya basic design}
+%
+% The third variant of the basic design, this time using the Alegrya
+% font. 
+%
+%
+% \UzLStyle{alegrya scholary design}
+%
+% The Alegrya version of the previous “scholary” design. Unlike the
+% Computer Modern version, this design does not look old, but more
+% fresh -- while still creating the impression that the text must be
+% about a very scientific subject. 
+%
+%
+% \UzLStyle{alegrya stylish design}
+%
+% The design is quite similar to the scholary version for the Alegrya
+% font, but with even more modern additions. “Stylish” is the word
+% that comes to my mind.
+%
+%
+\UzLStyle{alegrya modern design}
+%
+% A design that uses the sans serif version of the Alegrya font for
+% the headlines. This is a nice modern overall design.
+%
+%%%
+
+% Now, include the package you need here using \usepackage. 
+
+
+\begin{document}
+
+\chapter{Einleitung}
+Der Schutz von sensiblen Daten ist in vielen Bereichen wichtig, damit unbefugte nicht Daten wie Herkunft, Religion, Ethnizität usw. erhalten. Das Thema hat zur Zeit eine wichtige Rolle, da im Jahre 2016 die Datenschutz-Grundverordnung (DSGVO) abgeschlossen wurde. \\ Bisher wurde 
+Motivation : Gängige Vorgehensweise zur priavy jetzt ("hipaa compliance"), Lösung : DBIC und warum und unterschied, Konflikt zwischen gute 
+relevante daten und anonymisierung, Warum angreifer modeliert? (Vorwissen) 
+warum ich gerade medizinische DB verwendet habe?
+Beiträge dieser Arbeit : evaluiert und ausgeführt 
+Ergebnis dieser Arbeit
+
+
+\section{Contributions of this Thesis}
+% In a German thesis write: \section{Beiträge dieser Arbeit}
+
+% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+% !!! Your action is needed here !!!
+% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+%
+% Replace with a detailed account of your contributions:
+
+This document is both intended as a template that students can easily
+and conveniently adapt to their own needs and as a trove of tips and
+tricks on how to write a good thesis. The template as well as the
+\textsc{uzl-thesis} class have been written by Till Tantau and
+they reflect -- to a certain degree -- my personal choices and many of
+the recommendations may differ from those by other people. However,
+one recommendation of mine trumps those made by anyone else:
+\emph{Always listen to your adviser!}
+
+
+\section{Verwandte Arbeiten}
+% In a German thesis write: \section{Verwandte Arbeiten}
+
+Verwandte arbeiten : angerona marco guanaireini und andere related works aber warum genau marcos?
+s.
+% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+% !!! Your action is needed here !!!
+% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+%
+% Replace with a detailed account of what other people have already
+% researched concerning your thesis's theme. Even when (indeed,
+% especially when) there has been only little or even no research by
+% other people, you should explain in detail that this is the case and
+% why it is the case. 
+
+Concerning the first aspect of this text, namely the fact that it
+serves as a template for bachelor's and master's theses written at the
+University of Lübeck, let me remark that there are several older
+templates and styles. However, this class is the official (new) one
+and should be used rather than any other one.
+
+Concerning the set of recommendations I make on how to write a
+thesis, first note that there are \emph{many} books on,
+well, ``how to write a thesis''. You are \emph{very} cordially invited
+to go to the library and actually read one of them (reading books
+\emph{is} part of being a scientist, by the way). My personal favorite
+is \citetitle{Alley1996} \cite{Alley1996}. Second, note that
+the hints and observations I make are \emph{my} observations and may
+not be shared by everyone. Of course, I can make a very good case on
+why you really should follow the recommendations \emph{I} make -- but
+remember that you should \emph{always listen to your adviser!}
+
+\section{Structure of this Thesis}
+
+
+
+
+\chapter{Conclusion}
+% In a German thesis write: \subsection{Zusammenfassung und Ausblick}
+
+
+% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+% !!! Your action is needed here !!!
+% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+%
+% Replace the following with your conclusion
+
+
+
+This template document got much longer than I had initially intended
+with more and more hints and comments becoming part of the text. The
+reason is, of course, that writing a thesis is not easy since there
+are a \emph{lot} of things to consider. However, you have six months
+to write your thesis, so you stand a decent chance to get most things 
+right.
+
+Do some great scientific research now and report on it in a thesis
+that is a pleasure to read. 
+
+
+
+
+% Normally, the bibliography comes next at this point. Do *not* (try
+% to) include further indices and tables like an index or
+% a list of figures or a list of tables or such things. Nobody
+% actually uses them and they just use up space. 
+%
+% You *can* however include a glossary, if this seems appropriate. It
+% goes here as an unnumbered chapter. Most thesis will *not* need a
+% glossary: a well-written text (re)explains strange words and
+% concepts as necessary. However, there are situations where a
+% glossary may be helpful.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%
+% 
+% Bibliographies
+%
+%%%
+%
+% The uzl-thesis class will load biblatex for the bibliography
+% management. This is a powerful package, see its documentation for
+% details. The styles will be setup correctly and automatically by
+% choosing one of the two style keys as described earlier.
+%
+% In order for the bibliography to work, run latex in the following
+% order (which is the standard order):
+% 
+% > lualatex thesis-example
+% > bibtex thesis-example
+% > lualatex thesis-example
+% 
+% Add BibTeX files using \addbibresource or use the {bibtex entries}
+% environment (see below).
+%
+%%%
+%
+% Although everyting is normally setup automatically, you can change
+% the options passed to biblatex using the key 'biblatex';
+% for instance,
+%
+%   \UzLThesisSetup{biblatex={firstinits=false}}
+%
+% will switch off shortened first names. Normally, you will not need
+% this key in your preamble. 
+% 
+% Note that the bibtex program is used as the 'backend' of biblatex
+% by default (rather than biber, which is the preferred program of
+% biblatex). This means that you can (and must) run *bibtex* after you
+% have run lualatex on your thesis. If you wish to use biber instead
+% of bibtex, say 'biblatex={backend=biber}'. 
+% 
+%%%
+%
+% The following environment is optional. It allows you to keep the
+% bibtex entries for your thesis right here in the thesis file. What
+% happens is that each time this tex file is processed, the contents
+% of the following environment gets written to the file
+% \jobname-bibtex-entries.bib (this file gets overwritten each
+% time). Independently, \addbibresource{\jobname-bibtex-entries.bib}
+% is always called if the file \jobname-bibtex-entries.bib
+% exists. 
+%
+% In result, you can edit and keep the bibliography's bibtex entries
+% right here. If you change something here, run latex, then bibtex,
+% then latex once more.
+%
+% If you would like to manage the bibtex entries in a separate file,
+% remove the below environment, delete the \jobname-bibtex-entries.bib
+% file and instead write
+%
+% \addbibresource{filename-of-your-bibtex-file.bib}
+%
+% in the preamble.
+%
+%%%
+
+
+% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+% !!! Your action is needed here !!!
+% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+%
+% Replace following example entries with the ones of your thesis.
+
+\begin{bibtex-entries}
+
+@Book{Knuth1986,
+  author =       {Donald Erwin Knuth},
+  title =        {The \TeX book},
+  publisher =    {Addison-Wesley},
+  year =         {1986},
+}
+
+@Book{Lamport1994,
+  author =       {Leslie Lamport},
+  title =        {\LaTeX: A Document Preparation System},
+  publisher =    {Addison-Wesley},
+  edition =      {Second edition},
+  year =         {1994},
+}
+
+@TechReport{Kernighan1974,
+  author =       {Brian Kernighan},
+  title =        {Programming in C – A Tutorial},
+  institution =  {Bell Laboratories},
+  year =         {1974}
+}
+
+@Manual{Tantau2019,
+  author =       {Till Tantau},
+  title =        {The Ti\emph kZ and PGF Packages: Manual for version 3.1.3},
+  institution =  {Institut für Theoretische Informatik, Universität zu Lübeck},
+  year =         {2019},
+  url =          {https://github.com/pgf-tikz/pgf}
+}
+
+@Book{Alley1996,
+  author =       {Michael Alley},
+  title =        {The Craft of Scientific Writing},
+  publisher =    {Springer},
+  year =         {1996},
+  edition =      {Third Edition},
+}
+
+@Book{DowneyF13,
+  author =       {R. G. Downey and M. R. Fellows},
+  title =        {Fundamentals of Parameterized Complexity},
+  series =       {Texts in Computer Science},
+  publisher =    {Springer},
+  year =         2013,
+  doi =          {10.1007/978-1-4471-5559-1},
+}
+
+@Manual{biblatex,
+  title =        {The \textsc{BibLaTeX} package},
+  subtitle =     {Sophisticated Bibliographies in \LaTeX},
+  author =       {Kime, Philip and Lehman, Philipp},
+  url =          {https://github.com/plk/biblatex},
+  urldate =      {2019-06-11},
+  date =         {2018-10-30},
+  version =      {3.12}
+}
+
+@Manual{varioref,
+  title =        {The \textsc{varioref} package},
+  subtitle =     {Intelligent page references},
+  author =       {Mittelbach, Frank},
+  url =          {http://www.ctan.org/pkg/varioref},
+  urldate =      {2019-06-11},
+  date =         {2016-02-16},
+  version =      {1.5c}
+}
+
+@Manual{hyperref,
+  title =        {The \textsc{hyperref} package},
+  subtitle =     {Extensive support for hypertext in \LaTeX},
+  author =       {Rahtz, Sebastian and Oberdiek, Heiko},
+  url =          {https://github.com/ho-tex/hyperref},
+  urldate =      {2019-06-11},
+  date =         {2018-11-30},
+  version =      {6.88e}
+}
+
+@Manual{babel,
+  title =        {The \textsc{babel} package},
+  subtitle =     {Multilingual support for Plain \TeX\ or \LaTeX},
+  author =       {Braams, Johannes L. and Bezos López, Javier},
+  url =          {http://www.ctan.org/pkg/babel},
+  urldate =      {2019-06-11},
+  date =         {2019-06-03},
+  version =      {3.32}
+}
+
+@Manual{fontspec,
+  title =        {The \textsc{fontspec} package},
+  subtitle =     {Advanced font selection in Xe\LaTeX\ and Lua\LaTeX},
+  author =       {Robertson, Will},
+  url =          {http://www.ctan.org/pkg/fontspec},
+  urldate =      {2019-06-11},
+  version =      {2.7c}
+}
+
+@Manual{url,
+  title =        {The \textsc{url} package},
+  subtitle =     {Verbatim with \textsc{url}-sensitive line breaks},
+  author =       {Arseneau, Donald},
+  url =          {http://www.ctan.org/pkg/url},
+  urldate =      {2019-06-11},
+  date =         {2013-09-16},
+  version =      {3.4}
+}
+
+@Manual{amsmath,
+  title =        {The \textsc{amsmath} package},
+  subtitle =     {\AmS\ mathematical facilities for \LaTeX},
+  author =       {{The \LaTeX\ Team}},
+  url =          {http://www.ams.org/tex/amslatex.html},
+  urldate =      {2019-06-11}, 
+  date =         {2017-09-02},
+  version =      {2.17a}
+}
+
+@Book{Beutelspacher2009,
+  title =        {„Das ist o.\,B.\,d.\,A.\ trivial!“: Tipps und Tricks zur
+                  Formulierung mathematischer Gedanken (Mathematik für
+                  Studienanfänger)},
+  author =       {Albrecht Beutelspacher},
+  year =         {2009},
+  edition =      {Ninth, updated edition},
+  publisher =    {Vieweg+Teubner Verlag},
+  doi =          {10.1007/978-3-8348-9075-7},
+}
+
+\end{bibtex-entries}
+
+
+
+% If you need to have an appendix (I advise against it), insert it
+% here using, first, \appendix and then \chapter and then,
+% possibly, \section. 
+%
+% \appendix
+%
+% \chapter{Technical Appendix}
+%
+% \section{Experimental Parameters} % possibly
+%
+% Again, I advise against using an appendix.
+
+
+\end{document}
+
+%  LocalWords:  LaTeX tex moretexcs Lübeck pdf uzl lualatex bibtex th
+%  LocalWords:  TechReport Kernighan Lamport's Tantau's Tantau cls kZ
+%  LocalWords:  Mustermann emacs oldschool pdflatex texmf utf biber
+%  LocalWords:  biblatex Alphabetische Bibliographie Numerische VIIa
+%  LocalWords:  varioref german Einleitung Beiträge dieser Arbeit xml
+%  LocalWords:  Ergebnisse Verwandte Arbeiten Aufbau nucleotide VIIc
+%  LocalWords:  ensembl amino phylogenetic Alexa Siri decrypt versa
+%  LocalWords:  cryptographic pre nondeterministic deterministically
+%  LocalWords:  Beutelspacher Untersuchungen zum genetischen sep llcc
+%  LocalWords:  Beispiel tikz jpg png Alegrya Kasimir Malewitsch PGF
+%  LocalWords:  Lamport Institut für Theoretische Informatik zu url
+%  LocalWords:  Universität Springer DowneyF Downey Parameterized doi
+%  LocalWords:  BibLaTeX Kime Philipp urldate Mittelbach hyperref Lua
+%  LocalWords:  Rahtz Oberdiek Heiko Braams Bezos López fontspec Das
+%  LocalWords:  Arseneau amsmath ist Tipps und zur Formulierung
+%  LocalWords:  mathematischer Gedanken Mathematik Studienanfänger
+%  LocalWords:  Albrecht Vieweg Teubner Verlag
