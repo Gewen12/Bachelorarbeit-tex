@@ -41,7 +41,7 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="1">
+  <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
       <file>Template_for_the_LaTeX_Class_uzl-thesis.aux</file>
@@ -57,14 +57,14 @@
       <file>blx-bibtex.def</file>
       <file>biblatex.def</file>
       <file>standard.bbx</file>
-      <file>authoryear.bbx</file>
-      <file>authoryear.cbx</file>
+      <file>numeric.bbx</file>
+      <file>numeric.cbx</file>
       <file>biblatex.cfg</file>
       <file>german.lbx</file>
       <file>english.lbx</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="1">
+  <external package="biblatex" priority="5" active="0">
     <generic>bibtex</generic>
     <cmdline>
       <binary>bibtex</binary>
@@ -86,6 +86,7 @@
     </requires>
     <requires type="editable">
       <file>Template_for_the_LaTeX_Class_uzl-thesis-bibtex-entries.bib</file>
+      <file>thesis.bib</file>
     </requires>
     <requires type="static">
       <file>biblatex.bst</file>
