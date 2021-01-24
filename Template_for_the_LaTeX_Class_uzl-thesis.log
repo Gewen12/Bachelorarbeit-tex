@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.12) (format=lualatex 2021.1.5)  15 JAN 2021 09:03
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.12) (format=lualatex 2021.1.5)  23 JAN 2021 16:10
  restricted system commands enabled.
 **Template_for_the_LaTeX_Class_uzl-thesis.tex
 (./Template_for_the_LaTeX_Class_uzl-thesis.tex
@@ -2710,13 +2710,43 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count453
 \@thisrulewidth=\dimen305
 )
+(D:/Programme/Miktex/tex/latex/todonotes/todonotes.sty
+Package: todonotes 2020/08/18 v1.1.3 Todonotes source and documentation.
+Package: todonotes 2018/11/22
+
+(D:/Programme/Miktex/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarysh
+adows.code.tex
+File: tikzlibraryshadows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(D:/Programme/Miktex/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfa
+dings.code.tex
+File: tikzlibraryfadings.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(D:/Programme/Miktex/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
+File: pgflibraryfadings.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)))
+(D:/Programme/Miktex/tex/latex/latex-tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count454
+\calc@Bcount=\count455
+\calc@Adimen=\dimen306
+\calc@Bdimen=\dimen307
+\calc@Askip=\skip82
+\calc@Bskip=\skip83
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count456
+\calc@Cskip=\skip84
+)
+\c@@todonotes@numberoftodonotes=\count457
+)
 (D:/Programme/Miktex/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryar
 rows.code.tex
 File: tikzlibraryarrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 
 (D:/Programme/Miktex/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\arrowsize=\dimen306
+\arrowsize=\dimen308
 ))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -2726,41 +2756,41 @@ Package csquotes Info: Redefining alias 'default' -> 'german'.
 (./Template_for_the_LaTeX_Class_uzl-thesis.aux)
 \openout1 = Template_for_the_LaTeX_Class_uzl-thesis.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 39.
+(Font)              scaled to size 12.0pt on input line 40.
 
 (D:/Programme/Miktex/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count454
-\scratchdimen=\dimen307
+\scratchcounter=\count458
+\scratchdimen=\dimen309
 \scratchbox=\box85
-\nofMPsegments=\count455
-\nofMParguments=\count456
+\nofMPsegments=\count459
+\nofMParguments=\count460
 \everyMPshowfont=\toks46
-\MPscratchCnt=\count457
-\MPscratchDim=\dimen308
-\MPnumerator=\count458
-\makeMPintoPDFobject=\count459
+\MPscratchCnt=\count461
+\MPscratchDim=\dimen310
+\MPnumerator=\count462
+\makeMPintoPDFobject=\count463
 \everyMPtoPDFconversion=\toks47
 ) (D:/Programme/Miktex/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -2801,7 +2831,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 39.
+Package hyperref Info: Link coloring OFF on input line 40.
 (D:/Programme/Miktex/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -2811,20 +2841,20 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (D:/Programme/Miktex/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count460
+\c@section@level=\count464
 LaTeX Info: Redefining \Ref on input line 520.
 )
-LaTeX Info: Redefining \ref on input line 39.
-LaTeX Info: Redefining \pageref on input line 39.
-LaTeX Info: Redefining \nameref on input line 39.
+LaTeX Info: Redefining \ref on input line 40.
+LaTeX Info: Redefining \pageref on input line 40.
+LaTeX Info: Redefining \nameref on input line 40.
 
 (./Template_for_the_LaTeX_Class_uzl-thesis.out)
 (./Template_for_the_LaTeX_Class_uzl-thesis.out)
 \@outlinefile=\write5
 
 \openout5 = Template_for_the_LaTeX_Class_uzl-thesis.out
-LaTeX Info: Redefining \Ref on input line 39.
-\c@lstlisting=\count461
+LaTeX Info: Redefining \Ref on input line 40.
+\c@lstlisting=\count465
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
 
@@ -2871,60 +2901,67 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Can't use 'location' + 'address'.
 
 )
-Package biblatex Info: Reference section=0 on input line 39.
-Package biblatex Info: Reference segment=0 on input line 39.
-<uzl-thesis-logo-itcs.pdf, id=74, 426.79149pt x 113.8112pt>
-File: uzl-thesis-logo-itcs.pdf Graphic file (type pdf)
-<use uzl-thesis-logo-itcs.pdf>
-Package luatex.def Info: uzl-thesis-logo-itcs.pdf  used on input line 39.
-(luatex.def)             Requested size: 426.79045pt x 113.81091pt.
+Package biblatex Info: Reference section=0 on input line 40.
+Package biblatex Info: Reference segment=0 on input line 40.
+
+
+Package todonotes Warning: The length marginparwidth is less than 2cm and will m
+ost likely cause issues with the appearance of inserted todonotes. The issue can
+ be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loa
+ding the todonotes package. on input line 40.
+
+<institutslogo.pdf, id=98, 387.69844pt x 86.57344pt>
+File: institutslogo.pdf Graphic file (type pdf)
+<use institutslogo.pdf>
+Package luatex.def Info: institutslogo.pdf  used on input line 40.
+(luatex.def)             Requested size: 387.69748pt x 86.57321pt.
 LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 39.
+(Font)              scaled to size 12.0pt on input line 40.
 LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/n' will be
-(Font)              scaled to size 15.4pt on input line 39.
+(Font)              scaled to size 15.4pt on input line 40.
 LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/it' will be
-(Font)              scaled to size 15.4pt on input line 39.
+(Font)              scaled to size 15.4pt on input line 40.
 LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 39.
-<uzl-thesis-logo-slogan.pdf, id=75, 142.26349pt x 11.38112pt>
+(Font)              scaled to size 12.0pt on input line 40.
+<uzl-thesis-logo-slogan.pdf, id=99, 142.26349pt x 11.38112pt>
 File: uzl-thesis-logo-slogan.pdf Graphic file (type pdf)
 <use uzl-thesis-logo-slogan.pdf>
-Package luatex.def Info: uzl-thesis-logo-slogan.pdf  used on input line 39.
+Package luatex.def Info: uzl-thesis-logo-slogan.pdf  used on input line 40.
 (luatex.def)             Requested size: 142.26312pt x 11.38107pt.
- [1
+[1
 
-{C:/Users/Gewen/AppData/Local/MiKTeX/pdftex/config/pdftex.map}<./uzl-thesis-logo
--itcs.pdf><./uzl-thesis-logo-slogan.pdf>]
+{C:/Users/Gewen/AppData/Local/MiKTeX/pdftex/config/pdftex.map}<./institutslogo.p
+df><./uzl-thesis-logo-slogan.pdf>]
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 39.
+(Font)              scaled to size 12.0pt on input line 40.
 LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/n' will be
-(Font)              scaled to size 10.9pt on input line 39.
+(Font)              scaled to size 10.9pt on input line 40.
  [2
 
 ]
 LaTeX Font Info:    Font shape `TU/TeXGyrePagellaMath(2)/m/n' will be
-(Font)              scaled to size 12.00128pt on input line 39.
+(Font)              scaled to size 12.00128pt on input line 40.
 LaTeX Font Info:    Font shape `TU/TeXGyrePagellaMath(2)/m/n' will be
-(Font)              scaled to size 8.00085pt on input line 39.
+(Font)              scaled to size 8.00085pt on input line 40.
 LaTeX Font Info:    Font shape `TU/TeXGyrePagellaMath(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 39.
+(Font)              scaled to size 6.00064pt on input line 40.
 LaTeX Font Info:    Font shape `TU/TeXGyrePagellaMath(3)/m/n' will be
-(Font)              scaled to size 11.99872pt on input line 39.
+(Font)              scaled to size 11.99872pt on input line 40.
 LaTeX Font Info:    Font shape `TU/TeXGyrePagellaMath(3)/m/n' will be
-(Font)              scaled to size 7.99915pt on input line 39.
+(Font)              scaled to size 7.99915pt on input line 40.
 LaTeX Font Info:    Font shape `TU/TeXGyrePagellaMath(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 39.
+(Font)              scaled to size 5.99936pt on input line 40.
 LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 13.20007pt on input line 39.
+(Font)              scaled to size 13.20007pt on input line 40.
 LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 8.80005pt on input line 39.
+(Font)              scaled to size 8.80005pt on input line 40.
 LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 6.60004pt on input line 39.
+(Font)              scaled to size 6.60004pt on input line 40.
  [3
 
 ]
 LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/n' will be
-(Font)              scaled to size 22.0pt on input line 39.
+(Font)              scaled to size 22.0pt on input line 40.
 
 (./Template_for_the_LaTeX_Class_uzl-thesis.toc)
 \tf@toc=\write6
@@ -2936,52 +2973,56 @@ LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/n' will be
 ]
 Kapitel 1.
 LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/n' will be
-(Font)              scaled to size 60.0pt on input line 41.
+(Font)              scaled to size 60.0pt on input line 42.
 
-Overfull \hbox (18.9488pt too wide) in paragraph at lines 42--46
-\TU/Alegreya(0)/m/n/12 sphä-re und Di-gi-ta-li-sie-rung ist spä-te-stens seit der wirk-sam-keit der Eu-ro-p
-äi-sche Datenschutz-
+Overfull \hbox (27.76881pt too wide) in paragraph at lines 43--47
+\TU/Alegreya(0)/m/n/12 sphä-re und Di-gi-ta-li-sie-rung ist spä-te-stens seit der Wirk-sam-keit der Eu-ro-p
+äi-schen Datenschutz-
  []
 
 
-Overfull \hbox (6.24461pt too wide) in paragraph at lines 42--46
+Overfull \hbox (6.24461pt too wide) in paragraph at lines 43--47
 \TU/Alegreya(0)/m/n/12 Grundverordnung (DSGVO) im Mai 󰋇󰋅󰋆󰋍 be-merk-b
 ar [[]󰋉[]]. Ei-ne an-de-re Re-ge-lung zum Schutz
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--46
+Underfull \hbox (badness 10000) in paragraph at lines 43--47
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--46
+Underfull \hbox (badness 10000) in paragraph at lines 43--47
 
  []
 
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input li
+ne 49.
+LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
+(Font)              scaled to size 7.2pt on input line 49.
 [1
 
 
 ] [2]
 Kapitel 2.
 LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/n' will be
-(Font)              scaled to size 13.0pt on input line 67.
+(Font)              scaled to size 13.0pt on input line 66.
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 10.9pt on input line 68.
-<System-model.PNG, id=141, 1299.35437pt x 572.89032pt>
+(Font)              scaled to size 10.9pt on input line 67.
+<System-model.PNG, id=164, 1299.35437pt x 572.89032pt>
 File: System-model.PNG Graphic file (type png)
 <use System-model.PNG>
-Package luatex.def Info: System-model.PNG  used on input line 70.
+Package luatex.def Info: System-model.PNG  used on input line 69.
 (luatex.def)             Requested size: 256.07741pt x 112.89764pt.
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 75.
+(Font)              scaled to size 12.0pt on input line 74.
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--83
+Underfull \hbox (badness 10000) in paragraph at lines 73--82
 
  []
 
 
-Overfull \hbox (3.1688pt too wide) in paragraph at lines 74--83
+Overfull \hbox (3.1688pt too wide) in paragraph at lines 73--82
 \TU/Alegreya(0)/b/n/12 Datenbankzustand \TU/Alegreya(0)/m/n/12 Der Da-ten-bank-z
 u-stand re-prä-sen-tiert die Be-le-gung der Da-ten-ele-men-
  []
@@ -2989,13 +3030,13 @@ u-stand re-prä-sen-tiert die Be-le-gung der Da-ten-ele-men-
 [3
 
 <./System-model.PNG>]
-Overfull \hbox (1.2616pt too wide) in paragraph at lines 84--86
+Overfull \hbox (1.2616pt too wide) in paragraph at lines 83--85
 \TU/Alegreya(0)/m/n/12 Be-vor wir an-fan-gen kön-nen das Pro-jekt zu in-itia-li
 -sie-ren, soll-ten wir uns mit Bayes-Netzen
  []
 
 
-Overfull \hbox (1.68657pt too wide) in paragraph at lines 84--86
+Overfull \hbox (1.68657pt too wide) in paragraph at lines 83--85
 \TU/Alegreya(0)/m/n/12 ten selbst ei-ne Zu-falls-va-ria-ble mit ei-ner Wahr-sche
 in-lich-keits-ver-tei-lung $\TU/AlegreyaItalic(0)/m/n/12 P\TU/TeXGyrePagellaMat
 h(1)/m/n/12 (\TU/AlegreyaItalic(0)/m/n/12 V[] \TU/TeXGyrePagellaMath(1)/m/n/12 
@@ -3005,40 +3046,40 @@ egreyaItalic(0)/m/n/12 V[]\TU/TeXGyrePagellaMath(1)/m/n/12 ))$\TU/Alegreya(0)/m
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--86
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
 
  []
 
 [4]
 LaTeX Font Info:    Font shape `TU/Alegreya(2)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 91.
+(Font)              scaled to size 12.0pt on input line 90.
 LaTeX Font Info:    Font shape `TU/Alegreya(2)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 92.
+(Font)              scaled to size 12.0pt on input line 91.
 
 
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 97.
+LaTeX Warning: Command \textbackslash invalid in math mode on input line 96.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--99
+Underfull \hbox (badness 10000) in paragraph at lines 95--98
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 111--115
+Underfull \hbox (badness 10000) in paragraph at lines 110--114
 
  []
 
 [6]
 LaTeX Font Info:    Font shape `TU/Alegreya(2)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 125.
+(Font)              scaled to size 8.0pt on input line 124.
 LaTeX Font Info:    Font shape `TU/Alegreya(2)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 125.
+(Font)              scaled to size 6.0pt on input line 124.
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 129.
+(Font)              scaled to size 8.0pt on input line 128.
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 129.
+(Font)              scaled to size 6.0pt on input line 128.
 
-Overfull \hbox (24.65756pt too wide) in paragraph at lines 134--139
+Overfull \hbox (24.65756pt too wide) in paragraph at lines 133--138
 \TU/Alegreya(2)/m/n/12 Für die Kno-ten mit Ab-hän-gig-kei-ten, al-so für al-l
 e Kno-ten V für die gilt $\TU/AlegreyaItalic(0)/m/n/12 H \TU/TeXGyrePagellaMat
 h(1)/m/n/12 = {\TU/AlegreyaItalic(0)/m/n/12 v \TU/TeXGyrePagellaMath(1)/m/n/12 
@@ -3048,12 +3089,12 @@ yaItalic(0)/m/n/12 Parent\TU/TeXGyrePagellaMath(1)/m/n/12 (\TU/AlegreyaItalic(0
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--139
+Underfull \hbox (badness 10000) in paragraph at lines 133--138
 
  []
 
 
-Overfull \hbox (4.08574pt too wide) in paragraph at lines 134--139
+Overfull \hbox (4.08574pt too wide) in paragraph at lines 133--138
 \TU/Alegreya(2)/m/n/12 junc-tiuon über-ge-ben wer-den als $\TU/AlegreyaItalic(
 0)/m/n/12 t[]\TU/TeXGyrePagellaMath(1)/m/n/12 , ..., \TU/AlegreyaItalic(0)/m/n/
 12 t[]$\TU/Alegreya(2)/m/n/12 . So-mit wür-den wir dann fol-gen-des er-hal-ten,
@@ -3061,7 +3102,17 @@ Overfull \hbox (4.08574pt too wide) in paragraph at lines 134--139
  []
 
 [7]
-Underfull \hbox (badness 10000) detected at line 199
+Underfull \hbox (badness 10000) detected at line 198
+
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 220
+
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 220
 
  []
 
@@ -3132,16 +3183,6 @@ Underfull \hbox (badness 10000) detected at line 227
 
 
 Underfull \hbox (badness 10000) detected at line 227
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 228
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 228
 
  []
 
@@ -3158,8 +3199,15 @@ Kapitel 5.
 [12
 
 ]
+No file Template_for_the_LaTeX_Class_uzl-thesis.tdo.
+\tf@tdo=\write7
+
+\openout7 = Template_for_the_LaTeX_Class_uzl-thesis.tdo
+[13
+
+]
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 381.
+(Font)              scaled to size 12.0pt on input line 382.
 
 
 Package biblatex Warning: Name format 'last-first' deprecated.
@@ -3167,15 +3215,22 @@ Package biblatex Warning: Name format 'last-first' deprecated.
 (biblatex)                Using 'family-given' now.
 
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 381.
-[13
+(Font)              scaled to size 8.0pt on input line 382.
+[14
 
 Missing character: There is no ∗ (U+2217) in font [Alegreya-Regular.otf]:mode=
 node;script=latn;language=dflt;+tlig;+pnum;+lnum;!
 ] (./Template_for_the_LaTeX_Class_uzl-thesis.aux)
-Package rerunfilecheck Info: File `Template_for_the_LaTeX_Class_uzl-thesis.out' 
-has not changed.
-(rerunfilecheck)             Checksum: CF096E25F9461CD6263C2AE64B2E06FF;2676.
+
+Package rerunfilecheck Warning: File `Template_for_the_LaTeX_Class_uzl-thesis.ou
+t' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Template_for_the_LaTeX_Class_uzl-the
+sis.out':
+(rerunfilecheck)             Before: 348E1BF044FAD2FE23D858DF03920B80;2676
+(rerunfilecheck)             After:  78F4713288FFB8FA92A8736A15DCE946;2676.
 Package logreq Info: Writing requests to 'Template_for_the_LaTeX_Class_uzl-thesi
 s.run.xml'.
 
@@ -3183,15 +3238,16 @@ s.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 42829 strings out of 478830
+ 43297 strings out of 478830
  100000,1977958 words of node,token memory allocated
- 662 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 1 dir, 5 glue, 4 kern, 1 glyph, 16 attribute, 72 gl
-ue_spec, 10 attribute_list, 2 write, 2 pdf_action nodes
-   avail lists: 1:1,2:1814,3:298,4:139,5:975,6:57,7:7966,8:83,9:1185,10:14,11:90
+ 1192 words of node memory still in use:
+   23 hlist, 2 vlist, 10 rule, 1 dir, 5 glue, 4 kern, 1 glyph, 64 attribute, 74 
+glue_spec, 58 attribute_list, 2 write, 16 pdf_literal, 2 pdf_action, 16 pdf_colo
+rstack nodes
+   avail lists: 1:4,2:1850,3:298,4:139,5:975,6:57,7:7966,8:83,9:1185,10:14,11:90
 9
- 60973 multiletter control sequences out of 65536+200000
- 221 fonts using 64523863 bytes
+ 61395 multiletter control sequences out of 65536+200000
+ 222 fonts using 64865151 bytes
  108i,12n,127p,1853b,2941s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/Programme/Miktex/fonts/opentype/public/lm/lmmonoprop10-regular.otf><D:/Progr
 amme/Miktex/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf><D:/Prog
@@ -3204,10 +3260,10 @@ rta/alegreya/Alegreya-Italic.otf><D:/Programme/Miktex/fonts/opentype/huerta/aleg
 reya/AlegreyaSans-Bold.otf><D:/Programme/Miktex/fonts/opentype/huerta/alegreya/A
 legreyaSans-Italic.otf><D:/Programme/Miktex/fonts/opentype/huerta/alegreya/Alegr
 eyaSans-Regular.otf>
-Output written on Template_for_the_LaTeX_Class_uzl-thesis.pdf (17 pages, 225319
+Output written on Template_for_the_LaTeX_Class_uzl-thesis.pdf (18 pages, 201579
  bytes).
 
-PDF statistics: 330 PDF objects out of 1000 (max. 8388607)
- 84 named destinations out of 1000 (max. 131072)
- 152 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 358 PDF objects out of 1000 (max. 8388607)
+ 87 named destinations out of 1000 (max. 131072)
+ 312 words of extra memory for PDF output out of 10000 (max. 100000000)
 

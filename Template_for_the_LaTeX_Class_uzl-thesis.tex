@@ -2,10 +2,10 @@
 % !TeX program = lualatex
 
 \UzLThesisSetup{
-  Logo-Dateiname        = {uzl-thesis-logo-itcs.pdf},
+  Logo-Dateiname        = {institutslogo.pdf},
   Verfasst              = {am}{Institut für Informationssysteme},
-  Titel auf Deutsch = { Evaluierung eines Algorithmus zur Absicherung von Datenbanken },
-  Titel auf Englisch = { Evaluation of an Algorithm for Securing Databases },
+  Titel auf Deutsch = { Evaluation eines Algorithmus zur Absicherung von Datenbanken mit Propabilistischen  },
+  Titel auf Englisch = { Evaluation of an Algorithm for Securing Databases from Propabilsitic Inference},
   Autor                 = {Kevin Schmelzer},
   Betreuerin            = {Prof. Dr. Ralf Möller},
   Mit Unterstützung von = {Simon Schiff},
@@ -31,6 +31,7 @@
 \usepackage{booktabs}
 \usepackage{tikz}
 \usepackage{biblatex}
+\usepackage{todonotes}
 \usetikzlibrary{positioning,shapes,arrows}
 
 \newcolumntype{M}[1]{D{.}{.}{1.#1}}
@@ -39,15 +40,13 @@
 \begin{document}
 
 \chapter{Einleitung}
-Der Schutz von sensiblen Daten ist in vielen Bereichen wichtig, damit unbefugte nicht Daten wie Herkunft, Religion, Ethnizität usw. erhalten. Die Relevanz des Themas Privatsphäre und Digitalisierung ist spätestens seit der wirksamkeit der Europäische Datenschutz-Grundverordnung (DSGVO) im  Mai 2018 bemerkbar \cite{1}. Eine andere Regelung zum Schutz der Privatsphäre speziell im medizinischen Bereich ist die Health Insurance Portability and Accountability(HIPAA) aus dem Jahr 1996. Hierbei wurde für jeden der im Gesundheitswesen tätig ist in den USA durch bestimmte Anordnungen und Regelungen vorgeschrieben, die Privatsphäre der Patienten durch z.B. Zugangskontrolle, Anonymisierung, richtige Datenspeicherung usw. zu schützen. \cite{7}[ Dabei kam es damals schon zum Konflikt zwischen dem Schutz der Privatsphäre und zur Verwendung oder Veröffentlichung von Gesundheitsinformation um wichtige soziale Ziele, wie zum Beispiel Forschungszwecke, zu erfüllen.\cite{8}. Der bisherige Ansatz sensible Daten zu schützen war es den Zugang in teilen einfach zu verbieten und die Daten zu anonymisieren \cite{2}. Dieser Ansatz ist zwar für die Sicherheit optimal, jedoch leidet darunter das andere Konfliktziel.] \\ 
+Der Schutz von sensiblen Daten ist in vielen Bereichen wichtig, damit unbefugte nicht Daten wie Herkunft, Religion, Ethnizität usw. erhalten. Die Relevanz des Themas Privatsphäre und Digitalisierung ist spätestens seit der Wirksamkeit der Europäischen Datenschutz-Grundverordnung (DSGVO) im  Mai 2018 bemerkbar \cite{1}. Eine andere Regelung zum Schutz der Privatsphäre speziell im medizinischen Bereich ist die Health Insurance Portability and Accountability(HIPAA) aus dem Jahr 1996. Hierbei wurde für jeden der im Gesundheitswesen tätig ist in den USA durch bestimmte Anordnungen und Regelungen vorgeschrieben, die Privatsphäre der Patienten durch z.B. Zugangskontrolle, Anonymisierung, richtige Datenspeicherung usw. zu schützen. \cite{7}[ Dabei kam es damals schon zum Konflikt zwischen dem Schutz der Privatsphäre und zur Verwendung oder Veröffentlichung von Gesundheitsinformation um wichtige soziale Ziele, wie zum Beispiel Forschungszwecke, zu erfüllen.\cite{8}. Der bisherige Ansatz sensible Daten zu schützen war es den Zugang in teilen einfach zu verbieten und die Daten zu anonymisieren \cite{2}. Dieser Ansatz ist zwar für die Sicherheit optimal, jedoch leidet darunter das andere Konfliktziel.] \\ 
 Um die Vertraulichkeit von sensiblen Daten zu wahren braucht man hingegen Schutz vor direkten und indirekten Zugriff auf die Datenbank. Beim Direkten Zugang versucht ein Nutzer aus Datenbankantworten und indirekter Zugang ein Nutzer durch statistische Auswertungen von externen Informationen und klug gewählte Anfragen an sensible Daten zu kommen.  Daher kam es zu einigen neuen Ansätzen, die auch den indirekten Zugang schützen sollen und eine davon ist die Database Inference Control (DBIC). Damit DBIC auch effektiv den indirekten Zugang verhindert, muss dieser eine große Menge von probabilistischen Abhängigkeiten abdecken können, um viele verschiedene Angreifermodelle darzustellen und es muss eine angemessene Laufzeit aufweisen, um diese auch auf Reale und große Datenbanken anwenden zu können.\\
 Dies wurde mit Angerona versucht, da bisherige DBIC Mechanismen nur präzise Datenabhängigkeiten oder nur eine begrenzte Anzahl von probabilistischen Abhängigkeiten erlaubt haben und somit nicht für Reale Datenbanken tauglich waren. \cite{6}
 \\ \\
 
-
-relevante daten und anonymisierung, Warum angreifer modeliert? (Vorwissen) 
-warum ich gerade medizinische DB verwendet habe?
-TODO
+\todo[inline, size=\tiny]{relevante daten und anonymisierung, Warum angreifer modeliert? (Vorwissen) 
+	warum ich gerade medizinische DB verwendet habe?}
 
 \section{Beiträge dieser Arbeit}
 TODO
@@ -266,6 +265,8 @@ right.
 Do some great scientific research now and report on it in a thesis
 that is a pleasure to read. 
 
+
+\listoftodos
 
 
 
