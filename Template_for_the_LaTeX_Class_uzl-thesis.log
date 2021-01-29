@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.12) (format=lualatex 2021.1.5)  23 JAN 2021 16:10
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.12) (format=lualatex 2021.1.5)  29 JAN 2021 13:07
  restricted system commands enabled.
 **Template_for_the_LaTeX_Class_uzl-thesis.tex
 (./Template_for_the_LaTeX_Class_uzl-thesis.tex
@@ -2753,7 +2753,14 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'german'.
 
-(./Template_for_the_LaTeX_Class_uzl-thesis.aux)
+(./Template_for_the_LaTeX_Class_uzl-thesis.aux
+
+LaTeX Warning: Label `lst-2' multiply defined.
+
+
+LaTeX Warning: Label `lst-3' multiply defined.
+
+)
 \openout1 = Template_for_the_LaTeX_Class_uzl-thesis.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
@@ -2778,8 +2785,7 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
 LaTeX Font Info:    ... okay on input line 40.
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 40.
-
-(D:/Programme/Miktex/tex/context/base/mkii/supp-pdf.mkii
+ (D:/Programme/Miktex/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count458
 \scratchdimen=\dimen309
@@ -2973,264 +2979,337 @@ LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/n' will be
 ]
 Kapitel 1.
 LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/n' will be
-(Font)              scaled to size 60.0pt on input line 42.
-
-Overfull \hbox (27.76881pt too wide) in paragraph at lines 43--47
-\TU/Alegreya(0)/m/n/12 sphä-re und Di-gi-ta-li-sie-rung ist spä-te-stens seit der Wirk-sam-keit der Eu-ro-p
-äi-schen Datenschutz-
- []
-
-
-Overfull \hbox (6.24461pt too wide) in paragraph at lines 43--47
-\TU/Alegreya(0)/m/n/12 Grundverordnung (DSGVO) im Mai 󰋇󰋅󰋆󰋍 be-merk-b
-ar [[]󰋉[]]. Ei-ne an-de-re Re-ge-lung zum Schutz
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--47
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--47
-
- []
-
+(Font)              scaled to size 60.0pt on input line 41.
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input li
-ne 49.
-LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 7.2pt on input line 49.
+ne 47.
 [1
 
 
-] [2]
+]
+LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
+(Font)              scaled to size 7.2pt on input line 47.
+
+Overfull \hbox (6.58073pt too wide) in paragraph at lines 62--63
+\TU/Alegreya(0)/m/n/12 auf ech-te, pseud-ony-mi-sier-te Da-ten-ban-ken wie MI-MI
+C III, eI-CU und Syn-thea. Zum Schluss
+ []
+
+[2]
 Kapitel 2.
 LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/n' will be
-(Font)              scaled to size 13.0pt on input line 66.
+(Font)              scaled to size 13.0pt on input line 65.
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 10.9pt on input line 67.
-<System-model.PNG, id=164, 1299.35437pt x 572.89032pt>
+(Font)              scaled to size 10.9pt on input line 66.
+<System-model.PNG, id=165, 1299.35437pt x 572.89032pt>
 File: System-model.PNG Graphic file (type png)
 <use System-model.PNG>
-Package luatex.def Info: System-model.PNG  used on input line 69.
+Package luatex.def Info: System-model.PNG  used on input line 68.
 (luatex.def)             Requested size: 256.07741pt x 112.89764pt.
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 74.
+(Font)              scaled to size 12.0pt on input line 73.
+LaTeX Font Info:    Font shape `TU/LatinModernMono(0)/m/n' will be
+(Font)              scaled to size 12.29993pt on input line 74.
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--82
+Underfull \hbox (badness 10000) in paragraph at lines 72--81
 
  []
 
 
-Overfull \hbox (3.1688pt too wide) in paragraph at lines 73--82
-\TU/Alegreya(0)/b/n/12 Datenbankzustand \TU/Alegreya(0)/m/n/12 Der Da-ten-bank-z
-u-stand re-prä-sen-tiert die Be-le-gung der Da-ten-ele-men-
+Overfull \hbox (4.84418pt too wide) in paragraph at lines 72--81
+\TU/Alegreya(0)/m/n/12 keits-ver-tei-lung. Die Re-geln wer-den for-ma-li-siert 
+durch ein Kom-man-do in der Form \TU/LatinModernMono(0)/m/n/12 SECRET
  []
 
 [3
 
 <./System-model.PNG>]
-Overfull \hbox (1.2616pt too wide) in paragraph at lines 83--85
-\TU/Alegreya(0)/m/n/12 Be-vor wir an-fan-gen kön-nen das Pro-jekt zu in-itia-li
--sie-ren, soll-ten wir uns mit Bayes-Netzen
- []
-
-
-Overfull \hbox (1.68657pt too wide) in paragraph at lines 83--85
-\TU/Alegreya(0)/m/n/12 ten selbst ei-ne Zu-falls-va-ria-ble mit ei-ner Wahr-sche
-in-lich-keits-ver-tei-lung $\TU/AlegreyaItalic(0)/m/n/12 P\TU/TeXGyrePagellaMat
-h(1)/m/n/12 (\TU/AlegreyaItalic(0)/m/n/12 V[] \TU/TeXGyrePagellaMath(1)/m/n/12 
-∣ \TU/AlegreyaItalic(0)/m/n/12 Parent\TU/TeXGyrePagellaMath(1)/m/n/12 (\TU/Al
-egreyaItalic(0)/m/n/12 V[]\TU/TeXGyrePagellaMath(1)/m/n/12 ))$\TU/Alegreya(0)/m
-/n/12 .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--85
-
- []
-
-[4]
+<bayes-netz-bsp.PNG, id=177, 530.98375pt x 485.815pt>
+File: bayes-netz-bsp.PNG Graphic file (type png)
+<use bayes-netz-bsp.PNG>
+Package luatex.def Info: bayes-netz-bsp.PNG  used on input line 86.
+(luatex.def)             Requested size: 256.07741pt x 234.29308pt.
+ [4]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on in
+put line 99.
 LaTeX Font Info:    Font shape `TU/Alegreya(2)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 90.
+(Font)              scaled to size 12.0pt on input line 99.
+LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
+(Font)              scaled to size 9.25pt on input line 100.
 LaTeX Font Info:    Font shape `TU/Alegreya(2)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 91.
-
-
-LaTeX Warning: Command \textbackslash invalid in math mode on input line 96.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--98
-
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 110--114
+(Font)              scaled to size 12.0pt on input line 100.
+ [5<./bayes-netz-bsp.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 104--107
 
  []
 
 [6]
 LaTeX Font Info:    Font shape `TU/Alegreya(2)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 124.
+(Font)              scaled to size 8.0pt on input line 132.
 LaTeX Font Info:    Font shape `TU/Alegreya(2)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 124.
+(Font)              scaled to size 6.0pt on input line 132.
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 128.
+(Font)              scaled to size 8.0pt on input line 136.
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 128.
-
-Overfull \hbox (24.65756pt too wide) in paragraph at lines 133--138
-\TU/Alegreya(2)/m/n/12 Für die Kno-ten mit Ab-hän-gig-kei-ten, al-so für al-l
-e Kno-ten V für die gilt $\TU/AlegreyaItalic(0)/m/n/12 H \TU/TeXGyrePagellaMat
-h(1)/m/n/12 = {\TU/AlegreyaItalic(0)/m/n/12 v \TU/TeXGyrePagellaMath(1)/m/n/12 
-∈ \TU/AlegreyaItalic(0)/m/n/12 V\TU/TeXGyrePagellaMath(1)/m/n/12 ||\TU/Alegre
-yaItalic(0)/m/n/12 Parent\TU/TeXGyrePagellaMath(1)/m/n/12 (\TU/AlegreyaItalic(0
-)/m/n/12 v\TU/TeXGyrePagellaMath(1)/m/n/12 )| ≥
+(Font)              scaled to size 6.0pt on input line 136.
+ [7] [8]
+Overfull \hbox (6.5056pt too wide) in paragraph at lines 191--192
+\TU/Alegreya(2)/m/n/12 Im Bei-spiel wird ei-ne Pa-ti-en-ten-da-ten-bank ei-nes 
+Kran-ken-hau-ses be-trach-tet, die das Rauch-
  []
 
+LaTeX Font Info:    Calculating math sizes for size <10.9> on input line 218.
+LaTeX Font Info:    Font shape `TU/TeXGyrePagellaMath(2)/m/n' will be
+(Font)              scaled to size 10.90115pt on input line 218.
+LaTeX Font Info:    Font shape `TU/TeXGyrePagellaMath(2)/m/n' will be
+(Font)              scaled to size 7.63077pt on input line 218.
+LaTeX Font Info:    Font shape `TU/TeXGyrePagellaMath(2)/m/n' will be
+(Font)              scaled to size 5.45058pt on input line 218.
+LaTeX Font Info:    Font shape `TU/TeXGyrePagellaMath(3)/m/n' will be
+(Font)              scaled to size 10.89882pt on input line 218.
+LaTeX Font Info:    Font shape `TU/TeXGyrePagellaMath(3)/m/n' will be
+(Font)              scaled to size 7.62914pt on input line 218.
+LaTeX Font Info:    Font shape `TU/TeXGyrePagellaMath(3)/m/n' will be
+(Font)              scaled to size 5.4494pt on input line 218.
+LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
+(Font)              scaled to size 11.99005pt on input line 218.
+LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
+(Font)              scaled to size 8.39299pt on input line 218.
+LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
+(Font)              scaled to size 5.99503pt on input line 218.
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--138
-
- []
-
-
-Overfull \hbox (4.08574pt too wide) in paragraph at lines 133--138
-\TU/Alegreya(2)/m/n/12 junc-tiuon über-ge-ben wer-den als $\TU/AlegreyaItalic(
-0)/m/n/12 t[]\TU/TeXGyrePagellaMath(1)/m/n/12 , ..., \TU/AlegreyaItalic(0)/m/n/
-12 t[]$\TU/Alegreya(2)/m/n/12 . So-mit wür-den wir dann fol-gen-des er-hal-ten,
- wenn
- []
-
-[7]
-Underfull \hbox (badness 10000) detected at line 198
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 220
+Underfull \hbox (badness 10000) detected at line 234
 
  []
 
-
-Underfull \hbox (badness 10000) detected at line 220
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 221
+[9] [10] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 318--320
 
  []
 
-
-Underfull \hbox (badness 10000) detected at line 221
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 222
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 222
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 223
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 223
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 224
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 224
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 225
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 225
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 226
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 226
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 227
-
- []
-
-
-Underfull \hbox (badness 10000) detected at line 227
-
- []
-
-[8] [9]
+[12] [13]
 Kapitel 3.
-[10
+
+Underfull \hbox (badness 10000) in paragraph at lines 370--372
+
+ []
+
+
+Overfull \hbox (1.15424pt too wide) in paragraph at lines 375--376
+\TU/Alegreya(2)/m/n/12 net. Dies ist im-mer un-se-re Aus-gangs-ta-bel-le, da al-
+le Kran-ken-haus-auf-ent-hal-te be-trach-
+ []
+
+[14
 
 ]
+
+LaTeX Warning: Reference `mimic-bayes-net' on page 15 undefined on input line 38
+3.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--385
+
+ []
+
+
+Overfull \hbox (10.05363pt too wide) in paragraph at lines 452--458
+[][] \TU/Alegreya(2)/m/n/12 Das
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 452--458
+
+ []
+
+[15]
+Overfull \hbox (6.91907pt too wide) in paragraph at lines 459--461
+\TU/Alegreya(2)/m/n/12 ver-schie-de-nen Kran-ken-häu-sern. Zu den Da-ten ge-h
+ö-ren Vir-tal-pa-ra-me-ter, Mes-sun-gen, P󰀎le-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 459--461
+
+ []
+
+[16]
+Overfull \hbox (2.71527pt too wide) in paragraph at lines 467--468
+[]\TU/Alegreya(2)/m/n/12 Die Ta-bel-le \TU/Alegreya(2)/m/it/12 TRE-AT-MENT  \TU
+/Alegreya(2)/m/n/12 ent-hält Be-hand-lungs-in-for-ma-tio-nen über den Kran-ken
+-haus-
+ []
+
+[17] (D:/Programme/Miktex/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+LaTeX Font Info:    Font shape `TU/LatinModernMono(0)/m/n' will be
+(Font)              scaled to size 11.17242pt on input line 547.
+ [18]
+Overfull \hbox (14.21619pt too wide) in paragraph at lines 550--553
+\TU/Alegreya(2)/m/n/12 An-schlie-ßend kann man mit dem Kom-man-do  \TU/LatinMo
+dernMono(0)/m/n/12 .$\TU/TeXGyrePagellaMath(1)/m/n/12 \$\TU/LatinModernMono(0)/
+m/n/12 run_synthea -p [anzahl] -o false
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 550--553
+
+ []
+
+
+Overfull \hbox (65.93567pt too wide) in paragraph at lines 637--639
+[][]
+ []
+
+
+Overfull \hbox (3.48146pt too wide) in paragraph at lines 637--639
+\TU/Alegreya(2)/m/n/12 ↔Art des Bru-ches, weil z.B. ein Arm-bruch ab-hän-gig ist vom Kno-chen-bruch und von Osteo-
+ []
+
+[19] [20]
 Kapitel 4.
-[11
+
+Underfull \hbox (badness 10000) in paragraph at lines 815--817
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 815--817
+
+ []
+
+[21
 
 ]
 Kapitel 5.
-[12
+[22
 
-]
-No file Template_for_the_LaTeX_Class_uzl-thesis.tdo.
+] (./Template_for_the_LaTeX_Class_uzl-thesis.tdo)
 \tf@tdo=\write7
 
 \openout7 = Template_for_the_LaTeX_Class_uzl-thesis.tdo
-[13
+ [23
 
 ]
 LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 382.
+(Font)              scaled to size 12.0pt on input line 954.
 
 
 Package biblatex Warning: Name format 'last-first' deprecated.
 (biblatex)                Please use 'family-given' instead.
 (biblatex)                Using 'family-given' now.
 
-LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 382.
-[14
 
+Underfull \hbox (badness 10000) in paragraph at lines 954--954
+\TU/Alegreya(2)/m/n/12 Syn-thea: An ap-proach, me-thod, and so󰀖t-ware me-cha-
+nism for ge-nera-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 954--954
+\TU/Alegreya(2)/m/n/12 ting syn-the-tic pa-ti-ents and the syn-the-tic lec-tro-n
+ic health ca-re re-
+ []
+
+
+Underfull \hbox (badness 4913) in paragraph at lines 954--954
+\TU/Alegreya(2)/m/n/12 cord. In: \TU/Alegreya(0)/m/sc/12 󰃥󰃉󰂍\TU/Alegre
+ya(2)/m/n/12 : []$\TU/LatinModernMonoProp(0)/m/n/12 https : / / watermark . silv
+erchair . com / ocx079 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 954--954
+\TU/LatinModernMonoProp(0)/m/n/12 pdf ? token = AQECAHi208BE49Ooan9kkhW _ Ercy7D
+m3ZL _
+ []
+
+
+Overfull \hbox (613.22041pt too wide) in paragraph at lines 954--954
+\TU/LatinModernMonoProp(0)/m/n/12 9Cf3qfKAc485ysgAAAqEwggKdBgkqhkiG9w0BBwagggKOM
+IICigIBADCCAoMGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMlUeUc5rZXpMd8SZCAgEQgIICVMCG4
+HzeJeHP -
+ []
+
+
+Overfull \hbox (8.26457pt too wide) in paragraph at lines 954--954
+\TU/LatinModernMonoProp(0)/m/n/12 OuKibqkLHwcuMDot2 - MtOyLcGc57WFcQzzHLtRHHcu8J
+DHx8do9Xm _
+ []
+
+
+Overfull \hbox (474.28456pt too wide) in paragraph at lines 954--954
+\TU/LatinModernMonoProp(0)/m/n/12 v - N3MBKn4BK42JxgtPavGnFnWPfLGxAFB4CMwfPgL90o
+62vbj27v2VbLt1rhGc14FtHPsrivkQVX8p6NTGgJ2WCrh5hMemQTWrg35zfNTY6w3joRKic81Tc -
+ []
+
+
+Overfull \hbox (592.11247pt too wide) in paragraph at lines 954--954
+\TU/LatinModernMonoProp(0)/m/n/12 FMYi3v9EA07 - 5PT0z4JBXiwR0E7dr9x7sR4l8zVqmLfU
+kcvCcH6qxfA1g4xHP2bFUYIDghcGHzy1vs455XlKXfAZ755x3rUghJ0UVRqkLjFwyqtc4nWYnfBmHv4Q
+UMYvGbO20cxjzj _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 954--954
+\TU/LatinModernMonoProp(0)/m/n/12 QUsiwOJ20uiQThkJU - Ze2ahgZ4qW9LZ - yJO3eczuZD
+Pw _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 954--954
+\TU/LatinModernMonoProp(0)/m/n/12 nsMhmEx3ocl3HcZmREf1nqsakMvuLL0Jq1y -
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 954--954
+\TU/LatinModernMonoProp(0)/m/n/12 beb7y3dyuEzh6QLeme5mx5089mHyRlh22t _ ksbEP _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 954--954
+\TU/LatinModernMonoProp(0)/m/n/12 uV5cduUrQxjihPxc1SVTUCCzGXAty _ L8GO8XA - K0rv
+ -
+ []
+
+
+Overfull \hbox (271.70056pt too wide) in paragraph at lines 954--954
+\TU/LatinModernMonoProp(0)/m/n/12 _UGUEwmSOMl8t0z8BchfXMNVOdrK9iGJsP39FUdfIGdt2R
+382SsBupHMeF9AoaFQLqlJIdIRLFvwBXnB5WSNmWRR -
+ []
+
+
+Overfull \hbox (138.62059pt too wide) in paragraph at lines 954--954
+\TU/LatinModernMonoProp(0)/m/n/12 pyd7O5v5oB0Yp2C3S6XiJL3xsMCC8H8OQk3SEBS5I4npew
+2Jo8xlrlhHQpXVkWea46YArjbIpXg -
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 954--954
+\TU/LatinModernMonoProp(0)/m/n/12 MALkttRAqi9MDocU2ms1m086niEWj60DfaTVK66LJYPwd _
+ []
+
+
+Overfull \hbox (86.94855pt too wide) in paragraph at lines 954--954
+\TU/LatinModernMonoProp(0)/m/n/12 XSTIrwSQoZgeWxGPhsaYPzADT0Q - uDXDY1C8SGM29GxO
+zfwtZ29Bst8OvO5jChH _
+ []
+
+[24
+
+] [25
 Missing character: There is no ∗ (U+2217) in font [Alegreya-Regular.otf]:mode=
 node;script=latn;language=dflt;+tlig;+pnum;+lnum;!
 ] (./Template_for_the_LaTeX_Class_uzl-thesis.aux)
 
-Package rerunfilecheck Warning: File `Template_for_the_LaTeX_Class_uzl-thesis.ou
-t' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: Checksums for `Template_for_the_LaTeX_Class_uzl-the
-sis.out':
-(rerunfilecheck)             Before: 348E1BF044FAD2FE23D858DF03920B80;2676
-(rerunfilecheck)             After:  78F4713288FFB8FA92A8736A15DCE946;2676.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `Template_for_the_LaTeX_Class_uzl-thesis.out' 
+has not changed.
+(rerunfilecheck)             Checksum: 0DFC78F9B367C187832F8C13B411AE74;2608.
 Package logreq Info: Writing requests to 'Template_for_the_LaTeX_Class_uzl-thesi
 s.run.xml'.
 
@@ -3238,32 +3317,33 @@ s.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 43297 strings out of 478830
- 100000,1977958 words of node,token memory allocated
- 1192 words of node memory still in use:
-   23 hlist, 2 vlist, 10 rule, 1 dir, 5 glue, 4 kern, 1 glyph, 64 attribute, 74 
-glue_spec, 58 attribute_list, 2 write, 16 pdf_literal, 2 pdf_action, 16 pdf_colo
+ 43729 strings out of 478830
+ 195336,1977958 words of node,token memory allocated
+ 1276 words of node memory still in use:
+   23 hlist, 2 vlist, 10 rule, 1 dir, 5 glue, 4 kern, 1 glyph, 78 attribute, 74 
+glue_spec, 65 attribute_list, 2 write, 16 pdf_literal, 9 pdf_action, 16 pdf_colo
 rstack nodes
-   avail lists: 1:4,2:1850,3:298,4:139,5:975,6:57,7:7966,8:83,9:1185,10:14,11:90
-9
- 61395 multiletter control sequences out of 65536+200000
- 222 fonts using 64865151 bytes
- 108i,12n,127p,1853b,2941s stack positions out of 5000i,500n,10000p,200000b,50000s
+   avail lists: 1:6,2:3954,3:1235,4:723,5:3243,6:89,7:8851,8:1030,9:6639,10:22,1
+1:955
+ 61675 multiletter control sequences out of 65536+200000
+ 260 fonts using 77318215 bytes
+ 108i,14n,127p,1853b,2941s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/Programme/Miktex/fonts/opentype/public/lm/lmmonoprop10-regular.otf><D:/Progr
 amme/Miktex/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf><D:/Prog
-ramme/Miktex/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf><D:/Programme/M
-iktex/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf><D:/Programme/
+ramme/Miktex/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf><D:/Pro
+gramme/Miktex/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf><D:/Programme/
 Miktex/fonts/opentype/huerta/alegreya/Alegreya-Italic.otf><D:/Programme/Miktex/f
-onts/opentype/huerta/alegreya/Alegreya-Bold.otf><D:/Programme/Miktex/fonts/opent
-ype/huerta/alegreya/Alegreya-Regular.otf><D:/Programme/Miktex/fonts/opentype/hue
-rta/alegreya/Alegreya-Italic.otf><D:/Programme/Miktex/fonts/opentype/huerta/aleg
-reya/AlegreyaSans-Bold.otf><D:/Programme/Miktex/fonts/opentype/huerta/alegreya/A
-legreyaSans-Italic.otf><D:/Programme/Miktex/fonts/opentype/huerta/alegreya/Alegr
-eyaSans-Regular.otf>
-Output written on Template_for_the_LaTeX_Class_uzl-thesis.pdf (18 pages, 201579
+onts/opentype/public/lm/lmmono12-regular.otf><D:/Programme/Miktex/fonts/opentype
+/huerta/alegreya/Alegreya-Bold.otf><D:/Programme/Miktex/fonts/opentype/huerta/al
+egreya/Alegreya-Regular.otf><D:/Programme/Miktex/fonts/opentype/huerta/alegreya/
+Alegreya-Italic.otf><D:/Programme/Miktex/fonts/opentype/huerta/alegreya/Alegreya
+Sans-Bold.otf><D:/Programme/Miktex/fonts/opentype/huerta/alegreya/AlegreyaSans-I
+talic.otf><D:/Programme/Miktex/fonts/opentype/huerta/alegreya/AlegreyaSans-Regul
+ar.otf>
+Output written on Template_for_the_LaTeX_Class_uzl-thesis.pdf (29 pages, 325189
  bytes).
 
-PDF statistics: 358 PDF objects out of 1000 (max. 8388607)
- 87 named destinations out of 1000 (max. 131072)
+PDF statistics: 610 PDF objects out of 1000 (max. 8388607)
+ 221 named destinations out of 1000 (max. 131072)
  312 words of extra memory for PDF output out of 10000 (max. 100000000)
 

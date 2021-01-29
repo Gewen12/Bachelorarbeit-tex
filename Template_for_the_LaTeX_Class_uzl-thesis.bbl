@@ -1,0 +1,470 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{7}{inproceedings}{}
+    \verb{url}
+    \verb https://www.hhs.gov/hipaa/for-professionals/security/laws-regulations
+    \verb /index.html
+    \endverb
+    \field{urlday}{30}
+    \field{urlmonth}{12}
+    \field{urlyear}{2020}
+  \endentry
+
+  \entry{6}{inproceedings}{}
+    \verb{url}
+    \verb https://mguarnieri.github.io/publication/csf2017/
+    \endverb
+    \field{urlday}{30}
+    \field{urlmonth}{12}
+    \field{urlyear}{2020}
+  \endentry
+
+  \entry{16}{manual}{}
+    \verb{url}
+    \verb https://medicine.yale.edu/intmed/vacs/instruments/
+    \endverb
+  \endentry
+
+  \entry{20}{manual}{}
+    \verb{url}
+    \verb https://github.com/synthetichealth/synthea
+    \endverb
+  \endentry
+
+  \entry{21}{manual}{}
+    \verb{url}
+    \verb https://www.census.gov/
+    \endverb
+  \endentry
+
+  \entry{5}{inproceedings}{}
+    \verb{url}
+    \verb https://dtai.cs.kuleuven.be/problog/index.html#
+    \endverb
+    \field{day}{30}
+    \field{month}{12}
+    \field{year}{2020}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{11}{manual}{}
+    \verb{url}
+    \verb https://de.statista.com/statistik/daten/studie/1099197/umfrage/anteil
+    \verb -der-raucher-in-der-eu-nach-geschlecht/#professional
+    \endverb
+    \field{month}{01}
+    \field{year}{2020}
+    \field{urlday}{12}
+    \field{urlmonth}{01}
+    \field{urlyear}{2021}
+  \endentry
+
+  \entry{14}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=ABDKEEDEM}{%
+         family={Andrei\bibnamedelima Barasch},
+         familyi={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+         suffix={Douglas E.\bibnamedelima Morse},
+         suffixi={D\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+         given={David 1. Krutchkof Ellen\bibnamedelima Eisenberg},
+         giveni={D\bibinitperiod\bibinitdelim \bibinitperiod\bibinitdelim
+  K\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ABDEMDKEE1}
+    \strng{fullhash}{ABDEMDKEE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{subtitle}{A Case-Series Analysis}
+    \field{title}{Smoking, Gender, and Age as Risk Factors for Site-Specific
+  Intraoral Squamous Cell Carcinoma}
+    \verb{url}
+    \verb https://acsjournals.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/109
+    \verb 7-0142(19940201)73:3%3C509::AID-CNCR2820730303%3E3.0.CO;2-X
+    \endverb
+    \field{version}{2.17a}
+    \field{day}{25}
+    \field{month}{08}
+    \field{year}{1993}
+    \field{urlday}{22}
+    \field{urlmonth}{01}
+    \field{urlyear}{2020}
+  \endentry
+
+  \entry{15}{book}{}
+    \name{author}{1}{}{%
+      {{hash=BA}{%
+         family={Beutelspacher},
+         familyi={B\bibinitperiod},
+         given={Albrecht},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Vieweg+Teubner Verlag}%
+    }
+    \strng{namehash}{BA1}
+    \strng{fullhash}{BA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{doi}
+    \verb 10.1007/978-3-8348-9075-7
+    \endverb
+    \field{edition}{Ninth, updated edition}
+    \field{title}{„Das ist o.\,B.\,d.\,A.\ trivial!“: Tipps und Tricks zur
+  Formulierung mathematischer Gedanken (Mathematik für Studienanfänger)}
+    \verb{url}
+    \verb https://apps.who.int/iris/bitstream/handle/10665/39473/9241541334-eng
+    \verb .pdf?sequence=1&isAllowed=y
+    \endverb
+    \field{year}{2009}
+  \endentry
+
+  \entry{1}{manual}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{Datenschutz-Grundverordnung(DSGVO)}
+    \verb{url}
+    \verb https://dsgvo-gesetz.de/
+    \endverb
+    \field{urlday}{22}
+    \field{urlmonth}{01}
+    \field{urlyear}{2020}
+  \endentry
+
+  \entry{10}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GP}{%
+         family={Golibrzuch},
+         familyi={G\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Möller},
+         familyi={M\bibinitperiod},
+         given={Ralf},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kaya},
+         familyi={K\bibinitperiod},
+         given={Atila},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GPMRKA1}
+    \strng{fullhash}{GPMRKA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{A study of the rough set approach for image understanding}
+    \field{month}{01}
+    \field{year}{2021}
+  \endentry
+
+  \entry{9}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=IA}{%
+         family={Ingelheim},
+         familyi={I\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{IA1}
+    \strng{fullhash}{IA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{title}{Das erste Jahr DSGVO - Eine Bestandsaufnahme}
+    \verb{url}
+    \verb http://www.ctan.org/pkg/varioref
+    \endverb
+    \field{month}{04}
+    \field{year}{2019}
+  \endentry
+
+  \entry{19}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=JWJNAQCMDHCDKDTGSMMK}{%
+         family={Jason\bibnamedelima Walonoski},
+         familyi={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+         suffix={Mark\bibnamedelima Kramer},
+         suffixi={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+         given={Joseph Nichols Andre Quina Chris Moesel Dylan Hall Carlton
+  Duffett Kudakwashe Dube Thomas Gallagher Scott\bibnamedelima McLachlan},
+         giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim
+  A\bibinitperiod\bibinitdelim Q\bibinitperiod\bibinitdelim
+  C\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
+  D\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim
+  C\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
+  K\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
+  T\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim
+  S\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JWMKJNAQCMDHCDKDTGSM1}
+    \strng{fullhash}{JWMKJNAQCMDHCDKDTGSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{title}{Synthea: An approach, method, and software mechanism for
+  generating synthetic patients and the synthetic lectronic health care record}
+    \verb{url}
+    \verb https://watermark.silverchair.com/ocx079.pdf?token=AQECAHi208BE49Ooan
+    \verb 9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAqEwggKdBgkqhkiG9w0BBwagggKOMIICigI
+    \verb BADCCAoMGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMlUeUc5rZXpMd8SZCAgEQgIIC
+    \verb VMCG4HzeJeHP-OuKibqkLHwcuMDot2-MtOyLcGc57WFcQzzHLtRHHcu8JDHx8do9Xm_v-
+    \verb N3MBKn4BK42JxgtPavGnFnWPfLGxAFB4CMwfPgL90o62vbj27v2VbLt1rhGc14FtHPsri
+    \verb vkQVX8p6NTGgJ2WCrh5hMemQTWrg35zfNTY6w3joRKic81Tc-FMYi3v9EA07-5PT0z4JB
+    \verb XiwR0E7dr9x7sR4l8zVqmLfUkcvCcH6qxfA1g4xHP2bFUYIDghcGHzy1vs455XlKXfAZ7
+    \verb 55x3rUghJ0UVRqkLjFwyqtc4nWYnfBmHv4QUMYvGbO20cxjzj_QUsiwOJ20uiQThkJU-Z
+    \verb e2ahgZ4qW9LZ-yJO3eczuZDPw_nsMhmEx3ocl3HcZmREf1nqsakMvuLL0Jq1y-beb7y3d
+    \verb yuEzh6QLeme5mx5089mHyRlh22t_ksbEP_uV5cduUrQxjihPxc1SVTUCCzGXAty_L8GO8
+    \verb XA-K0rv-_UGUEwmSOMl8t0z8BchfXMNVOdrK9iGJsP39FUdfIGdt2R382SsBupHMeF9Ao
+    \verb aFQLqlJIdIRLFvwBXnB5WSNmWRR-pyd7O5v5oB0Yp2C3S6XiJL3xsMCC8H8OQk3SEBS5I
+    \verb 4npew2Jo8xlrlhHQpXVkWea46YArjbIpXg-MALkttRAqi9MDocU2ms1m086niEWj60Dfa
+    \verb TVK66LJYPwd_XSTIrwSQoZgeWxGPhsaYPzADT0Q-uDXDY1C8SGM29GxOzfwtZ29Bst8Ov
+    \verb O5jChH_W0-PXMIPbnIaLc1gmMWockWwaixjed
+    \endverb
+  \endentry
+
+  \entry{13}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=KATJRFMMTRFAAAE}{%
+         family={Kawsar\bibnamedelima Ahmed},
+         familyi={K\bibinitperiod\bibinitdelim A\bibinitperiod},
+         suffix={Abdullah-Al-Emran},
+         suffixi={A\bibinithyphendelim A\bibinithyphendelim E\bibinitperiod},
+         given={Tasnuba Jesmin Rouhshney Fatima Mukti Md Tamilur Rahman
+  Farzana\bibnamedelima Ahmed},
+         giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  R\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim
+  M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
+  T\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
+  F\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KAAAETJRFMMTRFA1}
+    \strng{fullhash}{KAAAETJRFMMTRFA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{Early Detection of Lung Cancer Risk Using Data Mining}
+    \field{version}{Vol 14}
+    \field{year}{2013}
+  \endentry
+
+  \entry{2}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=KM}{%
+         family={Ku\v{c}era},
+         familyi={K\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=TP}{%
+         family={Tsankov},
+         familyi={T\bibinitperiod},
+         given={Petar},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Gehr},
+         familyi={G\bibinitperiod},
+         given={Timon},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Guarnieri},
+         familyi={G\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=VM}{%
+         family={Vechev},
+         familyi={V\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Association for Computing Machinery}%
+    }
+    \keyw{program synthesis, bayesian inference, privacy enforcement}
+    \strng{namehash}{KM+1}
+    \strng{fullhash}{KMTPGTGMVM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    Existing probabilistic privacy enforcement approaches permit the execution
+  of a program that processes sensitive data only if the information it leaks
+  is within the bounds specified by a given policy. Thus, to extract any
+  information, users must manually design a program that satisfies the policy.
+  In this work, we present a novel synthesis approach that automatically
+  transforms a program into one that complies with a given policy. Our approach
+  consists of two ingredients. First, we phrase the problem of determining the
+  amount of leaked information as Bayesian inference, which enables us to
+  leverage existing probabilistic programming engines. Second, we present two
+  synthesis procedures that add uncertainty to the program's outputs as a way
+  of reducing the amount of leaked information: an optimal one based on SMT
+  solving and a greedy one with quadratic running time. We implemented and
+  evaluated our approach on 10 representative programs from multiple
+  application domains. We show that our system can successfully synthesize a
+  permissive enforcement mechanism for all examples.%
+    }
+    \field{booktitle}{Proceedings of the 2017 ACM SIGSAC Conference on Computer
+  and Communications Security}
+    \verb{doi}
+    \verb 10.1145/3133956.3134079
+    \endverb
+    \field{isbn}{9781450349468}
+    \field{pages}{391–408}
+    \field{series}{CCS '17}
+    \field{title}{Synthesis of Probabilistic Privacy Enforcement}
+    \verb{url}
+    \verb https://doi.org/10.1145/3133956.3134079%7D
+    \endverb
+    \list{location}{1}{%
+      {Dallas, Texas, USA}%
+    }
+    \field{year}{2017}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{4}{report}{}
+    \name{author}{2}{}{%
+      {{hash=LDRAK}{%
+         family={Luc De\bibnamedelima Raedt∗},
+         familyi={L\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
+  R\bibinitperiod},
+         given={Angelika\bibnamedelima Kimmig},
+         giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=TH}{%
+         family={Toivonen},
+         familyi={T\bibinitperiod},
+         given={Hannu},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LDRAKTH1}
+    \strng{fullhash}{LDRAKTH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{ProbLog: A Probabilistic Prolog and its Application in Link
+  Discovery}
+    \list{institution}{1}{%
+      {Machine Learning Lab, Albert-Ludwigs-University Freibur}%
+    }
+    \field{type}{techreport}
+    \field{year}{2007}
+  \endentry
+
+  \entry{8}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=NRB}{%
+         family={Ness},
+         familyi={N\bibinitperiod},
+         given={Roberta\bibnamedelima B.},
+         giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Medical Association}%
+    }
+    \strng{namehash}{NRB1}
+    \strng{fullhash}{NRB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{subtitle}{Sophisticated Bibliographies in \LaTeX}
+    \field{title}{Influence of the HIPAA Privacy Rule on Health Research}
+  \endentry
+
+  \entry{3}{book}{}
+    \name{author}{1}{}{%
+      {{hash=uPNSR}{%
+         prefix={und},
+         prefixi={u\bibinitperiod},
+         family={Peter\bibnamedelima Norvig},
+         familyi={P\bibinitperiod\bibinitdelim N\bibinitperiod},
+         given={Stuart\bibnamedelima Russel},
+         giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Pearson}%
+    }
+    \strng{namehash}{PNSRu1}
+    \strng{fullhash}{PNSRu1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{edition}{Third Edition}
+    \field{title}{Artificial Intelligence, A Modern Approach}
+    \field{year}{2010}
+  \endentry
+
+  \entry{12}{manual}{}
+    \name{author}{1}{}{%
+      {{hash=RW}{%
+         family={Robertson},
+         familyi={R\bibinitperiod},
+         given={Will},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RW1}
+    \strng{fullhash}{RW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{MIMIC-III, a freely accessible critical care database}
+    \verb{url}
+    \verb file:///C:/Users/Gewen/Downloads/sdata201635%20(2).pdf
+    \endverb
+    \field{day}{24}
+    \field{month}{02}
+    \field{year}{2016}
+    \field{urlday}{24}
+    \field{urlmonth}{01}
+    \field{urlyear}{2020}
+  \endentry
+\enddatalist
+\endinput
