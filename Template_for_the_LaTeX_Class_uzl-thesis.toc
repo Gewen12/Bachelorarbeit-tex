@@ -15,44 +15,56 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}Verwandte Arbeiten}{2}{section.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Aufbau dieser Arbeit}{2}{section.1.3}%
+\contentsline {section}{\numberline {1.3}Aufbau dieser Arbeit}{3}{section.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Grundlagen von Angerona}{3}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Grundlagen von Angerona}{4}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Grundlegendes}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Grundlegendes}{4}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Systemmodell}{3}{section*.4}%
+\contentsline {subsection}{Systemmodell}{4}{section*.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Bayes-Netze}{4}{section*.5}%
+\contentsline {subsection}{Bayes-Netze}{6}{section*.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Problog}{5}{section*.7}%
+\contentsline {subsection}{Problog}{7}{section*.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Angerona}{6}{section*.8}%
+\contentsline {subsection}{\texttt {ATKLOG}}{7}{section*.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Praktisches Setup}{7}{section.2.2}%
+\contentsline {subsection}{Angerona}{8}{section*.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{BeliefProgram}{7}{section*.10}%
+\contentsline {section}{\numberline {2.2}Praktisches Setup}{10}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{InitStatements}{9}{section*.12}%
+\contentsline {subsection}{Angreifermodell}{11}{section*.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Template}{9}{section*.13}%
+\contentsline {subsection}{Initialisierung und Sicherheitsregeln}{13}{section*.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Beispiel}{9}{section.2.3}%
+\contentsline {subsection}{Template}{13}{section*.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Auswertung}{14}{chapter.3}%
+\contentsline {section}{\numberline {2.3}Beispiel}{13}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}MIMIC III}{14}{section.3.1}%
+\contentsline {chapter}{\numberline {3}Medizinische Datenbanken und Angreifermodellierung}{18}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}eICU}{16}{section.3.2}%
+\contentsline {section}{\numberline {3.1}MIMIC III}{18}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Synthea}{18}{section.3.3}%
+\contentsline {section}{\numberline {3.2}eICU}{22}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Angreifer modellierung}{20}{section.3.4}%
+\contentsline {section}{\numberline {3.3}Synthea}{26}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Vor und nachteile}{20}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Auswertungen der medizinische Datenbanken }{29}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Laufzeiten der Patientendatenbanken}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Sicherheit}{29}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{22}{chapter.5}%
+\contentsline {subsection}{Schwellwert}{29}{section*.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Literatur}{24}{chapter*.20}%
+\contentsline {subsection}{Historie}{30}{section*.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Laufzeit}{31}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Vorhandene Auswertungen}{31}{section*.20}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Komplexität des Angreifermodell}{32}{section*.22}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{MIMIC III und eICU bei wachsenden Sicherheitsrichtlinien}{33}{section*.24}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{35}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Literatur}{37}{chapter*.27}%

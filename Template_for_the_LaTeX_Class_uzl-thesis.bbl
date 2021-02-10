@@ -27,6 +27,13 @@
     \field{urlyear}{2020}
   \endentry
 
+  \entry{22}{manual}{}
+    \verb{url}
+    \verb C. Farkas and S. Jajodia, “The inference problem: a survey,” ACM
+    \verb SIGKDD Explorations Newsletter, vol. 4, no. 2, pp. 6–11, 2002
+    \endverb
+  \endentry
+
   \entry{6}{inproceedings}{}
     \verb{url}
     \verb https://mguarnieri.github.io/publication/csf2017/
@@ -185,6 +192,43 @@
     \field{title}{A study of the rough set approach for image understanding}
     \field{month}{01}
     \field{year}{2021}
+  \endentry
+
+  \entry{guarnieri2017securing}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=GM}{%
+         family={Guarnieri},
+         familyi={G\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Marinovic},
+         familyi={M\bibinitperiod},
+         given={Srdjan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Basin},
+         familyi={B\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{GMMSBD1}
+    \strng{fullhash}{GMMSBD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{booktitle}{Proceedings of the 30th IEEE Computer Security
+  Foundations Symposium}
+    \field{pages}{343\bibrangedash 359}
+    \field{title}{Securing Databases from Probabilistic Inference}
+    \field{year}{2017}
   \endentry
 
   \entry{9}{inproceedings}{}

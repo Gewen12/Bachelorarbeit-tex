@@ -39,6 +39,10 @@ I was expecting a `,' or a `}'---line 144 of file thesis.bib
  :  date =         {2017-08-30},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Repeated entry---line 173 of file thesis.bib
+ :  @manual{22
+ :            ,
+I'm skipping whatever remains of this entry
 Biblatex version: 3.16
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Too many commas in name 1 of "Kawsar Ahmed, Abdullah-Al-Emran, Tasnuba Jesmin, Rouhshney Fatima Mukti, Md Tamilur Rahman, Farzana Ahmed" for entry 13
@@ -1098,45 +1102,45 @@ Too many commas in name 1 of "Kawsar Ahmed, Abdullah-Al-Emran, Tasnuba Jesmin, R
 while executing---line 2813 of file biblatex.bst
 Too many commas in name 1 of "Kawsar Ahmed, Abdullah-Al-Emran, Tasnuba Jesmin, Rouhshney Fatima Mukti, Md Tamilur Rahman, Farzana Ahmed" for entry 13
 while executing---line 2813 of file biblatex.bst
-You've used 20 entries,
+You've used 22 entries,
             6393 wiz_defined-function locations,
-            1282 strings with 14037 characters,
-and the built_in function-call counts, 126519 in all, are:
-= -- 7564
-> -- 6504
-< -- 831
-+ -- 6171
-- -- 5105
-* -- 7707
-:= -- 14319
+            1289 strings with 14369 characters,
+and the built_in function-call counts, 134554 in all, are:
+= -- 8042
+> -- 6649
+< -- 883
++ -- 6351
+- -- 5171
+* -- 8257
+:= -- 15069
 add.period$ -- 0
-call.type$ -- 20
-change.case$ -- 276
+call.type$ -- 22
+change.case$ -- 291
 chr.to.int$ -- 460
-cite$ -- 38
-duplicate$ -- 9434
-empty$ -- 11243
-format.name$ -- 647
-if$ -- 23269
+cite$ -- 42
+duplicate$ -- 10363
+empty$ -- 12049
+format.name$ -- 735
+if$ -- 24951
 int.to.chr$ -- 0
-int.to.str$ -- 36
+int.to.str$ -- 40
 missing$ -- 0
-newline$ -- 435
-num.names$ -- 629
-pop$ -- 6508
+newline$ -- 478
+num.names$ -- 677
+pop$ -- 7207
 preamble$ -- 1
-purify$ -- 307
+purify$ -- 329
 quote$ -- 0
-skip$ -- 3295
+skip$ -- 3566
 stack$ -- 0
-substring$ -- 16301
-swap$ -- 2554
-text.length$ -- 608
-text.prefix$ -- 19
+substring$ -- 17024
+swap$ -- 2766
+text.length$ -- 657
+text.prefix$ -- 21
 top$ -- 1
-type$ -- 667
+type$ -- 735
 warning$ -- 0
-while$ -- 1154
+while$ -- 1260
 width$ -- 0
-write$ -- 416
-(There were 531 error messages)
+write$ -- 457
+(There were 532 error messages)

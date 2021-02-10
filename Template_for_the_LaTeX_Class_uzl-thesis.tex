@@ -4,7 +4,7 @@
 \UzLThesisSetup{
   Logo-Dateiname        = {institutslogo.pdf},
   Verfasst              = {am}{Institut für Informationssysteme},
-  Titel auf Deutsch = { Evaluation eines Algorithmus zur Absicherung von Datenbanken mit Propabilistischen  },
+  Titel auf Deutsch = { Evaluation eines Algorithmus zur Absicherung von Datenbanken mit Propabilistischen Abhängigkeiten },
   Titel auf Englisch = { Evaluation of an Algorithm for Securing Databases from Propabilsitic Inference},
   Autor                 = {Kevin Schmelzer},
   Betreuerin            = {Prof. Dr. Ralf Möller},
@@ -16,7 +16,7 @@
    Englische Abstract
   },
   Zusammenfassung       = {
-  	Datenbanken mit sensiblen Daten sollten einen hohen Sicherheitsstandard erfüllen. Trotzdem ist das einrichten von Sicherheitsvorkehrungen komplex und erfordert spezielle Fachkräfte, die sich mit den Systemen auskennen müssen. Diese Problematik haben viele Forschungseinrichtungen und auch Unternehmen, weil es viel zu Beachten gibt. Eins davon ist die Inferenzkontrolle für aggregierte Anfragen, wodurch ein Angreifer durch statistische Auswertungen und klug gewählte Anfragen an sensible Daten kommen kann.\\ Wir werden hierbei den Prototypen Angerona evaluieren, der Informationslücken verhindert die von probabilistischen Abhängigkeiten resultieren. Es wird gezeigt, wie man Angerona mit echten Patientendaten initalisiert und welche Vor-und Nachteile dieser Algorithmus aufweist. Zum Schluss generieren wir mit Synthea Patienten und testen die Performance mit verschiedenen Eingaben.
+  	Die Vertraulichkeit sensibler Daten in einer Datenbank sollten einen hohen Sicherheitsstandard erfüllen. Jedoch ist das einrichten von Sicherheitsvorkehrungen komplex  Diese Problematik haben viele Forschungseinrichtungen und auch Unternehmen, weil es viel zu Beachten gibt. Eins davon ist die Inferenzkontrolle für aggregierte Anfragen, wodurch ein Angreifer durch statistische Auswertungen und klug gewählte Anfragen an sensible Daten kommen kann.\\ Wir werden hierbei den Prototypen Angerona evaluieren, der Informationslücken verhindert die von probabilistischen Abhängigkeiten resultieren. Es wird gezeigt, wie man Angerona mit medizinischen Datenbanken initalisiert und welche Vor-und Nachteile dieser Algorithmus aufweist. Zum Schluss generieren wir mit Synthea Patienten und testen die Performance mit verschiedenen Eingaben.
   },
   %Alphabetische Bibliographie
   % Alternatively:
@@ -32,6 +32,13 @@
 \usepackage{tikz}
 \usepackage{biblatex}
 \usepackage{todonotes}
+\usepackage{cleveref}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{MnSymbol}
+\usepackage{algorithmicx}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
 \usetikzlibrary{positioning,shapes,arrows}
 
 \newcolumntype{M}[1]{D{.}{.}{1.#1}}
@@ -39,17 +46,17 @@
 \addbibresource{thesis.bib}
 \begin{document}
 \chapter{Einleitung}
-Der Schutz von sensiblen Daten ist für viele Unternehmen und andere Einrichtungen wichtig, die persönliche Daten, wie Herkunft, Religion, Alter usw., erfassen, verarbeiten und speichern. Die Relevanz des Themas Privatsphäre und Digitalisierung ist spätestens seit der Wirksamkeit der Europäischen Datenschutz-Grundverordnung (DSGVO) \cite{1} im  Mai 2018 bemerkbar, da die dadurch entstandene Herausforderungen auf Unternehmensseite Sie vor rechtliche und insbesondere auch technische Probleme stellt, weshalb DSGVO-konform software-Lösungen entwickelt wurden um die Arbeit zu erleichtern \cite{9}.\\ 
-Ein besonderer Fokus wird auf die Privatsphäre in Krankenhäusern gelegt, da in Krankenhäusern das Thema Privatsphäre schon immer ein sehr sensibles Thema gewesen ist. Dabei gab es schon vor der Einführung der DSGVO eine andere Regelung zum Schutz der Privatsphäre speziell im medizinischen Bereich und zwar die Health Insurance Portability and Accountability (HIPAA) aus dem Jahr 1996 aus den USA. Hierbei wird für jeden der Gesundheitsdaten verarbeitet oder speichert, durch Anordnungen und Regelungen zur Verarbeitung von Daten vorgeschrieben, die Privatsphäre der Patienten durch z.B. Zugangskontrolle, Anonymisierung, richtige Datenspeicherung usw. zu schützen \cite{7}. Dabei kam es damals schon zum Konflikt zwischen dem Schutz der Privatsphäre und zur Verwendung oder Veröffentlichung von Gesundheitsinformation um wichtige soziale Ziele, wie zum Beispiel Forschungszwecke, zu erfüllen \cite{8}. Der bisherige Ansatz sensible Daten zu schützen war es den Zugang in Teilen einfach zu verbieten und die Daten zu anonymisieren \cite{2}. Dieser Ansatz ist zwar für die Sicherheit optimal, jedoch leidet darunter die Usability, da der Zugang zu den Daten für beispielsweise Forschungszwecke schwierig ist bzw. bei zu starker Anonymisierung unbrauchbar werden. \\ 
-Die Gewährleistung der Vertraulichkeit von sensiblen Daten erfordert einen Schutz vor direktem und indirektem Zugriff auf eine Datenbank. Der direkte Zugriff beschreibt dabei den Zugang zu Daten aus einer Datenbank mithilfe von einfachen Anfragen an die Datenbank. Beim indirekten Zugriff hingegen, wird versucht durch statistische Auswertungen von externen Informationen und klug gewählte Anfragen an die Datenbank, an sensible Daten zu kommen.   Daher kam es zu einigen neuen Ansätzen, die auch den indirekten Zugang schützen sollen und eine davon ist die Database Inference Control (DBIC). Damit DBIC auch effektiv den indirekten Zugang verhindert, muss dieser eine große Menge von probabilistischen Abhängigkeiten abdecken können, um viele verschiedene Angreifermodelle darzustellen und es muss eine angemessene Laufzeit aufweisen, um diese auch auf reale und große Datenbanken anwenden zu können. Die Laufzeit wird dabei in \textit{Online} und \textit{Offline} Zeiten unterteilt, wobei die \textit{Online} Zeit das Intervall zwischen dem Start der Anfrage und der Antwort ist und die \textit{Offline} Zeit vom Start des Systems bis das System bereit für eine Eingabe ist. \\
-Der DBIC Mechanismus der in diesem Paper evaluiert wird ist Angerona, wovon erstmals nur ein Prototyp existiert. Der unterschied zu bisherige DBIC Mechanismen zu Angerona ist, dass die bisherigen nur präzise Datenabhängigkeiten oder nur eine begrenzte Anzahl von probabilistischen Abhängigkeiten erlaubt haben und somit nicht für Reale Datenbanken tauglich waren. Angerona hingegen soll auch bei komplexen probabilistischen Abhängigkeiten eine angemessene Laufzeit haben und somit in der Praxis nutzbar sein. \\
-Um das Datenbankmodell mit den probabilistischen Abhängigkeiten nach Angerona zu übertragen, werden zuerst alle Abhängigkeiten in ein Bayes Netz modelliert. Anschließend wird aus dem Bayes Netz ein Angreifermodell erstellt, in dem das Vorwissen von jedem Benutzer gespeichert wird. Mithilfe von Sicherheitsregeln wird dann ein Schwellwert definiert, der den Zugang zum Datenbanksystem nur zulässt, wenn das Vorwissen des Angreifers unter dem Schwellwert liegt.
-\todo[inline, size=\tiny]{gehört der letzte Satz überhaupt hier rein??]}
-
-
+Der Schutz von sensiblen Daten ist für viele Unternehmen und andere Einrichtungen wichtig, die persönliche Daten, wie Herkunft, Religion, Alter usw., erfassen, verarbeiten und speichern. Die Relevanz des Themas Privatsphäre und Digitalisierung ist spätestens seit der Wirksamkeit der Europäischen Datenschutz-Grundverordnung (DSGVO) \cite{1} im  Mai 2018 bemerkbar, da die dadurch entstandene Herausforderungen auf Unternehmensseite diese vor rechtliche und insbesondere auch technische Probleme stellt, weshalb DSGVO-konforme Software-Lösungen entwickelt wurden um die Arbeit zu erleichtern \cite{9}.\\ 
+In dieser Arbeit wird ein besonderer Fokus auf die Privatsphäre in Krankenhäusern gelegt, da in Krankenhäusern viele sensible und persönliche Daten über Patienten erfasst werden. Dabei gab es schon vor der Einführung der DSGVO eine andere Regelung zum Schutz der Privatsphäre speziell im medizinischen Bereich und zwar die Health Insurance Portability and Accountability (HIPAA) aus dem Jahr 1996 aus den USA. Hierbei wird für jeden der Gesundheitsdaten verarbeitet oder speichert, durch Anordnungen und Regelungen zur Verarbeitung von Daten vorgeschrieben, die Privatsphäre der Patienten durch z.B. Zugangskontrolle, Anonymisierung, richtige Datenspeicherung usw. zu schützen \cite{7}. Dabei kam es bei der Einführung der HIPAA schon zum Konflikt zwischen dem Schutz der Privatsphäre und zur Verwendung oder Veröffentlichung von Gesundheitsinformation, um wichtige soziale Ziele, wie zum Beispiel Forschungszwecke, zu erfüllen \cite{8}. Der bisherige Ansatz sensible Daten zu schützen war es den Zugang in Teilen einfach zu verbieten und die Daten zu anonymisieren \cite{2}. Durch den Ansatz wird die Vertraulichkeit der Daten verbessert, jedoch leidet darunter die Usability, da der Zugang zu den Daten für beispielsweise Forschungszwecke schwierig ist bzw. bei zu starker Anonymisierung unbrauchbar werden. \\ 
+Um die Vertraulichkeit von sensiblen Daten zu schützen erfordert es einen Schutz vor direktem und indirektem Zugriff auf eine Datenbank. Der direkte Zugriff beschreibt dabei den Zugang zu Daten aus einer Datenbank und wird durch Zugangskontrolle geschützt. Beim indirekten Zugriff hingegen, wird versucht durch statistische Auswertungen von externen Informationen und klug gewählte Anfragen an die Datenbank, an sensible Daten zu kommen. Um den direkten Zugriff zu verhindert gibt es einige neuen Ansätzen und eine davon ist die Database Inference Control (DBIC) \cite{22}.
+Der DBIC Mechanismus der in diesem Paper evaluiert wird ist Angerona, wovon erstmals nur ein Prototyp existiert. \\ 
+Der DBIC-Mechanismus Angerona sichert die Datenbank ab, indem eine probabilistische logische Programmiersprache (Problog) verwendet wird um das Vorwissen eines Angreifers darzustellen. Dafür wird die Sprache \texttt{ATKLOG} entwickelt die auf Problog basiert und durch probabilistische Abhängigkeiten das initiale Vorwissen des Angreifers ausdrückt um dadurch das Angreifermodell darzustellen. Um ein Datenbankmodell nach Angerona zu übertragen, wird ein zuerst alle probabilistischen Abhängigkeiten in ein Bayes Netz modelliert. Anschließend wird aus dem Bayes Netz ein Angreifermodell erstellt, in dem das initale Vorwissen von jedem Benutzer gespeichert wird. Mithilfe von Sicherheitsregeln wird dann ein Schwellwert definiert, der den Zugang zum Datenbanksystem nur zulässt, wenn das Vorwissen des Angreifers unter dem Schwellwert liegt. \\  
+Damit DBIC's wie Angerona auch effektiv den indirekten Zugang schützen, müssen diese eine große Menge von probabilistischen Abhängigkeiten abdecken können, um viele verschiedene Angreifermodelle darzustellen und es muss eine angemessene Laufzeit aufweisen, um diese auch auf reale und große Datenbanken anwenden zu können.\\
+Die Laufzeit wird dabei in \textit{Online} und \textit{Offline} Zeiten unterteilt, wobei die \textit{Online} Zeit das Intervall zwischen dem Start der Anfrage und der Antwort ist und die \textit{Offline} Zeit vom Start des Systems bis das System bereit für eine Eingabe ist. \\
+Der Unterschied zu bisherigen DBIC Mechanismen zu Angerona ist, dass die bisher nur eine begrenzte Anzahl von probabilistischen Abhängigkeiten erlaubt haben und somit nicht für Reale Datenbanken tauglich sind. Angerona hingegen soll auch bei komplexen probabilistischen Abhängigkeiten eine angemessene Laufzeit haben und somit in der Praxis nutzbar sein \cite{guarnieri2017securing}. \\
 
 \section{Beiträge dieser Arbeit}
-In dieser Arbeit wird der Prototyp von Angerona, einem Prototypen für ein DBIC Mechanismus von Marco Guarnieri auf echten, pseudonomisierten Patientendatenbanken evaluiert. Dabei wird im ersten Schritt  die korrekte Einrichtung von Angerona vorgestellt und anschließend mit realistischen Beispielen bewerten. Zum Schluss wird die Online und Offline Laufzeit bei der Nutzung verschiedener Patientendatenbanken gemessen.
+In dieser Arbeit wird der Prototyp Angerona von Marco Guarnieri auf pseudonomisierten und synthetischen medizinische Datenbanken evaluiert. Dabei wird im ersten Schritt die korrekte Einrichtung von Angerona vorgestellt und anschließend mit realistischen Beispielen bewertet. Anschließend werden Beispiele für die pseudonomisierten und synthetischen medizinische Datenbanken erstellt und dazugehörige Bayes-Netze modelliert, die in Angerona übertragen werden.  Zum Schluss wird die Online und Offline Laufzeit bei der Nutzung dieser medizinischen Datenbanken gemessen.
 
 
 \section{Verwandte Arbeiten}
@@ -59,98 +66,157 @@ Es existieren bereits einige Ansätze, die auch versucht haben DBIC-Mechanismen 
 \section{Aufbau dieser Arbeit}
 % Replace the following by one or two paragraphs describing the
 % thesis's structure.
-In dieser Arbeit wird Angerona vorgestellt gefolgt von einigen Beispielen, die den Zweck von Angerona näher bringen. Anschließend folgen Initialisierungen und Auswertungen auf echte, pseudonymisierte Datenbanken wie MIMIC III, eICU und Synthea. Zum Schluss werden die Online und Offline Laufzeiten auf diesen Datenbanken analysiert und ausgewertet.
-\chapter{Grundlagen von Angerona}
+In \cref{chap:Grundlagen} wird die Funktionsweise von Angerona beschrieben und die Einrichtung erläutert. In \cref{chap:Modellierung} werden die genutzten Pseudonymisierten und Synthetischen Datenbanken vorgestellt und dazu geeignete Angreifermodelle modelliert. In \cref{chap:Auswertung} wird die Sicherheit und die Laufzeit von Angerona gezeigt und zum Schluss wird in \cref{chap:Zusammenfassung} eine Zusammenfassung der Arbeit gegeben.
+\chapter{Grundlagen von Angerona}\label{chap:Grundlagen}
 \section{Grundlegendes}
 \subsection{Systemmodell}
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.6\textwidth]{System-model.PNG}
+	\includegraphics[width=0.9\textwidth]{System-model.PNG}
 	\caption{Systemmodell}
 	\label{fig1}
-	\end{figure}
-Die Abbildung 2.1 zeigt das von Angerona genutzte Systemmodell. Dabei interagiert der Beutzer mit dem Inferenzkontrollsystem, welches aus den zwei Komponenten Policy Decision Point(PDP) und dem Policy Enforcement Point (PEP) besteht. Das Inferenzkontrollsystem entscheidet Anhand von vordefinierten Sicherheitsregeln und einem Angreifermodell, ob die Anfrage des Benutzers an das Datenbanksystem übergeben wird. Dabei wird davon ausgegangen, dass alle Anfragen und Antworten aus dem Systemmodell über sichere Kommunikationskanäle laufen. Außerdem gilt als Voraussetzung, dass jeder Benutzer das Datenbankschema und die Sicherheitsregeln kennt. \\ \\ 
-\textbf{Datenbanksytem} Das Datenbanksystem lagert alle Daten und gibt diese ausschließlich dem Inferenzkontrollsystem  heraus. Dadurch kann ein Benutzer keine direkte Anfrage an das Datenbanksystem stellen.   \\  
-\textbf{Benutzer} Jeder Benutzer hat ein eigenes Konto um Informationen mithilfe von \texttt{SELECT} Anfragen an das Inferenzkontrollsystem zu erhalten. Dabei hat jeder Benutzer nur Leserechte und kann somit die Datenbank nicht verändern. Jede Anfrage wird vom Inferenzkontrollsystem geprüft und wird nur ausgeführt, wenn diese von den Sicherheitsregeln autorisiert wird. \\ 
-\textbf{Sicherheitsregeln} Die Sicherheitsregeln bestehen aus einer Menge von Regeln, die definieren welche Informationen geheim gehalten werden sollen. Diese Regeln definieren die Erwartungen jedes Benutzers über den Inhalt der Datenbank als Wahrscheinlichkeitsverteilung. Die Regeln werden formalisiert durch ein Kommando in der Form \texttt{SECRET $q$ FOR $u$ THRESHOLD l}, wobei $q$ die Anfrage, $u$ den Benutzer und $l$ den Grenzwert darstellt, bei der die Anfrage genehmigt werden darf. Dabei gilt $0 \leq l \leq 1$. Eine Sicherheitsregel \enquote{Der Benutzer $u$ ist nicht autorisiert die Antwort von der Anfrage $q$ zu erfahren} wird ausgedrückt mit \texttt{SECRET $q$ FOR $u$ THRESHOLD 1}. Außerdem kann die Regel \enquote{Für alle Benutzer $u \notin \{u1,\dots,u_n\}$, muss die Erwartung von $u$ bei der Anfrage $q$ kleiner als $l$ sein} mit dem Kommando \texttt{SECRET $q$ FOR USERS NOT IN $\{u_1,\dots,u_n\}$ THRESHOLD l}\\ 
-\textbf{Angreifer} Ein potentieller Angreifer ist jeder Benutzer des Datenbanksystem mit einem Benutzerkonto. Das Ziel eines Angreifers ist es die Sicherheitsregeln zu verletzen indem er mindestens auf ein \texttt{SECRET $q$} schließen kann mit einer Wahrscheinlichkeit unter dem dazugehörigen \texttt{THRESHOLD $l$}. \\ Der Angreifer interagiert mit dem Inferenzkontrollsystem, indem er Anfragen wie ein Benutzer stellt. Somit kann der Angreifer neue Informationen aus den Antworten erhalten und Daten die in Beziehungen stehen feststellen. Ein Beispiel für eine Beziehung zwischen Daten ist zum Beispiel, dass wenn ein Patient raucht, dass die Wahrscheinlichkeit für Krebs für Ihn erhöht ist.  \\
+\end{figure}
+\noindent 
+Die \cref{fig1} zeigt das von Angerona genutzte Systemmodell. Dabei interagiert der Beutzer mit dem Inferenzkontrollsystem, welches aus den zwei Komponenten Policy Decision Point(PDP) und dem Policy Enforcement Point (PEP) besteht. Das Inferenzkontrollsystem entscheidet Anhand von vordefinierten Sicherheitsregeln und einem Angreifermodell, ob die Anfrage des Benutzers an das Datenbanksystem übergeben wird. Dabei wird davon ausgegangen, dass alle Anfragen und Antworten aus dem Systemmodell über sichere Kommunikationskanäle laufen. Außerdem gilt als Voraussetzung, dass jeder Benutzer das Datenbankschema und die Sicherheitsregeln kennt. \\ \\ 
+\textbf{Datenbanksytem} Das Datenbanksystem verwaltet alle Daten und gibt diese ausschließlich dem Inferenzkontrollsystem  heraus. Dadurch kann ein Benutzer keine Anfrage direkt an das Datenbanksystem stellen. \\
+\textbf{Benutzer} Jeder Benutzer hat ein eigenes Konto um Informationen zu erhalten, indem \texttt{SELECT} Anfragen an das Inferenzkontrollsystem gestellt werden. Dabei hat jeder Benutzer nur Leserechte und kann somit den Datenbankzustand nicht verändern. Jede Anfrage wird vom Inferenzkontrollsystem geprüft und wird nur ausgeführt, wenn diese von den Sicherheitsregeln autorisiert wird. \\ 
+\textbf{Sicherheitsregeln} Die Sicherheitsregeln bestehen aus einer Menge von Regeln, die definieren welche Informationen geheim gehalten werden sollen. Diese Regeln definieren die Erwartungen jedes Benutzers über den Inhalt der Datenbank als Wahrscheinlichkeitsverteilung. Die Regeln werden formalisiert durch ein Kommando in der Form \texttt{SECRET $q$ FOR $u$ THRESHOLD $l$}, wobei $q$ die Anfrage, $u$ den Benutzer und $l$ den Grenzwert darstellt, bei der die Anfrage genehmigt werden darf. Dabei gilt $0 \leq l \leq 1$. Eine Sicherheitsregel \enquote{Der Benutzer $u$ ist nicht autorisiert die Antwort von der Anfrage $q$ zu erfahren} wird ausgedrückt mit \texttt{SECRET $q$ FOR $u$ THRESHOLD 1}. Außerdem kann die Regel \enquote{Für alle Benutzer $u \notin \{u1,\dots,u_n\}$, muss die Erwartung von $u$ bei der Anfrage $q$ kleiner als $l$ sein} mit dem Kommando \enquote{\texttt{SECRET $q$ FOR USERS NOT IN $\{u_1,\dots,u_n\}$ THRESHOLD l}} ausgedrückt werden.\\ 
+\textbf{Angreifer} Ein potentieller Angreifer ist jeder Benutzer des Datenbanksystem mit einem Benutzerkonto. Das Ziel eines Angreifers ist es die Sicherheitsregeln zu verletzen indem er mindestens auf ein \texttt{SECRET $q$}schließen kann mit einer Wahrscheinlichkeit unter dem dazugehörigen \texttt{THRESHOLD $l$}. \\ Der Angreifer interagiert mit dem Inferenzkontrollsystem, indem er Anfragen stellt und somit neue Informationen aus den Antworten erhält und Daten die in Beziehung zueinander stehen feststellen kann. Ein Beispiel für eine Beziehung zwischen Daten ist zum Beispiel, dass wenn ein Patient raucht, dass die Wahrscheinlichkeit für Krebs für Ihn erhöht ist.  \\
 \textbf{Datenbankzustand} Der Datenbankzustand beschreibt die Belegung der Datenelemente in der Datenbank. \\
-\textbf{Angreifermodell} Das Angreifermodell repräsentiert das Vorwissen des Benutzers über den aktuellen Datenbankzustand und wie dieses sich verändert, wenn der Benutzer mit der Datenbank interagiert. Diese Erwartung kann das Wissen des Angreifers über die Beziehung zwischen den Datenelementen oder Vorwissen widerspiegeln.\\ 
-\textbf{Inferenzkontrollsystem} Das Inferenzkontrollsystem schützt die Vertraulichkeit der Daten in der Datenbank. Es besteht aus dem PEP und dem PDP und wird mit den Sicherheitsregeln $P$ und dem Angreifermodell $ATK$ konfiguriert. Für jeden Benutzer behält das Inferenzkontrollsystem die Erwartung gemäß dem Angreifermodell im Überblick.  \\
-Das System fängt alle Anfragen $c$ vom Benutzer $u$ ab und entscheidet dann, ob $u$ autorisiert ist $c$ auszuführen. Wenn $c$ die Sicherheitsregeln erfüllt, dann wird $c$ an das Datenbanksystem weitergeleitet, dass dann $c$ ausführt und die Antwort an $u$ zurückgibt. Andernfalls wird eine \texttt{security exception} ausgelöst und $c$ wird verweigert \cite{6}.
+\textbf{Angreifermodell} Das Angreifermodell definiert das Vorwissen des Benutzers über den aktuellen Datenbankzustand. Im Angreifermodell werden auch die probabilistischen Abhängigkeiten definiert, die ein Angreifer benötigt um Informationen zu sensiblen Daten zu erhalten. Dies führt auch dazu, dass das Angreifermodell sich aktualisiert, sobald sich das Vorwissen über eine Abhängigkeit verändert, wenn der Angreifer mit der Datenbank interagiert.\\ 
+\textbf{Inferenzkontrollsystem} Das Inferenzkontrollsystem schützt die Vertraulichkeit der Daten in der Datenbank. Es besteht aus dem PEP und dem PDP und wird mit Sicherheitsregeln und einem Angreifermodell konfiguriert. Für jeden Benutzer beobachtet das Inferenzkontrollsystem das Vorwissen aus dem Angreifermodell und fängt alle Anfragen vom Benutzer ab und entscheidet dann, ob der Benutzer autorisiert ist die Anfrage auszuführen. Dafür wird geprüft, ob die Anfrage die Sicherheitsregeln erfüllt und wenn das der Fall ist, dann wird die Anfrage an das Datenbanksystem weitergeleitet und ausgeführt und an den Benutzer gesendet. Wenn der Benutzer nicht autorisiert ist, weil die Anfrage nicht die Sicherheitsregeln erfüllt, wird eine \texttt{security exception} ausgelöst und die Anfrage wird verweigert \cite{6}.
 \subsection{Bayes-Netze}
 Für jede Implementierung, die in Angerona vorgenommen wird, sollte ein dazugehöriges Bayes-Netz modelliert werden, damit die Abhängigkeiten übersichtlich dargestellt werden. Denn ohne Bayes-Netz  wird es fast unmöglich bei komplexeren Abhängigkeiten überhaupt ein Angreifermodell zu deklarieren.  \\
-Ein Bayes-Netz ist ein direkter, azyklischer Graph in dem jeder Knoten die gemeinsamen Wahrscheinlichkeitsverteilungen jeder Zufallsvariablen enthält. Dabei ist jeder Knoten selbst eine Zufallsvariable mit einer Wahrscheinlichkeitsverteilung $P(V_i \mid Parent(V_i) )$. Die Elternbeziehung eines Knoten gibt dabei an, dass $Parent(V_i) $ einen direkten Einfluss auf $V_i$ hat und wird  mit einem gerichteten Pfeil dargestellt\cite{3}. Ein Beispiel für solch ein Bayes-Netz ist in Abbildung 2.2 zu sehen. 
+Ein Bayes-Netz ist ein direkter, azyklischer Graph in dem jeder Knoten die gemeinsamen Wahrscheinlichkeitsverteilungen seiner Zufallsvariable enthält. Dabei hat jeder Knoten $V_i$ selbst eine Wahrscheinlichkeitsverteilung $P(V_i \mid Parent(V_i) )$. Die Elternbeziehung eines Knoten gibt dabei an, dass $Parent(V_i) $ einen direkten Einfluss auf $V_i$ hat und wird  mit einem gerichteten Pfeil dargestellt \cite{3}.\\  Ein Beispiel für solch ein Bayes-Netz ist in Abbildung 2.2 zu sehen, indem der Start des Motors davon abhängig ist, ob die Batterie OK ist und ob genug Benzin vorhanden ist. Die Abhängigkeit kann formal beschrieben werden durch $P(m \mid b,e)$. Die Wahrscheinlichkeit, dass der Motor startet ist dabei $0.99$, wenn genug Benzin und die Batterie in Ordnung ist. Die Wahrscheinlichkeit, dass der Motor startet, obwohl nicht genug Benzin vorhanden ist und die Batterie nicht in Ordnung ist beträgt $0.03$. \\
+Eine zusätzliche Voraussetzung für die Bayes-Netze ist, dass diese Polytrees sein müssen, da Angerona nur Polytrees wie in \cref{def:Polytree} akzeptiert.
+ \begin{definition}[Polytree]\label{def:Polytree}
+	Ein Polytree ist ein direkter, azyklischer Graph, der azyklisch bleibt, selbst wenn alle direkten Kanten durch indirekte Kanten ersetzt werden.
+\end{definition}
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.6\textwidth]{bayes-netz-bsp.PNG}
-	\caption{In diesem Bayes-Netz ist der Start des Motors davon abhängig, ob der Motor OK ist und ob genug Benzin vorhanden ist. Die Abhängigkeit kann formal beschrieben werden durch $P(m \mid b,e)$. Die Wahrscheinlichkeit, dass der Motor startet ist dabei $0.99$, wenn genug Benzin und die Batterie in Ordnung ist. Die Wahrscheinlichkeit, dass der Motor startet, obwohl nicht genug Benzin vorhanden ist und die Batterie nicht in Ordnung ist beträgt $0.03$.}
-	\cite{10}
+	\caption{Beispiel für ein Bayes-Netz \cite{10}}
 	\label{fig}
 \end{figure}
-\todo[inline, size=\tiny]{Zitat richtig in Bild einfügen. 11 gehört zum Bild , Nach bildern ist nächste Zeile eingerückt}
-Eine zusätzliche Vorrassetzung für die Bayes-Netze  in Angerona ist, dass diese Polytree sein müssen, da Angerona nur azyklische Modellierungen akzeptiert.
- \begin{definition}[Polytree]
-	Ein Polytree ist ein direkter, azyklischer Graph, der azyklisch bleibt, selbst wenn alle direkten Kanten durch indirekte Kanten ersetzt werden.
-\end{definition}
 \subsection{Problog}
-Problog ist eine probabilistische Erweiterung von Prolog (PROgramming in LOGic), wobei Prolog eine logische Programmiersprache ist, die aus verschiedenen Klauseln $k_i$ und aus logischen Verknüpfungen ein Ergebnis berechnet. Problog erweitert jedes $k_i$ mit einer Wahrscheinlichkeit $p_i$, wodurch Problog  Wahrscheinlichkeiten ausgibt, mit welcher die $k_i$ eintreten, wohingegen Prolog nur ein true oder false nach logischen Berechnungen liefern kann. 
+Problog ist eine probabilistische Erweiterung von Prolog (PROgramming in LOGic), wobei Prolog eine logische Programmiersprache ist, die aus verschiedenen Klauseln $k_i$ und aus logischen Verknüpfungen ein Ergebnis berechnet. Problog erweitert jedes $k_i$ mit einer Wahrscheinlichkeit $p_i$, wodurch Problog  Wahrscheinlichkeiten ausgibt, mit welcher die $k_i$ eintreten, wohingegen Prolog nur ein true oder false nach logischen Berechnungen liefern kann. Eine logische Verknüpfung $\land$ wird in Problog mit einem \enquote{,} dargestellt und eine negation mit  \enquote{\textbackslash+}. Ein Beispiel für ein Problog Programm sieht man in \autoref{code:problogbeispiel}.
 \uzldeflanguageshorthand{Problog}{style=code,language=problog}
-\begin{Pseudocode}[caption={Beispiel Problog Programm}, label={lst-1}, numbers=left]
+\begin{Pseudocode}[caption={Beispiel Problog Programm}, label={code:problogbeispiel}, numbers=left]
 0.1::erdbeben.
 0.9::alarm_bei_erdbeben.
 alarm :- erdbeben, alarm_bei_erdbeben.
 \end{Pseudocode} 
-Ein Problog Programm $T = {p_1 :: k_1, \dots, p_n :: k_n}$ gibt somit eine probabilistische Verteilung über die einzelnen Klauseln und diese können anschließend zu einer beliebigen Logischen Verknüpfungen aus $K = {k_1 , \dots , k_n}$ verknüpft werden. In Beispiel 1 sieht man, dass der Fakt \textit{erdbeben} mit Wahrscheinlichkeit $ P(erdbeben) = 0.1$ wahr ist und $0.9$ falsch ist. Andersrum für den Fakt alarm\_bei\_erdbeben ist die Wahrscheinlichkeit $0.9$, dass der Alarm auslöst und eine Gegenwahrscheinlichkeit von $0.1$, dass dieser nicht auslöst. Diese Aussagen aus Zeile 1 und 2 nennt man auch probabilistischer Fakt.\\  In Beispiel 1 ist somit für die Klausel $k_{alarm} = 0.9 \cdot 0.1 = 0.09  $. \cite{4}\cite{5} \\ 
-Um das Angreifermodell zu initialisieren benötigen wir nur das $\land$ als logische Verknüpfung , dass in Problog mit einem \enquote{,} dargestellt wird. Normalerweise wird eine Negation mit \enquote{\textbackslash+} gekennzeichnet, in Angerona jedoch mit \enquote{\textit{NOT}}.\\ \\
-Noch ein Konstrukt, dass von Problog geliefert wird, ist die \textit{annotated disjunction}, die es möglich macht Klauseln zu definieren, die mehr als nur zwei Werte annehmen können. Ein Beispiel dafür wäre ein Alarm, der die Werte $P(A_1)$ = 0.2 (an), $P(A_2)$ = 0.7 (aus) oder $P(A_3)$ = 0.1 (defekt) annehmen kann. Dies würde man mithilfe der annotated disjunction folgendermaßen formulieren : 
-\begin{Pseudocode}
-2/10::alarm(X, 1); 7/10::alarm(X, 2); 1/10::alarm(X, 3).
+Ein Problog Programm $T = {p_1 :: k_1, \dots, p_n :: k_n}$ gibt somit eine probabilistische Verteilung über die einzelnen Klauseln und diese können anschließend zu einer beliebigen Logischen Verknüpfungen aus $K = {k_1 , \dots , k_n}$ verknüpft werden. In Beispiel 1 sieht man, dass der Fakt \textit{erdbeben} mit Wahrscheinlichkeit $ P(erdbeben) = 0.1$ wahr ist und $0.9$ falsch ist. Andersherum für den Fakt alarm\_bei\_erdbeben ist die Wahrscheinlichkeit $0.9$, dass der Alarm auslöst und eine Gegenwahrscheinlichkeit von $0.1$, dass dieser nicht auslöst. Die Aussagen aus Zeile 1 und 2 sind probabilistische Fakten.\\  In Beispiel 1 ist somit für die Klausel $k_{alarm} = 0.9 \cdot 0.1 = 0.09  $. \cite{4}\cite{5} \\ 
+Noch ein Konstrukt, dass von Problog geliefert wird, ist die \textit{annotated disjunction}(\autoref{code:annotateddisjunction}), die es möglich macht Klauseln zu definieren, die mehr als nur zwei Werte annehmen können. Dafür werden alle möglichen Werte die eintreffen können als probabilistischen Fakt dargestellt, jedoch wird diesen ein Tupel $t = (v,c) $ übergeben, wobei $v$ eine festgelegte Variable ist und $c \in \mathbb{N}$ eine Konstante die den zutreffenden Wert repräsentiert, und  mit einem logischen $\lor$ verknüpft. Ein Beispiel dafür wäre ein Alarm, der die Werte $P(A_1)$ = 0.2 (an), $P(A_2)$ = 0.7 (aus) oder $P(A_3)$ = 0.1 (defekt) annehmen kann. \cite{5}
+\begin{Pseudocode}[caption={Problog Beispiel \textit{annotated disjunction}}, label={code:annotateddisjunction}, numbers=left]
+	2/10::alarm(X, 1); 7/10::alarm(X, 2); 1/10::alarm(X, 3).
 \end{Pseudocode}
 
+\subsection{\texttt{ATKLOG}}
+Angerona verwendet \texttt{ATKLOG} um ein Angreifermodell zu modellieren. \texttt{ATKLOG} ist eine Sprache die auf \texttt{Problog} basiert und entworfen wurde um das initiale Vorwissen eines Benutzers über den Datenbankzustand darzustellen. Das Vorwissen des Benutzers wird als Wahrscheinlichkeitsverteilung definiert. Außerdem verändert sich das Vorwissen eines Benutzers im \texttt{ATKLOG}, wenn dieser eine Anfrage stellt, da das Ergebnis dem Benutzer mehr Informationen über den aktuellen Datenbankzustand verrät. Beachtet wird auch, dass verweigerte Anfragen das Vorwissen des Benutzers auch beeinflusst.\cite{guarnieri2017securing} \\ 
+Ein syntaktische Unterschiede von \texttt{ATKLOG} zu \texttt{Problog} ist, dass eine Negation mit \enquote{\textit{NOT}} dargestellt wird. Außerdem werden \textit{annotated disjunction} anders dargestellt, weil \texttt{ATKLOG} nur Variablenzuweisung oder probabilistische Fakten erlaubt. Umgewandelt wird eine \textit{annotated disjunction} in ein \texttt{ATKLOG} konformes Schema, indem das \enquote{;} entfernt wird und für jeden Wert den die Variable annehmen kann eine neue Klausel erstellt wird. Anschließend wird jede Klausel mit einer neuen Variable, die im folgenden $sw_1, \dots sw_n$ genannt wird, konjugiert und die dazugehörige Wahrscheinlichkeit mit $p_i$ für $1 \leq i < n$ wird für jeder dieser neu erstellen Variable ein probabilistischen Fakt hinzugefügt. Jedes $p_i$ wird dabei neu berechnet mit $p_i = P(A_i) \cdot (1 - \sum_{1\leq j<i}P(A_j))^{-1}$ , wobei $P(A_1), \dots ,P(A_{n-1}), P(A_n)$ die Wahrscheinlichkeiten für das eintreffen der Werte ist. \\
+Außerdem muss für jeden möglichen eintreffenden Wert ein Variablenname zugeordnet werden der als $name$ definiert wird und die Tupel, die durch die \textit{annotated disjunction} übergeben werden als $t_1 , \dots , t_n$. 
+\begin{Pseudocode}[caption={Vorgehensweise bei \textit{annotated disjunction}}, label={lst-2}, numbers=left]
+$name(t_1)$ :- $sw_1(t_1)$
+$\dots$
+$name(t_n)$ :- NOT $sw_1(t_1), \dots ,$ NOT $sw_{n−1}(t_{n−1}), sw_n(t_n)$
+	
+$p_1::sw_1(id)$
+$\dots$
+$p_n::sw_n(id)$
+\end{Pseudocode} 
 
 \subsection{Angerona}
-Angerona ist ein DBIC (Database Inference Control) Mechanismus der Datenbanken gegen probabilistische Inferenzen absichert. Hierbei wird nur ein Prototyp von Angerona betrachtet, da es noch keine vollendete Version gibt. Der Prototyp unterstützt hierbei nur boolesche Anfragen. Es wurde zwar eine Lösung für nicht-boolesche Werte im Paper vorgestellt, jedoch wurde diese nicht im Prototypen implementiert.\\ 
-Zusätzlich führt Angerona eine \textbf{Historie} $h=(u,q,a,d)$, die für jeden Benutzer die alle bereits getätigten Anfragen speichert, die an das Inferenzkontrollsystem gestellt wurden. Jeder Eintrag in der Historie speichert den Benutzer $u$, die Anfrage $q$, die Antwort aus dem Datenbanksystem $a$ und die Entscheidung $d$, ob die Anfrage genehmigt wurde. \\ 
- Als input benötigt Angerona ein Datenbankzustand $s$, eine Historie $h$, die Anfrage $q$ vom Benutzer $u$, die Systemkonfiguration $c$ und das Angreifermodell $ATK$. Die \textbf{Systemkonfiguration} definieren dabei das Datenbankschema und die Integritätsbedingungen.  \\ 
-   Angerona prüft dabei für jede Anfrage $q$, ob diese eine vorher definierte Sicherheitsregel $s \in S$ verletzt. Dafür wird zuerst in der Historie $h$ nachgesehen, ob $s$ bereits vorher verletzt wurde. Wenn dies nicht der Fall ist, dann wird geprüft, ob nach der Antwort von $s$ eine andere Sicherheitsregel $s' \in S$  verletzt wird. Dies wird sichergestellt, indem das Vorwissen vom Benutzer $u$ von $s'$ und $s$  unter dem definierten Schwellwert liegen muss, nachdem die Anfrage $s$ ausgeführt wurde. Damit verhindert Angerona, dass nach der Ausführung von $q$ nicht weitere $s'$ verletzt werden .  \\ Geprüft wird dies, indem Angerona zuerst prüft, ob es überhaupt möglich ist, dass die Anfrage $q$ in einem beliebigen Datenbankzustand zutreffen könnte. Wenn dies der Fall ist, dann wird die Historie $h$ erweitert mit der Anfrage $q$ und dem $s$ und prüft dann anschließend ob mit der erweiterten Historie einen Datenbankzustand gibt, indem $q$ nicht zugelassen wird  \cite{6}.
-   \todo[inline, size=\tiny]{Wie genau soll Angerona beschrieben werden? Vlt. noch Algorithmus hinzufügen, aber der aus dem Paper ist gefühlt zu komplex }
 
-
+Angerona ist ein DBIC (Database Inference Control) Mechanismus\cite{22} der Datenbanken gegen probabilistische Inferenzen absichert. Es existiert zur Zeit nur ein Prototyp von Angerona, der nur boolesche Anfragen unterstützt. Es wurde zwar eine Lösung für nicht-boolesche Werte im Paper vorgestellt, jedoch wurde diese nicht im Prototypen implementiert.
+\begin{algorithm}
+	\caption{Angerona Algorithmus}\label{alg-angerona}
+	\begin{algorithmic}[1]
+		\State \textbf{Input} Systemzustand $s=\langle db,U,P\rangle $, Historie $H$, Aktion $\langle u,q \rangle$, Systemkonfiguration $C$ und ein ATKLOG Modell $ATK$
+		\State \textbf{Output} Die Sicherheitsentscheidung ob die Anfrage q zugelassen wird in $\{ \top, \bot \}$
+		\For{$\langle u, \psi, l \rangle \in$ secrets(P, u)}
+		\If{$secure(C, ATK, h,\langle u,\psi,l \rangle$)}
+		\If{ $pox(C, ATK, h, \langle u,q \rangle$)} \State 
+		$h'\gets h \cdot \langle \langle u,q\rangle , \top , \top \rangle$
+		\If{$ \neg secure(C, ATK, h',\langle u,\psi,l \rangle$}
+		\State \textbf{return} $\bot$
+		\EndIf
+		\EndIf
+		\If{ $pox(C, ATK, h, \langle u, \neg q \rangle$)} \State 
+		$h'\gets h \cdot \langle \langle u, q\rangle , \top , \bot \rangle$
+		\If{$ \neg secure(C, ATK, h',\langle u,\psi,l \rangle$}
+		\State \textbf{return} $\bot$
+		\EndIf
+		\EndIf
+		\EndIf
+		\EndFor
+		\State \textbf{return} $\top$
+		\State
+		\Function{secure}{$\langle D,\Gamma \rangle$, ATK, h, $\langle u, \psi , l \rangle$}
+		\State $p\gets ATK(u)$
+		\For{$\phi \in knowledge(h,u)$} 
+		\State $p\gets p \cup PL(\phi) \cup \{evidence(head(\phi),true)\}$ 
+		\EndFor
+		\State $p\gets p\cup PL(\psi)$
+		\State \textbf{return} $\lsem p \rsem_D   (head(\psi)) < l $
+		\EndFunction
+		\State
+		\Function{$pox$}{$\langle D,\Gamma \rangle), ATK,h,\langle u,\psi \rangle $}
+		\State $p\gets ATK(u)$
+		\For{$\phi \in knowledge(h,u)$} 
+		\State $p\gets p \cup PL(\phi) \cup \{evidence(head(\phi),true)\}$ 
+		\EndFor
+		\State \textbf{return} $\lsem p \rsem_D   (head(\psi)) > 0 $
+		\EndFunction
+	\end{algorithmic}
+\end{algorithm}
+Der Angerona Algorithmus aus \autoref{alg-angerona} erhält folgende Eingaben:
+\begin{itemize}
+	\item Den Systemzustand $s=\langle db,U,P\rangle $ der den aktuellen Systemzustand beschreibt, wobei $db$ den aktuellen Datenbankzustand, $U$ die Menge der Benutzer und $P$ die Sicherheitsregeln darstellt.
+	\item Die Historie H, die aus $h=\langle u,q,a,d \rangle$ besteht, die für jeden Benutzer alle bereits getätigten Anfragen speichert. Jeder Eintrag in der Historie speichert den Benutzer $u$, die Anfrage $q$, die Antwort aus dem Datenbanksystem $a \in \{\top, \bot \}$ und die Entscheidung $d \in \{\top, \bot \}$, ob die Anfrage genehmigt wurde.
+	\item Die Aktionen $\langle u,q \rangle$ die einem Benutzer seine getätigten Anfragen zuordnet.
+	\item Der Systemkonfiguration $C$ ,die aus $\langle D,\Gamma \rangle$ besteht, wobei $D$  das Datenbankschema darstellt und $\Gamma$ die Integritätsbedingungen. 
+	\item  Das $ATKLOG Modell ATK$, dass das Angreifermodell für jeden Benutzer $u$ über das atkuelle Datenbankschema darstellt.
+\end{itemize}
+Angerona prüft dabei für die Anfrage q aus der Aktion $\langle u,q \rangle$, ob diese eine Sicherheitsregel aus $secrets(P,u)$ verletzt und gibt $\top$ zurück wenn die Anfrage genehmigt werden soll oder $\bot$ wenn diese verweigert werden soll. \\ 
+Dafür wird über alle  $secrets(P,u) = \{ \langle u,\phi,l \rangle \mid \langle u,\phi,l \rangle \in P \land u \in U\}$ iteriert, wobei $\phi$ die Anfrage und $l$ den Schwellwert definiert, bei der die Anfrage verweigert werden soll. In jeder Iteration für jede Sicherheitsregel wird zuerst geprüft, ob die Sicherheitsregel bereits verletzt wurde, indem zuerst die Funktion \texttt{secure} ausgeführt wird. \\ 
+Die Funktion \texttt{secure} erweitert dafür das aktuelle Angreifermodell $ATK$, indem die  Funktion \texttt{knowledge(h,u)} mit den bereits getätigten Anfragen aus der Historie $h$ für den Benutzer $u$ alle bereits getätigten Anfragen von $u$ hinzufügt und als  \texttt{evidence} deklariert werden. Anschließend wird die Anfrage aus der Sicherheitsregel noch in \texttt{Problog} definiert und dem Angreifermodell hinzugefügt. Der Ausdruck $\lsem p \rsem_D (head(\psi)$ prüft dabei für alel Datenbankzustände in welcher die Anfrage $\psi$ erfüllt ist und berechnet die Wahrscheinlichkeit durch $\frac{\text{Menge der Datenbankzustände in den $\psi$ erfüllt ist}}{Menge aller Datenbankzustände}$. Wenn diese Wahrscheinlichkeit kleiner dem Schwellwert $l$ ist, dann gilt die Sicherheitsregel als nicht verletzt und es wird ein \top ausgegeben. \\ 
+Anschließend wird mit der Funktion $pox$ geprüft, ob für die  Anfrage $q$ überhaupt ein Datenbankzustand existiert, indem diese erfüllt ist. Dabei geht die Funktion $pox$ die selben Schritte wie die Funktion $secure$ durch, vergleicht am Ende jedoch die Wahrscheinlichkeit der erfüllenden Datenbankzustände nicht mit dem Schwellwert sondern prüft nur ob diese größer 0 ist. Wenn $pox$ ein $\top$ zurückgibt und somit ein Datenbankzustand existiert indem $q$ erfüllt ist, wird eine neue Historie $h'$ erstellt, die um die Anfrage $q$ erweitert ist. Anschließend wird die \texttt{secure} Funktion mit der neuen Historie $h'$ ausgeführt und geprüft, ob die Sicherheitsregel verletzt wird, wenn die Anfrage $q$ genehmigt wurde. Damit wird verhindert, dass eine genehmigte Anfrage eine andere Sicherheitsregel verletzen würde. Wenn die erweiterte Historie $h'$ die Sicherheitsregel verletzt, dann verweigert Angerona die Anfrage $q$ gibt somit ein $\bot$ als Output \\ 
+Falls jedoch die Sicherheitsregel immer noch nicht verletzt wurde, werden die selben Schritte für die Anfrage $\neg q$ durchgeführt. Dafür wird wieder mit der Funktion $pox$ geprüft,  ob ein Datenbankzustand existiert, indem $ \neg q$ gilt. Wenn dies der Fall ist, dann wird die Historie $h'$ um die Anfrage $\neg q$ erweitert und es wird geprüft, ob durch die Verweigerung der Anfrage $q$ die Sicherheitsregel verletzt wird. Wenn dies nicht der Fall ist, wird von Angerona ein $\top$ ausgegeben, ansonsten ein $\bot$. \\ \\ 
+Angerona verwendet außerdem noch einige Funktionen innerhalb der \texttt{secure} und \texttt{pox} Funktionen. Diese sind zum einen die Funktion \texttt{knowledge}, die aus der Historie $h$ alle raus extrahiert, die zum Benutzer $u$ gehören. Die Funktion \texttt{evidence} , die aus \texttt{Problog} stammt verwendet wird um Informationen als Wahr oder Falsch anzunehmen, was dadurch die Wahrscheinlichkeitswerte für andere probabilistische Abhängigkeiten verändert. Die Funktion \texttt{PL}, die  eine Anfrage in logische Programmierregeln umwandelt und somit für \texttt{Problog} lesbar macht. \cite{guarnieri2017securing}
 \section{Praktisches Setup} \label{2.2}
-Der Prototyp von Angerona lässt sich auf der Seite von Marco Guarnieri \cite{6} herunterladen. Angerona lässt sich in zwei verschiedene Modis starten :
+Der Prototyp von Angerona kann auf der Seite von Marco Guarnieri \cite{6} heruntergeladen werden. Angerona lässt sich in zwei verschiedene Modis starten :
 \begin{enumerate}
-	\item \textbf{Experiment}: Hiermit können vorgefertigte Beispiele aus dem Paper \enquote{Securing Databases from Probabilistic Inference}\cite{6} reproduziert werden. Hierbei werden keine größeren Initialiserungsschritte benötigt und das Programm übernimmt die Generierung vom beliefProgram und die dazugehörige Datenbank. Anschließend werden zufällig generierte Anfragen an die Datenbank gestellt und von Angerona geprüft. Als output erhält man die Zeitmessung für die Ausführung der Anfrage, die Ausführungszeit von Angerona und die gesamte Zeit in einer CSV Datei.
-	\item \textbf{Manual}: Erlaubt es mit einer Datenbank zu interagieren, die durch Angerona geschützt ist. Dieser Modus erfordert drei Dateien als input und zwar das BeliefProgram, initStatements und das template. Diese drei Dateien werden im folgenden weiter erläutert.
+	\item \textbf{Experiment}: Hiermit können vorgefertigte Beispiele aus dem Paper \enquote{Securing Databases from Probabilistic Inference}\cite{guarnieri2017securing} reproduziert werden. Hierbei werden keine größeren Initialiserungsschritte benötigt und das Programm übernimmt die Generierung vom Angreifermodell und die dazugehörige Datenbank. Anschließend werden zufällig generierte Anfragen an die Datenbank gestellt und von Angerona geprüft. Als Ergebnis vom Programm erhält man die Zeitmessung für die Ausführung der Anfrage, die Ausführungszeit von Angerona und die gesamte Zeit in einer CSV Datei.
+	\item \textbf{Manual}: Erlaubt es mit einer Datenbank zu interagieren, die durch Angerona geschützt ist. Dieser Modus erfordert drei Dateien als input und zwar die \texttt{beliefProgramm.pbl}, \texttt{initStatements.txt} und das \texttt{template.cpt}.
 \end{enumerate}
 Im folgenden wird ausschließlich der Manual mode verwendet.
-\subsection{BeliefProgram}
-Das beliefProgram.pbl beschreibt das Angreifermodell. Hier werden die Erwartungen des Angreifers mithilfe von Problog beschrieben. \\ 
-In die ersten Zeilen werden dabei alle Knoten $\{v_0, \dots ,v_n\} \in V$ aus dem Bayes-Netz aufgeschrieben, die keine Abhängigkeit haben, in der Form,
-% darf man das so schreiben? Hab versucht das gut auszudrücken oder lieber natürliche Sprache ?
-\begin{Pseudocode}
+\subsection{Angreifermodell}
+Das Angreifermodell wird in der Datei \texttt{beliefProgram.pbl} beschrieben. Hier werden die Erwartungen des Angreifers mithilfe von \texttt{ATKLOG} beschrieben, dass auf \texttt{PROBLOG} basiert. \\ 
+Zuallererst werden alle Knoten $\{v_0, \dots ,v_n\} \in V$ in das Angreifermodell übertragen, die \textbf{keine Abhängigkeit}. Die Knoten die keine Abhängigkeiten werden definiert als $\{np_i \in V \mid Parent(np_i) = \emptyset\}$ und das Attribut \textit{name} gibt den vorher definierten  Namen für den Knoten aus. Dafür werden zuerst die Knoten ohne Abhängigkeiten einer Variable zugeordnet und anschließend werden die Wahrscheinlichkeiten für die Variable als probabilistischen Fakt für jeden Benutzer $p \in \mathbb{N}$ in das Angreifermodell hinzugefügt, wie im \autoref{code:beliefprogramOhneInference} zu sehen ist.
+\begin{Pseudocode} [caption={\texttt{beliefProgram.pbl} für Knoten ohne Abhängigkeiten}, label={code:beliefprogramOhneInference}]
 $np_0.name(X) :- p\_np_0.name(X).$ 
+$np_1.name(X) :- p\_np_1.name(X).$ 
 $\dots$
-$np_n.name(X) :- p\_np_n.name(X).$ 
-\end{Pseudocode}
-wobei $\{np_i \in V \mid Parent(np_i) = \emptyset\}$ und das Attribut name gibt den vorher definierten Namen für den Knoten aus. Anschließend werden die Wahrscheinlichkeit für die Klausel $p\_np_0.name$ als probabilistischen Fakt für jede Möglichkeit $p \in \mathbb{N}$ in der Datenbank hinzugefügt in der Form :
-\begin{Pseudocode}
+$np_n.name(X) :- p\_np_n.name(X).$
+
 $P(np_0) ::  p\_np_0.name(p_0).$ 
+$P(np_1) ::  p\_np_1.name(p_0).$ 
 $\dots$
 $P(np_n) ::  p\_np_n.name(p_0).$ 
+$P(np_0) ::  p\_np_n.name(p_1).$ 
 $\dots$
 $P(np_0) ::  p\_np_0.name(p_n).$ 
+$P(np_1) ::  p\_np_1.name(p_n).$ 
 $\dots$
 $P(np_n) ::  p\_np_n.name(p_n).$ 
 \end{Pseudocode}
-Für die Knoten mit Abhängigkeiten, also für alle Knoten V für die gilt $H=\{v \in V \mid Parent(v) \geq 1 \}$ werden die Klauseln für jede möglich Welt von den Abhängigkeiten eingefügt und verknüpft mit einer Konjunktion, die in Problog mit einem $","$ dargestellt wird. Die Negation wird nicht wie üblich in Problog mit einem $\backslash +$, sondern mit einem \enquote{NOT} dargestellt. Anschließend wird jeder Ausdruckt mit einer selbst definierten Variable versehen und mit diesem konjugiert, die am Ende durch einen probabilistischen Fakt die dazugehörige Wahrscheinlichkeit für diese Welt zugeordnet wird.\\
-   \todo[inline, size=\tiny]{Ist das Verständlich ?}
-
-\begin{Pseudocode}[caption={Beispiel mit 2 Variablen als Abhängigkei}, label={lst-2}, numbers=left]
-$H(X) :- v_0.name(X) , v_1.name(X), variable11(X).
-$H(X) :- v_0.name(X) , NOT v_1.name(X), variable10(X).
-$H(X) :- NOT v_0.name(X) , v_1.name(X), variable01(X).
-$H(X) :- NOT v_0.name(X) , NOT v_1.name(X), variable00(X).
+Für die Knoten \textbf{mit Abhängigkeiten}, also für alle Knoten V für die gilt $H=\{v \in V \mid Parent(v) \geq 1 \}$ werden die Klauseln für jede mögliche Welt von den Abhängigkeiten eingefügt und verknüpft mit einer Konjunktion, die in \texttt{ATKLOG} mit einem $","$ dargestellt wird. Anschließend wird jeder Ausdruck mit einer selbst definierten Variable versehen und mit diesem konjugiert, die am Ende durch einen probabilistischen Fakt die dazugehörige Wahrscheinlichkeit für diese Welt zugeordnet wird, wie in \autoref{beliefprogramMitInference} zu sehen ist.
+\begin{Pseudocode}[caption={\texttt{beliefProgram.pbl} für Knoten mit Abhängigkeiten}, label={code:beliefprogramMitInference}]
+$H(X) :- v_0.name(X) , v_1.name(X), variable11(X).$
+$H(X) :- v_0.name(X) , NOT v_1.name(X), variable10(X).$
+$H(X) :- NOT v_0.name(X) , v_1.name(X), variable01(X).$
+$H(X) :- NOT v_0.name(X) , NOT v_1.name(X), variable00(X).$
 
 $P(h_0) :: variable11(p_0)$
 $P(h_1) :: variable10(p_0)$
@@ -162,124 +228,131 @@ $P(h_1) :: variable10(p_n)$
 $P(h_2) :: variable01(p_n)$
 $P(h_n) :: variable00(p_n)$
 \end{Pseudocode} 
-Eine mehrwertige Variable  kann anstatt zwei Wahrheitswerten true und false auch mehr Werte annehmen. 
-Um diese im BeliefProgram auszudrücken, wird der mehrwertigen Variable in eine \textit{annotated disjunctiont} eingeteilt. Jedoch wird dann das \enquote{;} entfernt und für jeden Wert den die Variable annehmen kann eine neue Klausel erstellt mit einer neuen Variable die im folgenden $sw_1, \dots sw_n$ genannt wird und die dazugehörige Wahrscheinlichkeit mit $p_1, \dots , p_n$ wird zum Schluss für jeder dieser neu erstellen Variable ein probabilistischen Fakt hinzugefügt mit der dazugehörigen Wahrscheinlichkeit mit der der Wert zutrifft.
-Der Name der mehrwertigen Variable wird im folgenden als $A$ definieret und die Tupel, die durch die \textit{annotated disjunction} übergeben werden als $t_1 , \dots , t_n$. 
-\begin{Pseudocode}[caption={Vorgehensweise bei \textit{annotated disjunction} }, label={lst-2}, numbers=left]
-$A(t_1)$ :- $sw_1(t_1)$
-$\dots$
-$A(t_n)$ :- NOT $sw_1(t_1), \dots ,$ NOT $sw_{n−1}(t_{n−1}), sw_n(t_n)$
+Eine \textbf{mehrwertige Variable} kann anstatt zwei Wahrheitswerten \texttt{true} und \texttt{false} auch mehr Werte annehmen.
+Um diese im Angreifermodell auszudrücken, wird der mehrwertigen Variable in eine \textit{annotated disjunction} eingeteilt. Zum Beispiel das Alter einer Person kann mehrere Werte annehmen. Im folgenden Beispiel gehen wir davon aus, dass das Alter in jung, mittel und alt eingeteilt werden kann. Dabei sind die Wahrscheinlichkeiten dafür, dass eine Person jung ist $40\%$ , mittel $25\%$ und alt $35\%$. Dann würde im \texttt{beliefProgram.pbl} die Klauseln wie in \autoref{code:beliefprogramMitInference} zu sehen ist angeordnet werden und die Wahrscheinlichkeiten $p_i$ jeweils berechnet werden durch : 
+\begin{itemize}
+	\item $0.4 \cdot (1- 0)^{-1} = 0.4 $
+	\item  $0.25 \cdot (1 - 0.4)^{-1} = 0.4166 = 5/12 $
+	\item $ 0.35 \cdot (1 - 0.35 - 0.4)^{-1} = 1 $
+\end{itemize}
 
-$p_1::sw_1( )$
-$\dots$
-$p_n::sw_n( )$
+\begin{Pseudocode}[caption={\texttt{beliefProgram.pbl} für Knoten mit Abhängigkeiten}, label={code:beliefprogramMitInference}]
+alter(X,1) :- p_jung(X).
+alter(X,2) :- NOT p_jung(X), p_mittel(X).
+alter(X,3) :- NOT p_jung(X) , NOT p_mittel(X) , p_alt(X).
 
+4/10 :: p_jung(id).
+5/12 :: p_mittel(id).
+1/1 :: p_alt(id).
 \end{Pseudocode} 
-\subsection{InitStatements}
-Die InitStatements.txt definiert das Datenbankschema und füllt die Datenbank mit Daten. Außerdem werden hier die Sicherheitsregeln definiert, wie hoch das Vorwissen sein darf, bei dem ein Benutzer auf die Information der Datenbank zugreifen darf. \\ 
+
+
+\subsection{Initialisierung und Sicherheitsregeln}
+Die \texttt{initStatements.txt} definiert das Datenbankschema und füllt die Datenbank mit Daten. Außerdem werden hier die Sicherheitsregeln definiert, wie hoch das Vorwissen sein darf, bei dem ein Benutzer auf die Information der Datenbank zugreifen darf. \\ 
 Die InitStatements werden in vier Schritte initalisiert:
 \begin{enumerate}
 	\item Die \textbf{Tabellen } werden mit dem Kommando \textit{AS admin : CREATE TABLE tablename(parameter)} initialisiert. 
 	\item  Die \textbf{Benutzer  } werden mit dem Kommando \textit{AS admin : ADD USER benutzer} initialisiert. 
 	\item Die \textbf{Sicherheitsregeln}  werden mit dem Kommando \textit{AS admin : SECRET anfrage('id') FOR benutzer THRESHOLD grenze} initalisiert.
-	\item Das \textbf{Füllen} der Datenbank mit den benötigten Werten wird mit dem Kommando \textit{AS admin : INSERT IN tabelle ['id']} 
+	\item Das \textbf{Füllen} der Datenbank wird mit dem Kommando \textit{AS admin : INSERT IN tabelle ['id']} erledigt.
 \end{enumerate} 
 
 \subsection{Template}
-Die template.cpt ist die Vorlage für Angerona. In dieser werden die Tabellen aus den InitStatements und die definierten Fakten aus dem BeliefProgram initalisiert.
-\section{Beispiel}
-Im Beispiel wird  eine Patientendatenbank eines Krankenhauses betrachtet, die das Rauchverhalten und die Elternbeziehung von Patienten speichert und ob diese Krebs haben. Die Datenbank hat dabei die Tabellen \textit{Patienten, Raucher, Krebs, MutterHatKrebs } und \textit{VaterhatKrebs}. In der Patientendatenbanken sind die Patienten Alice mit der \textit{id} 1, Bob mit der \textit{id} 2 und Carl mit der \textit{id} 3 die Patienten , wobei Alice und Bob die Eltern von Carl sind. Alice raucht nicht, aber Bob und Carl rauchen. Alle drei Patienten haben Krebs.\\  Als Benutzer für das System existiert nur Mallory mit dem Benutzernamen \textit{mallory}. Außerdem wird vom folgendem Probabilistisches Modell ausgegangen: 
+Die \texttt{template.cpt} ist die Vorlage für Angerona. In dieser werden die Tabellen aus den \texttt{initStatements.txt} und die definierten Fakten aus dem \texttt{beliefProgram.pbl} initalisiert.
+\section{Beispiel} \label{chap:Beispiel}
+Im Beispiel wird  eine medizinische Datenbank eines Krankenhauses betrachtet, die das Rauchverhalten und die Elternbeziehung von Patienten speichert und ob diese Krebs haben. Die Datenbank hat dabei die Tabellen \textit{Patienten, Raucher, Krebs, MutterHatKrebs } und \textit{VaterhatKrebs}. In der medizinischen Datenbank sind die Patienten Alice mit der \textit{id} 1, Bob mit der \textit{id} 2 und Carl mit der \textit{id} 3 die Patienten , wobei Alice und Bob die Eltern von Carl sind. Alice raucht nicht, aber Bob und Carl rauchen. Alle drei Patienten haben Krebs.\\  Als Benutzer für das System existiert nur Mallory mit dem Benutzernamen \textit{mallory}. Außerdem wird vom folgendem Probabilistisches Modell ausgegangen: 
 \begin{enumerate}
 \item Jeder Patient entwickelt mit einer Wahrscheinlichkeit von 5\% Krebs
 \item Für jedes Elternteil das Krebs hat, steigt die Wahrscheinlichkeit vom Kind Krebs zu bekommen um 15\%
 \item Wenn ein Patient raucht, dann steigt die Wahrscheinlichkeit für Krebs um 25\%
 \end{enumerate}
-Zu Beginn  wird das probabilistische Modell in ein Bayes-Netz übertragen. Dabei wird davon ausgegangen, dass die Wahrscheinlichkeit, dass ein Patient raucht 25\% \cite{11}, jeweils ein Elternteil Krebs hat 10\% entspricht. Ein Patient ist in diesem Fall zu 100\% ein Patient, da eine Patientendatenbank betrachtet wird \cite{6}.  \\
+Zu Beginn  wird das probabilistische Modell in ein Bayes-Netz übertragen. Dabei wird davon ausgegangen, dass die Wahrscheinlichkeit, dass ein Patient raucht 25\%, jeweils ein Elternteil Krebs hat 10\% entspricht \cite{11}. Ein Patient ist in diesem Fall zu 100\% ein Patient, da eine medizinische Datenbank betrachtet wird \cite{guarnieri2017securing}. Dadurch ergibt sich das Bayes-Netz aus \autoref{tikz-1} \\
 \begin{figure}[htpb]
 	\caption{Bayes-Netz}
 	\label{tikz-1}
 	\centering
-\begin{tikzpicture}[
-	node distance=1cm and 0cm,
-	mynode/.style={draw,ellipse,text width=2cm,align=center}
-	]
-	\node[mynode] (patient) {Patienten};
-	\node[mynode,right=of patient] (smokes) {Raucher};
-	\node[mynode,right=of smokes] (mother) {MutterHatKrebs};
-	\node[mynode,right=of mother] (dad) {VaterHatKrebs};
-	\node[mynode,below right=of smokes] (cancer) {Krebs};
-	\path 
-	(patient) edge[-latex] (cancer)
-	(mother) edge[-latex] (cancer)
-	(smokes) edge[-latex] (cancer) 
-	(dad) edge[-latex] (cancer);
-	\node[above=0.5cm of patient]
-	{
-		\begin{tabular}{cM{1}M{1}}
-			\toprule
-			\multicolumn{1}{c}{Patienten} \\
-			\multicolumn{1}{c}{$P(P)$} \\
-			\cmidrule(r){1-1}
-			$1.00$\\
-			\bottomrule
-		\end{tabular}
-	};
-	\node[above=0.5cm of smokes]
-	{
-		\begin{tabular}{M{1}M{1}}
-			\toprule
-			\multicolumn{1}{c}{Raucher} \\
-			\multicolumn{1}{c}{$P(R)$} \\
-			\cmidrule(r){1-1}
-			$0.25$ \\
-			\bottomrule
-		\end{tabular}
-	};
-	\node[above=0.5cm of mother]
-	{
-		\begin{tabular}{ccM{1}M{1}}
-			\toprule
-			\multicolumn{1}{c}{Mutter hat Krebs} \\
-			\multicolumn{1}{c}{$P(M)$} \\
-			\cmidrule(r){1-1}
-			$0.1$ \\
-			\bottomrule
-		\end{tabular}
-	};
-	\node[above=0.5cm of dad]
-{
-	\begin{tabular}{ccM{1}M{1}}
-		\toprule
-		\multicolumn{1}{c}{Vater hat Krebs} \\
-		\multicolumn{1}{c}{$P(V)$} \\
-		\cmidrule(r){1-1}
-		$0.1$ \\
-		\bottomrule
-	\end{tabular}
-};
-	\node[below=0.5cm of cancer]
-{
-	\begin{tabular}{|c|c|c|c|c|}
-		\hline
-		\multicolumn{5}{|c|}{Krebs} \\
-		\hline
-		P &R & M &V &$P(L)$ \\
-		\hline
-		T&T&T&T& $0.6$ \\
-		T&T&T&F& $0.45$\\
-		T&T&F&T& $0.45$\\
-		T&T&F&F& $0.3$\\
-		T&F&T&T& $0.35$\\
-		T&F&T&F& $0.2$\\
-		T&F&F&T& $0.2$\\
-		T&F&F&F& $0.05$\\
-		\hline
-	\end{tabular}
-};
-\end{tikzpicture}
+	\begin{tikzpicture}[
+		node distance=1cm and 0cm,
+		mynode/.style={draw,ellipse,text width=2cm,align=center}
+		]
+		\node[mynode] (patient) {Patienten};
+		\node[mynode,right=of patient] (smokes) {Raucher};
+		\node[mynode,right=of smokes] (mother) {MutterHatKrebs};
+		\node[mynode,right=of mother] (dad) {VaterHatKrebs};
+		\node[mynode,below right=of smokes] (cancer) {Krebs};
+		\path 
+		(patient) edge[-latex] (cancer)
+		(mother) edge[-latex] (cancer)
+		(smokes) edge[-latex] (cancer) 
+		(dad) edge[-latex] (cancer);
+		\node[above=0.5cm of patient]
+		{
+			\begin{tabular}{cM{1}M{1}}
+				\toprule
+				\multicolumn{1}{c}{Patienten} \\
+				\multicolumn{1}{c}{$P(P)$} \\
+				\cmidrule(r){1-1}
+				$1.00$\\
+				\bottomrule
+			\end{tabular}
+		};
+		\node[above=0.5cm of smokes]
+		{
+			\begin{tabular}{M{1}M{1}}
+				\toprule
+				\multicolumn{1}{c}{Raucher} \\
+				\multicolumn{1}{c}{$P(R)$} \\
+				\cmidrule(r){1-1}
+				$0.25$ \\
+				\bottomrule
+			\end{tabular}
+		};
+		\node[above=0.5cm of mother]
+		{
+			\begin{tabular}{ccM{1}M{1}}
+				\toprule
+				\multicolumn{1}{c}{Mutter hat Krebs} \\
+				\multicolumn{1}{c}{$P(M)$} \\
+				\cmidrule(r){1-1}
+				$0.1$ \\
+				\bottomrule
+			\end{tabular}
+		};
+		\node[above=0.5cm of dad]
+		{
+			\begin{tabular}{ccM{1}M{1}}
+				\toprule
+				\multicolumn{1}{c}{Vater hat Krebs} \\
+				\multicolumn{1}{c}{$P(V)$} \\
+				\cmidrule(r){1-1}
+				$0.1$ \\
+				\bottomrule
+			\end{tabular}
+		};
+		\node[below=0.5cm of cancer]
+		{
+			\begin{tabular}{|c|c|c|c|c|}
+				\hline
+				\multicolumn{5}{|c|}{Krebs} \\
+				\hline
+				P &R & M &V &$P(K|P,R,M,V)$ \\
+				\hline
+				T&T&T&T& $0.6$ \\
+				T&T&T&F& $0.45$\\
+				T&T&F&T& $0.45$\\
+				T&T&F&F& $0.3$\\
+				T&F&T&T& $0.35$\\
+				T&F&T&F& $0.2$\\
+				T&F&F&T& $0.2$\\
+				T&F&F&F& $0.05$\\
+				\hline
+			\end{tabular}
+		};
+	\end{tikzpicture}
 \end{figure}
-Die Fälle in denen $P$ \textit{false} sind bewusst nicht in der Tabelle für Krebs gelistet, da diese Fälle nicht eintreffen können. Die Warhscheinlichkeiten dafür, dass ein Patient Krebs hat berechnen sich aus $P(L) =\sum_{i=0}^N p_i | X(p) | X(p_i) = true$ \todo[inline, size=\tiny]{Summe richtig aufschreiben}. \\ 
-Mithilfe des Bayes-Netz wird das BeliefProgram definiert, indem jeder Knoten der keine Abhängigkeiten besitzt definiert wird. Im Beispiel sind das die Knoten Patient, Raucher, MutterHatKrebs und VaterHatKrebs.
+\noindent 
+Die Fälle in denen $P$ \textit{false} sind bewusst nicht in der Tabelle für Krebs gelistet, da diese Fälle nicht eintreffen können. Die Wahrscheinlichkeiten dafür, dass ein Patient Krebs hat wird berechnet, indem die oben genannten Wahrscheinlichkeiten aufsummiert werden, wenn dieser Fakt auf den Patienten zutrifft. Zum Beispiel der Wert in der ersten Tabellenzeile ergibt sich aus $0.05 + 0.15 + 0.15 +0.25 = 0.6$. \\ \\
+Mithilfe des Bayes-Netz wird das Angreifermodell definiert, indem jeder Knoten der keine Abhängigkeiten besitzt definiert wird. Im Beispiel sind das die Knoten Patient, Raucher, MutterHatKrebs und VaterHatKrebs.
 \begin{Pseudocode}[caption={Beispiel für Knoten ohne Abhängigkeiten }, label={lst-3}, numbers=left]
 patient(X) :- p_patient(X).
 raucher(X) :- p_raucher(X).
@@ -288,42 +361,62 @@ vaterHatKrebs(X) :- p_vaterHatKrebs(X).
 	
 1/1 :: p_patient(1).
 25/100 :: p_raucher(1).
-1/10 :: p_mutterHatKrebs(1).
-1/10 :: p_vaterHatKrebs(1).
-\dots 
+1/10 :: p_mutterhatkrebs(1).
+1/10 :: p_vaterhatkrebs(1).
+1/1 :: p_patient(2).
+25/100 :: p_raucher(2).
+1/10 :: p_mutterhatkrebs(2).
+1/10 :: p_vaterhatkrebs(2).
 1/1 :: p_patient(3).
 25/100 :: p_raucher(3).
-1/10 :: p_mutterHatKrebs(3).
-1/10 :: p_vaterHatKrebs(3).
+1/10 :: p_mutterhatkrebs(3).
+1/10 :: p_vaterhatkrebs(3).
 \end{Pseudocode}
-Anschließend können die Knoten mit Abhängigkeiten definiert werden. Im Beispiel ist das nur der Knoten Krebs. Dieser wird folgendermaßen definiert: 
+Anschließend können die Knoten mit Abhängigkeiten definiert werden. Im Beispiel ist das nur der Knoten Krebs. Für den Knoten Krebs wird dafür für jede mögliche Welt in Abhängigkeiten von den Elternknoten eine Klausel initialisiert und mit einer selbst definiert Variable versehen, die im folgenden die Form $v0000, v0001, \dots , v1111$ hat. Damit ergibt sich folgendes \texttt{beliefProgral.pbl} ; 
 \begin{Pseudocode}[caption={Beispiel für Knoten mit Abhängigkeiten }, label={lst-3}, numbers=left]
-Krebs(X) :- patient(X), raucher(X), mutterHatKrebs(X), vaterHatKrebs(X), p_p_r_m_v(X).
-Krebs(X) :- patient(X), raucher(X), mutterHatKrebs(X), NOT vaterHatKrebs(X), p_p_r_m_nv(X).
-$\dots$
-Krebs(X) :- patient(X), NOT raucher(X), NOT mutterHatKrebs(X), NOT vaterHatKrebs(X), p_np_nr_nm_nv(X).
+krebs(X) :- patient(X), raucher(X), mutterhatkrebs(X), vaterhatkrebs(X), v1111(X).
+krebs(X) :- patient(X), raucher(X), mutterhatkrebs(X), NOT vaterhatkrebs(X), v1110(X).
+krebs(X) :- patient(X), raucher(X), NOT mutterhatkrebs(X), vaterhatkrebs(X), v1101(X).
+krebs(X) :- patient(X), raucher(X), NOT mutterhatkrebs(X), NOT vaterhatkrebs(X), v1100(X).
+krebs(X) :- patient(X), NOT raucher(X), mutterhatkrebs(X), vaterhatkrebs(X), v1011(X).
+krebs(X) :- patient(X), NOT raucher(X), mutterhatkrebs(X), NOT vaterhatkrebs(X), v1010(X).
+krebs(X) :- patient(X), NOT raucher(X), NOT mutterhatkrebs(X), vaterhatkrebs(X), v1001(X).
+krebs(X) :- patient(X), NOT raucher(X), NOT mutterhatkrebs(X), NOT vaterhatkrebs(X), v1000(X).
 
-6/10 :: p_p_r_m_v(1).
-45/100 :: p_p_r_m_nv(1).
-$\dots$
-5/100 :: p_np_nr_nm_nv(1).
-
-$\dots$
-
-6/10 :: p_p_r_m_v(3).
-45/100 :: p_p_r_m_nv(3).
-$\dots$
-5/100 :: p_np_nr_nm_nv(3).
+6/10 :: v1111(1).
+45/100 :: v1110(1).
+45/100 :: v1101(1).
+3/10 :: v1100(1).
+35/100 :: v1011(1).
+2/10 :: v1010(1).
+2/10 :: v1001(1).
+5/100 :: v1000(1).
+6/10 :: v1111(2).
+45/100 :: v1110(2).
+45/100 :: v1101(2).
+3/10 :: v1100(2).
+35/100 :: v1011(2).
+2/10 :: v1010(2).
+2/10 :: v1001(2).
+5/100 :: v1000(2).
+6/10 :: v1111(3).
+45/100 :: v1110(3).
+45/100 :: v1101(3).
+3/10 :: v1100(3).
+35/100 :: v1011(3).
+2/10 :: v1010(3).
+2/10 :: v1001(3).
+5/100 :: v1000(3).
 \end{Pseudocode}
 Damit wäre das Angreifermodell mit dem \textit{BeliefProgram} vollständig initialisiert.\\ \\
-Die InitStatements werden einfach nach den vorher angegeben vier Schritten initialisiert.
+Die \texttt{initStatements.txt} werden einfach nach den vorher angegeben vier Schritten initialisiert.
 \begin{enumerate}
-	\item  Für jeden Knoten wird eine \textbf{Tabelle} angelegt: 
+	\item  Für jeden Knoten aus dem Bayes-Netz wird eine \textbf{Tabelle} angelegt: 
 \begin{Pseudocode}
 AS admin : CREATE TABLE patient(id)
 AS admin : CREATE TABLE raucher(id)
-AS admin : CREATE TABLE mutterHatKrebs(id)
-AS admin : CREATE TABLE vaterHatKrebs(id)
+AS admin : CREATE TABLE mutterhatkrebs(id)
+AS admin : CREATE TABLE vaterhatkrebs(id)
 AS admin : CREATE TABLE krebs(id)
 \end{Pseudocode}
 \item Der \textbf{Benutzer} Mallory wird folgendermaßen angelegt:
@@ -335,56 +428,63 @@ AS admin : ADD USER mallory
 AS admin : SECRET cancer('1') FOR mallory THRESHOLD 1/2
 AS admin : SECRET cancer('2') FOR mallory THRESHOLD 1/2
 AS admin : SECRET cancer('3') FOR mallory THRESHOLD 1/2
-
+\end{Pseudocode}
 \item \textbf{Gefüllt} wird die Datenbank mit den oben gegeben Werten dann folgendermaßen:
-
-AS admin : INSERT in patient('1')
-AS admin : INSERT in patient('2')
-AS admin : INSERT in patient('3')
-AS admin : INSERT in raucher('2')
-AS admin : INSERT in raucher('3')
-AS admin : INSERT in mutterHatKrebs('1')
-AS admin : INSERT in vaterHatKrebs('1')
-AS admin : INSERT in krebs('1')
-AS admin : INSERT in krebs('2')
-AS admin : INSERT in krebs('3')
+\begin{Pseudocode}
+AS admin : INSERT IN patient['1']
+AS admin : INSERT IN patient['2']
+AS admin : INSERT IN patient['3']
+AS admin : INSERT IN raucher['2']
+AS admin : INSERT IN raucher['3']
+AS admin : INSERT IN mutterhatkrebs['1']
+AS admin : INSERT IN vaterhatkrebs['1']
+AS admin : INSERT IN krebs['1']
+AS admin : INSERT IN krebs['2']
+AS admin : INSERT IN krebs['3']
 \end{Pseudocode}
 \end{enumerate}
-
-Im tempalte werden alle verwendeten Variablen aus dem BeliefProgram folgendermaßen initalisiert: 
+Im \texttt{tempalte.cpt} werden alle verwendeten Variablen aus dem \texttt{beliefProgram.pbl} und initialisierten Tabellen folgendermaßen initialisiert: 
 \begin{Pseudocode}
 patient: []
 raucher: []
-mutterHatKrebs: []
-vaterHatKrebs: []
+mutterhatkrebs: []
+vaterhatkrebs: []
+p_patient: []
+p_raucher: []
+p_mutterhatkrebs: []
+p_vaterhatkrebs: []
 krebs: []
-p_p_r_m_v: []
-p_p_r_m_nv: []
-$\dots$
-p_np_nr_nm_nv: []
+v1111: []
+v1110: []
+v1101: []
+v1100: []
+v1011: []
+v1010: []
+v1001: []
+v1000: []
 \end{Pseudocode}
 
-\chapter{Auswertung}
-In diesem Kapitel wird der Prototyp von Angerona auf drei verschiedene Patientendatenbanken angewendet. Betrachtet werden die Datenbanken MIMIC III, eICU und der Patientengenerator Synthea.
+\chapter{Medizinische Datenbanken und Angreifermodellierung}\label{chap:Modellierung}
+In diesem Kapitel wird der Prototyp von Angerona auf drei verschiedene medizinische Datenbanken angewendet. Betrachtet werden die Datenbanken MIMIC III, eICU und der synthetische Patientengenerator Synthea.
 \section{MIMIC III}
-MIMIC III (Medical Information Mart for Intesive Care) III \cite{12} ist eine für Forschungszwecke frei zugängliche Datenbank, die pseudonymisiert Patientendaten und dazugehörige klinische Daten, die in Intensivstationen in einem Spezialkrankenhaus eingewiesen wurden, speichert. Die Daten stammen dabei aus dem Beth Israel Deaconess Medical Center in Boston, Massachusetts und wurden in dem Zeitraum vom Juni 2001 bis Oktober 2012 erfasst. Die Datenbank enthält 58976 Krankenhauseinweisungen für 38645 Erwachsene und 7875 Neugeborene. Gespeichert werden Daten wie Vitalparameter, Medikamente, Labormessungen, Beobachtungen und Notizen, die vom Personal dokumentiert wurden, Flüssigkeitsbilanzen, Verfahrenscodes, Diagnosecodes, Aufenthaltsdauer, Überlebensdaten und mehr.  \\ \\ 
-Im folgenden wird für jeden Patienten in der MIMIC III Datenbank die Information, dass dieser Krebs hat, abgesichert. Die Wahrscheinlichkeitswerte des Vorwissens vom Angreifermodell wurden aus der MIMIC III Datenbank ausgelesen und somit hat jeder Angreifer ein perfektes Vorwissen.
-\todo[inline, size=\tiny]{reicht wenn man schreibt perfekt?}. \\ Dabei wird jede Krankenhauseinweisungen als ein Patienten betrachtet, wodurch Patienten auch mehrmals gelistet sein können, wenn diese mehrmals eingewiesen wurden. \\ 
-Risikofaktoren und somit Abhängiekiten für Krebs sind in dem Fall Alter, Geschlecht und Rauchverhalten des Patienten.\cite{13,14} Um diese Daten aus der MIMIC III Datenbank zu erhalten werden die folgenden Tabellen benötigt : 
+MIMIC III (Medical Information Mart for Intesive Care) III \cite{12} ist eine für Forschungszwecke frei zugängliche Datenbank, die pseudonymisiert medizinische Daten und dazugehörige klinische Daten, die in Intensivstationen in einem Spezialkrankenhaus eingewiesen wurden, speichert. Die Daten stammen dabei aus dem Beth Israel Deaconess Medical Center in Boston, Massachusetts und wurden in dem Zeitraum vom Juni 2001 bis Oktober 2012 erfasst. Die Datenbank enthält 58976 Krankenhauseinweisungen für 38645 Erwachsene und 7875 Neugeborene. Gespeichert werden Daten wie Vitalparameter, Medikamente, Labormessungen, Beobachtungen, Notizen vom Personal, Flüssigkeitsbilanzen, Verfahrenscodes, Diagnosecodes, Aufenthaltsdauer, Überlebensdaten und mehr.  \\ \\ 
+Im folgenden wird für jeden Patienten in der MIMIC III Datenbank die Information, dass dieser Krebs hat, abgesichert. Die Wahrscheinlichkeitswerte des Vorwissens vom Angreifermodell wurden aus der MIMIC III Datenbank ausgelesen, indem zum Beispiel die Wahrscheinlichkeit für das Vorwissen, dass eine Person Krebs hat berechnet wird durch $
+p(krebs) =  \frac{\text{Anzahl der Patienten die Krebs haben}}{\text{Gesamtanzahl der Patienten}}$. \\ 
+Risikofaktoren und somit Abhängigkeiten für Krebs sind in dem Fall Alter, Geschlecht und Rauchverhalten des Patienten\cite{13,14}. Um diese Daten aus der MIMIC III Datenbank zu erhalten werden die folgenden Tabellen benötigt : 
 \begin{enumerate}
-	\item Die Tabelle \textit{ADMISSIONS}  enthält Informationen über die Einweisung ins Krankenhaus. Dabei ist jeder Krankenhausaufenthalt einer eindeutigen \textit{HADM\_ID} zugeordnet. Dies ist immer unsere Ausgangstabelle, da alle Krankenhausaufenthalte betrachtet werden und die Tabelle enthält Informationen zu demographischen Daten, Ein- und Ausweisungszeiten und erste Einweisungsinformationen.
+	\item Die Tabelle \textit{ADMISSIONS}  enthält Informationen über die Einweisung ins Krankenhaus. Dabei ist jeder Krankenhausaufenthalt einer eindeutigen \textit{HADM\_ID} zugeordnet. Die Tabelle enthält Informationen zu demographischen Daten, Ein- und Ausweisungszeiten und erste Einweisungsinformationen.
 	\item Die Tabelle \textit{PATIENTS} enthält Informationen über jeden Patienten. Dabei ist jeder Patient einer eindeutigen \textit{SUBJECT\_ID} zugeordnet. Die Tabelle enthält Informationen über das Geschlecht, Geburtsdatum und Todesdatum, falls vorhanden.
-	\item Die Tabelle \textit{DIAGNOSES\_ICD} enthält zu jeder \textit{HADM\_ID} oder \textit{SUBJECT\_ID} die dazugehörige Diagnose als icd9-code(International Classification of Diseases). icd9-codes sind standardisierter Codes, die verwendet  werdeb um Krankheiten , Verletzungen oder sonstige Diagnosen International einheitlich zu speichern\cite{15}.
-	\item Die Tabelle \textit{NOTEVENTS } enthält alle Notizen zu den Patienten.
+	\item Die Tabelle \textit{DIAGNOSES\_ICD} enthält zu jeder \textit{HADM\_ID} oder \textit{SUBJECT\_ID} die dazugehörige Diagnose als \texttt{icd9-code}(International Classification of Diseases). \texttt{Icd9-codes} sind standardisierter Codes, die verwendet  werden um Krankheiten , Verletzungen oder sonstige Diagnosen International einheitlich zu speichern \cite{15}.
+	\item Die Tabelle \textit{NOTEVENTS} enthält alle Notizen zu den Patienten, die vom Krankenhauspersonal dokumentiert sind.
 \end{enumerate} 
-Dabei wurde das Alter in die Intervalle  $\leq 40$ mit 13265 , $< 40 bis \leq 60$ mit 14382  und $>60$ mit 31329 eingeteilt, wobei die Wahrscheinlichkeit für Krebs mit dem Alter steigt. Dies lässt sich berechnen, indem die Differenz zwischen des Geburtsdatum aus der Tabelle \textit{PATIENTS} und dem Einweisungsdatum aus der Tabelle \textit{ADMISSIONS} berechnet wird.
-Das Geschlecht jedes Patienten kann aus der Tabelle \textit{PATIENTS} unter dem Attribut \textit{gender} ausgelesen werden und man erhält 32950 Männer und 26026 Frauen, wobei Männer eine höhere Wahrscheinlichkeit haben Krebs zu bekommen als Frauen. Das Rauchverhalten wurde aus der Tabelle \textit{NOTEVENTS} ausgelesen, indem nach den Schlagwörtern \enquote{smoke} und \enquote{cigarette} gesucht wurde. Somit erhält man 25237 Raucher, wobei Raucher ein erhöhtes Risiko haben Krebs zu bekommen. \\
-Um die Krankenhausaufenthalte zu bekommen, für die Patienten bei den  Krebs diagnostiziert wurde, werden die icd9-codes für Krebs \cite{16} mit den aus der \textit{DIAGNOSES\_ICD} verglichen und bei Gleichheit hinzugefügt. Dafür wurde ein Skript geschrieben, dass alle icd9-codes aus einer Liste extrahiert und in an das icd9-code Format von der MIMIC III Datenbank umwandelt und anschließend diese in eine extra angefertigte Tabelle kopiert. Somit kann man die Tabellen direkt miteinander vergleichen und erhält 13658 Krebspatienten. 
-Mit diesen Informationen kann man das Bayes-netz skizzieren, dass in Abbildung 3.1 \ref{mimic-bayes-net} zu sehen ist.
-\todo[inline, size=\tiny]{Alle Bayes-netze sind noch nicht richtig referenziert. Muss mir noch was einfallen lassen für Bayes-Netze generell.}. \\ 
-
-%\begin{figure}
-%		\label{mimic-bayes-net}
+Im folgenden wird die Angreifermodellierung für die MIMIC III Datenbank anhand der Krankenhauseinweisungen betrachtet. Das bedeutet, dass die \textit{HADM\_ID} als $id$ genutzt wird um die Patienten nach Angerona zu übertragen. Daher kann es auch vorkommen, dass ein Patient mehrmals auftauchen kann, wenn dieser mehrmals eingewiesen wurde.\\ 
+Dabei wurde das Alter in die Intervalle $[0,40], (40,60]$ und $(60,\infty)$ eingeteilt, da dies in \cite{13} als Altersgrenze definiert wurde, in denen die Krebsrisikos unterschiedlich sind und mit höherem alter ein erhöhtes Krebsrisiko existiert. Krankenhauseinweisungen für Patienten mit einem Alter im Intervall $[0,40]$ existieren 13265, für $(40,60]$ 14382 und $(60,\infty)$ 31329. Dies lässt sich berechnen, indem die Differenz zwischen des Geburtsdatum aus der Tabelle \textit{PATIENTS} und dem Einweisungsdatum aus der Tabelle \textit{ADMISSIONS} berechnet wird.
+Das Geschlecht jedes Patienten kann aus der Tabelle \textit{PATIENTS} unter dem Attribut \textit{gender} ausgelesen werden und erhält 32950 Männer und 26026 Frauen, wobei Männer eine höhere Wahrscheinlichkeit haben Krebs zu bekommen als Frauen. Das Rauchverhalten wurde aus der Tabelle \textit{NOTEVENTS} ausgelesen, indem nach den Schlagwörtern \enquote{smoke} und \enquote{cigarette} gesucht wurde. Somit erhält man 25237 Raucher, wobei Raucher ein erhöhtes Risiko haben Krebs zu bekommen. \\
+Um die Krankenhausaufenthalte zu bekommen, für die Patienten bei den  Krebs diagnostiziert wurde, werden die \texttt{icd9-codes} für Krebs \cite{16} mit den aus der \textit{DIAGNOSES\_ICD} verglichen und bei Gleichheit hinzugefügt. Dafür wurde ein Skript geschrieben, dass alle \texttt{icd9-codes} aus einer Liste extrahiert und in an das \texttt{icd9-code} Format von der MIMIC III Datenbank umwandelt und anschließend diese in eine extra angefertigte Tabelle kopiert. Somit kann man die Tabellen direkt miteinander vergleichen und erhält 13658 Krebspatienten. 
+Mit diesen Informationen kann man das Bayes-Netz skizzieren, dass in Abbildung \ref{mimic-bayes-net} zu sehen ist.\\
+\begin{figure}[htpb]
+	\caption{MIMIC III Bayes-netz}
+	\label{mimic-bayes-net}
 	\begin{tikzpicture}[
 		node distance=1cm and 1.5cm,
 		mynode/.style={draw,ellipse,text width=2cm,align=center}
@@ -402,7 +502,7 @@ Mit diesen Informationen kann man das Bayes-netz skizzieren, dass in Abbildung 3
 			\begin{tabular}{|c|c|c|}
 				\hline
 				\multicolumn{3}{|c|}{Age} \\
-				$P(A=[0,40])$ & $P(A=(40,60]$ & $P(A=(60,89])$ \\
+				$P(A=[0,40])$ & $P(A=(40,60]$ & $P(A=(60,\infty))$ \\
 				$0.225$ &  $0.244$ & $0.531$ \\
 				\hline
 			\end{tabular}
@@ -450,35 +550,79 @@ Mit diesen Informationen kann man das Bayes-netz skizzieren, dass in Abbildung 3
 			\end{tabular}
 		};
 	\end{tikzpicture}
-%	\caption{MIMIC III Bayes-netz}
-%\end{figure}\todo{Errors von bayes netz fixxen und Werte neu berechnen}
-Das Bayes-Netz wird in ein Angreifermodell nach dem Schema aus \ref{2.2} übertragen und als beliefProgram.pbl gespeichert. Für das Alter werden dabei die \textit{annotated disjunction} verwendet, da  \\ \\
-Die initStatements werden nach dem Schema von \ref{2.2} initialisiert, indem die Tabellen jeweils ein Knoten aus dem Bayes-Netz darstellen. Die Benutzer und die Sicherheitsregeln für Krebs können hierbei beliebig erstellt werden, sollten jedoch nicht zu hoch sein, da sonst die Laufzeit ungeeignet für eine Implementierung ist. \\ 
-Für das füllen der Tabellen werden die \textit{HADM\_ID}s verwendet. Dafür wurde ein Bash-Skript geschrieben, dass alle \textit{HADM\_ID} s aus der Datenbank mit den benötigten Werten filtert und anschließend im passendem Format speichert.
+\end{figure}Das Bayes-Netz wird in ein Angreifermodell nach dem Schema aus \ref{2.2} übertragen und als \texttt{beliefProgram.pbl} gespeichert. Für das Alter werden dabei die \textit{annotated disjunction} verwendet, da diese die durch die drei Intervalle mehr als zwei Wahrheitswerte haben können. \\ \\
+Die \textit{initStatements.txt} wird nach dem Schema von \ref{2.2} initialisiert, indem die Tabellen jeweils ein Knoten aus dem Bayes-Netz darstellen. Die Benutzer und die Sicherheitsregeln für Krebs können hierbei beliebig erstellt werden. Für das füllen der Tabellen werden die \textit{HADM\_ID}s verwendet. Dafür wurde ein Bash-Skript geschrieben, dass alle \textit{HADM\_ID}'s  aus der Datenbank mit den benötigten Werten filtert und anschließend in der Form \enquote{\texttt{AS admin : INSERT IN tabelle ['HADM\_ID']}} die Daten speichert. \\ 
+Anschließend können beliebig viele Sicherheitsregeln hinzugefügt werden für die einzelnen \texttt{HADM\_IDs}, indem in der \texttt{initStatements.txt} die Sicherheitsregeln erweitert werden durch den Befehl \enquote{\texttt{AS admin : SECRET cancer('HADM\_ID') FOR u1 THRESHOLD 0/1}}. Anschließend muss im Angreifermodell, also in der Datei \texttt{beliefProgram.pbl} für diese HADM\_ID das Vorwissen definiert werden. Ein Beispiel der \texttt{beliefProgram.pbl} in der ein Patient mit der HADM\_ID 165315 abgesichert wurde ist in Programmtext  \ref{code:beliefprogrammimic} zu sehen. 
+
+\begin{Pseudocode}[caption={\textit{beliefProgram.pbl} für Krebs in MIMIC III}, label={code:beliefprogrammimic}, numbers=left]
+male(X) :- p_male(X). 
+smokes(X) :- p_smokes(X).
+
+age(X,100000) :- p_young(X).
+age(X,100001) :- NOT p_young(X), p_middle(X).
+age(X,100002) :- NOT p_young(X) , NOT p_middle(X) , p_old(X).
+
+cancer(X) :- age(X,100000), smokes(X), male(X), p_young_smokes_male(X).
+cancer(X) :- age(X,100000), smokes(X), NOT male(X), p_young_smokes_not_male(X).
+cancer(X) :- age(X,100000), NOT smokes(X), male(X), p_young_not_smokes_male(X).
+cancer(X) :- age(X,100000), NOT smokes(X), NOT male(X), p_young_not_smokes_not_male(X).
+
+cancer(X) :- age(X,100001), smokes(X), male(X), p_middle_smokes_male(X).
+cancer(X) :- age(X,100001), smokes(X), NOT male(X), p_middle_smokes_not_male(X).
+cancer(X) :- age(X,100001), NOT smokes(X), male(X), p_middle_not_smokes_male(X).
+cancer(X) :- age(X,100001), NOT smokes(X), NOT male(X), p_middle_not_smokes_not_male(X).
+
+cancer(X) :- age(X,100002), smokes(X), male(X), p_old_smokes_male(X).
+cancer(X) :- age(X,100002), smokes(X), NOT male(X), p_old_smokes_not_male(X).
+cancer(X) :- age(X,100002), NOT smokes(X), male(X), p_old_not_smokes_male(X).
+cancer(X) :- age(X,100002), NOT smokes(X), NOT male(X), p_old_not_smokes_not_male(X).
+
+559/1000 :: p_male(165315).
+696/1000 :: p_smokes(165315).
+225/1000 :: p_young(165315).
+244/775 :: p_middle(165315).
+1/1 :: p_old(165315).
+44/1000 :: p_young_smokes_male(165315).
+48/1000 :: p_young_smokes_not_male(165315).
+19/1000 :: p_young_not_smokes_male(165315).
+23/1000 :: p_young_not_smokes_not_male(165315).
+201/1000 :: p_middle_smokes_male(165315).
+262/1000 :: p_middle_smokes_not_male(165315).
+178/1000 :: p_middle_not_smokes_male(165315).
+233/1000 :: p_middle_not_smokes_not_male(165315).
+365/1000 :: p_old_smokes_male(165315).
+327/1000 :: p_old_smokes_not_male(165315).
+324/1000 :: p_old_not_smokes_male(165315).
+279/1000 :: p_old_not_smokes_not_male(165315).
+\end{Pseudocode}
+
 \section{eICU}
-\textbf{eICU} ist eine Datenbank, die aus einer großen Anzahl von Daten aus verschiedenen Krankenhäusern der USA besteht. Dabei ist MIMIC III nicht Teil der eICU, wodurch dies ein völlig unabhängigen Datensatz darstellt. Alle Tabellen wurden so Pseudonymisiert, dass diese dem HIPAA Standard entsprechen. Dadurch kommt es auch, dass Patienten mit einem Alter über 89 in der Tabelle nicht existieren, da diese mit \enquote{>89} dargestellt werden. Die Daten stammen aus dem Jahr 2014 bis 2015 und wurden dabei zufällig aus verschiedenen Krankenhäusern der USA gewählt und anschließend wurde jedem Krankenhausaufenthalt und Patient eine eindeutige Identifikationsnummer zugeordnet. \\ 
+\textbf{eICU} ist eine Datenbank, die aus einer großen Anzahl von Daten aus verschiedenen Krankenhäusern der USA besteht. Dabei ist MIMIC III nicht Teil der eICU, wodurch dies ein völlig unabhängigen Datensatz darstellt. Alle Tabellen wurden so Pseudonymisiert, dass diese dem HIPAA Standard entsprechen. Dadurch kommt es auch, dass Patienten mit einem Alter über 89 in der Tabelle als \enquote{>89} dargestellt werden. Die Daten stammen aus dem Jahr 2014 bis 2015 und wurden dabei zufällig aus verschiedenen Krankenhäusern der USA gewählt und anschließend wurde jedem Krankenhausaufenthalt und Patient eine eindeutige Identifikationsnummer zugeordnet. \\ 
 Die Datenbank enthält 200859 Krankenhauseinweisungen für 139367 Patienten aus 208 verschiedenen Krankenhäusern. Zu den Daten gehören Virtalparameter, Messungen, Pflegepläne, Art und Schweregrad der Krankheit, Diagnoseinformationen, Behandlungsinformationen und mehr. \\ \\
-Im folgenden wird für jeden Patienten in der eICU Datenbank die Information, dass dieser Krebs hat, abgesichert. Die Wahrscheinlichkeitswerte des Vorwissens vom Angreifermodell werden aus der eICU Datenbank ausgelesen und somit hat jeder Angreifer wieder ein  perfektes Vorwissen. \todo[inline, size=\tiny]{reicht wenn man schreibt perfekt?} Dabei werden die Krankenhauseinweisungen als id gewählt. \\ 
-Risikofaktoren und somit Abhängigkeiten für Krebs sind in dem Fall Alter, Geschlecht und eine Chemotherapie oder andere Onkologische Maßnahmen .\cite{13,14} Um diese Daten aus der eICU Datenbank zu erhalten werden die folgenden Tabellen benötigt : 
+Im folgenden wird für jeden Patienten in der eICU Datenbank die Information, dass dieser Krebs hat, abgesichert. Die Wahrscheinlichkeitswerte des Vorwissens vom Angreifermodell werden nach dem selben Prinzip wie MIMIC III aus der eICU Datenbank ausgelesen. \\ 
+Risikofaktoren und somit Abhängigkeiten für Krebs sind in dem Fall Alter, Geschlecht und eine Chemotherapie oder andere Onkologische Maßnahmen\cite{13,14}. Um diese Daten aus der eICU Datenbank zu erhalten werden die folgenden Tabellen benötigt : 
 \begin{enumerate}
 	\item Die Tabelle \textit{ADMISSIONSDX} stellt für jede Station in der eine Diagnose gestellt wurde, die Diagnoseinformationen bereit. Die Tabelle enthält Informationen zu demographischen Daten, Ein- und Ausweisungszeiten und erste Einweisungsinformationen.
 	\item Die Tabelle \textit{PATIENT} enthält genauere Informationen über einen Patienten.  Dabei ist jeder Patient einer eindeutigen \textit{patientUnitStayID} zugeordnet, wodurch Patienten mehrfach auftauchen können, wenn diese mehrfach Eingewiesen wurden. Dies ist immer die Ausgangstabelle, da alle Krankenhausaufenthalte betrachtet werden. Zu den Daten gehören Informationen über das Geschlecht, Alter, ethnische Zugehörigkeit und mehr.
-	\item Die Tabelle \textit{diagnosis} enthält Diagnosedaten zu jedem Krankenhausaufenthalt. Diese werden im ICD9 Format gespeichert.
+	\item Die Tabelle \textit{diagnosis} enthält Diagnosedaten zu jedem Krankenhausaufenthalt. Diese werden als \texttt{icd9-codes} gespeichert.
 	\item Die Tabelle \textit{TREATMENT } enthält Behandlungsinformationen über den Krankenhausaufenthalt.
 \end{enumerate} 
-Die Intervalle für das Alter wurden wie bei MIMIC III gewählt und das Alter kann einfach aus der Tabelle \textit{PATIENT} aus dem Attribut \textit{age} ausgelesen werden. Somit erhält man für die Intervalle  $(0,40]$ = 23091,  $(40,60]$ = 57065 und $(60,89]$ = 120608 Patienten. Dabei wurden 95 Patienten nicht berücksichtigt, weil das Attribut \textit{age} leer war.\\ 
+Die Intervalle für das Alter wurden wie bei MIMIC III gewählt und das Alter kann aus der Tabelle \textit{PATIENT} aus dem Attribut \textit{age} ausgelesen werden. Somit erhält man für die Intervalle  $(0,40]$ = 23091,  $(40,60]$ = 57065 und $(60,89]$ = 120608 Patienten. Dabei wurden 95 Patienten nicht berücksichtigt, weil das Attribut \textit{age} leer war.\\ 
 Nach dem selben Prinzip wie beim Alter kann auch das Geschlecht ausgelesen werden, indem das Attribut \textit{gender} aus der Tabelle \textit{PATIENT} ausgelesen wird. Somit erhält man eine Verteilung von 92303 Frauen und 108379 Männern. Hierbei sind wieder 177 nicht berücksichtigt, weil das Attribut \textit{gender} für diese leer war. \\
-Ob ein Patient eine Chemotherapie oder andere Onkologische Maßnahmen hatte, lässt sich aus der Tabelle \textit{TREATMENT } auslesen, indem man nach dem Suchwort \enquote{\textit{oncology}} und  \enquote{\textit{chemotherap}}sucht. Dabei sind diese eine garantierte Aussage darüber, ob dieser Patient Krebs hat. In der eICU Datenbank gibt es 2387 Patienten, bei denen dies der Fall ist. \\ 
+Ob ein Patient eine Chemotherapie oder andere Onkologische Maßnahmen hatte, lässt sich aus der Tabelle \textit{TREATMENT } auslesen, indem man nach dem Suchwort \enquote{\textit{oncology}} und  \enquote{\textit{chemotherap}}sucht. Dabei wurde festgestellt, dass dies eine garantierte Aussage darüber ist, ob dieser Patient Krebs hat, weil jeder Patient Krebs hatte auf den dies zutrifft. In der eICU Datenbank gibt es 2387 Patienten, bei denen dies der Fall ist. \\ 
 Um die  Krebspatienten zu erhalten, werden aus der \textit{ADMISSIONSDX} Tabelle die \textit{icd9-codes} für Krebs gefiltert. Das führt dazu, dass 8179 Krebspatienten in der Datenbank enthalten sind. 
-Daraus ergibt sich folgendes Bayes-Netz:
-
+Daraus ergibt sich das Bayes-netz aus Abbildung \ref{eicu-bayes-net}. \\ 
+Die \texttt{initStatements.txt} und \texttt{beliefProgram.pbl} werden nach dem selben Prinzip wie für MIMIC III generiert. Ein Beispiel für einen Patienten mit der id 875123 ist Programmtext \ref{code:beliefprogrameicu}.
+\begin{figure}[htpb]
+	\caption{eICU III Bayes-netz}
+	\label{eicu-bayes-net}
 	\begin{tikzpicture}[
 	node distance=1cm and 1.5cm,
 	mynode/.style={draw,ellipse,text width=2cm,align=center}
 	]
 	\node[mynode] (age) {Age};
 	\node[mynode,below right=of age] (cancer) {Cancer};
-	\node[mynode,above right=of cancer] (smoke) {Chemo};
+	\node[mynode,above right=of cancer] (smoke) {ChemoOrOcnology};
 	\node[mynode,above = of cancer] (male) {Male};
 	\path [-latex]
 	(age) edge (cancer) 
@@ -488,10 +632,10 @@ Daraus ergibt sich folgendes Bayes-Netz:
 	{
 		\begin{tabular}{|c|c|c|}
 			\hline
-			\multicolumn{3}{c}{Age} \\
+			\multicolumn{3}{|c|}{Age} \\
 			$P(A=[0,40])$ & $P(A=(40,60]$ & $P(A=(60,89])$ \\
 			\hline
-			$0,115$ &  $0,284$ & $0,6$ \\
+			$0,116$ &  $0,284$ & $0,6$ \\
 			\hline
 		\end{tabular}
 	};
@@ -499,19 +643,19 @@ Daraus ergibt sich folgendes Bayes-Netz:
 	{
 		\begin{tabular}{|c|}
 			\hline
-			Oncology \\
+			ChemoOrOcnology \\
 			$P(O)$ \\
 			\hline
 			0,012 \\
 			\hline
 		\end{tabular}
 	};
-	\node[above right =0.2cm of male]
+	\node[above left =0.8cm of smoke]
 	{
 		\begin{tabular}{|c|}
 			\hline
 			Male \\
-			$(M)$ \\
+			$P(M)$ \\
 			\hline
 			$0,46$  \\
 			\hline
@@ -520,10 +664,10 @@ Daraus ergibt sich folgendes Bayes-Netz:
 	\node[below=0.5cm of cancer]
 	{
 		\begin{tabular}{|c|c|c|c|}
-			\toprule
-			\multicolumn{4}{c}{Cancer} \\
+			\hline
+			\multicolumn{4}{|c|}{Cancer} \\
 			Age &Ocnology &Male & $P(C \mid A,M,O)$  \\
-			\cmidrule(r){1-4}
+			\hline
 			$<=40$ & T & T & 1 \\
 			$<=40$ & T & F & 1 \\
 			$<=40$ & F & T & 0.016 \\
@@ -536,30 +680,75 @@ Daraus ergibt sich folgendes Bayes-Netz:
 			$>60$ & T & F & 1 \\
 			$>60$ & F & T & 0.044\\
 			$>60$ & F & F  & 0.034 \\
-			\bottomrule
+			\hline
 		\end{tabular}
 	};
 \end{tikzpicture}
+\end{figure}
+\newpage
+\begin{Pseudocode} [caption={\textit{beliefProgram.pbl} für Krebs in eICU}, label={code:beliefprogrameicu}, numbers=left]
+male(X) :- p_male(X). 
+ocnology(X) :- p_ocnology(X).
 
+age(X,100000) :- p_young(X).
+age(X,100001) :- NOT p_young(X), p_middle(X).
+age(X,100002) :- NOT p_young(X) , NOT p_middle(X) , p_old(X).
+
+cancer(X) :- age(X,100000), ocnology(X), male(X), p_young_ocnology_male(X).
+cancer(X) :- age(X,100000), ocnology(X), NOT male(X), p_young_ocnology_not_male(X).
+cancer(X) :- age(X,100000), NOT ocnology(X), male(X), p_young_not_ocnology_male(X).
+cancer(X) :- age(X,100000), NOT ocnology(X), NOT male(X), p_young_not_ocnology_not_male(X).
+
+cancer(X) :- age(X,100001), ocnology(X), male(X), p_middle_ocnology_male(X).
+cancer(X) :- age(X,100001), ocnology(X), NOT male(X), p_middle_ocnology_not_male(X).
+cancer(X) :- age(X,100001), NOT ocnology(X), male(X), p_middle_not_ocnology_male(X).
+cancer(X) :- age(X,100001), NOT ocnology(X), NOT male(X), p_middle_not_ocnology_not_male(X).
+
+cancer(X) :- age(X,100002), ocnology(X), male(X), p_old_ocnology_male(X).
+cancer(X) :- age(X,100002), ocnology(X), NOT male(X), p_old_ocnology_not_male(X).
+cancer(X) :- age(X,100002), NOT ocnology(X), male(X), p_old_not_ocnology_male(X).
+cancer(X) :- age(X,100002), NOT ocnology(X), NOT male(X), p_old_not_ocnology_not_male(X).
+
+46/100 :: p_male(875123).
+12/1000 :: p_ocnology(875123).
+116/1000 :: p_young(875123).
+71/221 :: p_middle(875123).
+1/1 :: p_old(875123).
+1/1 :: p_young_ocnology_male(875123).
+1/1 :: p_young_ocnology_not_male(875123).
+16/1000 :: p_young_not_ocnology_male(875123).
+20/1000 :: p_young_not_ocnology_not_male(875123).
+1/1 :: p_middle_ocnology_male(875123).
+1/1 :: p_middle_ocnology_not_male(875123).
+33/1000 :: p_middle_not_ocnology_male(875123).
+42/1000 :: p_middle_not_ocnology_not_male(875123).
+1/1 :: p_old_ocnology_male(875123).
+1/1 :: p_old_ocnology_not_male(875123).
+44/1000 :: p_old_not_ocnology_male(875123).
+34/1000 :: p_old_not_ocnology_not_male(875123).
+\end{Pseudocode}
 
 \section{Synthea}
-\textbf{Synthea} \cite{19,20} ist eine open-source Software, mit der Patientendatenbanken generiert werden können. Die demographischen Daten werden dabei anhand von öffentlich Zugänglichen demographischen Daten vom US Census Bureau \cite{21} generiert. Synthea unterstützt dabei die Generierung der Datenbank in den Formaten ccda, fhir, text und CSV. Im folgendem Fall werden ausschließlich CSV-Dateien generiert.\\  Um Synthea für Angerona kompatibel zu machen, müssen die generierten Patientenid's von UUID zu einer eindeutig identifizierbaren id, die nur aus Zahlen besteht umgewandelt werden, weil Angerona als input nur Zahlen erlaubt und die UUID noch Sonderzeichen und Buchstaben enthält. Dies kann implementiert werden, indem im Source Ordner von Synthea in der LifeCycleModule.java die Zeile 136 ersetzt wird durch folgende : 
+\textbf{Synthea} \cite{19,20} ist eine open-source Software, mit der medizinische Datenbanken generiert werden können. Die demographischen Daten werden dabei anhand von öffentlich Zugänglichen demographischen Daten vom US Census Bureau \cite{21} generiert. Synthea unterstützt dabei die Generierung der Datenbank in den Formaten ccda, fhir, text und CSV. Im folgendem Fall werden ausschließlich CSV-Dateien generiert.\\  Um Synthea für Angerona kompatibel zu machen, müssen die generierten Patientenid's von UUID zu einer eindeutig identifizierbaren id, die nur aus Zahlen besteht umgewandelt werden, weil Angerona als ids nur Zahlen erlaubt und die UUID noch Sonderzeichen und Buchstaben enthält. Dies kann implementiert werden, indem im Source Ordner von Synthea in der LifeCycleModule.java die Zeile 136 ersetzt wird durch folgende : 
 \begin{Java}
     attributes.put(Person.ID, String.format("\%040d", new BigInteger(UUID.randomUUID().toString().replace("-", ""), 16)));
 \end{Java}
-Anschließend kann man mit dem Kommando \texttt{ .$\backslash$run\_synthea -p [anzahl] -o false} die CSV-Dateien generieren und in eine beliebige Datenbank übertragen. Mit -o false wird genau die Anzahl der Patienten, die übergeben werden, da sonst auch tote Patienten generiert werden würden, die Synthea Standardmäßig mitzählt.  \\ \\
-Um die Daten für das Vorwissen des Angreifers zu modellieren, wird das Generic Module Framework von Synthea verwendet. Dadurch lassen sich die Abhängigkeiten für Krankheiten oder sonstige  Einweisungsgründe ablesen, indem man in der \texttt{Module Gallary} eine beliebige öffnet. Im folgenden  wird das Angreifermodell  für die Krankheit Osteoporose definiert.  \href{https://github.com/synthetichealth/synthea/wiki/Module-Gallery#Osteoporosis} 
-Aus der \textit{Module Gallary} geht hervor, dass Osteoporose abhängig ist von folgenden Faktoren : 
+Anschließend kann man mit dem Kommando \texttt{ .$\backslash$run\_synthea -p [anzahl] -o false} die CSV-Dateien generieren und in eine beliebige Datenbank übertragen. Das -o steht für \textit{\textit{overflowPopulation}} und sorgt dafür, dass genau die Anzahl an Patienten generiert wird, die übergeben wird. \\ \\
+Um die Daten für das Vorwissen des Angreifers zu modellieren, wird das \texttt{Generic Module Framework} von Synthea verwendet. Dadurch lassen sich die Abhängigkeiten für Krankheiten oder sonstige  Einweisungsgründe ablesen, indem man in der \texttt{Module Gallery}\cite{22} eine beliebige öffnet. Im folgenden  wird das Angreifermodell für die Krankheit Osteoporose definiert.  
+Aus der \textit{Module Gallery} geht hervor, dass Osteoporose abhängig ist von folgenden Faktoren : 
 \begin{enumerate}
 	\item \textbf{Geschlecht}: Frauen haben ein erhöhtes Risiko an Osteoporose zu erkranken als Männer. Dabei haben Männer eine $0.6$ Fache geringere Wahrscheinlichkeit als Frauen.
-	\item \textbf{Alter}: Personen ab 60 Jahren können erst an Osteoporose erkranken. Dabei steigt die Wahrscheinlichkeit mit dem Alter in 10er Schritten immer mehr an bis zum Alter 90, wodurch sich ein Intervall von $<60$, 60-70 , 70-80, 80-90 und $\geq 90$ ergibt.
-	\item \textbf{Knochendichte(bone-density)}: Wenn die Knochendichte zwischen $-3.8$ und $-2.5$ liegt, ist dies ein garantiertes Indiz für Osteoporose.
-	\item \textbf{Medikament} Bisphosphate: Wenn ein Patient das Medikament Bisphosphate verschrieben bekommen hat, dann ist dies ebenfalls ein garantiertes Indiz für Osteoporose.
+	\item \textbf{Alter}: Ein Person kann erst an Osteoporose erkranken, wenn diese mindestens 60 Jahre alt ist. Dabei steigt die Wahrscheinlichkeit mit dem Alter in 10er Schritten immer mehr an bis zum Alter 90, wodurch sich ein Intervall von $<60$, 60-70 , 70-80, 80-90 und $\geq 90$ ergibt.
+	\item \textbf{Knochendichte (bone-density)}: Wenn die Knochendichte zwischen $-3.8$ und $-2.5$ liegt, ist dies ein garantiertes Indiz für Osteoporose.
+	\item \textbf{Medikament} Bisphosphonate : Wenn ein Patient das Medikament Bisphosphonate verschrieben bekommen hat, dann ist dies ebenfalls ein garantiertes Indiz für Osteoporose.
 \end{enumerate} 
-Das Vorwissen für das Geschlecht wurde aus der demographics.csv im Synthea Verzeichniss ausgelesen, indem der durchschnitt aller Städte gebildet wurde, wobei ein Wahrscheinlichkeitswert von $0.5$ berechnet wurde. Die Daten für die Medikamente, Alter und die Knochendichte wurden aus einer Tabelle mit 100.000 Patienten gesampelt. 
+Das Vorwissen für das Geschlecht wurde aus der demographics.csv im Synthea Verzeichnis ausgelesen, indem der Durchschnitt aller Städte gebildet wurde, wobei ein Wahrscheinlichkeitswert von $0.5$ berechnet wurde. Die Daten für die Medikamente, Alter und die Knochendichte wurden aus einer Tabelle mit 100.000 Patienten approximiert (en:samplen). 
 \\ 
-Im folgenden Bayes-Netz werden die Wahrscheinlichkeitswerte für $P(A < 60)$ nicht gelistet, weil diese die Wahrscheinlichkeit 0 haben. Ebenfalls werden die Wahrscheinlichkeiten für $P(B=TRUE)$ und $P(O=TRUE)$ nicht gelistet, weil diese die Wahrscheinlichkeit 1 haben. Dadurch ergibt sich folgendes Bayes-Netz : 
-
+Die Modellierung des Bayes-Netz ist in Abbildung \ref{synthea-osteoporosis} zu sehen. Die Wahrscheinlichkeitswerte für $P(A < 60)$ sind nicht gelistet, weil diese die Wahrscheinlichkeit 0 haben, da kein Patient unter 60 Osteoporose haben kann nach dem Schema aus der \texttt{Module Gallery}. Ebenfalls werden die Wahrscheinlichkeiten für $P(O)$ in denen $B=TRUE$ oder $O=TRUE$ ist nicht gelistet, weil diese die Wahrscheinlichkeit 1 haben und die Tabelle ansonsten zu groß zum darstellen ist.
+\begin{figure}[htpb]
+	\caption{Synthea Osteoporose Bayes-Netz}
+		\label{synthea-osteoporosis}
+	\centering
 	\begin{tikzpicture}[
 	node distance=1cm and 1cm,
 	mynode/.style={draw,ellipse,text width=2cm,align=center}
@@ -574,7 +763,7 @@ Im folgenden Bayes-Netz werden die Wahrscheinlichkeitswerte für $P(A < 60)$ nic
 		(medication) edge (Osteoporosis)
 		(Gender) edge(Osteoporosis)
 		(bonedensity) edge(Osteoporosis);
-		\node[above=0.4cm of bonedensity]
+		\node[below=0.1cm of bonedensity]
 		{
 			\begin{tabular}{|c|}
 				\hline
@@ -585,22 +774,22 @@ Im folgenden Bayes-Netz werden die Wahrscheinlichkeitswerte für $P(A < 60)$ nic
 				\hline
 			\end{tabular}
 		};
-			\node[above =0.4cm of age]
+			\node[above =1.5cm of age]
 	{
 		\begin{tabular}{|c|c|c|c|c|}
 			\hline
-			\multicolumn{3}{c}{Age} \\
+			\multicolumn{5}{|c|}{Age} \\
 			$P(A < 60)$ & $P(A=(60,70]$ & $P(A=(70,80])$& $P(A=(80,90])$& $P(A \geq 90)$ \\
 			\hline
 			$0.766$ &$0.123$ &  $0,0654$ & $0,025$ & $0,021$ \\
 			\hline
 		\end{tabular}
 	};
-		\node[above right=0.5cm of medication]
+		\node[above =0.1cm of Gender]
 		{
 			\begin{tabular}{|c|}
 				\hline
-				medication \\
+				Bisphosphate \\
 				$P(O)$ \\
 				\hline
 				0,025 \\
@@ -622,7 +811,7 @@ Im folgenden Bayes-Netz werden die Wahrscheinlichkeitswerte für $P(A < 60)$ nic
 		{
 			\begin{tabular}{|c|c|c|c|c|}
 				\hline
-				\multicolumn{5}{c}{Osteoporosis} \\
+				\multicolumn{5}{|c|}{Osteoporosis} \\
 				Age &Male &Medication & Bone density & $P(O \mid A,M,O,B)$  \\
 				\hline
 			$60-70$ & T & F & F & $0,0714$ \\
@@ -635,189 +824,262 @@ Im folgenden Bayes-Netz werden die Wahrscheinlichkeitswerte für $P(A < 60)$ nic
 			\end{tabular}
 		};
 	\end{tikzpicture}
-Ein erweitertes Angreifermodell mit mehr Abhängigkeiten wurde durch hinzufügen des Moduls \textit{Injury} erreicht. Hierfür wurde das Angreifermodell mit dem Vorwissen für ein Knochenbruch erweitert. Ein Knochenbruch ist dabei Abhängig von Osteoporose unnd ein Knochenbruch wird unterteilt in Armbruch, Knöchelbruch, Gelenkbruch, Rippenbruch, Schlüsselbeinbruch und gebrochene Hüfte. Jedoch lässt sich dies nicht in einem für Angerona konformen Bayes-Netz modellieren, da dadurch die Bedingung verletzt wird, dass das Bayes-Netz ein Poly-tree sein muss. Durch die genannte Modellierung würde nämlich ein Zyklus entstehen zwischen den Knoten Osteoporose \leftrightarrow Knochenbruch \leftrightarrow Art des Bruches, weil z.B. ein Armbruch abhängig ist vom Knochenbruch und von Osteoporose. \\ 
-Deshalb wurde die Wahrscheinlichkeit Knochenbruch als Knoten ohne Abhängigkeit definiert und die Wahrscheinlichkeit für ein Knochenbruch aus einer generierten Patientendatenbank mit 100.000 Patienten gesampled \todo[inline, size=\tiny]{gesampled? Vielleicht umschreiben}. Die Wahrscheinlichkeiten für die einzelnen Brüche können aus der Module Gallary für \textit{Injury} ausgelesen werden. Somit ergibt sich folgendes Bayes-Netz :
+\end{figure}
+\\ \\
+Ein erweitertes Angreifermodell mit mehr Abhängigkeiten wurde durch hinzufügen des Moduls \texttt{Injury} erreicht. Hierfür wurde das Angreifermodell mit dem Vorwissen für ein Knochenbruch erweitert. Ein Knochenbruch ist dabei Abhängig von Osteoporose unnd ein Knochenbruch wird unterteilt in Armbruch, Knöchelbruch, Gelenkbruch, Rippenbruch, Schlüsselbeinbruch und gebrochene Hüfte. Jedoch lässt sich dies nicht in einem für Angerona konformen Bayes-Netz modellieren, da dadurch die Bedingung verletzt wird, dass das Bayes-Netz ein Poly-tree sein muss. Durch die genannte Modellierung würde nämlich ein Zyklus entstehen zwischen den Knoten Osteoporose \leftrightarrow Knochenbruch \leftrightarrow Art des Bruches, weil z.B. ein Armbruch abhängig ist vom Knochenbruch und von Osteoporose. \\ 
+Deshalb wurde die Wahrscheinlichkeit Knochenbruch als Knoten ohne Abhängigkeit definiert und die Wahrscheinlichkeit für ein Knochenbruch aus einer generierten medizinische Datenbank mit 100.000 Patienten approximiert (en:samplen). Die Wahrscheinlichkeiten für die einzelnen Brüche können aus der \texttt{Module Gallery} für \texttt{Injury} ausgelesen werden. Dabei sind die Wahrscheinlichkeitswerte für die spezifischen Knochenbrüche bei den \textit{broken bone} den Wert \textit{false} entspricht nicht gelistet, weil diese die Wahrscheinlichkeit 0 haben. Somit ergibt sich das Bayes-Netz Abbildung \ref{synthea-brokenbone}
+\begin{figure}[htpb]
+	\caption{Synthea Knochenbruch Bayes-Netz}
+	\label{synthea-brokenbone}
+	\centering
+\begin{tikzpicture}[
+	node distance=1cm and 1cm,
+	mynode/.style={draw,ellipse,text width=2cm,align=center}
+	]
+	\node[mynode] (Osteoporosis) {Osteoporosis};
+	\node[above= of Osteoporosis] (empty) {};
+	\node[mynode,left = of Osteoporosis] (brokenbone) {Broken bone};
+	\node[mynode, below right = of Osteoporosis] (brokenhip) {Broken hip};
+	\node[mynode, below = of brokenhip] (brokenclavicle) {Broken clavicle};
+	\node[mynode, left = of brokenclavicle] (brokenrib) {Broken rib};
+	\node[mynode, left = of brokenrib] (brokenwrist) {Broken wrist};
+	\node[mynode, left = of brokenwrist] (brokenankle) {Broken ankle};
+	\node[mynode, above = of brokenankle](brokenarm) {Broken arm};
+	
+	
+	
+	
+	\path [-latex]
+	(empty) edge (Osteoporosis)
+	(Osteoporosis) edge(brokenarm)
+	(Osteoporosis) edge(brokenwrist)
+	(Osteoporosis) edge(brokenankle)
+	(Osteoporosis) edge(brokenrib)
+	(Osteoporosis) edge(brokenclavicle)
+	(Osteoporosis) edge(brokenhip)
+	(brokenbone) edge(brokenarm)
+	(brokenbone) edge(brokenwrist)
+	(brokenbone) edge(brokenankle)
+	(brokenbone) edge(brokenrib)
+	(brokenbone) edge(brokenclavicle)
+	(brokenbone) edge(brokenhip);
+	\node[above=0.4cm of brokenarm]
+	{
+		\begin{tabular}{|c|c|c|}
+			\hline
+			\multicolumn{3}{|c|}{broken arm} \\
+			$BB$ & $O$ & $P(BA \mid BB,O)$  \\
+			\hline
+			T & T & $0.417$ \\
+			T & F & $0.225$ \\
+			\hline
+		\end{tabular}
+	};
+	\node[below=0.4cm of brokenankle]
+	{
+		\begin{tabular}{|c|c|c|}
+			\hline
+			\multicolumn{3}{|c|}{broken ankle} \\
+			$BB$ & $O$ & $P(BA \mid BB,O)$  \\
+			\hline
+			T & T & $0.101$ \\
+			T & F & $0.2$ \\
+			\hline
+		\end{tabular}
+	};
+	\node[below=0.4cm of brokenwrist]
+	{
+		\begin{tabular}{|c|c|c|}
+			\hline
+			\multicolumn{3}{|c|}{broken wrist} \\
+			$BB$ & $O$ & $P(BW \mid BB,O)$  \\
+\hline
+			T & T & $0.101$ \\
+			T & F & $0.2$ \\
+			\hline
+		\end{tabular}
+	};
+	\node[below=0.5cm of brokenrib]
+	{
+		\begin{tabular}{|c|c|c|}
+			\hline
+			\multicolumn{3}{|c|}{broken rib} \\
+			$BB$ & $O$ & $P(BR \mid BB,O)$  \\
+\hline
+			T & T & $0.05$ \\
+			T & F & $0.1$ \\
+			\hline
+		\end{tabular}
+	};
+	\node[below=0.4cm of brokenclavicle]
+	{
+		\begin{tabular}{|c|c|c|}
+			\hline
+			\multicolumn{3}{|c|}{broken clavicle} \\
+			$BB$ & $O$ & $P(BC \mid BB,O)$  \\
+\hline
+			T & T & $0.101$ \\
+			T & F & $0.225$ \\
+			\hline
+		\end{tabular}
+	};
+	\node[above=2.1cm of brokenhip]
+	{
+		\begin{tabular}{|c|c|c|}
+			\hline
+			\multicolumn{3}{|c|}{broken hip} \\
+			$BB$ & $O$ & $P(BH \mid BB,O)$  \\
+\hline
+			T & T & $0.23$ \\
+			T & F & $0.05$ \\
+			\hline
+		\end{tabular}
+	};
+	\node[above=0.4cm of brokenbone]
+{
+	\begin{tabular}{|c|c|c|}
+		\hline
+		broken bone \\
+		$P(BB)$  \\
+		\hline
+		$14,061$\\
+		\hline
+	\end{tabular}
+};
 
-%\begin{tikzpicture}[
-%	node distance=1cm and 1cm,
-%	mynode/.style={draw,ellipse,text width=2cm,align=center}
-%	]
-%	\node[mynode] (Osteoporosis) {Osteoporosis};
-%	\node[mynode, above left=of Osteoporosis] (age) {Age};
-%	\node[mynode,above right= of Osteoporosis] (Gender) {Gender};
-%	\node[mynode,above = of Osteoporosis] (medication) {Bisphosphate};
-%	\node[mynode,left = of age] (bonedensity) {Bone density ($0.017$);
-%%
-%	\node[mynode,left = of Osteoporosis] (brokenbone) {Broken bone (14,061)};
-%	\node[mynode, below right = of Osteoporosis] (brokenhip) {Broken hip};
-%	\node[mynode, below = of brokenhip] (brokenclavicle) {Broken clavicle};
-%	\node[mynode, left = of brokenclavicle] (brokenrib) {Broken rib};
-%	\node[mynode, left = of brokenrib] (brokenwrist) {Broken wrist};
-%	\node[mynode, left = of brokenwrist] (brokenankle) {Broken ankle};
-%	\node[mynode, above = of brokenankle](brokenarm) {Broken arm};
-%	
-%	
-%	
-%	
-%	\path [-latex]
-%	(age) edge (Osteoporosis)
-%	(medication) edge (Osteoporosis)
-%	(Gender) edge(Osteoporosis)
-%	(bonedensity) edge(Osteoporosis)
-%	(Osteoporosis) edge(brokenarm)
-%	(Osteoporosis) edge(brokenwrist)
-%	(Osteoporosis) edge(brokenankle)
-%	(Osteoporosis) edge(brokenrib)
-%	(Osteoporosis) edge(brokenclavicle)
-%	(Osteoporosis) edge(brokenhip)
-%	(brokenbone) edge(brokenarm)
-%	(brokenbone) edge(brokenwrist)
-%	(brokenbone) edge(brokenankle)
-%	(brokenbone) edge(brokenrib)
-%	(brokenbone) edge(brokenclavicle)
-%	(brokenbone) edge(brokenhip);
-%	\node[above=0.4cm of age]
-%	{
-%		\begin{tabular}{|c|c|c|c|c|}
-%			\hline
-%			\multicolumn{5}{c}{Age} \\
-%			$P(A < 60)$ & $P(A=[60,70))$ & $P(A=[70,80))$ & $P(A=[80,90))$& $P(A \geq 90)$  \\
-%			\hline
-%			$0.766$ &$0.123$ &  $0,0654$ & $0,025$ & $0,021$ \\
-%			\hline
-%		\end{tabular}
-%	};
-%	\node[above=3.4cm of medication]
-%	{
-%		\begin{tabular}{|c|}
-%			\hline
-%			Bisphosphate \\
-%			$P(B)$} \\
-%			\hline
-%			$0.025$ \\ % 2462/99998 => 100.000 gesampled und 2462 haben das medikament verschrieben bekommen
-%			\hline
-%		\end{tabular}
-%	};
-%	\node[above=0.4cm of Gender]
-%	{
-%		\begin{tabular}{|c|}
-%			\hline
-%			Gender \\
-%			$P(M)$ \\
-%			\hline
-%			$0,5$ \\
-%			\hline
-%		\end{tabular}
-%	};
-%	\node[above=0.4cm of Gender]
-%	{
-%		\begin{tabular}{|c|}
-%			\hline
-%			Gender \\
-%			$P(M)$ \\
-%			\hline
-%			$0,5$ \\
-%			\hline
-%		\end{tabular}
-%	};
-%	\node[above=0.4cm of brokenarm]
-%	{
-%		\begin{tabular}{|c|c|c|}
-%			\hline
-%			\multicolumn{3}{c}{broken arm} \\
-%			$BB$ & $O$ & $P(BA \mid BB,O)$  \\
-%			\hline
-%			T & T & $0.417$ \\
-%			T & F & $0.225$ \\
-%			F & T & $0$ \\
-%			F & F & $0$ \\
-%			\hline
-%		\end{tabular}
-%	};
-%	\node[below=0.4cm of brokenankle]
-%	{
-%		\begin{tabular}{|c|c|c|}
-%			\hline
-%			\multicolumn{3}{c}{broken ankle} \\
-%			$BB$ & $O$ & $P(BA \mid BB,O)$  \\
-%			\hline
-%			T & T & $0.101$ \\
-%			T & F & $0.2$ \\
-%			F & T & $0$ \\
-%			F & F & $0$ \\
-%			\hline
-%		\end{tabular}
-%	};
-%	\node[below=0.4cm of brokenwrist]
-%	{
-%		\begin{tabular}{|c|c|c|}
-%			\hline
-%			\multicolumn{3}{c}{broken wrist} \\
-%			$BB$ & $O$ & $P(BW \mid BB,O)$  \\
-%\hline
-%			T & T & $0.101$ \\
-%			T & F & $0.2$ \\
-%			F & T & $0$ \\
-%			F & F & $0$ \\
-%			\hline
-%		\end{tabular}
-%	};
-%	\node[below=0.4cm of brokenrib]
-%	{
-%		\begin{tabular}{|c|c|c|}
-%			\hline
-%			\multicolumn{3}{c}{broken rib} \\
-%			$BB$ & $O$ & $P(BR \mid BB,O)$  \\
-%\hline
-%			T & T & $0.05$ \\
-%			T & F & $0.1$ \\
-%			F & T & $0$ \\
-%			F & F & $0$ \\
-%			\hline
-%		\end{tabular}
-%	};
-%	\node[below=0.4cm of brokenclavicle]
-%	{
-%		\begin{tabular}{|c|c|c|}
-%			\hline
-%			\multicolumn{3}{c}{broken clavicle} \\
-%			$BB$ & $O$ & $P(BC \mid BB,O)$  \\
-%\hline
-%			T & T & $0.101$ \\
-%			T & F & $0.225$ \\
-%			F & T & $0$ \\
-%			F & F & $0$ \\
-%			\hline
-%		\end{tabular}
-%	};
-%	\node[above=0.4cm of brokenhip]
-%	{
-%		\begin{tabular}{|c|c|c|}
-%			\hline
-%			\multicolumn{3}{c}{broken hip} \\
-%			$BB$ & $O$ & $P(BH \mid BB,O)$  \\
-%\hline
-%			T & T & $0.23$ \\
-%			T & F & $0.05$ \\
-%			F & T & $0$ \\
-%			F & F & $0$ \\
-%			\hline
-%		\end{tabular}
-%	};
-%	\node[below=0.5cm of brokenarm]
-%	;
-%\end{tikzpicture}
-\section{Angreifer modellierung}
+\end{tikzpicture}
+\end{figure}
 
-\section{Vor und nachteile}
+\chapter{Auswertungen der medizinische Datenbanken }\label{chap:Auswertung}
+In diesem Kapitel wird die Sicherheit von Angerona an einem Praxisbeispiel gezeigt, indem zuerst geprüft wird, ob der Schwellwert eingehalten wird und anschließend ob die Historie erkennt, ob beim Zulassen dieser Anfrage eine Sicherheitsregel verletzt werden würde. \\ Um die Laufzeit zu testen wird zuerst betrachtet, wie die Laufzeit bereits getestet wurde. Dann werden mit Synthea zwei verschieden große synthetische medizinische Datenbanken generiert und  für das einfache Osteoporosebeispiel und für das komplexere Knochenbruchbeispiel geprüft, wie sich die Laufzeiten bei verschieden komplexen Abhängigkeiten verhalten. Anschließend wird die Laufzeit von den medizinischen Datenbanken MIMIC III und eICU bei wachsender Anzahl von Sicherheitsregeln getestet . \\ \\
+Alle Datenbanken laufen auf einer virtuellen Maschine in einem PowerEdge R530 Server. Dieser Server hat zwei Intel Xeon E5-2620 v3 Prozessoren 2,4GHz mit jeweils 6 Core / 12 Threads und 64GB DDR4-SDRAM. Als Datenbanksystem wird PostgreSQL Version 9.5.24 verwendet. \\ 
 
-\chapter{Laufzeiten der Patientendatenbanken}
-Um die folgenden Experimente und Auswertung zu reproduzieren, sollten erstmal die Anwendungen und Einstellungen vorgestellt werden. Der genutzte Computer hat einen AMD Ryzen 2600x Sechs-Kern Prozessor die mit 3.6GHz laufen, 16GB RAM mit 2400MHz und nutzt Windows
-10 Enterprise LTSC als Betriebssystem. Das Projekt wurde jedoch aus Kompatibilitätsgründen auf einer virtuellen Maschine ausgeführt. Die VM läuft auf Oracle VM VirtualBox Version 6.1.6 und nutzt Ubuntu 20.04.1 LTS. Dabei wurden der VM Sechs von Zwölf Threads und 8GB RAM bereitgestellt. \\ \\
+\section{Sicherheit}
+\subsection{Schwellwert}\label{sub:schwellwert}
+Betrachtet wird im Folgenden das Beispiel aus \autoref{chap:Beispiel}. Um zu prüfen, ob der Schwellwert eingehalten wird, wird das Beispiel vereinfacht. Es wird im Angreifermodell das Vorwissen, dafür das Alice Eltern Krebs haben, von Mallory für Alice (id 1) auf 100\% gesetzt. Dies wird umgesetzt, indem die Variablen $p\_vaterhatkrebs$ und $p\_mutterhatkrebs$ auf $1/1$ gesetzt werden wie in \autoref{code-mallorysvorwissen}.
+\begin{Pseudocode}[caption={Mallorys Vorwissen}, label={code-mallorysvorwissen}]
+1/1 :: p\_patient(1).
+25/100 :: p_raucher(1).
+1/1 :: p_mutterhatkrebs(1).
+1/1 :: p_vaterhatkrebs(1).
+\end{Pseudocode}
+Anschließend kann der Schwellwert berechnet werden, indem für jede mögliche Klausel \textit{krebs(X)} die noch eintreffen kann, die Wahrscheinlichkeiten aufaddiert werden. Diese sind in dem Fall folgende, weil nur noch die Abhängigkeit \enquote{Raucher} variabel ist:
+\begin{itemize}
+	\item[$\bullet$] \texttt{krebs(X) :- patient(X), raucher(X), mutterhatkrebs(X), vaterhatkrebs(X), v1111(X).}
+	\item[\bullet] \texttt{krebs(X) :- patient(X), NOT raucher(X), mutterhatkrebs(X), vaterhatkrebs(X), v1011(X).}
+\end{itemize}
+Somit ist der Schwellwert für $krebs(X) = (\frac{1}{1} \cdot \frac{25}{100} \cdot \frac{1}{1} \cdot \frac{1}{1} \cdot \frac{6}{10}) + (\frac{1}{1} \cdot 1- \frac{25}{100} \cdot \frac{1}{1} \cdot \frac{1}{1} \cdot \frac{35}{100}) = \frac{33}{80} $. \\  Nun kann die Sicherheitsregel für krebs(X) für Mallory auf den Schwellwert gesetzt werden und es wird als Ergebnis von Angerona \textit{true} ausgegeben, da auf den Wert zugegriffen werden darf, wie in \autoref{code-thresholdAccess} zu sehen ist. Allerdings wird bei einem Schwellwert $ \geq \frac{34}{80}$ der Zugriff verweigert, wie im \ref{code-thresholdNoAccess} zu sehen ist. 
 
-Alle Datenbanken laufen auf einer Virtuellen Maschine in einem PowerEdge R530 Server. Dieser Server hat zwei Intel Xeon E5-2620 v3 Prozessoren 2,4GHz mit jeweils 6 Core / 12 Threads und 64GB DDR4-SDRAM. Als Datenbanksystem wird PostgreSQL Version 9.5.24 verwendet.
 
-\chapter{Zusammenfassung und Ausblick}
+\begin{Pseudocode}[caption={Angerona Ergebnis für Schwellwert=$\frac{33}{80}$}, label={code-thresholdAccess}]
+Write a command. Write 'Stop' to conclude.
+AS mallory:krebs('1')
+ACCESS CONTROL RESULT
+	Acc.Ctrl.: true
+ACTION RESULT
+	Result: true Exception: false
+\end{Pseudocode}
+
+\begin{Pseudocode}[caption={Angerona Ergebnis für Schwellwert=$\frac{34}{80}$}, label={code-thresholdNoAccess}]
+Write a command. Write 'Stop' to conclude.
+AS mallory:krebs('1')
+ACCESS CONTROL RESULT
+	Acc.Ctrl.: false Cause: mallory : krebs ('1') is not authorized
+\end{Pseudocode}
+
+\subsection{Historie}
+Im Folgenden wird das Beispiel von \cref{sub:schwellwert} fortgesetzt. Um die Historie zu prüfen, wird an Angerona die Anfrage gestellt, ob Alice eine Raucherin ist. Aber da die Information dafür, dass Alice Raucherin ist, den Schwellwert auf $\frac{6}{10}$ anhebt und somit das Vorwissen $\geq$ Schwellwert ist, wird der Zugriff verweigert, wie in \autoref{code-history} zu sehen ist. 
+
+\begin{Pseudocode}[caption={Angerona Ergebnis für die Abfrage, ob Alice Raucherin ist}, label={code-history}]
+Write a command. Write 'Stop' to conclude.
+AS mallory:raucher('1')
+ACCESS CONTROL RESULT
+	Acc.Ctrl.: false Cause: mallory : raucher ('1') is not authorized
+\end{Pseudocode}
+
+\section{Laufzeit}
+Die Messung der Laufzeit wird in \textit{Onlinezeit} und \textit{Offlinezeit} gemessen. Die \textit{Onlinezeit} beschreibt die Zeit zwischen der Anfrage eines Benutzers bis die Antwort erhalten wird. Die \textit{Offlinezeit}  beschreibt die Zeit zwischen dem Start von Angerona bis zu dem Zeitpunkt an dem Angerona bereit für eine Eingabe ist. \\ 
+Dabei ist bei der Onlinezeit besonders wichtig, dass diese nicht zu hoch ist, da sonst die Benutzer lange Wartezeiten  für jede Anfrage haben. Die Offline Zeit hingegen kann auch etwas länger dauern, da diese nur einmal ausgeführt wird. \\
+Jedoch ist bereits beim Start der kleineren medizinischen Datenbank MIMIC III die Offlinelaufzeit nach 24 Stunden zu keinem Ende gekommen. Deshalb wird im ersten Schritt mit Synthea getestet, wie groß eine Patientendatenbank werden kann, sodass diese noch in angemessener Zeit nutzbar ist.   
+Anschließend wird gezeigt, wie Angerona sich bei wachsender Anzahl von Sicherheitsregeln verhält.\\ 
+Dabei ist jede Onlinezeit das \texttt{worst-case} Szenario und bedeutet das der Schwellwert auf 0 gesetzt wird, damit die Überprüfung der Sicherheitsregel bis zum Schluss ausgeführt wird, die Anfrage nicht verweigert und somit abgebrochen wird. Es wurden dabei nicht wie im Paper nur 100 Sicherheitsrichtlinien definiert, sondern jeweils immer für alle Patienten versucht, weil dies praxisnäher ist um die Sicherheit zu gewährleisten. Denn wenn nur die Patienten abgesichert werden, die zum Beispiel Krebs haben, dann könnte ein Angreifer ohne Historie für alle Patienten abfragen ob diese Krebs haben und würde nur \texttt{false} oder \texttt{security exceptions} erhalten. Wenn der Angreifer dann durch statistische Recherche herausfindet, dass das Verhältnis der Anzahl der erhaltenen \texttt{security exceptions} zu der bei den \texttt{false} erhalten wurde ca. der Wahrscheinlichkeit entspricht das ein beliebiger Patient Krebs hat, kann der Angreifer daraus schließen, dass die Patienten für die eine \texttt{security exception} ausgegeben wurde mit einer sehr hohen Wahrscheinlichkeit Krebs haben bzw. vielleicht sogar alle Krebs haben. \\ 
+Jedoch kann dies umgangen werden, indem einigen Patienten die kein Krebs haben auch eine Sicherheitsrichtlinie hinzugefügt wird, da dann der Angreifer alle möglichen Ergebnisse erhalten kann. Deshalb sollte mindestens für die Leute die Krebs haben eine Sicherheitsrichtlinie definiert werden, aber es ist von Vorteil noch mehr Sicherheitsrichtlinien zu definieren.
+
+\subsection{Vorhandene Auswertungen}
+Die Laufzeit von Angerona wurde bereits im Paper für den Algorithmus analysiert. Dabei wurde ein synthetisches \texttt{beliefProgram.pbl} für 1,000 bis 100,000 Patienten generiert, wovon ein Beispiel für 1 Patienten in \autoref{code:cancerExample} zu sehen ist. Davon wurden 100 Patienten mit Sicherheitsregeln abgesichert und anschließend zufällig 100 Anfragen gestellt. \\ 
+\begin{Pseudocode}[caption={\texttt{beliefProgram.pbl} für das Beispiel aus dem Paper \cite{6}}, label={code:cancerExample}]]
+cancer(X) :- patient(X), sw1(X).
+cancer(X) :- smokes(X), sw2(X).
+cancer(Y) :- father(X,Y), mother(Z,Y), cancer(X), NOT cancer(Z), sw3(Y).
+cancer(Y) :- father(X,Y), mother(Z,Y), NOT cancer(X), cancer(Z), sw3(Y).
+cancer(Y) :- father(X,Y), mother(Z,Y), cancer(X), cancer(Z), sw3(Y), sw4(Y).
+cancer(Y) :- father(X,Y), mother(Z,Y), cancer(X), cancer(Z), NOT sw3(Y), sw4(Y).
+1/1 :: patient(0).
+1/20 :: sw1(0).
+5/19 :: sw2(0).
+3/14 :: sw3(0).
+3/7 :: sw4(0).
+\end{Pseudocode}
+Das Ergebnis für die Onlinezeit aus dem Paper kann in \autoref{fig:paperlaufzeit} nachgesehen werden. Das Experiment wurde von uns für die selbe Modellierung, aber unseren Hardware Spezifikationen vom Server wiederholt und eine graphische Modellierung des Ergebnisses für die Onlinezeiten ist in \autoref{fig:unserelaufzeit} zu sehen. Die onlinezeiten unterscheiden sich dabei nicht sehr stark, da diese bei unter 1 Sekunde bleibt bei beliebiger Größe der Datenbank bis 100,000 Patienten. \\
+Die Offlinezeit hingegen wurde im Paper mit maximal 2,5 Minuten für beliebig große Datenbanken bis 100,000 Patienten gemessen. Nach unseren Messungen wächst die Offlinezeit exponentiell und hat bereits bei der Modellierung von 50,000 Patienten eine Offlinelaufzeit von mehr als 2 Stunden. Dies kann den Grund haben, dass bei unseren Messungen die Initialisierung anhand der 3 Dateien \texttt{beliefProgram.pbl} , \texttt{initStatements.txt} und \texttt{template.cpt} geschieht und diese nach Angerona übertragen und übersetzt werden müssen. In dem Beispiel vom Paper hingegen wurden die Beispiele direkt in den Code eingebaut, wodurch der Übertragungs- und Übersetzungsschritt wegfällt. 
+	\begin{figure}[ht]
+	\begin{minipage}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{assets/paperLaufzeit.PNG}
+		\caption{Onlinezeit aus \cite{guarnieri2017securing}}
+		\label{fig:paperlaufzeit}
+	\end{minipage}
+	\begin{minipage}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{assets/onlineSkript.png}
+		\caption{Onlinezeit Osteoporose}
+		\label{fig:unserelaufzeit}
+	\end{minipage}
+\end{figure}
+
+\subsection{Komplexität des Angreifermodell}
+Um zu prüfen, wie Angeronas Laufzeit sich verhält bei wachsender Komplexität der Datenbanken, wird das Osteoporose und das Knochenbruch Beispiel aus der Synthea Datenbanken in Angerona modelliert. Dafür wurden für das Osteoporose Beispiel für alle Patienten eine Sicherheitsregel für die Abfrage nach der Krankheit Osteoporse festgelegt mit einem Schwellwert von 0/1, damit der worst-case der Onlinezeit betrachtet wird. Für das Knochenbruchbeispiel wurde für jeden Patienten alle Arten von Knochenbrüche abgesichert. Eine graphische Modellierung für den Vergleich der Onlinezeit ist in \autoref{fig:syntheaonline} und für die Offlinezeit in \autoref{fig:syntheaoffline}\\  Dabei wächst für kleinere Datenbankgrößen die Laufzeit kaum und wird erst bei einer Datenbankgröße mit 3000 Patienten bemerkbar, da hierbei die Differenz der Onlinezeit vom Knochenbruch Beispiel ca. 750 Millisekunden länger ist und die Offlinezeit ca. 12 Minuten länger als beim Osteoporose Beispiel. Die Differenz der Komplexität steigt jedoch für komplexere Datenbanken konstant mit, sodass bereits bei einer Datenbankgröße mit 5000 Patienten die Differenz der Offlinezeit 23 Minuten und die Onlinezeitdifferenz 6 Sekunden beträgt.
+	\begin{figure}[ht]
+		\begin{minipage}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{assets/OfflinezeitSynthea.png}
+		\caption{Offlinezeiten Synthea}
+		\label{fig:syntheaoffline}
+	\end{minipage}
+	\begin{minipage}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{assets/onlineSynthea.png}
+		\caption{Onlinezeiten Synthea}
+		\label{fig:syntheaonline}
+	\end{minipage}
+\end{figure}
+\noindent
+Gründe für die erhöhten Laufzeiten beim Knochenbruch Beispiel sind dabei, dass Daten in die Datenbank eingefügt werden, die Angreifermodellierung komplexer und somit die \texttt{beliefProgram.pbl} größer ist und das es mehr Abhängigkeiten gibt und somit mehr Probabilistische Fakten je Patient modelliert werden.  
+
+\subsection{MIMIC III und eICU bei wachsenden Sicherheitsrichtlinien}
+Die MIMIC III und eICU Datenbank lässt sich nicht durch Angerona modellieren, wenn man für jeden Patienten die Information, dass diese Krebs haben, absichert. Deshalb wird im folgenden geprüft, wie sich die Online- und Offlinelaufzeiten verhalten bei wachsenden Sicherheitsrichtlinien für die Information, dass ein Patient Krebs hat. Zum Schluss wird die Laufzeit gezeigt, wenn man das Vorwissen des Angreifers und die Sicherheitsrichtlinien nur für Patienten mit Krebs definiert. \\ \\
+Um zu testen wie Angerona sich bei wachsender Größe des Angreifermodells verhält wird die MIMIC III und eICU Datenbank verwendet. Dabei wird jeweils für die Datenbanken die Sicherheitsregeln für die Patienten in der \texttt{initStatements.txt} und das Vorwissen in der \texttt{beliefProgram.pbl} erweitert. Dadurch ergeben sich die Onlinelaufzeiten in \autoref{fig:onlinesecures} und die Offlinelaufzeiten in \autoref{fig:offlinesecures} . \\ 
+Auffällig ist, dass die Offlinezeiten annähernd gleich steigen, jedoch verschiedene Startzeiten haben bei nur einer definierten  Sicherheitsrichtlinie. Dies ist dadurch zu erklären, dass initial die benötigte Datenbank generiert wird und diese beim eICU fast vier mal größer ist als beim MIMIC III Beispiel. Die Laufzeit ist jedoch nicht vier mal länger bei einer Offlinelaufzeit für MIMIC III bei einer Sicherheitsrichtlinie für 1 Patienten. Denn zum Start ist die Offlinelaufzeit für eICU mit $48.8$ Minuten knapp 8 mal länger als für das MIMIC III Beispiel mit einer Offlinelaufzeit von ca. $6.5$ Minuten. Der Faktor jedoch verringert sich bei wachsender Anzahl der Sicherheitsrichtlinien und ist bereits bei 10,000 definierten Sicherheitsrichtlinien nur noch knapp 2 mal länger mit einer Offlinelaufzeit für eICU von ca. $105$ Minuten und für MIMIC III mit $65$ Minuten. \\ 
+Die Onlinelaufzeit wächst dabei für MIMIC III und eICU annähernd linear zu den Sicherheitsrichtlinien, wobei für größere Datenbanken wie bei eICU die Onlinelaufzeit generell etwas höher liegt. Zwar ist bei bis zu 1000 Sicherheitsrichtlinien die Laufzeit identisch und bleibt bei unter 3 Sekunden für beide Fälle, jedoch ab 2000 Sicherheitsrichtlinien ist die Laufzeit für größere Datenbanken(eICU) länger als für kleinere Datenbanken(MIMIC III). Der Unterschied der Onlinelaufzeit bleibt jedoch annähernd konstant und ist zum Beispiel für die viermal größere Datenbank eICU ca. 4 Sekunden länger als für die MIMIC III Datenbank. 
+	\begin{figure}[ht]
+	\begin{minipage}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{assets/OfflineEicuMimic.png}
+		\caption{Offlinezeiten Sicherheitsrichtlinien}
+		\label{fig:offlinesecures}
+	\end{minipage}
+	\begin{minipage}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{assets/onlineEicuMimic.png}
+		\caption{Onlinezeiten Sicherheitsrichtlinien}
+		\label{fig:onlinesecures}
+	\end{minipage}
+\end{figure}
+Für das MIMIC III Beispiel wurde außerdem beim absichern aller Patienten, die Krebs haben, was eine Menge von $13658$ Sicherheitsrichtlinien entspricht, eine Offlinelaufzeit von $77$ Minuten und eine Onlinelaufzeit von $36.4$ Sekunden gemessen. Außerdem ist dabei aufgefallen, dass während Angerona läuft $6.7$ GB vom Arbeitsspeicher reserviert wurde. \\ 
+Für das eICU Beispiel wurde beim absichern aller Patienten die Krebs haben, was eine Menge von $8179$ Sicherheitsrichtlinien entspricht, eine Offlinelaufzeit von $89$ Minuten und eine Onlinelaufzeit von $23.6$ Sekunden gemessen. Außerdem ist dabei aufgefallen, dass während Angerona läuft $5.8$ GB vom Arbeitsspeicher reserviert wurde. \\ 
+Hierbei sieht man, dass die Datenbankgröße, also die Größe der \texttt{initStatements.txt} eher eine Auswirkung auf die Offlinelaufzeit und die Anzahl der Sicherheitsrichtlinien, also die Größe der \texttt{beliefProgram.pbl}, auf die Onlinelaufzeit hat.  
+
+\chapter{Zusammenfassung und Ausblick} \label{chap:Zusammenfassung}
 
 % !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 % !!! Your action is needed here !!!
@@ -826,6 +1088,8 @@ Alle Datenbanken laufen auf einer Virtuellen Maschine in einem PowerEdge R530 Se
 % Replace the following with your conclusion
 % Ausblick : Gruppensystem einführen vlt. Vlt ist es jetzt schon möglich?, damit nicht jeder einzelnd deklariert werden muss weil sonst sau voll , 2. Nachteil : nur Numbers/integers erlaubt und z.B. standard uuid ist ein mix aus Buchstaben , Nummern und -(Sonderzeichen)
 
+
+Hardware Spezifikatione
 
 This template document got much longer than I had initially intended
 with more and more hints and comments becoming part of the text. The
