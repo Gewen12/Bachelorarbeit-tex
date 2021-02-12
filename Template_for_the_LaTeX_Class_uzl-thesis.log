@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.12) (format=lualatex 2021.1.5)  10 FEB 2021 17:25
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.12) (format=lualatex 2021.1.5)  12 FEB 2021 08:02
  restricted system commands enabled.
 **Template_for_the_LaTeX_Class_uzl-thesis.tex
 (./Template_for_the_LaTeX_Class_uzl-thesis.tex
@@ -1172,912 +1172,80 @@ h LuaLaTeX)
 \g__um_primekern_muskip=\muskip22
 
 (D:/Programme/Miktex/tex/latex/unicode-math/unicode-math-table.tex)))
-(D:/Programme/Miktex/tex/latex/alegreya/Alegreya.sty
-Package: Alegreya 2019/10/12 (Bob Tennent) Supports Alegreya and AlegreyaSC font
-s for all LaTeX engines. 
-
-(D:/Programme/Miktex/tex/generic/iftex/ifxetex.sty
-Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
-)
-(D:/Programme/Miktex/tex/latex/base/textcomp.sty
-Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-)
-(D:/Programme/Miktex/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
-
-(D:/Programme/Miktex/tex/generic/xkeyval/xkeyval.tex
-(D:/Programme/Miktex/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks43
-\XKV@tempa@toks=\toks44
-)
-\XKV@depth=\count449
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-
-Package fontspec Info: Font family 'Alegreya(0)' created for font 'Alegreya'
-(fontspec)             with options [Ligatures = TeX,Extension = .otf,Scale =
-(fontspec)             1,Ligatures=TeX,Numbers =
-(fontspec)             {Proportional,Lining},UprightFont =
-(fontspec)             *-Regular,ItalicFont = *-Italic,BoldFont =
-(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Regular.otf]:mode=node;script=latn;lan
-guage=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Regular.otf]:mode=node;script=latn;lan
-guage=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Bold.otf]:mode=node;script=latn;langua
-ge=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Bold.otf]:mode=node;script=latn;langua
-ge=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Italic.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Italic.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-BoldItalic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-BoldItalic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+pnum;+lnum;+smcp;"
-
-
-Package fontspec Info: Font family 'Alegreya(1)' created for font 'Alegreya'
-(fontspec)             with options [Ligatures = TeX,Extension = .otf,Scale =
-(fontspec)             1,Renderer=Basic,Numbers =
-(fontspec)             {Proportional,Lining},UprightFont =
-(fontspec)             *-Regular,ItalicFont = *-Italic,BoldFont =
-(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Regular.otf]:mode=base;script=latn;lan
-guage=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Regular.otf]:mode=base;script=latn;lan
-guage=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Bold.otf]:mode=base;script=latn;langua
-ge=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Bold.otf]:mode=base;script=latn;langua
-ge=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Italic.otf]:mode=base;script=latn;lang
-uage=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Italic.otf]:mode=base;script=latn;lang
-uage=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-BoldItalic.otf]:mode=base;script=latn;
-language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-BoldItalic.otf]:mode=base;script=latn;
-language=dflt;+tlig;+pnum;+lnum;+smcp;"
-
-LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/Alegreya(1)/m/n on input line 169.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/Alegreya(1)/m/it on input line 169.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/Alegreya(1)/b/n on input line 169.
-LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 11.0pt on input line 169.
-
-Package fontspec Info: Font family 'Alegreya(2)' created for font 'Alegreya'
-(fontspec)             with options [Ligatures = TeX,Extension = .otf,Scale =
-(fontspec)             1,Numbers = {Proportional,Lining},UprightFont =
-(fontspec)             *-Regular,ItalicFont = *-Italic,BoldFont =
-(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Regular.otf]:mode=node;script=latn;lan
-guage=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Regular.otf]:mode=node;script=latn;lan
-guage=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Bold.otf]:mode=node;script=latn;langua
-ge=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Bold.otf]:mode=node;script=latn;langua
-ge=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Italic.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Italic.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-BoldItalic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-BoldItalic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+pnum;+lnum;+smcp;"
-
-
-Package fontspec Info: Font family 'Alegreya(3)' created for font 'Alegreya'
-(fontspec)             with options [Ligatures = TeX,Extension = .otf,Scale =
-(fontspec)             1,Numbers = {Proportional,OldStyle},UprightFont =
-(fontspec)             *-Regular,ItalicFont = *-Italic,BoldFont =
-(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Regular.otf]:mode=node;script=latn;lan
-guage=dflt;+tlig;+pnum;+onum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Regular.otf]:mode=node;script=latn;lan
-guage=dflt;+tlig;+pnum;+onum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Bold.otf]:mode=node;script=latn;langua
-ge=dflt;+tlig;+pnum;+onum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Bold.otf]:mode=node;script=latn;langua
-ge=dflt;+tlig;+pnum;+onum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Italic.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+pnum;+onum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Italic.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+pnum;+onum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-BoldItalic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+pnum;+onum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-BoldItalic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+pnum;+onum;+smcp;"
-
-
-Package fontspec Info: Font family 'Alegreya(4)' created for font 'Alegreya'
-(fontspec)             with options [Ligatures = TeX,Extension = .otf,Scale =
-(fontspec)             1,Numbers = {Monospaced,OldStyle},UprightFont =
-(fontspec)             *-Regular,ItalicFont = *-Italic,BoldFont =
-(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Regular.otf]:mode=node;script=latn;lan
-guage=dflt;+tlig;+tnum;+onum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Regular.otf]:mode=node;script=latn;lan
-guage=dflt;+tlig;+tnum;+onum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Bold.otf]:mode=node;script=latn;langua
-ge=dflt;+tlig;+tnum;+onum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Bold.otf]:mode=node;script=latn;langua
-ge=dflt;+tlig;+tnum;+onum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Italic.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+tnum;+onum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Italic.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+tnum;+onum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-BoldItalic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+tnum;+onum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-BoldItalic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+tnum;+onum;+smcp;"
-
-
-Package fontspec Info: Font family 'Alegreya(5)' created for font 'Alegreya'
-(fontspec)             with options [Ligatures = TeX,Extension = .otf,Scale =
-(fontspec)             1,Numbers = {Proportional, OldStyle},UprightFont =
-(fontspec)             *-Regular,ItalicFont = *-Italic,BoldFont =
-(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Regular.otf]:mode=node;script=latn;lan
-guage=dflt;+tlig;+pnum;+onum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Regular.otf]:mode=node;script=latn;lan
-guage=dflt;+tlig;+pnum;+onum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Bold.otf]:mode=node;script=latn;langua
-ge=dflt;+tlig;+pnum;+onum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Bold.otf]:mode=node;script=latn;langua
-ge=dflt;+tlig;+pnum;+onum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Italic.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+pnum;+onum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Italic.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+pnum;+onum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-BoldItalic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+pnum;+onum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-BoldItalic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+pnum;+onum;+smcp;"
-
-
-Package fontspec Info: Font family 'Alegreya(6)' created for font 'Alegreya'
-(fontspec)             with options [Ligatures = TeX,Extension = .otf,Scale =
-(fontspec)             1,Numbers = {Monospaced,Lining},UprightFont =
-(fontspec)             *-Regular,ItalicFont = *-Italic,BoldFont =
-(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Regular.otf]:mode=node;script=latn;lan
-guage=dflt;+tlig;+tnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Regular.otf]:mode=node;script=latn;lan
-guage=dflt;+tlig;+tnum;+lnum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Bold.otf]:mode=node;script=latn;langua
-ge=dflt;+tlig;+tnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Bold.otf]:mode=node;script=latn;langua
-ge=dflt;+tlig;+tnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Italic.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+tnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Italic.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+tnum;+lnum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-BoldItalic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+tnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-BoldItalic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+tnum;+lnum;+smcp;"
-
-
-Package fontspec Info: Font family 'Alegreya(7)' created for font 'Alegreya'
-(fontspec)             with options [Ligatures = TeX,Extension = .otf,Scale =
-(fontspec)             1,Numbers = {Proportional,Lining},UprightFont =
-(fontspec)             *-ExtraBold,ItalicFont = *-ExtraBoldItalic,BoldFont =
-(fontspec)             *-ExtraBold,BoldItalicFont = *-ExtraBoldItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-ExtraBold.otf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-ExtraBold.otf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-ExtraBold.otf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-ExtraBold.otf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-ExtraBoldItalic.otf]:mode=node;script=
-latn;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-ExtraBoldItalic.otf]:mode=node;script=
-latn;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-ExtraBoldItalic.otf]:mode=node;script=
-latn;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-ExtraBoldItalic.otf]:mode=node;script=
-latn;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-
-
-Package fontspec Info: Font family 'Alegreya(8)' created for font 'Alegreya'
-(fontspec)             with options [Ligatures = TeX,Extension = .otf,Scale =
-(fontspec)             1,Numbers = {Proportional,Lining},UprightFont =
-(fontspec)             *-Black,ItalicFont = *-BlackItalic,BoldFont =
-(fontspec)             *-Black,BoldItalicFont = *-BlackItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Black.otf]:mode=node;script=latn;langu
-age=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Black.otf]:mode=node;script=latn;langu
-age=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Black.otf]:mode=node;script=latn;langu
-age=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Black.otf]:mode=node;script=latn;langu
-age=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-BlackItalic.otf]:mode=node;script=latn
-;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-BlackItalic.otf]:mode=node;script=latn
-;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-BlackItalic.otf]:mode=node;script=latn
-;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-BlackItalic.otf]:mode=node;script=latn
-;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-
-
-Package fontspec Info: Font family 'Alegreya(9)' created for font 'Alegreya'
-(fontspec)             with options [Ligatures = TeX,Extension = .otf,Scale =
-(fontspec)             1,Numbers = {Proportional,Lining},UprightFont =
-(fontspec)             *-Medium,ItalicFont = *-MediumItalic,BoldFont =
-(fontspec)             *-Medium,BoldItalicFont = *-MediumItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Medium.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Medium.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Medium.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-Medium.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-MediumItalic.otf]:mode=node;script=lat
-n;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-MediumItalic.otf]:mode=node;script=lat
-n;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-MediumItalic.otf]:mode=node;script=lat
-n;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Alegreya-MediumItalic.otf]:mode=node;script=lat
-n;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-
-LaTeX Info: Redefining \textin on input line 294.
-)
-(D:/Programme/Miktex/tex/latex/alegreya/AlegreyaSans.sty
-Package: AlegreyaSans 2019/10/12 (Bob Tennent) Supports AlegreyaSans fonts for a
-ll LaTeX engines. 
-
-Package fontspec Info: Font family 'AlegreyaSans(0)' created for font
-(fontspec)             'AlegreyaSans' with options [Ligatures = TeX,Extension
-(fontspec)             = .otf,Scale = 1,Ligatures=TeX,Numbers =
-(fontspec)             {Proportional,Lining},UprightFont =
-(fontspec)             *-Regular,ItalicFont = *-Italic,BoldFont =
-(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Regular.otf]:mode=node;script=latn
-;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Regular.otf]:mode=node;script=latn
-;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Bold.otf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Bold.otf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Italic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Italic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-BoldItalic.otf]:mode=node;script=l
-atn;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-BoldItalic.otf]:mode=node;script=l
-atn;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-
-
-Package fontspec Info: Font family 'AlegreyaSans(1)' created for font
-(fontspec)             'AlegreyaSans' with options [Ligatures = TeX,Extension
-(fontspec)             = .otf,Scale = 1,Renderer=Basic,Numbers =
-(fontspec)             {Proportional,Lining},UprightFont =
-(fontspec)             *-Regular,ItalicFont = *-Italic,BoldFont =
-(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Regular.otf]:mode=base;script=latn
-;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Regular.otf]:mode=base;script=latn
-;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Bold.otf]:mode=base;script=latn;la
-nguage=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Bold.otf]:mode=base;script=latn;la
-nguage=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Italic.otf]:mode=base;script=latn;
-language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Italic.otf]:mode=base;script=latn;
-language=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-BoldItalic.otf]:mode=base;script=l
-atn;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-BoldItalic.otf]:mode=base;script=l
-atn;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/AlegreyaSans(1)/m/n on input line 18
-6.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/AlegreyaSans(1)/b/n on input line 1
-86.
-
-Package fontspec Info: Font family 'AlegreyaSans(2)' created for font
-(fontspec)             'AlegreyaSans' with options [Ligatures = TeX,Extension
-(fontspec)             = .otf,Scale = 1,Numbers =
-(fontspec)             {Proportional,Lining},UprightFont =
-(fontspec)             *-Regular,ItalicFont = *-Italic,BoldFont =
-(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Regular.otf]:mode=node;script=latn
-;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Regular.otf]:mode=node;script=latn
-;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Bold.otf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Bold.otf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Italic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Italic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-BoldItalic.otf]:mode=node;script=l
-atn;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-BoldItalic.otf]:mode=node;script=l
-atn;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-
-
-Package fontspec Info: Font family 'AlegreyaSans(3)' created for font
-(fontspec)             'AlegreyaSans' with options [Ligatures = TeX,Extension
-(fontspec)             = .otf,Scale = 1,Numbers =
-(fontspec)             {Proportional,OldStyle},UprightFont =
-(fontspec)             *-Regular,ItalicFont = *-Italic,BoldFont =
-(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Regular.otf]:mode=node;script=latn
-;language=dflt;+tlig;+pnum;+onum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Regular.otf]:mode=node;script=latn
-;language=dflt;+tlig;+pnum;+onum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Bold.otf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+pnum;+onum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Bold.otf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+pnum;+onum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Italic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+pnum;+onum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Italic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+pnum;+onum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-BoldItalic.otf]:mode=node;script=l
-atn;language=dflt;+tlig;+pnum;+onum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-BoldItalic.otf]:mode=node;script=l
-atn;language=dflt;+tlig;+pnum;+onum;+smcp;"
-
-
-Package fontspec Info: Font family 'AlegreyaSans(4)' created for font
-(fontspec)             'AlegreyaSans' with options [Ligatures = TeX,Extension
-(fontspec)             = .otf,Scale = 1,Numbers =
-(fontspec)             {Monospaced,OldStyle},UprightFont =
-(fontspec)             *-Regular,ItalicFont = *-Italic,BoldFont =
-(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Regular.otf]:mode=node;script=latn
-;language=dflt;+tlig;+tnum;+onum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Regular.otf]:mode=node;script=latn
-;language=dflt;+tlig;+tnum;+onum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Bold.otf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+tnum;+onum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Bold.otf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+tnum;+onum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Italic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+tnum;+onum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Italic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+tnum;+onum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-BoldItalic.otf]:mode=node;script=l
-atn;language=dflt;+tlig;+tnum;+onum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-BoldItalic.otf]:mode=node;script=l
-atn;language=dflt;+tlig;+tnum;+onum;+smcp;"
-
-
-Package fontspec Info: Font family 'AlegreyaSans(5)' created for font
-(fontspec)             'AlegreyaSans' with options [Ligatures = TeX,Extension
-(fontspec)             = .otf,Scale = 1,Numbers = {Proportional,
-(fontspec)             OldStyle},UprightFont = *-Regular,ItalicFont =
-(fontspec)             *-Italic,BoldFont = *-Bold,BoldItalicFont =
-(fontspec)             *-BoldItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Regular.otf]:mode=node;script=latn
-;language=dflt;+tlig;+pnum;+onum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Regular.otf]:mode=node;script=latn
-;language=dflt;+tlig;+pnum;+onum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Bold.otf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+pnum;+onum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Bold.otf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+pnum;+onum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Italic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+pnum;+onum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Italic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+pnum;+onum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-BoldItalic.otf]:mode=node;script=l
-atn;language=dflt;+tlig;+pnum;+onum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-BoldItalic.otf]:mode=node;script=l
-atn;language=dflt;+tlig;+pnum;+onum;+smcp;"
-
-
-Package fontspec Info: Font family 'AlegreyaSans(6)' created for font
-(fontspec)             'AlegreyaSans' with options [Ligatures = TeX,Extension
-(fontspec)             = .otf,Scale = 1,Numbers =
-(fontspec)             {Monospaced,Lining},UprightFont = *-Regular,ItalicFont
-(fontspec)             = *-Italic,BoldFont = *-Bold,BoldItalicFont =
-(fontspec)             *-BoldItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Regular.otf]:mode=node;script=latn
-;language=dflt;+tlig;+tnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Regular.otf]:mode=node;script=latn
-;language=dflt;+tlig;+tnum;+lnum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Bold.otf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+tnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Bold.otf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+tnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Italic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+tnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Italic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+tnum;+lnum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-BoldItalic.otf]:mode=node;script=l
-atn;language=dflt;+tlig;+tnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-BoldItalic.otf]:mode=node;script=l
-atn;language=dflt;+tlig;+tnum;+lnum;+smcp;"
-
-
-Package fontspec Info: Font family 'AlegreyaSans(7)' created for font
-(fontspec)             'AlegreyaSans' with options [Ligatures = TeX,Extension
-(fontspec)             = .otf,Scale = 1,Numbers =
-(fontspec)             {Proportional,Lining},UprightFont = *-Black,ItalicFont
-(fontspec)             = *-BlackItalic,BoldFont = *-Black,BoldItalicFont =
-(fontspec)             *-BlackItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Black.otf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Black.otf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Black.otf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Black.otf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-BlackItalic.otf]:mode=node;script=
-latn;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-BlackItalic.otf]:mode=node;script=
-latn;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-BlackItalic.otf]:mode=node;script=
-latn;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-BlackItalic.otf]:mode=node;script=
-latn;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-
-
-Package fontspec Info: Font family 'AlegreyaSans(8)' created for font
-(fontspec)             'AlegreyaSans' with options [Ligatures = TeX,Extension
-(fontspec)             = .otf,Scale = 1,Numbers =
-(fontspec)             {Proportional,Lining},UprightFont =
-(fontspec)             *-ExtraBold,ItalicFont = *-ExtraBoldItalic,BoldFont =
-(fontspec)             *-ExtraBold,BoldItalicFont = *-ExtraBoldItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-ExtraBold.otf]:mode=node;script=la
-tn;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-ExtraBold.otf]:mode=node;script=la
-tn;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-ExtraBold.otf]:mode=node;script=la
-tn;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-ExtraBold.otf]:mode=node;script=la
-tn;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-ExtraBoldItalic.otf]:mode=node;scr
-ipt=latn;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-ExtraBoldItalic.otf]:mode=node;scr
-ipt=latn;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-ExtraBoldItalic.otf]:mode=node;scr
-ipt=latn;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-ExtraBoldItalic.otf]:mode=node;scr
-ipt=latn;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-
-
-Package fontspec Info: Font family 'AlegreyaSans(9)' created for font
-(fontspec)             'AlegreyaSans' with options [Ligatures = TeX,Extension
-(fontspec)             = .otf,Scale = 1,Numbers =
-(fontspec)             {Proportional,Lining},UprightFont = *-Thin,ItalicFont =
-(fontspec)             *-ThinItalic,BoldFont = *-Thin,BoldItalicFont =
-(fontspec)             *-ThinItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Thin.otf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Thin.otf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Thin.otf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Thin.otf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-ThinItalic.otf]:mode=node;script=l
-atn;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-ThinItalic.otf]:mode=node;script=l
-atn;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-ThinItalic.otf]:mode=node;script=l
-atn;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-ThinItalic.otf]:mode=node;script=l
-atn;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-
-
-Package fontspec Info: Font family 'AlegreyaSans(10)' created for font
-(fontspec)             'AlegreyaSans' with options [Ligatures = TeX,Extension
-(fontspec)             = .otf,Scale = 1,Numbers =
-(fontspec)             {Proportional,Lining},UprightFont = *-Light,ItalicFont
-(fontspec)             = *-LightItalic,BoldFont = *-Light,BoldItalicFont =
-(fontspec)             *-LightItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Light.otf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Light.otf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Light.otf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Light.otf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-LightItalic.otf]:mode=node;script=
-latn;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-LightItalic.otf]:mode=node;script=
-latn;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-LightItalic.otf]:mode=node;script=
-latn;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-LightItalic.otf]:mode=node;script=
-latn;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-
-
-Package fontspec Info: Font family 'AlegreyaSans(11)' created for font
-(fontspec)             'AlegreyaSans' with options [Ligatures = TeX,Extension
-(fontspec)             = .otf,Scale = 1,Numbers =
-(fontspec)             {Proportional,Lining},UprightFont = *-Medium,ItalicFont
-(fontspec)             = *-MediumItalic,BoldFont = *-Medium,BoldItalicFont =
-(fontspec)             *-MediumItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Medium.otf]:mode=node;script=latn;
-language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Medium.otf]:mode=node;script=latn;
-language=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Medium.otf]:mode=node;script=latn;
-language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-Medium.otf]:mode=node;script=latn;
-language=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-MediumItalic.otf]:mode=node;script
-=latn;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-MediumItalic.otf]:mode=node;script
-=latn;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-MediumItalic.otf]:mode=node;script
-=latn;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[AlegreyaSans-MediumItalic.otf]:mode=node;script
-=latn;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-
-LaTeX Info: Redefining \textsu on input line 338.
-LaTeX Info: Redefining \textin on input line 339.
-)
 luaotfload | cache : Lookup cache loaded from C:/Users/Gewen/AppData/Local/MiKTe
 X/luatex-cache/generic/names/luaotfload-lookup-cache.luc.
 
-Package fontspec Info: Could not resolve font "LatinModernMono/BI" (it
-(fontspec)             probably doesn't exist).
-
-
-Package fontspec Info: Could not resolve font "LatinModernMono/B" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: Font family 'LatinModernMono(0)' created for font
-(fontspec)             'Latin Modern Mono' with options
-(fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=WordS
-pace,Scale=1.025,UprightFeatures={SmallCapsFont=LMMonoCaps10-Regular},ItalicFeat
-ures={SmallCapsFont=LMMonoCaps10-Oblique}].
+Package fontspec Info: Font family 'TeXGyrePagella(0)' created for font 'TeX
+(fontspec)             Gyre Pagella' with options [Ligatures=TeX].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1.025]"LatinModernMono:mode=node;script=latn;langua
-ge=dflt;"
+(fontspec)             <->"TeXGyrePagella:mode=node;script=latn;language=dflt;+t
+lig;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1.025]"LMMonoCaps10-Regular:mode=node;script=latn;l
-anguage=dflt;"
-(fontspec)             and font adjustment code:
-(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
-(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
-(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
-(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+(fontspec)             <->"TeXGyrePagella:mode=node;script=latn;language=dflt;+t
+lig;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"TeXGyrePagella/B:mode=node;script=latn;language=dflt;
++tlig;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"TeXGyrePagella/B:mode=node;script=latn;language=dflt;
++tlig;+smcp;"
 (fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1.025]"LatinModernMono/I:mode=node;script=latn;lang
-uage=dflt;"
+(fontspec)             <->"TeXGyrePagella/I:mode=node;script=latn;language=dflt;
++tlig;"
 (fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1.025]"LMMonoCaps10-Oblique:mode=node;script=latn;l
-anguage=dflt;"
-(fontspec)             and font adjustment code:
-(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
-(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
-(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
-(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+(fontspec)             <->"TeXGyrePagella/I:mode=node;script=latn;language=dflt;
++tlig;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"TeXGyrePagella/BI:mode=node;script=latn;language=dflt
+;+tlig;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"TeXGyrePagella/BI:mode=node;script=latn;language=dflt
+;+tlig;+smcp;"
 
 
-Package fontspec Info: Could not resolve font "LatinModernMono/BI" (it
-(fontspec)             probably doesn't exist).
-
-
-Package fontspec Info: Could not resolve font "LatinModernMono/B" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: Font family 'LatinModernMono(1)' created for font
-(fontspec)             'Latin Modern Mono' with options
-(fontspec)             [Renderer=Basic,Scale=1.025,UprightFeatures={SmallCapsFon
-t=LMMonoCaps10-Regular},ItalicFeatures={SmallCapsFont=LMMonoCaps10-Oblique}].
+Package fontspec Info: Font family 'TeXGyrePagella(1)' created for font 'TeX
+(fontspec)             Gyre Pagella' with options [Renderer=Basic].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1.025]"LatinModernMono:mode=base;script=latn;langua
-ge=dflt;"
+(fontspec)             <->"TeXGyrePagella:mode=base;script=latn;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1.025]"LMMonoCaps10-Regular:mode=base;script=latn;l
-anguage=dflt;"
+(fontspec)             <->"TeXGyrePagella:mode=base;script=latn;language=dflt;+s
+mcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"TeXGyrePagella/B:mode=base;script=latn;language=dflt;
+"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"TeXGyrePagella/B:mode=base;script=latn;language=dflt;
++smcp;"
 (fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1.025]"LatinModernMono/I:mode=base;script=latn;lang
-uage=dflt;"
+(fontspec)             <->"TeXGyrePagella/I:mode=base;script=latn;language=dflt;
+"
 (fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1.025]"LMMonoCaps10-Oblique:mode=base;script=latn;l
-anguage=dflt;"
+(fontspec)             <->"TeXGyrePagella/I:mode=base;script=latn;language=dflt;
++smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"TeXGyrePagella/BI:mode=base;script=latn;language=dflt
+;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"TeXGyrePagella/BI:mode=base;script=latn;language=dflt
+;+smcp;"
 
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/LatinModernMono(1)/m/n on input line
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/TeXGyrePagella(1)/m/n on input line 2
+6.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/TeXGyrePagella(1)/m/it on input line
  26.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/LatinModernMono(1)/b/n on input line
- 26.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/TeXGyrePagella(1)/b/n on input line 
+26.
 LaTeX Font Info:    Calculating math sizes for size <11> on input line 26.
 
 Package fontspec Info: Could not resolve font "TeXGyrePagellaMath/B" (it
@@ -2288,334 +1456,151 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
 (D:/Programme/Miktex/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-luaotfload | aux : font no 122 (nil) defines no feature for script math
+luaotfload | aux : font no 75 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 76 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 77 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 78 (nil) does not define feature smcp for script latn
+ with language dflt
 
-Package fontspec Warning: Font "TeXGyreChorus" does not contain requested
-(fontspec)                Script "Math".
-
-
-Package fontspec Info: Could not resolve font "TeXGyreChorus/B" (it probably
-(fontspec)             doesn't exist).
-
-luaotfload | aux : font no 124 (nil) does not define feature ssty for script lat
-n with language dflt
-
-Package fontspec Warning: OpenType feature 'Style=MathScript' (ssty) not
-(fontspec)                available for font 'TeXGyreChorus' with script
-(fontspec)                'CustomDefault' and language 'Default'.
-
-luaotfload | aux : font no 124 (nil) does not define feature ssty for script lat
-n with language dflt
-
-Package fontspec Warning: OpenType feature 'Style=MathScriptScript' (ssty) not
-(fontspec)                available for font 'TeXGyreChorus' with script
-(fontspec)                'CustomDefault' and language 'Default'.
-
-
-Package fontspec Info: Font family 'TeXGyreChorus(0)' created for font 'TeX
-(fontspec)             Gyre Chorus' with options
-(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCaps
-Font={},Script=Math,SizeFeatures={{Size=9.57-},{Size=7.095-9.57,Font=TeX
-(fontspec)             Gyre Chorus,Style=MathScript},{Size=-7.095,Font=TeX
-(fontspec)             Gyre
-(fontspec)             Chorus,Style=MathScriptScript}},FontAdjustment={\__um_lua
-tex_copy_fontdimens:
-(fontspec)             },Scale={1.1}].
+Package fontspec Info: Font family 'ClearSans(0)' created for font 'Clear
+(fontspec)             Sans' with options [Ligatures=TeX,Scale=0.95].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <9.57->s*[1.1]"TeXGyreChorus:mode=base;script=latn;langua
-ge=dflt;"<7.095-9.57>s*[1.1]"TeXGyreChorus:mode=base;script=latn;language=dflt;"
-<-7.095>s*[1.1]"TeXGyreChorus:mode=base;script=latn;language=dflt;"
+(fontspec)             <->s*[0.95]"ClearSans:mode=node;script=latn;language=dflt
+;+tlig;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             and font adjustment code:
-(fontspec)             \__um_luatex_copy_fontdimens: 
-
-LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 12.10007pt on input line 26.
-\sym__um_fam1=\mathgroup6
-LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `normal'
-(Font)                  TU/TeXGyreChorus(0)/m/n --> TU/TeXGyreChorus(0)/m/n on i
-nput line 26.
-LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `bold'
-(Font)                  TU/TeXGyreChorus(0)/m/n --> TU/TeXGyreChorus(0)/b/n on i
-nput line 26.
-LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 8.95404pt on input line 26.
-LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 6.65503pt on input line 26.
-luaotfload | aux : font no 129 (nil) defines no feature for script math
-
-Package fontspec Warning: Font "Alegreya" does not contain requested Script
-(fontspec)                "Math".
-
-luaotfload | aux : font no 132 (nil) does not define feature ssty for script lat
-n with language dflt
-
-Package fontspec Warning: OpenType feature 'Style=MathScript' (ssty) not
-(fontspec)                available for font 'Alegreya' with script
-(fontspec)                'CustomDefault' and language 'Default'.
-
-luaotfload | aux : font no 132 (nil) does not define feature ssty for script lat
-n with language dflt
-
-Package fontspec Warning: OpenType feature 'Style=MathScriptScript' (ssty) not
-(fontspec)                available for font 'Alegreya' with script
-(fontspec)                'CustomDefault' and language 'Default'.
-
-
-Package fontspec Info: Font family 'Alegreya(10)' created for font 'Alegreya'
-(fontspec)             with options
-(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCaps
-Font={},Script=Math,SizeFeatures={{Size=9.57-},{Size=7.095-9.57,Font=Alegreya,St
-yle=MathScript},{Size=-7.095,Font=Alegreya,Style=MathScriptScript}},FontAdjustme
-nt={\__um_luatex_copy_fontdimens:
-(fontspec)             },Numbers={Lining}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <9.57->"Alegreya:mode=base;script=latn;language=dflt;+lnu
-m;"<7.095-9.57>"Alegreya:mode=base;script=latn;language=dflt;+lnum;"<-7.095>"Ale
-greya:mode=base;script=latn;language=dflt;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             and font adjustment code:
-(fontspec)             \__um_luatex_copy_fontdimens: 
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->"Alegreya/B:mode=base;script=latn;language=dflt;+lnum;
-"
+(fontspec)             <->s*[0.95]"ClearSans/B:mode=node;script=latn;language=df
+lt;+tlig;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
-(fontspec)             and font adjustment code:
-(fontspec)             \__um_luatex_copy_fontdimens: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[0.95]"ClearSans/I:mode=node;script=latn;language=df
+lt;+tlig;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[0.95]"ClearSans/BI:mode=node;script=latn;language=d
+flt;+tlig;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
-\sym__um_fam2=\mathgroup7
-LaTeX Font Info:    Overwriting symbol font `__um_fam2' in version `normal'
-(Font)                  TU/Alegreya(10)/m/n --> TU/Alegreya(10)/m/n on input lin
-e 26.
-LaTeX Font Info:    Overwriting symbol font `__um_fam2' in version `bold'
-(Font)                  TU/Alegreya(10)/m/n --> TU/Alegreya(10)/b/n on input lin
-e 26.
-luaotfload | aux : font no 138 (nil) defines no feature for script math
+luaotfload | aux : font no 85 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 86 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 87 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 88 (nil) does not define feature smcp for script latn
+ with language dflt
 
-Package fontspec Warning: Font "AlegreyaItalic" does not contain requested
-(fontspec)                Script "Math".
-
-
-Package fontspec Info: Could not resolve font "AlegreyaItalic/B" (it probably
-(fontspec)             doesn't exist).
-
-luaotfload | aux : font no 140 (nil) does not define feature ssty for script lat
-n with language dflt
-
-Package fontspec Warning: OpenType feature 'Style=MathScript' (ssty) not
-(fontspec)                available for font 'AlegreyaItalic' with script
-(fontspec)                'CustomDefault' and language 'Default'.
-
-luaotfload | aux : font no 140 (nil) does not define feature ssty for script lat
-n with language dflt
-
-Package fontspec Warning: OpenType feature 'Style=MathScriptScript' (ssty) not
-(fontspec)                available for font 'AlegreyaItalic' with script
-(fontspec)                'CustomDefault' and language 'Default'.
-
-
-Package fontspec Info: Font family 'AlegreyaItalic(0)' created for font
-(fontspec)             'Alegreya Italic' with options
-(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCaps
-Font={},Script=Math,SizeFeatures={{Size=9.57-},{Size=7.095-9.57,Font=Alegreya
-(fontspec)             Italic,Style=MathScript},{Size=-7.095,Font=Alegreya
-(fontspec)             Italic,Style=MathScriptScript}},FontAdjustment={\__um_lua
-tex_copy_fontdimens:
-(fontspec)             },Numbers={Lining}].
+Package fontspec Info: Font family 'ClearSans(1)' created for font 'Clear
+(fontspec)             Sans' with options [Renderer=Basic,Scale=0.95].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <9.57->"AlegreyaItalic:mode=base;script=latn;language=dfl
-t;+lnum;"<7.095-9.57>"AlegreyaItalic:mode=base;script=latn;language=dflt;+lnum;"
-<-7.095>"AlegreyaItalic:mode=base;script=latn;language=dflt;+lnum;"
+(fontspec)             <->s*[0.95]"ClearSans:mode=base;script=latn;language=dflt
+;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             and font adjustment code:
-(fontspec)             \__um_luatex_copy_fontdimens: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.95]"ClearSans/B:mode=base;script=latn;language=df
+lt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[0.95]"ClearSans/I:mode=base;script=latn;language=df
+lt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[0.95]"ClearSans/BI:mode=base;script=latn;language=d
+flt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
-\sym__um_fam3=\mathgroup8
-LaTeX Font Info:    Overwriting symbol font `__um_fam3' in version `normal'
-(Font)                  TU/AlegreyaItalic(0)/m/n --> TU/AlegreyaItalic(0)/m/n on
- input line 26.
-LaTeX Font Info:    Overwriting symbol font `__um_fam3' in version `bold'
-(Font)                  TU/AlegreyaItalic(0)/m/n --> TU/AlegreyaItalic(0)/b/n on
- input line 26.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/ClearSans(1)/m/n on input line 26.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/ClearSans(1)/b/n on input line 26.
 
-Package unicode-math Warning: I am trying to set up alphabet"it/num" but there
-(unicode-math)                are no configuration settings for it. (See
-(unicode-math)                source file "unicode-math-alphabets.dtx" to
-(unicode-math)                debug.)
-
-luaotfload | aux : font no 145 (nil) defines no feature for script math
-
-Package fontspec Warning: Font "AlegreyaBold" does not contain requested
-(fontspec)                Script "Math".
-
-
-Package fontspec Info: Could not resolve font "AlegreyaBold/B" (it probably
-(fontspec)             doesn't exist).
-
-luaotfload | aux : font no 133 (nil) does not define feature ssty for script lat
-n with language dflt
-
-Package fontspec Warning: OpenType feature 'Style=MathScript' (ssty) not
-(fontspec)                available for font 'AlegreyaBold' with script
-(fontspec)                'CustomDefault' and language 'Default'.
-
-luaotfload | aux : font no 133 (nil) does not define feature ssty for script lat
-n with language dflt
-
-Package fontspec Warning: OpenType feature 'Style=MathScriptScript' (ssty) not
-(fontspec)                available for font 'AlegreyaBold' with script
-(fontspec)                'CustomDefault' and language 'Default'.
-
-
-Package fontspec Info: Font family 'AlegreyaBold(0)' created for font
-(fontspec)             'Alegreya Bold' with options
-(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCaps
-Font={},Script=Math,SizeFeatures={{Size=9.57-},{Size=7.095-9.57,Font=Alegreya
-(fontspec)             Bold,Style=MathScript},{Size=-7.095,Font=Alegreya
-(fontspec)             Bold,Style=MathScriptScript}},FontAdjustment={\__um_luate
-x_copy_fontdimens:
-(fontspec)             },Numbers={Lining}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <9.57->"AlegreyaBold:mode=base;script=latn;language=dflt;
-+lnum;"<7.095-9.57>"AlegreyaBold:mode=base;script=latn;language=dflt;+lnum;"<-7.
-095>"AlegreyaBold:mode=base;script=latn;language=dflt;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             and font adjustment code:
-(fontspec)             \__um_luatex_copy_fontdimens: 
-
-\sym__um_fam4=\mathgroup9
-LaTeX Font Info:    Overwriting symbol font `__um_fam4' in version `normal'
-(Font)                  TU/AlegreyaBold(0)/m/n --> TU/AlegreyaBold(0)/m/n on inp
-ut line 26.
-LaTeX Font Info:    Overwriting symbol font `__um_fam4' in version `bold'
-(Font)                  TU/AlegreyaBold(0)/m/n --> TU/AlegreyaBold(0)/b/n on inp
-ut line 26.
-luaotfload | aux : font no 150 (nil) defines no feature for script math
-
-Package fontspec Warning: Font "AlegreyaBoldItalic" does not contain requested
-(fontspec)                Script "Math".
-
-
-Package fontspec Info: Could not resolve font "AlegreyaBoldItalic/B" (it
+Package fontspec Info: Could not resolve font "LatinModernMono/BI" (it
 (fontspec)             probably doesn't exist).
 
-luaotfload | aux : font no 152 (nil) does not define feature ssty for script lat
-n with language dflt
 
-Package fontspec Warning: OpenType feature 'Style=MathScript' (ssty) not
-(fontspec)                available for font 'AlegreyaBoldItalic' with script
-(fontspec)                'CustomDefault' and language 'Default'.
-
-luaotfload | aux : font no 152 (nil) does not define feature ssty for script lat
-n with language dflt
-
-Package fontspec Warning: OpenType feature 'Style=MathScriptScript' (ssty) not
-(fontspec)                available for font 'AlegreyaBoldItalic' with script
-(fontspec)                'CustomDefault' and language 'Default'.
+Package fontspec Info: Could not resolve font "LatinModernMono/B" (it probably
+(fontspec)             doesn't exist).
 
 
-Package fontspec Info: Font family 'AlegreyaBoldItalic(0)' created for font
-(fontspec)             'Alegreya Bold Italic' with options
-(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCaps
-Font={},Script=Math,SizeFeatures={{Size=9.57-},{Size=7.095-9.57,Font=Alegreya
-(fontspec)             Bold
-(fontspec)             Italic,Style=MathScript},{Size=-7.095,Font=Alegreya
-(fontspec)             Bold
-(fontspec)             Italic,Style=MathScriptScript}},FontAdjustment={\__um_lua
-tex_copy_fontdimens:
-(fontspec)             },Numbers={Lining}].
+Package fontspec Info: Font family 'LatinModernMono(0)' created for font
+(fontspec)             'Latin Modern Mono' with options
+(fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=WordS
+pace,Scale=1.05,UprightFeatures={SmallCapsFont=LMMonoCaps10-Regular},ItalicFeatu
+res={SmallCapsFont=LMMonoCaps10-Oblique}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <9.57->"AlegreyaBoldItalic:mode=base;script=latn;language
-=dflt;+lnum;"<7.095-9.57>"AlegreyaBoldItalic:mode=base;script=latn;language=dflt
-;+lnum;"<-7.095>"AlegreyaBoldItalic:mode=base;script=latn;language=dflt;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             <->s*[1.05]"LatinModernMono:mode=node;script=latn;languag
+e=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1.05]"LMMonoCaps10-Regular:mode=node;script=latn;la
+nguage=dflt;"
 (fontspec)             and font adjustment code:
-(fontspec)             \__um_luatex_copy_fontdimens: 
-
-\sym__um_fam5=\mathgroup10
-LaTeX Font Info:    Overwriting symbol font `__um_fam5' in version `normal'
-(Font)                  TU/AlegreyaBoldItalic(0)/m/n --> TU/AlegreyaBoldItalic(0
-)/m/n on input line 26.
-LaTeX Font Info:    Overwriting symbol font `__um_fam5' in version `bold'
-(Font)                  TU/AlegreyaBoldItalic(0)/m/n --> TU/AlegreyaBoldItalic(0
-)/b/n on input line 26.
-
-Package unicode-math Warning: I am trying to set up alphabet"bfit/num" but
-(unicode-math)                there are no configuration settings for it. (See
-(unicode-math)                source file "unicode-math-alphabets.dtx" to
-(unicode-math)                debug.)
-
-luaotfload | aux : font no 129 (nil) defines no feature for script math
-
-Package fontspec Warning: Font "Alegreya" does not contain requested Script
-(fontspec)                "Math".
-
-luaotfload | aux : font no 132 (nil) does not define feature ssty for script lat
-n with language dflt
-
-Package fontspec Warning: OpenType feature 'Style=MathScript' (ssty) not
-(fontspec)                available for font 'Alegreya' with script
-(fontspec)                'CustomDefault' and language 'Default'.
-
-luaotfload | aux : font no 132 (nil) does not define feature ssty for script lat
-n with language dflt
-
-Package fontspec Warning: OpenType feature 'Style=MathScriptScript' (ssty) not
-(fontspec)                available for font 'Alegreya' with script
-(fontspec)                'CustomDefault' and language 'Default'.
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1.05]"LatinModernMono/I:mode=node;script=latn;langu
+age=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1.05]"LMMonoCaps10-Oblique:mode=node;script=latn;la
+nguage=dflt;"
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
 
 
-Package fontspec Info: Font family 'Alegreya(11)' created for font 'Alegreya'
-(fontspec)             with options
-(fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCaps
-Font={},Script=Math,SizeFeatures={{Size=9.57-},{Size=7.095-9.57,Font=Alegreya,St
-yle=MathScript},{Size=-7.095,Font=Alegreya,Style=MathScriptScript}},FontAdjustme
-nt={\__um_luatex_copy_fontdimens:
-(fontspec)             }].
+Package fontspec Info: Could not resolve font "LatinModernMono/BI" (it
+(fontspec)             probably doesn't exist).
+
+
+Package fontspec Info: Could not resolve font "LatinModernMono/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Font family 'LatinModernMono(1)' created for font
+(fontspec)             'Latin Modern Mono' with options
+(fontspec)             [Renderer=Basic,Scale=1.05,UprightFeatures={SmallCapsFont
+=LMMonoCaps10-Regular},ItalicFeatures={SmallCapsFont=LMMonoCaps10-Oblique}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <9.57->"Alegreya:mode=base;script=latn;language=dflt;"<7.
-095-9.57>"Alegreya:mode=base;script=latn;language=dflt;"<-7.095>"Alegreya:mode=b
-ase;script=latn;language=dflt;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             and font adjustment code:
-(fontspec)             \__um_luatex_copy_fontdimens: 
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->"Alegreya/B:mode=base;script=latn;language=dflt;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
-(fontspec)             and font adjustment code:
-(fontspec)             \__um_luatex_copy_fontdimens: 
+(fontspec)             <->s*[1.05]"LatinModernMono:mode=base;script=latn;languag
+e=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1.05]"LMMonoCaps10-Regular:mode=base;script=latn;la
+nguage=dflt;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1.05]"LatinModernMono/I:mode=base;script=latn;langu
+age=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1.05]"LMMonoCaps10-Oblique:mode=base;script=latn;la
+nguage=dflt;"
 
-\sym__um_fam6=\mathgroup11
-LaTeX Font Info:    Overwriting symbol font `__um_fam6' in version `normal'
-(Font)                  TU/Alegreya(11)/m/n --> TU/Alegreya(11)/m/n on input lin
-e 26.
-LaTeX Font Info:    Overwriting symbol font `__um_fam6' in version `bold'
-(Font)                  TU/Alegreya(11)/m/n --> TU/Alegreya(11)/b/n on input lin
-e 26.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/LatinModernMono(1)/m/n on input line
+ 26.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/LatinModernMono(1)/b/n on input line
+ 26.
 
 Package fontspec Info: Could not resolve font "LatinModernMonoProp/BI" (it
 (fontspec)             probably doesn't exist).
@@ -2624,9 +1609,9 @@ Package fontspec Info: Could not resolve font "LatinModernMonoProp/BI" (it
 Package fontspec Info: Could not resolve font "LatinModernMonoProp/B" (it
 (fontspec)             probably doesn't exist).
 
-luaotfload | aux : font no 163 (nil) does not define feature smcp for script lat
+luaotfload | aux : font no 109 (nil) does not define feature smcp for script lat
 n with language dflt
-luaotfload | aux : font no 164 (nil) does not define feature smcp for script lat
+luaotfload | aux : font no 110 (nil) does not define feature smcp for script lat
 n with language dflt
 
 Package fontspec Info: Font family 'LatinModernMonoProp(0)' created for font
@@ -2645,38 +1630,6 @@ dflt;"
 (fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
 
 
-Package fontspec Info: Could not resolve font "TeXGyreChorus/B" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: Could not resolve font "TeXGyreChorus/BI" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: Could not resolve font "TeXGyreChorus/B" (it probably
-(fontspec)             doesn't exist).
-
-luaotfload | aux : font no 168 (nil) does not define feature smcp for script lat
-n with language dflt
-luaotfload | aux : font no 168 (nil) does not define feature smcp for script lat
-n with language dflt
-
-Package fontspec Info: Font family 'TeXGyreChorus(1)' created for font 'TeX
-(fontspec)             Gyre Chorus' with options [Scale=1.1,ItalicFont={TeX
-(fontspec)             Gyre Chorus}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1.1]"TeXGyreChorus:mode=node;script=latn;language=d
-flt;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1.1]"TeXGyreChorus:mode=node;script=latn;language=d
-flt;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
-
 (D:/Programme/Miktex/tex/latex/latex-tools/dcolumn.sty
 Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
 
@@ -2685,7 +1638,7 @@ Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
 \col@sep=\dimen291
 \ar@mcellbox=\box83
 \extrarowheight=\dimen292
-\NC@list=\toks45
+\NC@list=\toks43
 \extratabsurround=\skip80
 \backup@length=\skip81
 \ar@cellbox=\box84
@@ -2702,18 +1655,29 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen300
 \cmidrulekern=\dimen301
 \defaultaddspace=\dimen302
-\@cmidla=\count450
-\@cmidlb=\count451
+\@cmidla=\count449
+\@cmidlb=\count450
 \@aboverulesep=\dimen303
 \@belowrulesep=\dimen304
-\@thisruleclass=\count452
-\@lastruleclass=\count453
+\@thisruleclass=\count451
+\@lastruleclass=\count452
 \@thisrulewidth=\dimen305
 )
 (D:/Programme/Miktex/tex/latex/todonotes/todonotes.sty
 Package: todonotes 2020/08/18 v1.1.3 Todonotes source and documentation.
 Package: todonotes 2018/11/22
 
+(D:/Programme/Miktex/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(D:/Programme/Miktex/tex/generic/xkeyval/xkeyval.tex
+(D:/Programme/Miktex/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks44
+\XKV@tempa@toks=\toks45
+)
+\XKV@depth=\count453
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
 (D:/Programme/Miktex/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarysh
 adows.code.tex
 File: tikzlibraryshadows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
@@ -2799,6 +1763,10 @@ Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
 )
 (D:/Programme/Miktex/tex/latex/mnsymbol/MnSymbol.sty
 Package: MnSymbol 2007/01/21 v1.4 support for the MnSymbol font
+
+(D:/Programme/Miktex/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
 LaTeX Info: Redefining \dagger on input line 84.
 LaTeX Info: Redefining \ddagger on input line 84.
 LaTeX Info: Redefining \mathparagraph on input line 84.
@@ -2818,10 +1786,10 @@ LaTeX Info: Redefining \barwedge on input line 84.
 LaTeX Info: Redefining \doublebarwedge on input line 84.
 LaTeX Info: Redefining \centerdot on input line 84.
 LaTeX Info: Redefining \divideontimes on input line 84.
-\symMnSyA=\mathgroup12
-\symMnSyB=\mathgroup13
-\symMnSyC=\mathgroup14
-\symMnSyD=\mathgroup15
+\symMnSyA=\mathgroup6
+\symMnSyB=\mathgroup7
+\symMnSyC=\mathgroup8
+\symMnSyD=\mathgroup9
 LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 119.
 LaTeX Font Info:    Encoding `TU' has changed to `OMX' for symbol font
 (Font)              `largesymbols' in the math version `normal' on input line 11
@@ -2919,14 +1887,39 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 Package: algpseudocode 
 
 Document Style - pseudocode environments for use with the `algorithmicx' style
+) (D:/Programme/Miktex/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
+
+(D:/Programme/Miktex/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 )
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
+\g_MT_multlinerow_int=\count471
+\l_MT_multwidth_dim=\dimen315
+\origjot=\skip88
+\l_MT_shortvdotswithinadjustabove_dim=\dimen316
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen317
+\l_MT_above_intertext_sep=\dimen318
+\l_MT_below_intertext_sep=\dimen319
+\l_MT_above_shortintertext_sep=\dimen320
+\l_MT_below_shortintertext_sep=\dimen321
+\xmathstrut@box=\box87
+\xmathstrut@dim=\dimen322
+)
+
+Package lualatex-math Info: I'm going to patch macro \MT_cramped_internal:Nn.
+
+
 (D:/Programme/Miktex/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryar
 rows.code.tex
 File: tikzlibraryarrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 
 (D:/Programme/Miktex/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\arrowsize=\dimen315
+\arrowsize=\dimen323
 ))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -2940,62 +1933,46 @@ LaTeX Warning: Label `code:beliefprogramMitInference' multiply defined.
 
 LaTeX Warning: Label `code:beliefprogramMitInference@cref' multiply defined.
 
-
-LaTeX Warning: Label `lst-3' multiply defined.
-
-
-LaTeX Warning: Label `lst-3@cref' multiply defined.
-
 )
 \openout1 = Template_for_the_LaTeX_Class_uzl-thesis.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 47.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
  (D:/Programme/Miktex/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count471
-\scratchdimen=\dimen316
-\scratchbox=\box87
-\nofMPsegments=\count472
-\nofMParguments=\count473
+\scratchcounter=\count472
+\scratchdimen=\dimen324
+\scratchbox=\box88
+\nofMPsegments=\count473
+\nofMParguments=\count474
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count474
-\MPscratchDim=\dimen317
-\MPnumerator=\count475
-\makeMPintoPDFobject=\count476
+\MPscratchCnt=\count475
+\MPscratchDim=\dimen325
+\MPnumerator=\count476
+\makeMPintoPDFobject=\count477
 \everyMPtoPDFconversion=\toks50
 ) (D:/Programme/Miktex/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-
-(D:/Programme/Miktex/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 5.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG
-,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -3031,7 +2008,7 @@ Package grfext Info: Graphics extension search list:
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 47.
+Package hyperref Info: Link coloring OFF on input line 48.
 (D:/Programme/Miktex/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -3041,20 +2018,20 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (D:/Programme/Miktex/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count477
+\c@section@level=\count478
 LaTeX Info: Redefining \Ref on input line 520.
 )
-LaTeX Info: Redefining \ref on input line 47.
-LaTeX Info: Redefining \pageref on input line 47.
-LaTeX Info: Redefining \nameref on input line 47.
+LaTeX Info: Redefining \ref on input line 48.
+LaTeX Info: Redefining \pageref on input line 48.
+LaTeX Info: Redefining \nameref on input line 48.
 
 (./Template_for_the_LaTeX_Class_uzl-thesis.out)
 (./Template_for_the_LaTeX_Class_uzl-thesis.out)
 \@outlinefile=\write5
 
 \openout5 = Template_for_the_LaTeX_Class_uzl-thesis.out
-LaTeX Info: Redefining \Ref on input line 47.
-\c@lstlisting=\count478
+LaTeX Info: Redefining \Ref on input line 48.
+\c@lstlisting=\count479
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
 
@@ -3097,71 +2074,69 @@ Package biblatex Warning: BibTeX reported the following issues
 
 
 Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with '2':
-(biblatex)                - Can't use 'location' + 'address'.
+(biblatex)                with '21':
+(biblatex)                - Invalid format of field 'date' 
+(biblatex)                - Invalid format of field 'date'.
 
 )
-Package biblatex Info: Reference section=0 on input line 47.
-Package biblatex Info: Reference segment=0 on input line 47.
+Package biblatex Info: Reference section=0 on input line 48.
+Package biblatex Info: Reference segment=0 on input line 48.
+
+
+Package unicode-math Warning: Using \overbracket and \underbracket from
+(unicode-math)                `mathtools' package.
+(unicode-math)                 
+(unicode-math)                 Use \Uoverbracket and \Uunderbracket for
+(unicode-math)                original `unicode-math' definition.
+
+
+Package unicode-math Warning: I'm going to overwrite the following commands
+(unicode-math)                from the `mathtools' package: 
+(unicode-math)                 
+(unicode-math)                     \dblcolon, \coloneqq, \Coloneqq, \eqqcolon.
+(unicode-math)                
+(unicode-math)                 
+(unicode-math)                 Note that since I won't overwrite the other
+(unicode-math)                colon-like commands, using them will lead to
+(unicode-math)                inconsistencies.
 
 
 Package todonotes Warning: The length marginparwidth is less than 2cm and will m
 ost likely cause issues with the appearance of inserted todonotes. The issue can
  be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loa
-ding the todonotes package. on input line 47.
+ding the todonotes package. on input line 48.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package cleveref Info: loaded `german language definitions on input line 47.
+Package cleveref Info: loaded `german language definitions on input line 48.
 <institutslogo.pdf, id=98, 387.69844pt x 86.57344pt>
 File: institutslogo.pdf Graphic file (type pdf)
 <use institutslogo.pdf>
-Package luatex.def Info: institutslogo.pdf  used on input line 47.
+Package luatex.def Info: institutslogo.pdf  used on input line 48.
 (luatex.def)             Requested size: 387.69748pt x 86.57321pt.
-LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 47.
-LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/n' will be
-(Font)              scaled to size 15.4pt on input line 47.
-Package cleveref Info: loaded `german language definitions on input line 47.
-LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/it' will be
-(Font)              scaled to size 15.4pt on input line 47.
-LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 47.
+Package cleveref Info: loaded `german language definitions on input line 48.
 <uzl-thesis-logo-slogan.pdf, id=99, 142.26349pt x 11.38112pt>
 File: uzl-thesis-logo-slogan.pdf Graphic file (type pdf)
 <use uzl-thesis-logo-slogan.pdf>
-Package luatex.def Info: uzl-thesis-logo-slogan.pdf  used on input line 47.
+Package luatex.def Info: uzl-thesis-logo-slogan.pdf  used on input line 48.
 (luatex.def)             Requested size: 142.26312pt x 11.38107pt.
 [1
 
 {C:/Users/Gewen/AppData/Local/MiKTeX/pdftex/config/pdftex.map}<./institutslogo.p
 df><./uzl-thesis-logo-slogan.pdf>]
-Package cleveref Info: loaded `german language definitions on input line 47.
-Package cleveref Info: loaded `german language definitions on input line 47.
-LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 47.
-Package cleveref Info: loaded `german language definitions on input line 47.
-LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/n' will be
-(Font)              scaled to size 10.9pt on input line 47.
+Package cleveref Info: loaded `german language definitions on input line 48.
+Package cleveref Info: loaded `german language definitions on input line 48.
+Package cleveref Info: loaded `german language definitions on input line 48.
  [2
 
 ]
-Package cleveref Info: loaded `german language definitions on input line 47.
-Package cleveref Info: loaded `german language definitions on input line 47.
-LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 13.20007pt on input line 47.
-LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 8.80005pt on input line 47.
-LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 6.60004pt on input line 47.
-Package cleveref Info: loaded `german language definitions on input line 47.
+Package cleveref Info: loaded `german language definitions on input line 48.
+Package cleveref Info: loaded `german language definitions on input line 48.
+Package cleveref Info: loaded `german language definitions on input line 48.
  [3
 
 ]
-LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/n' will be
-(Font)              scaled to size 22.0pt on input line 47.
-
 (./Template_for_the_LaTeX_Class_uzl-thesis.toc
 Package cleveref Info: loaded `german language definitions on input line 2.
 Package cleveref Info: loaded `german language definitions on input line 3.
@@ -3180,18 +2155,18 @@ Package cleveref Info: loaded `german language definitions on input line 10.
 
 ]
 Kapitel 1.
-LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/n' will be
-(Font)              scaled to size 60.0pt on input line 48.
 LaTeX Font Info:    Font shape `TU/LatinModernMono(0)/m/n' will be
-(Font)              scaled to size 12.29993pt on input line 53.
+(Font)              scaled to size 11.55003pt on input line 53.
 
-Overfull \hbox (2.22705pt too wide) in paragraph at lines 49--57
-\TU/Alegreya(0)/m/n/12 durch z.B. Zu-gangs-kon-trol-le, An-ony-mi-sie-rung, rich
--ti-ge Da-ten-spei-che-rung usw. zu schüt-
+Overfull \hbox (0.25024pt too wide) in paragraph at lines 50--57
+\TU/TeXGyrePagella(0)/m/n/11 Die Lauf-zeit wird da-bei in \TU/LatinModernMono(0
+)/m/n/11 Online- \TU/TeXGyrePagella(0)/m/n/11 und \TU/LatinModernMono(0)/m/n/11
+ Offlinezeiten \TU/TeXGyrePagella(0)/m/n/11 un-ter-teilt, wo-bei die \TU/LatinM
+odernMono(0)/m/n/11 Onlinezeit
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--57
+Underfull \hbox (badness 10000) in paragraph at lines 50--57
 
  []
 
@@ -3199,43 +2174,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--57
 
 
 ]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input li
-ne 63.
-LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 7.2pt on input line 63.
-Package cleveref Info: loaded `german language definitions on input line 70.
+Package cleveref Info: loaded `german language definitions on input line 69.
  [2]
 Package cleveref Info: loaded `german language definitions on input line 70.
  [3]
 Kapitel 2.
-LaTeX Font Info:    Font shape `TU/AlegreyaSans(2)/m/n' will be
-(Font)              scaled to size 13.0pt on input line 72.
-LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 10.9pt on input line 73.
-<System-model.PNG, id=179, 1299.35437pt x 572.89032pt>
+<System-model.PNG, id=176, 1299.35437pt x 572.89032pt>
 File: System-model.PNG Graphic file (type png)
 <use System-model.PNG>
 Package luatex.def Info: System-model.PNG  used on input line 75.
 (luatex.def)             Requested size: 384.1096pt x 169.35083pt.
-LaTeX Font Info:    Font shape `TU/Alegreya(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 81.
 
 Underfull \hbox (badness 10000) in paragraph at lines 79--88
 
  []
 
-
-Overfull \hbox (4.84418pt too wide) in paragraph at lines 79--88
-\TU/Alegreya(0)/m/n/12 keits-ver-tei-lung. Die Re-geln wer-den for-ma-li-siert 
-durch ein Kom-man-do in der Form \TU/LatinModernMono(0)/m/n/12 SECRET
- []
-
 [4
 
 <./System-model.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 89--92
+
+ []
+
 Package cleveref Info: loaded `german language definitions on input line 92.
- [5]
-<bayes-netz-bsp.PNG, id=203, 398.23781pt x 364.36125pt>
+[5]
+<bayes-netz-bsp.PNG, id=197, 398.23781pt x 364.36125pt>
 File: bayes-netz-bsp.PNG Graphic file (type png)
 <use bayes-netz-bsp.PNG>
 Package luatex.def Info: bayes-netz-bsp.PNG  used on input line 97.
@@ -3244,355 +2207,264 @@ Package cleveref Info: loaded `german language definitions on input line 104.
  [6<./bayes-netz-bsp.PNG>]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on in
 put line 104.
-LaTeX Font Info:    Font shape `TU/Alegreya(2)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 104.
-LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 9.25pt on input line 105.
-LaTeX Font Info:    Font shape `TU/Alegreya(2)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 105.
 
-Overfull \hbox (47.84225pt too wide) in paragraph at lines 109--111
-\TU/Alegreya(2)/m/n/12 Noch ein Kon-strukt, dass von Pro-blog ge-lie-fert wird, ist die \TU/Alegreya(2)/m/it/12 an-no-ta-ted dis-junc-tion\TU/Alegreya(2)/m/n/12 ([]Programmtext 
-󰋇.󰋇[][]),
- []
+
+LaTeX Font Warning: Font shape `TU/LatinModernMono(0)/b/n' undefined
+(Font)              using `TU/LatinModernMono(0)/m/n' instead on input line 115.
+
 
 LaTeX Font Info:    Font shape `TU/LatinModernMono(0)/m/n' will be
-(Font)              scaled to size 13.32492pt on input line 115.
+(Font)              scaled to size 12.60004pt on input line 115.
 Package cleveref Info: loaded `german language definitions on input line 119.
 [7]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on inp
 ut line 133.
-LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 135.
-LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 155.
 
 
 Package hyperref Warning: No autoref name for `algorithm' on input line 173.
 
-LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 183.
-LaTeX Font Info:    Font shape `TU/Alegreya(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 183.
 Missing character: There is no ä (U+00E4) in font cmmi8!
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--187
+Underfull \hbox (badness 10000) in paragraph at lines 181--189
 
  []
 
-Package cleveref Info: loaded `german language definitions on input line 187.
+
+Overfull \hbox (16.6802pt too wide) in paragraph at lines 181--189
+\TU/TeXGyrePagella(0)/m/n/11 er-füllt ist und be-rech-net die Wahr-schein-lich-
+keit durch $[]$.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--189
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--189
+
+ []
+
+Package cleveref Info: loaded `german language definitions on input line 189.
 [8]
-Package cleveref Info: loaded `german language definitions on input line 187.
+Package cleveref Info: loaded `german language definitions on input line 189.
  [9]
-Package cleveref Info: loaded `german language definitions on input line 191.
- [10
-Missing character: There is no ⊤ (U+22A4) in font [Alegreya-Regular.otf]:mode=
-node;script=latn;language=dflt;+tlig;+pnum;+lnum;!
-]
-Overfull \hbox (48.96974pt too wide) in paragraph at lines 191--192
-\TU/Alegreya(2)/m/n/12 schützt ist. Die-ser Mo-dus er-for-dert drei Da-tei-en 
-als in-put und zwar die \TU/LatinModernMono(0)/m/n/12 beliefProgramm.pbl\TU/Ale
-greya(2)/m/n/12 ,
+Overfull \hbox (33.56361pt too wide) in paragraph at lines 193--194
+\TU/TeXGyrePagella(0)/m/n/11 schützt ist. Die-ser Mo-dus er-for-dert drei Da-te
+i-en als In-put und zwar die \TU/LatinModernMono(0)/m/n/11 beliefProgram.pbl\TU
+/TeXGyrePagella(0)/m/n/11 ,
  []
 
-LaTeX Font Info:    Font shape `TU/Alegreya(2)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 198.
-LaTeX Font Info:    Font shape `TU/Alegreya(2)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 198.
-
-LaTeX Warning: Reference `beliefprogramMitInference' on page 11 undefined on inp
-ut line 214.
-
-Package cleveref Info: loaded `german language definitions on input line 215.
-[11]
-Package cleveref Info: loaded `german language definitions on input line 253.
+Package cleveref Info: loaded `german language definitions on input line 194.
+[10]
+Package cleveref Info: loaded `german language definitions on input line 217.
+ [11]
+Package cleveref Info: loaded `german language definitions on input line 257.
  [12]
-LaTeX Font Info:    Calculating math sizes for size <10.9> on input line 290.
-LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 11.99005pt on input line 290.
-LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 8.39299pt on input line 290.
-LaTeX Font Info:    Font shape `TU/TeXGyreChorus(0)/m/n' will be
-(Font)              scaled to size 5.99503pt on input line 290.
-
-Underfull \hbox (badness 10000) detected at line 306
+Underfull \hbox (badness 10000) in paragraph at lines 271--358
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 269--356
-
- []
-
-Package cleveref Info: loaded `german language definitions on input line 356.
+Package cleveref Info: loaded `german language definitions on input line 358.
 [13]
-Package cleveref Info: loaded `german language definitions on input line 356.
+Package cleveref Info: loaded `german language definitions on input line 375.
  [14]
-Package cleveref Info: loaded `german language definitions on input line 388.
+Package cleveref Info: loaded `german language definitions on input line 411.
  [15]
-Underfull \hbox (badness 10000) in paragraph at lines 411--413
+Underfull \hbox (badness 10000) in paragraph at lines 413--415
 
  []
 
-Package cleveref Info: loaded `german language definitions on input line 433.
+Package cleveref Info: loaded `german language definitions on input line 459.
 [16]
-Package cleveref Info: loaded `german language definitions on input line 467.
+Package cleveref Info: loaded `german language definitions on input line 469.
  [17]
 Kapitel 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 470--474
+Underfull \hbox (badness 10000) in paragraph at lines 472--476
 
  []
 
 [18
 
 ]
-LaTeX Font Info:    Font shape `TU/Alegreya(0)/b/n' will be
-(Font)              scaled to size 10.9pt on input line 529.
-
-Underfull \hbox (badness 10000) in paragraph at lines 480--556
+Underfull \hbox (badness 10000) in paragraph at lines 482--558
 
  []
 
-
-Overfull \hbox (28.1565pt too wide) in paragraph at lines 480--556
-\TU/Alegreya(2)/m/n/12 wer-den durch den Be-fehl „  \TU/LatinModernMono(0)/m/
-n/12 AS admin : SECRET cancer('HADM_ID') FOR u1 THRESHOLD
- []
-
-
-Overfull \hbox (11.91852pt too wide) in paragraph at lines 480--556
-\TU/Alegreya(2)/m/n/12 für die-se HADM_ID das Vor-wis-sen de-fi-niert wer-den. Ein Bei-spiel der \TU/LatinModernMono(0)/m/n/12 beliefProgram.pbl
- []
-
-Package cleveref Info: loaded `german language definitions on input line 556.
+Package cleveref Info: loaded `german language definitions on input line 558.
 [19]
-Package cleveref Info: loaded `german language definitions on input line 556.
+Package cleveref Info: loaded `german language definitions on input line 570.
  [20]
-Package cleveref Info: loaded `german language definitions on input line 592.
- [21]
-Overfull \hbox (6.91907pt too wide) in paragraph at lines 600--604
-\TU/Alegreya(2)/m/n/12 ver-schie-de-nen Kran-ken-häu-sern. Zu den Da-ten ge-h
-ö-ren Vir-tal-pa-ra-me-ter, Mes-sun-gen, P󰀎le-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 600--604
+Underfull \hbox (badness 10000) in paragraph at lines 602--606
 
  []
 
-
-Overfull \hbox (2.71527pt too wide) in paragraph at lines 608--609
-[]\TU/Alegreya(2)/m/n/12 Die Ta-bel-le \TU/Alegreya(2)/m/it/12 TRE-AT-MENT  \TU
-/Alegreya(2)/m/n/12 ent-hält Be-hand-lungs-in-for-ma-tio-nen über den Kran-ken
--haus-
- []
-
-Package cleveref Info: loaded `german language definitions on input line 688.
-[22]
-Package cleveref Info: loaded `german language definitions on input line 688.
- [23]
-Package cleveref Info: loaded `german language definitions on input line 688.
- [24] (D:/Programme/Miktex/tex/latex/listings/lstlang1.sty
+Package cleveref Info: loaded `german language definitions on input line 606.
+[21]
+Package cleveref Info: loaded `german language definitions on input line 690.
+ [22]
+Package cleveref Info: loaded `german language definitions on input line 690.
+ [23] (D:/Programme/Miktex/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-Package cleveref Info: loaded `german language definitions on input line 733.
- [25]
+Package cleveref Info: loaded `german language definitions on input line 735.
+ [24]
 LaTeX Font Info:    Font shape `TU/LatinModernMono(0)/m/n' will be
-(Font)              scaled to size 11.17242pt on input line 733.
+(Font)              scaled to size 10.50003pt on input line 735.
 
-Overfull \hbox (13.27882pt too wide) in paragraph at lines 736--739
-\TU/Alegreya(2)/m/n/12 An-schlie-ßend kann man mit dem Kom-man-do  \TU/LatinMo
-dernMono(0)/m/n/12 .$\OMX/MnSymbolE/m/n/12 $\TU/LatinModernMono(0)/m/n/12 run_
-synthea -p [anzahl] -o false
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 736--739
+Underfull \hbox (badness 10000) in paragraph at lines 738--741
 
  []
 
 
-Overfull \hbox (8.00792pt too wide) in paragraph at lines 736--739
-\TU/Alegreya(2)/m/n/12 Um die Da-ten für das Vor-wis-sen des An-grei-fers zu mo
--del-lie-ren, wird das \TU/LatinModernMono(0)/m/n/12 Generic Module
+Overfull \hbox (5.10822pt too wide) in paragraph at lines 738--741
+\TU/TeXGyrePagella(0)/m/n/11 Um die Da-ten für das Vor-wis-sen des An-grei-fers
+ zu mo-del-lie-ren, wird das \TU/LatinModernMono(0)/m/n/11 Generic Module
  []
 
 
-Overfull \hbox (1.74393pt too wide) in paragraph at lines 736--739
-\TU/Alegreya(2)/m/n/12 hei-ten oder son-sti-ge Ein-wei-sungs-grün-de ab-le-sen,
- in-dem man in der \TU/LatinModernMono(0)/m/n/12 Module Gallery\TU/Alegreya(2)/
-m/n/12 [[]󰋇[]]
- []
-
-
-Overfull \hbox (20.0701pt too wide) in paragraph at lines 826--827
+Overfull \hbox (11.67146pt too wide) in paragraph at lines 828--829
  [][] 
  []
 
 
-Overfull \hbox (57.88716pt too wide) in paragraph at lines 950--951
+Overfull \hbox (54.19875pt too wide) in paragraph at lines 951--952
  [][] 
  []
 
-
-Overfull \hbox (5.05272pt too wide) in paragraph at lines 745--952
-\TU/Alegreya(2)/m/n/12 die Kno-chen-dich-te wur-den aus ei-ner Ta-bel-le mit 
-󰋆󰋅󰋅.󰋅󰋅󰋅 Pa-ti-en-ten ap-pro-xi-miert (en:sam-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 745--952
-
- []
-
-
-Overfull \hbox (3.48146pt too wide) in paragraph at lines 745--952
-\TU/Alegreya(2)/m/n/12 ↔Art des Bru-ches, weil z.B. ein Arm-bruch ab-hän-gig ist vom Kno-chen-bruch und von Osteo-
- []
-
-Package cleveref Info: loaded `german language definitions on input line 952.
-[26]
-Package cleveref Info: loaded `german language definitions on input line 952.
- [27]
 Package cleveref Info: loaded `german language definitions on input line 953.
- [28]
+[25]
+Package cleveref Info: loaded `german language definitions on input line 954.
+ [26]
+Package cleveref Info: loaded `german language definitions on input line 954.
+ [27]
 Kapitel 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 954--956
+Underfull \hbox (badness 10000) in paragraph at lines 955--957
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 954--956
+Underfull \hbox (badness 10000) in paragraph at lines 955--957
 
  []
 
 
-Overfull \hbox (7.26625pt too wide) in paragraph at lines 959--960
-\TU/Alegreya(2)/m/n/12 Be-trach-tet wird im Fol-gen-den das Bei-spiel aus []Ab-s
-chnitt 󰋇.󰋈[][]. Um zu prü-fen, ob der Schwell-
+Overfull \hbox (5.49649pt too wide) in paragraph at lines 960--961
+\TU/TeXGyrePagella(0)/m/n/11 Be-trach-tet wird im Fol-gen-den das Bei-spiel aus []Ab-schnitt 2.3[][]. Um zu pr
+ü-fen, ob der Schwell-
  []
 
-[29
+[28
 
 ]
-Overfull \hbox (49.28958pt too wide) in paragraph at lines 968--969
-[]\TU/LatinModernMono(0)/m/n/12 krebs(X) :- patient(X), raucher(X), mutterhatkre
+Overfull \hbox (21.48428pt too wide) in paragraph at lines 969--970
+[]\TU/LatinModernMono(0)/m/n/11 krebs(X) :- patient(X), raucher(X), mutterhatkre
 bs(X), vaterhatkrebs(X),
  []
 
 
-Overfull \hbox (74.62741pt too wide) in paragraph at lines 969--970
-[]\TU/LatinModernMono(0)/m/n/12 krebs(X) :- patient(X), NOT raucher(X), mutterha
+Overfull \hbox (45.27737pt too wide) in paragraph at lines 970--971
+[]\TU/LatinModernMono(0)/m/n/11 krebs(X) :- patient(X), NOT raucher(X), mutterha
 tkrebs(X), vaterhatkrebs(X),
  []
 
-
-Overfull \hbox (3.96626pt too wide) in paragraph at lines 1001--1007
-\TU/Alegreya(2)/m/n/12 in an-ge-mes-se-ner Zeit nutz-bar ist. An-schlie-ßend wi
-rd ge-zeigt, wie An-ge-ro-na sich bei wach-
+Package cleveref Info: loaded `german language definitions on input line 999.
+[29]
+Overfull \hbox (1.53282pt too wide) in paragraph at lines 1002--1008
+\TU/TeXGyrePagella(0)/m/n/11 in an-ge-mes-se-ner Zeit nutz-bar ist. An-schlie-
+ßend wird ge-zeigt, wie An-ge-ro-na sich bei wach-
  []
 
-Package cleveref Info: loaded `german language definitions on input line 1007.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1010--1011
+
+ []
+
+Package cleveref Info: loaded `german language definitions on input line 1011.
 [30]
-Underfull \hbox (badness 10000) in paragraph at lines 1009--1010
 
- []
-
-
-Package Listings Warning: Text dropped after begin of listing on input line 1010
+Package Listings Warning: Text dropped after begin of listing on input line 1011
 .
 
-Package cleveref Info: loaded `german language definitions on input line 1014.
-[31]
-<assets/paperLaufzeit.PNG, id=697, 754.31813pt x 589.4522pt>
+<assets/paperLaufzeit.PNG, id=690, 754.31813pt x 589.4522pt>
 File: assets/paperLaufzeit.PNG Graphic file (type png)
 <use assets/paperLaufzeit.PNG>
-Package luatex.def Info: assets/paperLaufzeit.PNG  used on input line 1028.
+Package luatex.def Info: assets/paperLaufzeit.PNG  used on input line 1029.
 (luatex.def)             Requested size: 192.0548pt x 150.07896pt.
-<assets/onlineSkript.png, id=700, 407.27156pt x 324.8386pt>
+<assets/onlineSkript.png, id=693, 551.43515pt x 456.58078pt>
 File: assets/onlineSkript.png Graphic file (type png)
 <use assets/onlineSkript.png>
-Package luatex.def Info: assets/onlineSkript.png  used on input line 1034.
-(luatex.def)             Requested size: 192.0548pt x 153.17972pt.
+Package luatex.def Info: assets/onlineSkript.png  used on input line 1035.
+(luatex.def)             Requested size: 192.0548pt x 159.0184pt.
 
-Overfull \hbox (1.4388pt too wide) in paragraph at lines 1026--1038
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 1027--1039
 []$[]$ $[]$ 
  []
 
 
-Overfull \hbox (31.59152pt too wide) in paragraph at lines 1023--1039
-\TU/Alegreya(2)/m/n/12 sun-gen die In-itia-li-sie-rung an-hand der 󰋈 Da-tei-e
-n \TU/LatinModernMono(0)/m/n/12 beliefProgram.pbl \TU/Alegreya(2)/m/n/12 , \TU/
-LatinModernMono(0)/m/n/12 initStatements.txt
+Overfull \hbox (25.81667pt too wide) in paragraph at lines 1024--1040
+\TU/TeXGyrePagella(0)/m/n/11 ben, dass bei un-se-ren Mes-sun-gen die In-itia-li-
+sie-rung an-hand der 3 Da-tei-en \TU/LatinModernMono(0)/m/n/11 beliefProgram.pbl
+
  []
 
-<assets/OfflinezeitSynthea.png, id=703, 574.01953pt x 461.09766pt>
+<assets/OfflinezeitSynthea.png, id=696, 574.77234pt x 476.90672pt>
 File: assets/OfflinezeitSynthea.png Graphic file (type png)
 <use assets/OfflinezeitSynthea.png>
-Package luatex.def Info: assets/OfflinezeitSynthea.png  used on input line 1045.
+Package luatex.def Info: assets/OfflinezeitSynthea.png  used on input line 1047.
 
-(luatex.def)             Requested size: 192.0548pt x 154.27342pt.
-<assets/onlineSynthea.png, id=704, 569.12625pt x 452.81671pt>
+(luatex.def)             Requested size: 192.0548pt x 159.35176pt.
+<assets/onlineSynthea.png, id=697, 581.54765pt x 472.01344pt>
 File: assets/onlineSynthea.png Graphic file (type png)
 <use assets/onlineSynthea.png>
-Package luatex.def Info: assets/onlineSynthea.png  used on input line 1051.
-(luatex.def)             Requested size: 192.0548pt x 152.80867pt.
+Package luatex.def Info: assets/onlineSynthea.png  used on input line 1053.
+(luatex.def)             Requested size: 192.0548pt x 155.88014pt.
 
-Overfull \hbox (1.4388pt too wide) in paragraph at lines 1043--1055
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 1045--1057
 []$[]$ $[]$ 
  []
 
-Package cleveref Info: loaded `german language definitions on input line 1058.
-[32<./assets/paperLaufzeit.PNG><./assets/onlineSkript.png>]
-<assets/OfflineEicuMimic.png, id=725, 572.5139pt x 466.74374pt>
+Package cleveref Info: loaded `german language definitions on input line 1059.
+[31<./assets/paperLaufzeit.PNG><./assets/onlineSkript.png>]
+<assets/OfflineEicuMimic.png, id=719, 558.96329pt x 458.08641pt>
 File: assets/OfflineEicuMimic.png Graphic file (type png)
 <use assets/OfflineEicuMimic.png>
-Package luatex.def Info: assets/OfflineEicuMimic.png  used on input line 1067.
-(luatex.def)             Requested size: 192.0548pt x 156.57556pt.
+Package luatex.def Info: assets/OfflineEicuMimic.png  used on input line 1069.
+(luatex.def)             Requested size: 192.0548pt x 157.38992pt.
 
-Underfull \hbox (badness 6910) in paragraph at lines 1068--1068
-[]\TU/Alegreya(2)/m/n/12 Ab-bil-dung 󰋉.󰋊: |O󰀌f-line-zei-ten Si-cher-hei
-ts-
+Underfull \hbox (badness 6893) in paragraph at lines 1070--1070
+[]\TU/TeXGyrePagella(0)/m/n/11 Ab-bil-dung 4.5: |Off-line-zei-ten Si-cher-heits-
+
  []
 
-<assets/onlineEicuMimic.png, id=726, 578.5364pt x 463.7325pt>
+<assets/onlineEicuMimic.png, id=720, 564.23297pt x 460.34485pt>
 File: assets/onlineEicuMimic.png Graphic file (type png)
 <use assets/onlineEicuMimic.png>
-Package luatex.def Info: assets/onlineEicuMimic.png  used on input line 1073.
-(luatex.def)             Requested size: 192.0548pt x 153.93791pt.
+Package luatex.def Info: assets/onlineEicuMimic.png  used on input line 1075.
+(luatex.def)             Requested size: 192.0548pt x 156.69078pt.
 
-Underfull \hbox (badness 7740) in paragraph at lines 1074--1074
-[]\TU/Alegreya(2)/m/n/12 Ab-bil-dung 󰋉.󰋋: |On-line-zei-ten Si-cher-heits-
+Underfull \hbox (badness 7273) in paragraph at lines 1076--1076
+[]\TU/TeXGyrePagella(0)/m/n/11 Ab-bil-dung 4.6: |On-line-zei-ten Si-cher-heits-
  []
 
 
-Overfull \hbox (1.4388pt too wide) in paragraph at lines 1065--1077
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 1067--1079
 []$[]$ $[]$ 
  []
 
 
-Overfull \hbox (0.38556pt too wide) in paragraph at lines 1060--1081
-\TU/Alegreya(2)/m/n/12 wird im fol-gen-den ge-prü󰀖t, wie sich die Online- un
-d O󰀌f-linelauf-zei-ten ver-hal-ten bei wach-
- []
-
-
-Overfull \hbox (6.4143pt too wide) in paragraph at lines 1060--1081
-\TU/Alegreya(2)/m/n/12 sen-den Si-cher-heits-richt-li-ni-en für die In-for-ma-t
-i-on, dass ein Pa-ti-ent Krebs hat. Zum Schluss
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1060--1081
+Underfull \hbox (badness 10000) in paragraph at lines 1062--1083
 
  []
 
-Package cleveref Info: loaded `german language definitions on input line 1081.
-[33<./assets/OfflinezeitSynthea.png><./assets/onlineSynthea.png>]
-Package cleveref Info: loaded `german language definitions on input line 1082.
- [34<./assets/OfflineEicuMimic.png><./assets/onlineEicuMimic.png>]
+Package cleveref Info: loaded `german language definitions on input line 1083.
+[32<./assets/OfflinezeitSynthea.png><./assets/onlineSynthea.png>]
+Package cleveref Info: loaded `german language definitions on input line 1083.
+ [33<./assets/OfflineEicuMimic.png><./assets/onlineEicuMimic.png>]
+Package cleveref Info: loaded `german language definitions on input line 1084.
+ [34]
 Kapitel 5.
 [35
 
@@ -3603,121 +2475,16 @@ Kapitel 5.
  [36
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1218--1218
-[]\TU/Alegreya(0)/m/sc/12 󰃥󰃉󰂍\TU/Alegreya(2)/m/n/12 : []$\TU/LatinMode
-rnMonoProp(0)/m/n/12 C . FarkasandS . Jajodia , “Theinferenceproblem : asurvey
- ,
- []
-
 
 Package biblatex Warning: Name format 'last-first' deprecated.
 (biblatex)                Please use 'family-given' instead.
 (biblatex)                Using 'family-given' now.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1218--1218
-\TU/Alegreya(2)/m/n/12 Syn-thea: An ap-proach, me-thod, and so󰀖t-ware me-cha-
-nism for ge-nera-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1218--1218
-\TU/Alegreya(2)/m/n/12 ting syn-the-tic pa-ti-ents and the syn-the-tic lec-tro-n
-ic health ca-re re-
- []
-
-
-Underfull \hbox (badness 6691) in paragraph at lines 1218--1218
-\TU/Alegreya(2)/m/n/12 cord. In: \TU/Alegreya(0)/m/sc/12 󰃥󰃉󰂍\TU/Alegre
-ya(2)/m/n/12 : []$\TU/LatinModernMonoProp(0)/m/n/12 https : / / watermark . silv
-erchair . com / ocx079 .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1218--1218
-\TU/LatinModernMonoProp(0)/m/n/12 pdf ? token = AQECAHi208BE49Ooan9kkhW _ Ercy7D
-m3ZL _
- []
-
-
-Overfull \hbox (614.68442pt too wide) in paragraph at lines 1218--1218
-\TU/LatinModernMonoProp(0)/m/n/12 9Cf3qfKAc485ysgAAAqEwggKdBgkqhkiG9w0BBwagggKOM
-IICigIBADCCAoMGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMlUeUc5rZXpMd8SZCAgEQgIICVMCG4
-HzeJeHP -
- []
-
-
-Overfull \hbox (9.72858pt too wide) in paragraph at lines 1218--1218
-\TU/LatinModernMonoProp(0)/m/n/12 OuKibqkLHwcuMDot2 - MtOyLcGc57WFcQzzHLtRHHcu8J
-DHx8do9Xm _
- []
-
-
-Overfull \hbox (475.74857pt too wide) in paragraph at lines 1218--1218
-\TU/LatinModernMonoProp(0)/m/n/12 v - N3MBKn4BK42JxgtPavGnFnWPfLGxAFB4CMwfPgL90o
-62vbj27v2VbLt1rhGc14FtHPsrivkQVX8p6NTGgJ2WCrh5hMemQTWrg35zfNTY6w3joRKic81Tc -
- []
-
-
-Overfull \hbox (593.57648pt too wide) in paragraph at lines 1218--1218
-\TU/LatinModernMonoProp(0)/m/n/12 FMYi3v9EA07 - 5PT0z4JBXiwR0E7dr9x7sR4l8zVqmLfU
-kcvCcH6qxfA1g4xHP2bFUYIDghcGHzy1vs455XlKXfAZ755x3rUghJ0UVRqkLjFwyqtc4nWYnfBmHv4Q
-UMYvGbO20cxjzj _
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1218--1218
-\TU/LatinModernMonoProp(0)/m/n/12 QUsiwOJ20uiQThkJU - Ze2ahgZ4qW9LZ - yJO3eczuZD
-Pw _
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1218--1218
-\TU/LatinModernMonoProp(0)/m/n/12 nsMhmEx3ocl3HcZmREf1nqsakMvuLL0Jq1y -
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1218--1218
-\TU/LatinModernMonoProp(0)/m/n/12 beb7y3dyuEzh6QLeme5mx5089mHyRlh22t _ ksbEP _
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1218--1218
-\TU/LatinModernMonoProp(0)/m/n/12 uV5cduUrQxjihPxc1SVTUCCzGXAty _ L8GO8XA - K0rv
- -
- []
-
-
-Overfull \hbox (273.16457pt too wide) in paragraph at lines 1218--1218
-\TU/LatinModernMonoProp(0)/m/n/12 _UGUEwmSOMl8t0z8BchfXMNVOdrK9iGJsP39FUdfIGdt2R
-382SsBupHMeF9AoaFQLqlJIdIRLFvwBXnB5WSNmWRR -
- []
-
-
-Overfull \hbox (140.0846pt too wide) in paragraph at lines 1218--1218
-\TU/LatinModernMonoProp(0)/m/n/12 pyd7O5v5oB0Yp2C3S6XiJL3xsMCC8H8OQk3SEBS5I4npew
-2Jo8xlrlhHQpXVkWea46YArjbIpXg -
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1218--1218
-\TU/LatinModernMonoProp(0)/m/n/12 MALkttRAqi9MDocU2ms1m086niEWj60DfaTVK66LJYPwd _
- []
-
-
-Overfull \hbox (88.41255pt too wide) in paragraph at lines 1218--1218
-\TU/LatinModernMonoProp(0)/m/n/12 XSTIrwSQoZgeWxGPhsaYPzADT0Q - uDXDY1C8SGM29GxO
-zfwtZ29Bst8OvO5jChH _
- []
-
 [37
 
 ]
-Package cleveref Info: loaded `german language definitions on input line 1218.
- [38
-Missing character: There is no ∗ (U+2217) in font [Alegreya-Regular.otf]:mode=
-node;script=latn;language=dflt;+tlig;+pnum;+lnum;!
-] (./Template_for_the_LaTeX_Class_uzl-thesis.aux
+Package cleveref Info: loaded `german language definitions on input line 1206.
+ [38] (./Template_for_the_LaTeX_Class_uzl-thesis.aux
 Package cleveref Info: loaded `german language definitions on input line 29.
 Package cleveref Info: loaded `german language definitions on input line 30.
 Package cleveref Info: loaded `german language definitions on input line 31.
@@ -3728,14 +2495,14 @@ Package cleveref Info: loaded `german language definitions on input line 35.
 Package cleveref Info: loaded `german language definitions on input line 37.
 )
 
-LaTeX Warning: There were undefined references.
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Template_for_the_LaTeX_Class_uzl-thesis.out' 
 has not changed.
-(rerunfilecheck)             Checksum: 83A67E12532F2C7D0E5CA3F7A3FD8D82;2744.
+(rerunfilecheck)             Checksum: D3E919E6E8966AD27116748E4B5C0997;2744.
 Package logreq Info: Writing requests to 'Template_for_the_LaTeX_Class_uzl-thesi
 s.run.xml'.
 
@@ -3743,38 +2510,34 @@ s.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 49821 strings out of 478830
- 244182,2373549 words of node,token memory allocated
- 1288 words of node memory still in use:
-   23 hlist, 2 vlist, 10 rule, 1 dir, 5 glue, 4 kern, 1 glyph, 80 attribute, 74 
-glue_spec, 66 attribute_list, 2 write, 16 pdf_literal, 10 pdf_action, 16 pdf_col
-orstack nodes
-   avail lists: 1:7,2:5535,3:1264,4:683,5:3775,6:98,7:12558,8:1033,9:8024,10:23,
-11:1118
- 67464 multiletter control sequences out of 65536+200000
- 303 fonts using 75949087 bytes
- 108i,14n,127p,1853b,2941s stack positions out of 5000i,500n,10000p,200000b,50000s
-<D:/Programme/Miktex/fonts/opentype/public/lm/lmmonoprop10-regular.otf>{D:/Progr
-amme/Miktex/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{D:/Programme/Miktex/fonts/en
-c/dvips/mnsymbol/MnSymbolD.enc}{D:/Programme/Miktex/fonts/enc/dvips/mnsymbol/MnS
-ymbolE.enc}{D:/Programme/Miktex/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}<D:/Progr
-amme/Miktex/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf><D:/Prog
-ramme/Miktex/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf><D:/Pro
-gramme/Miktex/fonts/opentype/huerta/alegreya/Alegreya-Regular.otf><D:/Programme/
-Miktex/fonts/opentype/huerta/alegreya/Alegreya-Italic.otf><D:/Programme/Miktex/f
-onts/opentype/huerta/alegreya/Alegreya-Bold.otf><D:/Programme/Miktex/fonts/opent
-ype/public/lm/lmmono12-regular.otf><D:/Programme/Miktex/fonts/opentype/huerta/al
-egreya/Alegreya-Regular.otf><D:/Programme/Miktex/fonts/opentype/huerta/alegreya/
-Alegreya-Italic.otf><D:/Programme/Miktex/fonts/opentype/huerta/alegreya/Alegreya
-Sans-Bold.otf><D:/Programme/Miktex/fonts/opentype/huerta/alegreya/AlegreyaSans-I
-talic.otf><D:/Programme/Miktex/fonts/opentype/huerta/alegreya/AlegreyaSans-Regul
-ar.otf><D:/Programme/Miktex/fonts/type1/public/mnsymbol/MnSymbol10.pfb><D:/Progr
-amme/Miktex/fonts/type1/public/mnsymbol/MnSymbol12.pfb><D:/Programme/Miktex/font
-s/type1/public/mnsymbol/MnSymbol8.pfb>
-Output written on Template_for_the_LaTeX_Class_uzl-thesis.pdf (42 pages, 779624
+ 49408 strings out of 478830
+ 244174,1977958 words of node,token memory allocated
+ 1233 words of node memory still in use:
+   23 hlist, 2 vlist, 10 rule, 1 dir, 5 glue, 4 kern, 1 glyph, 70 attribute, 75 
+glue_spec, 61 attribute_list, 2 write, 16 pdf_literal, 5 pdf_action, 16 pdf_colo
+rstack nodes
+   avail lists: 1:7,2:5548,3:796,4:682,5:3306,6:98,7:12792,8:128,9:8025,10:24,11
+:1142
+ 67070 multiletter control sequences out of 65536+200000
+ 218 fonts using 38415143 bytes
+ 108i,12n,125p,1853b,2443s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/Programme/Miktex/fonts/opentype/public/lm/lmmonoprop10-regular.otf><D:/Progr
+amme/Miktex/fonts/opentype/public/lm/lmmono10-regular.otf>{D:/Programme/Miktex/f
+onts/enc/dvips/mnsymbol/MnSymbolA.enc}{D:/Programme/Miktex/fonts/enc/dvips/mnsym
+bol/MnSymbolC.enc}{D:/Programme/Miktex/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}<D
+:/Programme/Miktex/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf>{
+D:/Programme/Miktex/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}<D:/Programme/Miktex/
+fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf><D:/Programme/Miktex
+/fonts/opentype/public/lm/lmmono12-regular.otf><D:/Programme/Miktex/fonts/openty
+pe/public/tex-gyre/texgyrepagella-regular.otf><D:/Programme/Miktex/fonts/opentyp
+e/public/tex-gyre/texgyrepagella-italic.otf><D:/Programme/Miktex/fonts/opentype/
+public/tex-gyre/texgyrepagella-bold.otf><D:/Programme/Miktex/fonts/type1/public/
+mnsymbol/MnSymbol10.pfb><D:/Programme/Miktex/fonts/type1/public/mnsymbol/MnSymbo
+l8.pfb>
+Output written on Template_for_the_LaTeX_Class_uzl-thesis.pdf (42 pages, 744419
  bytes).
 
-PDF statistics: 919 PDF objects out of 1000 (max. 8388607)
- 396 named destinations out of 1000 (max. 131072)
+PDF statistics: 859 PDF objects out of 1000 (max. 8388607)
+ 395 named destinations out of 1000 (max. 131072)
  312 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -24,22 +24,22 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: Template_for_the_LaTeX_Class_uzl-thesis-blx.bib
 Database file #2: Template_for_the_LaTeX_Class_uzl-thesis-bibtex-entries.bib
 Database file #3: thesis.bib
-I was expecting a `,' or a `}'---line 62 of file thesis.bib
+I was expecting a `,' or a `}'---line 55 of file thesis.bib
  :  
  :  year =         {2007}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 124 of file thesis.bib
+I was expecting a `,' or a `}'---line 111 of file thesis.bib
  :   
  :   urldate =  {2020-01-22},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 144 of file thesis.bib
- :  
- :  date =         {2017-08-30},
+I was expecting a `,' or a `}'---line 139 of file thesis.bib
+ :   
+ :   year = {2016}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 173 of file thesis.bib
+Repeated entry---line 166 of file thesis.bib
  :  @manual{22
  :            ,
 I'm skipping whatever remains of this entry
@@ -1104,43 +1104,43 @@ Too many commas in name 1 of "Kawsar Ahmed, Abdullah-Al-Emran, Tasnuba Jesmin, R
 while executing---line 2813 of file biblatex.bst
 You've used 22 entries,
             6393 wiz_defined-function locations,
-            1289 strings with 14369 characters,
-and the built_in function-call counts, 134554 in all, are:
-= -- 8042
-> -- 6649
-< -- 883
-+ -- 6351
-- -- 5171
-* -- 8257
-:= -- 15069
+            1280 strings with 11835 characters,
+and the built_in function-call counts, 124400 in all, are:
+= -- 8146
+> -- 4147
+< -- 767
++ -- 4086
+- -- 2858
+* -- 8457
+:= -- 12888
 add.period$ -- 0
 call.type$ -- 22
-change.case$ -- 291
-chr.to.int$ -- 460
+change.case$ -- 318
+chr.to.int$ -- 250
 cite$ -- 42
-duplicate$ -- 10363
-empty$ -- 12049
-format.name$ -- 735
-if$ -- 24951
+duplicate$ -- 10156
+empty$ -- 11926
+format.name$ -- 803
+if$ -- 24828
 int.to.chr$ -- 0
-int.to.str$ -- 40
+int.to.str$ -- 42
 missing$ -- 0
-newline$ -- 478
-num.names$ -- 677
-pop$ -- 7207
+newline$ -- 469
+num.names$ -- 716
+pop$ -- 7149
 preamble$ -- 1
-purify$ -- 329
+purify$ -- 362
 quote$ -- 0
-skip$ -- 3566
+skip$ -- 3491
 stack$ -- 0
-substring$ -- 17024
-swap$ -- 2766
-text.length$ -- 657
+substring$ -- 16828
+swap$ -- 2688
+text.length$ -- 592
 text.prefix$ -- 21
 top$ -- 1
 type$ -- 735
 warning$ -- 0
-while$ -- 1260
+while$ -- 1163
 width$ -- 0
-write$ -- 457
+write$ -- 448
 (There were 532 error messages)
