@@ -45,7 +45,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}MIMIC-III}{19}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}eICU}{22}{section.3.2}%
+\contentsline {section}{\numberline {3.2}eICU}{23}{section.3.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}Synthea}{26}{section.3.3}%
 \defcounter {refsection}{0}\relax 
@@ -55,15 +55,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{Schwellwert}{30}{section*.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Historie}{31}{section*.20}%
+\contentsline {subsection}{Temporäre Historie}{31}{section*.20}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Laufzeit}{32}{section.4.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{Vorhandene Auswertungen}{33}{section*.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Komplexität des Angreifermodell}{33}{section*.23}%
+\contentsline {subsection}{Komplexität des Angreifermodell}{34}{section*.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{MIMIC-III und eICU bei wachsenden Sicherheitsregeln}{35}{section*.25}%
+\contentsline {subsection}{MIMIC-III und eICU bei wachsenden Sicherheitsregeln}{34}{section*.25}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{37}{chapter.5}%
 \defcounter {refsection}{0}\relax 

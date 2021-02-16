@@ -17,72 +17,6 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
-  \entry{13}{article}{}
-    \true{moreauthor}
-    \true{morelabelname}
-    \name{author}{8}{}{%
-      {{hash=AK}{%
-         family={Ahmed},
-         familyi={A\bibinitperiod},
-         given={Kawsar},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=KAA}{%
-         family={Kawsar},
-         familyi={K\bibinitperiod},
-         given={Abdullah-Al},
-         giveni={A\bibinithyphendelim A\bibinitperiod},
-      }}%
-      {{hash=KE}{%
-         family={Kawsar},
-         familyi={K\bibinitperiod},
-         given={Emran},
-         giveni={E\bibinitperiod},
-      }}%
-      {{hash=EAA}{%
-         family={Emran},
-         familyi={E\bibinitperiod},
-         given={Abdullah-Al},
-         giveni={A\bibinithyphendelim A\bibinitperiod},
-      }}%
-      {{hash=JT}{%
-         family={Jesmin},
-         familyi={J\bibinitperiod},
-         given={Tasnuba},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=MRF}{%
-         family={Mukti},
-         familyi={M\bibinitperiod},
-         given={Roushney\bibnamedelima Fatima},
-         giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod},
-      }}%
-      {{hash=RM}{%
-         family={Rahman},
-         familyi={R\bibinitperiod},
-         given={Md},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=AF}{%
-         family={Ahmed},
-         familyi={A\bibinitperiod},
-         given={Farzana},
-         giveni={F\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {{\copyright} 2013 Asian Pacific Journal of Cancer Prevention}%
-    }
-    \strng{namehash}{AK+1}
-    \strng{fullhash}{AKKAAKEEAAJTMRFRMAF+1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{A}
-    \field{sortinithash}{A}
-    \field{title}{Early detection of lung cancer risk using data mining}
-    \field{year}{2013}
-  \endentry
-
   \entry{14}{article}{}
     \name{author}{4}{}{%
       {{hash=BA}{%
@@ -133,12 +67,12 @@
       {{hash=BA}{%
          family={Beutelspacher},
          familyi={B\bibinitperiod},
-         given={Albrecht},
+         given={Albrecht.},
          giveni={A\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
-      {Vieweg+Teubner Verlag}%
+      {Springer}%
     }
     \strng{namehash}{BA1}
     \strng{fullhash}{BA1}
@@ -146,10 +80,9 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \field{edition}{Ninth, updated edition}
-    \field{title}{„Das ist o.\,B.\,d.\,A.\ trivial!“: Tipps und Tricks zur
-  Formulierung mathematischer Gedanken (Mathematik für Studienanfänger)}
-    \field{year}{2009}
+    \field{title}{Das ist Obda Trivial!: Tipps und Tricks zur Formulierung
+  mathematischer Gedanken}
+    \field{year}{2020}
   \endentry
 
   \entry{1}{manual}{}
@@ -163,6 +96,44 @@
     \field{urlday}{22}
     \field{urlmonth}{01}
     \field{urlyear}{2020}
+  \endentry
+
+  \entry{4}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=DRL}{%
+         family={De\bibnamedelima Raedt},
+         familyi={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+         given={Luc},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kimmig},
+         familyi={K\bibinitperiod},
+         given={Angelika},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TH}{%
+         family={Toivonen},
+         familyi={T\bibinitperiod},
+         given={Hannu},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Hyderabad}%
+    }
+    \strng{namehash}{DRLKATH1}
+    \strng{fullhash}{DRLKATH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{booktitle}{IJCAI}
+    \field{pages}{2462\bibrangedash 2467}
+    \field{title}{ProbLog: A Probabilistic Prolog and Its Application in Link
+  Discovery.}
+    \field{volume}{7}
+    \field{year}{2007}
   \endentry
 
   \entry{11}{manual}{}
@@ -183,35 +154,23 @@
     \field{urlyear}{2021}
   \endentry
 
-  \entry{10}{inproceedings}{}
-    \name{author}{3}{}{%
+  \entry{10}{article}{}
+    \name{author}{1}{}{%
       {{hash=GP}{%
          family={Golibrzuch},
          familyi={G\bibinitperiod},
          given={Peter},
          giveni={P\bibinitperiod},
       }}%
-      {{hash=MR}{%
-         family={Möller},
-         familyi={M\bibinitperiod},
-         given={Ralf},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=KA}{%
-         family={Kaya},
-         familyi={K\bibinitperiod},
-         given={Atila},
-         giveni={A\bibinitperiod},
-      }}%
     }
-    \strng{namehash}{GPMRKA1}
-    \strng{fullhash}{GPMRKA1}
+    \strng{namehash}{GP1}
+    \strng{fullhash}{GP1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{G}
     \field{sortinithash}{G}
     \field{title}{A study of the rough set approach for image understanding}
-    \field{year}{2021}
+    \field{year}{2007}
   \endentry
 
   \entry{guarnieri2017securing}{inproceedings}{}
@@ -251,11 +210,48 @@
     \field{year}{2017}
   \endentry
 
+  \entry{6}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=GM}{%
+         family={Guarnieri},
+         familyi={G\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Marinovic},
+         familyi={M\bibinitperiod},
+         given={Srdjan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Basin},
+         familyi={B\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{GMMSBD1}
+    \strng{fullhash}{GMMSBD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{booktitle}{2017 IEEE 30th Computer Security Foundations Symposium
+  (CSF)}
+    \field{pages}{343\bibrangedash 359}
+    \field{title}{Securing databases from probabilistic inference}
+    \field{year}{2017}
+  \endentry
+
   \entry{7}{manual}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{H}
     \field{sortinithash}{H}
-    \field{title}{HIPAA}
+    \field{title}{HIPAA Compilance}
     \verb{url}
     \verb https://www.hhs.gov/hipaa/for-professionals/security/laws-regulations
     \verb /index.html
@@ -273,12 +269,15 @@
     \verb{url}
     \verb https://medicine.yale.edu/intmed/vacs/instruments/
     \endverb
+    \field{day}{30}
+    \field{month}{12}
+    \field{year}{2020}
     \field{urlday}{22}
     \field{urlmonth}{01}
     \field{urlyear}{2020}
   \endentry
 
-  \entry{9}{inproceedings}{}
+  \entry{9}{article}{}
     \name{author}{1}{}{%
       {{hash=IA}{%
          family={Ingelheim},
@@ -296,14 +295,164 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{I}
     \field{sortinithash}{I}
-    \field{title}{Das erste Jahr DSGVO - Eine Bestandsaufnahme}
+    \field{number}{4}
+    \field{pages}{68\bibrangedash 71}
+    \field{title}{Das erste Jahr DSGVO-Eine Bestandsaufnahme}
+    \field{volume}{63}
+    \field{journaltitle}{Controlling \& Management Review}
     \field{year}{2019}
+  \endentry
+
+  \entry{12}{article}{}
+    \name{author}{10}{}{%
+      {{hash=JAE}{%
+         family={Johnson},
+         familyi={J\bibinitperiod},
+         given={Alistair\bibnamedelima EW},
+         giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=PTJ}{%
+         family={Pollard},
+         familyi={P\bibinitperiod},
+         given={Tom\bibnamedelima J},
+         giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=SL}{%
+         family={Shen},
+         familyi={S\bibinitperiod},
+         given={Lu},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LWHL}{%
+         family={Li-Wei},
+         familyi={L\bibinithyphendelim W\bibinitperiod},
+         given={H\bibnamedelima Lehman},
+         giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=FM}{%
+         family={Feng},
+         familyi={F\bibinitperiod},
+         given={Mengling},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Ghassemi},
+         familyi={G\bibinitperiod},
+         given={Mohammad},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MB}{%
+         family={Moody},
+         familyi={M\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Szolovits},
+         familyi={S\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=CLA}{%
+         family={Celi},
+         familyi={C\bibinitperiod},
+         given={Leo\bibnamedelima Anthony},
+         giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MRG}{%
+         family={Mark},
+         familyi={M\bibinitperiod},
+         given={Roger\bibnamedelima G},
+         giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{JAE+1}
+    \strng{fullhash}{JAEPTJSLLWHLFMGMMBSPCLAMRG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 9}
+    \field{title}{MIMIC-III, a freely accessible critical care database}
+    \field{volume}{3}
+    \field{journaltitle}{Scientific data}
+    \field{year}{2016}
+  \endentry
+
+  \entry{13}{article}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{8}{}{%
+      {{hash=KA}{%
+         family={Kawsar},
+         familyi={K\bibinitperiod},
+         given={Ahmed},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KAA}{%
+         family={Kawsar},
+         familyi={K\bibinitperiod},
+         given={Abdullah-Al},
+         giveni={A\bibinithyphendelim A\bibinitperiod},
+      }}%
+      {{hash=KE}{%
+         family={Kawsar},
+         familyi={K\bibinitperiod},
+         given={Emran},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=EAA}{%
+         family={Emran},
+         familyi={E\bibinitperiod},
+         given={Abdullah-Al},
+         giveni={A\bibinithyphendelim A\bibinitperiod},
+      }}%
+      {{hash=JT}{%
+         family={Jesmin},
+         familyi={J\bibinitperiod},
+         given={Tasnuba},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=MRF}{%
+         family={Mukti},
+         familyi={M\bibinitperiod},
+         given={Roushney\bibnamedelima Fatima},
+         giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=RM}{%
+         family={Rahman},
+         familyi={R\bibinitperiod},
+         given={Md},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=AF}{%
+         family={Ahmed},
+         familyi={A\bibinitperiod},
+         given={Farzana},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{\copyright} 2013 Asian Pacific Journal of Cancer Prevention}%
+    }
+    \strng{namehash}{KA+1}
+    \strng{fullhash}{KAKAAKEEAAJTMRFRMAF+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{Early detection of lung cancer risk using data mining}
+    \field{year}{2013}
   \endentry
 
   \entry{2}{inproceedings}{}
     \name{author}{5}{}{%
       {{hash=KM}{%
-         family={Ku\v{c}era},
+         family={Ku{\v{c}}era},
          familyi={K\bibinitperiod},
          given={Martin},
          giveni={M\bibinitperiod},
@@ -333,51 +482,17 @@
          giveni={M\bibinitperiod},
       }}%
     }
-    \list{publisher}{1}{%
-      {Association for Computing Machinery}%
-    }
     \strng{namehash}{KM+1}
     \strng{fullhash}{KMTPGTGMVM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{K}
     \field{sortinithash}{K}
-    \field{title}{Synthesis of Probabilistic Privacy Enforcement}
-    \verb{url}
-    \verb https://doi.org/10.1145/3133956.3134079%7D
-    \endverb
+    \field{booktitle}{Proceedings of the 2017 ACM SIGSAC Conference on Computer
+  and Communications Security}
+    \field{pages}{391\bibrangedash 408}
+    \field{title}{Synthesis of probabilistic privacy enforcement}
     \field{year}{2017}
-  \endentry
-
-  \entry{4}{report}{}
-    \name{author}{2}{}{%
-      {{hash=LDRAK}{%
-         family={Luc De\bibnamedelima Raedt∗},
-         familyi={L\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
-  R\bibinitperiod},
-         given={Angelika\bibnamedelima Kimmig},
-         giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
-      }}%
-      {{hash=TH}{%
-         family={Toivonen},
-         familyi={T\bibinitperiod},
-         given={Hannu},
-         giveni={H\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{LDRAKTH1}
-    \strng{fullhash}{LDRAKTH1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{L}
-    \field{sortinithash}{L}
-    \field{title}{ProbLog: A Probabilistic Prolog and its Application in Link
-  Discovery}
-    \list{institution}{1}{%
-      {Machine Learning Lab, Albert-Ludwigs-University Freibur}%
-    }
-    \field{type}{techreport}
-    \field{year}{2007}
   \endentry
 
   \entry{5}{manual}{}
@@ -388,32 +503,13 @@
     \verb{url}
     \verb https://dtai.cs.kuleuven.be/problog/index.html#
     \endverb
-    \field{day}{30}
-    \field{month}{12}
-    \field{year}{2020}
-    \warn{\item Invalid format of field 'urldate'}
+    \field{year}{2015}
+    \field{urlday}{30}
+    \field{urlmonth}{12}
+    \field{urlyear}{2020}
   \endentry
 
-  \entry{12}{inproceedings}{}
-    \name{author}{1}{}{%
-      {{hash=RW}{%
-         family={Robertson},
-         familyi={R\bibinitperiod},
-         given={Will},
-         giveni={W\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{RW1}
-    \strng{fullhash}{RW1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{R}
-    \field{sortinithash}{R}
-    \field{title}{MIMIC-III, a freely accessible critical care database}
-    \field{year}{2016}
-  \endentry
-
-  \entry{3}{article}{}
+  \entry{3}{book}{}
     \name{author}{2}{}{%
       {{hash=RS}{%
          family={Russell},
@@ -436,19 +532,6 @@
     \field{sortinithash}{R}
     \field{title}{Artificial intelligence: a modern approach}
     \field{year}{2002}
-  \endentry
-
-  \entry{6}{inproceedings}{}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-    \field{title}{Securing Databases from Probabilistic Inference}
-    \verb{url}
-    \verb https://mguarnieri.github.io/publication/csf2017/
-    \endverb
-    \field{urlday}{30}
-    \field{urlmonth}{12}
-    \field{urlyear}{2020}
   \endentry
 
   \entry{24}{article}{}
@@ -502,7 +585,9 @@
     \verb{url}
     \verb https://github.com/synthetichealth/synthea
     \endverb
-    \field{year}{2016}
+    \field{urlday}{28}
+    \field{urlmonth}{01}
+    \field{urlyear}{2021}
   \endentry
 
   \entry{25}{manual}{}
@@ -513,9 +598,9 @@
     \verb{url}
     \verb https://github.com/synthetichealth/synthea/wiki/Module-Gallery
     \endverb
-    \field{day}{23}
-    \field{month}{01}
-    \field{year}{2021}
+    \field{urlday}{28}
+    \field{urlmonth}{01}
+    \field{urlyear}{2020}
   \endentry
 
   \entry{26}{manual}{}
@@ -526,9 +611,9 @@
     \verb{url}
     \verb https://synthetichealth.github.io/synthea/graphviz/osteoporosis.png
     \endverb
-    \field{day}{15}
-    \field{month}{02}
-    \field{year}{2021}
+    \field{urlday}{28}
+    \field{urlmonth}{01}
+    \field{urlyear}{2020}
   \endentry
 
   \entry{21}{manual}{}
@@ -539,8 +624,9 @@
     \verb{url}
     \verb https://www.census.gov/
     \endverb
-    \warn{\item Invalid format of field 'date' \item Invalid format of field
-  'date'}
+    \field{urlday}{28}
+    \field{urlmonth}{01}
+    \field{urlyear}{2020}
   \endentry
 
   \entry{19}{article}{}
