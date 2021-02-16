@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.12) (format=lualatex 2021.1.5)  12 FEB 2021 08:02
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.12) (format=lualatex 2021.1.5)  16 FEB 2021 10:19
  restricted system commands enabled.
 **Template_for_the_LaTeX_Class_uzl-thesis.tex
 (./Template_for_the_LaTeX_Class_uzl-thesis.tex
@@ -1663,47 +1663,6 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count452
 \@thisrulewidth=\dimen305
 )
-(D:/Programme/Miktex/tex/latex/todonotes/todonotes.sty
-Package: todonotes 2020/08/18 v1.1.3 Todonotes source and documentation.
-Package: todonotes 2018/11/22
-
-(D:/Programme/Miktex/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
-
-(D:/Programme/Miktex/tex/generic/xkeyval/xkeyval.tex
-(D:/Programme/Miktex/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks44
-\XKV@tempa@toks=\toks45
-)
-\XKV@depth=\count453
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-(D:/Programme/Miktex/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarysh
-adows.code.tex
-File: tikzlibraryshadows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-
-(D:/Programme/Miktex/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfa
-dings.code.tex
-File: tikzlibraryfadings.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-
-(D:/Programme/Miktex/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
-File: pgflibraryfadings.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-)))
-(D:/Programme/Miktex/tex/latex/latex-tools/calc.sty
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count454
-\calc@Bcount=\count455
-\calc@Adimen=\dimen306
-\calc@Bdimen=\dimen307
-\calc@Askip=\skip82
-\calc@Bskip=\skip83
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count456
-\calc@Cskip=\skip84
-)
-\c@@todonotes@numberoftodonotes=\count457
-)
 (D:/Programme/Miktex/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2370.
@@ -1732,13 +1691,13 @@ Package: caption 2020/10/26 v3.5g Customizing captions (AR)
 
 (D:/Programme/Miktex/tex/latex/caption/caption3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen308
-\captionmargin@=\dimen309
-\captionwidth=\dimen310
-\caption@tempdima=\dimen311
-\caption@indent=\dimen312
-\caption@parindent=\dimen313
-\caption@hangindent=\dimen314
+\captionmargin=\dimen306
+\captionmargin@=\dimen307
+\captionwidth=\dimen308
+\caption@tempdima=\dimen309
+\caption@indent=\dimen310
+\caption@parindent=\dimen311
+\caption@hangindent=\dimen312
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
 Package caption Info: \@makecaption = \long macro:#1#2->\vskip \abovecaptionskip
@@ -1752,14 +1711,14 @@ Package caption Warning: Unknown document class (or package),
 (caption)                standard defaults will be used.
 See the caption package documentation for explanation.
 
-\c@caption@flags=\count458
-\c@continuedfloat=\count459
+\c@caption@flags=\count453
+\c@continuedfloat=\count454
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 ) (D:/Programme/Miktex/tex/latex/caption/subcaption.sty
 Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
-\c@subfigure=\count460
-\c@subtable=\count461
+\c@subfigure=\count455
+\c@subtable=\count456
 )
 (D:/Programme/Miktex/tex/latex/mnsymbol/MnSymbol.sty
 Package: MnSymbol 2007/01/21 v1.4 support for the MnSymbol font
@@ -1858,30 +1817,30 @@ LaTeX Font Info:    Redeclaring math accent \vec on input line 1848.
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count462
-\c@ALG@rem=\count463
-\c@ALG@nested=\count464
-\ALG@tlm=\skip85
-\ALG@thistlm=\skip86
-\c@ALG@Lnr=\count465
-\c@ALG@blocknr=\count466
-\c@ALG@storecount=\count467
-\c@ALG@tmpcounter=\count468
-\ALG@tmplength=\skip87
+\c@ALG@line=\count457
+\c@ALG@rem=\count458
+\c@ALG@nested=\count459
+\ALG@tlm=\skip82
+\ALG@thistlm=\skip83
+\c@ALG@Lnr=\count460
+\c@ALG@blocknr=\count461
+\c@ALG@storecount=\count462
+\c@ALG@tmpcounter=\count463
+\ALG@tmplength=\skip84
 ) (D:/Programme/Miktex/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environ
 ment
 
 (D:/Programme/Miktex/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count469
-\float@exts=\toks46
+\c@float@type=\count464
+\float@exts=\toks44
 \float@box=\box85
-\@float@everytoks=\toks47
+\@float@everytoks=\toks45
 \@floatcapt=\box86
 )
-\@float@every@algorithm=\toks48
-\c@algorithm=\count470
+\@float@every@algorithm=\toks46
+\c@algorithm=\count465
 )
 (D:/Programme/Miktex/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
@@ -1890,6 +1849,19 @@ Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (D:/Programme/Miktex/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
 
+(D:/Programme/Miktex/tex/latex/latex-tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count466
+\calc@Bcount=\count467
+\calc@Adimen=\dimen313
+\calc@Bdimen=\dimen314
+\calc@Askip=\skip85
+\calc@Bskip=\skip86
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count468
+\calc@Cskip=\skip87
+)
 (D:/Programme/Miktex/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 )
@@ -1897,7 +1869,7 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count471
+\g_MT_multlinerow_int=\count469
 \l_MT_multwidth_dim=\dimen315
 \origjot=\skip88
 \l_MT_shortvdotswithinadjustabove_dim=\dimen316
@@ -1926,49 +1898,43 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'german'.
 
-(./Template_for_the_LaTeX_Class_uzl-thesis.aux
-
-LaTeX Warning: Label `code:beliefprogramMitInference' multiply defined.
-
-
-LaTeX Warning: Label `code:beliefprogramMitInference@cref' multiply defined.
-
-)
+(./Template_for_the_LaTeX_Class_uzl-thesis.aux)
 \openout1 = Template_for_the_LaTeX_Class_uzl-thesis.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
- (D:/Programme/Miktex/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+
+(D:/Programme/Miktex/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count472
+\scratchcounter=\count470
 \scratchdimen=\dimen324
 \scratchbox=\box88
-\nofMPsegments=\count473
-\nofMParguments=\count474
-\everyMPshowfont=\toks49
-\MPscratchCnt=\count475
+\nofMPsegments=\count471
+\nofMParguments=\count472
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count473
 \MPscratchDim=\dimen325
-\MPnumerator=\count476
-\makeMPintoPDFobject=\count477
-\everyMPtoPDFconversion=\toks50
+\MPnumerator=\count474
+\makeMPintoPDFobject=\count475
+\everyMPtoPDFconversion=\toks48
 ) (D:/Programme/Miktex/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
@@ -2008,7 +1974,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 48.
+Package hyperref Info: Link coloring OFF on input line 47.
 (D:/Programme/Miktex/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -2018,20 +1984,20 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (D:/Programme/Miktex/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count478
+\c@section@level=\count476
 LaTeX Info: Redefining \Ref on input line 520.
 )
-LaTeX Info: Redefining \ref on input line 48.
-LaTeX Info: Redefining \pageref on input line 48.
-LaTeX Info: Redefining \nameref on input line 48.
+LaTeX Info: Redefining \ref on input line 47.
+LaTeX Info: Redefining \pageref on input line 47.
+LaTeX Info: Redefining \nameref on input line 47.
 
 (./Template_for_the_LaTeX_Class_uzl-thesis.out)
 (./Template_for_the_LaTeX_Class_uzl-thesis.out)
 \@outlinefile=\write5
 
 \openout5 = Template_for_the_LaTeX_Class_uzl-thesis.out
-LaTeX Info: Redefining \Ref on input line 48.
-\c@lstlisting=\count479
+LaTeX Info: Redefining \Ref on input line 47.
+\c@lstlisting=\count477
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
 
@@ -2079,8 +2045,8 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'date'.
 
 )
-Package biblatex Info: Reference section=0 on input line 48.
-Package biblatex Info: Reference segment=0 on input line 48.
+Package biblatex Info: Reference section=0 on input line 47.
+Package biblatex Info: Reference segment=0 on input line 47.
 
 
 Package unicode-math Warning: Using \overbracket and \underbracket from
@@ -2100,40 +2066,34 @@ Package unicode-math Warning: I'm going to overwrite the following commands
 (unicode-math)                colon-like commands, using them will lead to
 (unicode-math)                inconsistencies.
 
-
-Package todonotes Warning: The length marginparwidth is less than 2cm and will m
-ost likely cause issues with the appearance of inserted todonotes. The issue can
- be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loa
-ding the todonotes package. on input line 48.
-
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package cleveref Info: loaded `german language definitions on input line 48.
-<institutslogo.pdf, id=98, 387.69844pt x 86.57344pt>
+Package cleveref Info: loaded `german language definitions on input line 47.
+<institutslogo.pdf, id=74, 387.69844pt x 86.57344pt>
 File: institutslogo.pdf Graphic file (type pdf)
 <use institutslogo.pdf>
-Package luatex.def Info: institutslogo.pdf  used on input line 48.
+Package luatex.def Info: institutslogo.pdf  used on input line 47.
 (luatex.def)             Requested size: 387.69748pt x 86.57321pt.
-Package cleveref Info: loaded `german language definitions on input line 48.
-<uzl-thesis-logo-slogan.pdf, id=99, 142.26349pt x 11.38112pt>
+Package cleveref Info: loaded `german language definitions on input line 47.
+<uzl-thesis-logo-slogan.pdf, id=75, 142.26349pt x 11.38112pt>
 File: uzl-thesis-logo-slogan.pdf Graphic file (type pdf)
 <use uzl-thesis-logo-slogan.pdf>
-Package luatex.def Info: uzl-thesis-logo-slogan.pdf  used on input line 48.
+Package luatex.def Info: uzl-thesis-logo-slogan.pdf  used on input line 47.
 (luatex.def)             Requested size: 142.26312pt x 11.38107pt.
 [1
 
 {C:/Users/Gewen/AppData/Local/MiKTeX/pdftex/config/pdftex.map}<./institutslogo.p
 df><./uzl-thesis-logo-slogan.pdf>]
-Package cleveref Info: loaded `german language definitions on input line 48.
-Package cleveref Info: loaded `german language definitions on input line 48.
-Package cleveref Info: loaded `german language definitions on input line 48.
+Package cleveref Info: loaded `german language definitions on input line 47.
+Package cleveref Info: loaded `german language definitions on input line 47.
+Package cleveref Info: loaded `german language definitions on input line 47.
  [2
 
 ]
-Package cleveref Info: loaded `german language definitions on input line 48.
-Package cleveref Info: loaded `german language definitions on input line 48.
-Package cleveref Info: loaded `german language definitions on input line 48.
+Package cleveref Info: loaded `german language definitions on input line 47.
+Package cleveref Info: loaded `german language definitions on input line 47.
+Package cleveref Info: loaded `german language definitions on input line 47.
  [3
 
 ]
@@ -2156,17 +2116,9 @@ Package cleveref Info: loaded `german language definitions on input line 10.
 ]
 Kapitel 1.
 LaTeX Font Info:    Font shape `TU/LatinModernMono(0)/m/n' will be
-(Font)              scaled to size 11.55003pt on input line 53.
+(Font)              scaled to size 11.55003pt on input line 52.
 
-Overfull \hbox (0.25024pt too wide) in paragraph at lines 50--57
-\TU/TeXGyrePagella(0)/m/n/11 Die Lauf-zeit wird da-bei in \TU/LatinModernMono(0
-)/m/n/11 Online- \TU/TeXGyrePagella(0)/m/n/11 und \TU/LatinModernMono(0)/m/n/11
- Offlinezeiten \TU/TeXGyrePagella(0)/m/n/11 un-ter-teilt, wo-bei die \TU/LatinM
-odernMono(0)/m/n/11 Onlinezeit
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--57
+Underfull \hbox (badness 10000) in paragraph at lines 49--56
 
  []
 
@@ -2174,305 +2126,316 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--57
 
 
 ]
-Package cleveref Info: loaded `german language definitions on input line 69.
+Package cleveref Info: loaded `german language definitions on input line 68.
  [2]
-Package cleveref Info: loaded `german language definitions on input line 70.
+Package cleveref Info: loaded `german language definitions on input line 69.
  [3]
 Kapitel 2.
-<System-model.PNG, id=176, 1299.35437pt x 572.89032pt>
+<System-model.PNG, id=153, 1299.35437pt x 572.89032pt>
 File: System-model.PNG Graphic file (type png)
 <use System-model.PNG>
-Package luatex.def Info: System-model.PNG  used on input line 75.
+Package luatex.def Info: System-model.PNG  used on input line 74.
 (luatex.def)             Requested size: 384.1096pt x 169.35083pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--88
+Underfull \hbox (badness 10000) in paragraph at lines 78--87
 
  []
 
 [4
 
 <./System-model.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 89--92
+Underfull \hbox (badness 10000) in paragraph at lines 88--91
 
  []
 
-Package cleveref Info: loaded `german language definitions on input line 92.
+Package cleveref Info: loaded `german language definitions on input line 91.
 [5]
-<bayes-netz-bsp.PNG, id=197, 398.23781pt x 364.36125pt>
+<bayes-netz-bsp.PNG, id=174, 401.24907pt x 261.97874pt>
 File: bayes-netz-bsp.PNG Graphic file (type png)
 <use bayes-netz-bsp.PNG>
-Package luatex.def Info: bayes-netz-bsp.PNG  used on input line 97.
-(luatex.def)             Requested size: 256.07741pt x 234.30234pt.
-Package cleveref Info: loaded `german language definitions on input line 104.
+Package luatex.def Info: bayes-netz-bsp.PNG  used on input line 96.
+(luatex.def)             Requested size: 256.07741pt x 167.20612pt.
+Package cleveref Info: loaded `german language definitions on input line 103.
  [6<./bayes-netz-bsp.PNG>]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on in
-put line 104.
+put line 103.
 
 
 LaTeX Font Warning: Font shape `TU/LatinModernMono(0)/b/n' undefined
-(Font)              using `TU/LatinModernMono(0)/m/n' instead on input line 115.
+(Font)              using `TU/LatinModernMono(0)/m/n' instead on input line 114.
 
 
 LaTeX Font Info:    Font shape `TU/LatinModernMono(0)/m/n' will be
-(Font)              scaled to size 12.60004pt on input line 115.
-Package cleveref Info: loaded `german language definitions on input line 119.
+(Font)              scaled to size 12.60004pt on input line 114.
+Package cleveref Info: loaded `german language definitions on input line 118.
 [7]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on inp
-ut line 133.
+ut line 132.
 
 
 Package hyperref Warning: No autoref name for `algorithm' on input line 173.
 
-Missing character: There is no ä (U+00E4) in font cmmi8!
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--189
-
- []
-
-
-Overfull \hbox (16.6802pt too wide) in paragraph at lines 181--189
-\TU/TeXGyrePagella(0)/m/n/11 er-füllt ist und be-rech-net die Wahr-schein-lich-
-keit durch $[]$.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--189
-
- []
-
-Package cleveref Info: loaded `german language definitions on input line 189.
+Package cleveref Info: loaded `german language definitions on input line 180.
 [8]
+Underfull \hbox (badness 10000) in paragraph at lines 181--189
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--189
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--189
+
+ []
+
 Package cleveref Info: loaded `german language definitions on input line 189.
- [9]
-Overfull \hbox (33.56361pt too wide) in paragraph at lines 193--194
-\TU/TeXGyrePagella(0)/m/n/11 schützt ist. Die-ser Mo-dus er-for-dert drei Da-te
-i-en als In-put und zwar die \TU/LatinModernMono(0)/m/n/11 beliefProgram.pbl\TU
-/TeXGyrePagella(0)/m/n/11 ,
+[9]
+Package cleveref Info: loaded `german language definitions on input line 193.
+ [10]
+Overfull \hbox (4.72191pt too wide) in paragraph at lines 198--201
+\TU/TeXGyrePagella(0)/m/n/11 Ab-hän-gig-kei-ten mit den pro-ba-bi-li-sti-schen Wahr-schein-lich-kei-ten mo-del-liert. An-schlie-
+ßend
  []
 
-Package cleveref Info: loaded `german language definitions on input line 194.
-[10]
-Package cleveref Info: loaded `german language definitions on input line 217.
- [11]
-Package cleveref Info: loaded `german language definitions on input line 257.
- [12]
-Underfull \hbox (badness 10000) in paragraph at lines 271--358
+Package cleveref Info: loaded `german language definitions on input line 209.
+[11]
+Overfull \hbox (23.52774pt too wide) in paragraph at lines 218--272
+\TU/TeXGyrePagella(0)/m/n/11 Netz mit zwei Ab-hän-gig-kei-ten ist in []Ab-bil-d
+ung 2.3[][] und die da-zu-ge-hö-ri-ge \TU/LatinModernMono(0)/m/n/11 beliefProgr
+am.pbl
+ []
+
+Package cleveref Info: loaded `german language definitions on input line 281.
+[12]
+Package cleveref Info: loaded `german language definitions on input line 317.
+ [13]
+Underfull \hbox (badness 10000) in paragraph at lines 325--412
 
  []
 
-Package cleveref Info: loaded `german language definitions on input line 358.
-[13]
-Package cleveref Info: loaded `german language definitions on input line 375.
- [14]
-Package cleveref Info: loaded `german language definitions on input line 411.
+Package cleveref Info: loaded `german language definitions on input line 419.
+[14]
+Package cleveref Info: loaded `german language definitions on input line 435.
  [15]
-Underfull \hbox (badness 10000) in paragraph at lines 413--415
+Underfull \hbox (badness 10000) in paragraph at lines 467--469
 
  []
 
-Package cleveref Info: loaded `german language definitions on input line 459.
+Package cleveref Info: loaded `german language definitions on input line 477.
 [16]
-Package cleveref Info: loaded `german language definitions on input line 469.
+Package cleveref Info: loaded `german language definitions on input line 521.
  [17]
+Overfull \hbox (78.80028pt too wide) in paragraph at lines 521--522
+\TU/LatinModernMono(0)/m/n/11 java -Xmx8192m -jar prototype.jar angeronaManual 
+1 models/BAExample/beliefProgram.pbl
+ []
+
+
+Overfull \hbox (5.9657pt too wide) in paragraph at lines 521--522
+\TU/LatinModernMono(0)/m/n/11 models/BAExample/initStatements.txt models/BAExamp
+le/template.cpt \TU/TeXGyrePagella(0)/m/n/11 ge-star-tet.
+ []
+
+Package cleveref Info: loaded `german language definitions on input line 529.
+[18]
 Kapitel 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 472--476
+Underfull \hbox (badness 10000) in paragraph at lines 532--536
 
  []
 
-[18
+[19
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 482--558
+Underfull \hbox (badness 10000) in paragraph at lines 542--618
 
  []
 
-Package cleveref Info: loaded `german language definitions on input line 558.
-[19]
-Package cleveref Info: loaded `german language definitions on input line 570.
- [20]
-Underfull \hbox (badness 10000) in paragraph at lines 602--606
+Package cleveref Info: loaded `german language definitions on input line 618.
+[20]
+Package cleveref Info: loaded `german language definitions on input line 627.
+ [21]
+Underfull \hbox (badness 10000) in paragraph at lines 662--666
 
  []
 
-Package cleveref Info: loaded `german language definitions on input line 606.
-[21]
-Package cleveref Info: loaded `german language definitions on input line 690.
- [22]
-Package cleveref Info: loaded `german language definitions on input line 690.
- [23] (D:/Programme/Miktex/tex/latex/listings/lstlang1.sty
+Package cleveref Info: loaded `german language definitions on input line 666.
+[22]
+Package cleveref Info: loaded `german language definitions on input line 750.
+ [23]
+Package cleveref Info: loaded `german language definitions on input line 750.
+ [24] (D:/Programme/Miktex/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-Package cleveref Info: loaded `german language definitions on input line 735.
- [24]
+Package cleveref Info: loaded `german language definitions on input line 795.
+ [25]
 LaTeX Font Info:    Font shape `TU/LatinModernMono(0)/m/n' will be
-(Font)              scaled to size 10.50003pt on input line 735.
+(Font)              scaled to size 10.50003pt on input line 795.
 
-Underfull \hbox (badness 10000) in paragraph at lines 738--741
+Underfull \hbox (badness 10000) in paragraph at lines 798--801
 
  []
 
 
-Overfull \hbox (5.10822pt too wide) in paragraph at lines 738--741
+Overfull \hbox (5.10822pt too wide) in paragraph at lines 798--801
 \TU/TeXGyrePagella(0)/m/n/11 Um die Da-ten für das Vor-wis-sen des An-grei-fers
  zu mo-del-lie-ren, wird das \TU/LatinModernMono(0)/m/n/11 Generic Module
  []
 
 
-Overfull \hbox (11.67146pt too wide) in paragraph at lines 828--829
- [][] 
+Overfull \hbox (3.57787pt too wide) in paragraph at lines 798--801
+\TU/TeXGyrePagella(0)/m/n/11 [[]18[]] ei-ne be-lie-bi-ge öff-net. Im fol-gen-de
+n wird das An-grei-fer-mo-dell für die Krank-heit Osteo-
  []
 
 
-Overfull \hbox (54.19875pt too wide) in paragraph at lines 951--952
+Overfull \hbox (11.67146pt too wide) in paragraph at lines 889--890
  [][] 
  []
 
-Package cleveref Info: loaded `german language definitions on input line 953.
-[25]
-Package cleveref Info: loaded `german language definitions on input line 954.
- [26]
-Package cleveref Info: loaded `german language definitions on input line 954.
+<assets/osteoporosis.png, id=605, 1224.575pt x 1659.19875pt>
+File: assets/osteoporosis.png Graphic file (type png)
+<use assets/osteoporosis.png>
+Package luatex.def Info: assets/osteoporosis.png  used on input line 894.
+(luatex.def)             Requested size: 426.79135pt x 578.24718pt.
+
+Overfull \hbox (54.19875pt too wide) in paragraph at lines 1017--1018
+ [][] 
+ []
+
+Package cleveref Info: loaded `german language definitions on input line 1019.
+[26]
+Package cleveref Info: loaded `german language definitions on input line 1020.
  [27]
+Package cleveref Info: loaded `german language definitions on input line 1020.
+ [28<./assets/osteoporosis.png>]
+Package cleveref Info: loaded `german language definitions on input line 1020.
+ [29]
 Kapitel 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 955--957
+Underfull \hbox (badness 10000) in paragraph at lines 1021--1023
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 955--957
+Underfull \hbox (badness 10000) in paragraph at lines 1021--1023
 
  []
 
 
-Overfull \hbox (5.49649pt too wide) in paragraph at lines 960--961
+Overfull \hbox (5.49649pt too wide) in paragraph at lines 1026--1027
 \TU/TeXGyrePagella(0)/m/n/11 Be-trach-tet wird im Fol-gen-den das Bei-spiel aus []Ab-schnitt 2.3[][]. Um zu pr
 ü-fen, ob der Schwell-
  []
 
-[28
+[30
 
 ]
-Overfull \hbox (21.48428pt too wide) in paragraph at lines 969--970
+Overfull \hbox (21.48428pt too wide) in paragraph at lines 1035--1036
 []\TU/LatinModernMono(0)/m/n/11 krebs(X) :- patient(X), raucher(X), mutterhatkre
 bs(X), vaterhatkrebs(X),
  []
 
 
-Overfull \hbox (45.27737pt too wide) in paragraph at lines 970--971
+Overfull \hbox (45.27737pt too wide) in paragraph at lines 1036--1037
 []\TU/LatinModernMono(0)/m/n/11 krebs(X) :- patient(X), NOT raucher(X), mutterha
 tkrebs(X), vaterhatkrebs(X),
  []
 
-Package cleveref Info: loaded `german language definitions on input line 999.
-[29]
-Overfull \hbox (1.53282pt too wide) in paragraph at lines 1002--1008
+Package cleveref Info: loaded `german language definitions on input line 1061.
+[31]
+Overfull \hbox (1.53282pt too wide) in paragraph at lines 1070--1076
 \TU/TeXGyrePagella(0)/m/n/11 in an-ge-mes-se-ner Zeit nutz-bar ist. An-schlie-
 ßend wird ge-zeigt, wie An-ge-ro-na sich bei wach-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1010--1011
+Underfull \hbox (badness 10000) in paragraph at lines 1078--1079
 
  []
 
-Package cleveref Info: loaded `german language definitions on input line 1011.
-[30]
+Package cleveref Info: loaded `german language definitions on input line 1079.
+[32]
 
-Package Listings Warning: Text dropped after begin of listing on input line 1011
+Package Listings Warning: Text dropped after begin of listing on input line 1079
 .
 
-<assets/paperLaufzeit.PNG, id=690, 754.31813pt x 589.4522pt>
+<assets/paperLaufzeit.PNG, id=697, 754.31813pt x 589.4522pt>
 File: assets/paperLaufzeit.PNG Graphic file (type png)
 <use assets/paperLaufzeit.PNG>
-Package luatex.def Info: assets/paperLaufzeit.PNG  used on input line 1029.
+Package luatex.def Info: assets/paperLaufzeit.PNG  used on input line 1097.
 (luatex.def)             Requested size: 192.0548pt x 150.07896pt.
-<assets/onlineSkript.png, id=693, 551.43515pt x 456.58078pt>
+<assets/onlineSkript.png, id=700, 551.43515pt x 456.58078pt>
 File: assets/onlineSkript.png Graphic file (type png)
 <use assets/onlineSkript.png>
-Package luatex.def Info: assets/onlineSkript.png  used on input line 1035.
+Package luatex.def Info: assets/onlineSkript.png  used on input line 1103.
 (luatex.def)             Requested size: 192.0548pt x 159.0184pt.
 
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 1027--1039
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 1095--1107
 []$[]$ $[]$ 
  []
 
-
-Overfull \hbox (25.81667pt too wide) in paragraph at lines 1024--1040
-\TU/TeXGyrePagella(0)/m/n/11 ben, dass bei un-se-ren Mes-sun-gen die In-itia-li-
-sie-rung an-hand der 3 Da-tei-en \TU/LatinModernMono(0)/m/n/11 beliefProgram.pbl
-
- []
-
-<assets/OfflinezeitSynthea.png, id=696, 574.77234pt x 476.90672pt>
+<assets/OfflinezeitSynthea.png, id=703, 574.77234pt x 476.90672pt>
 File: assets/OfflinezeitSynthea.png Graphic file (type png)
 <use assets/OfflinezeitSynthea.png>
-Package luatex.def Info: assets/OfflinezeitSynthea.png  used on input line 1047.
+Package luatex.def Info: assets/OfflinezeitSynthea.png  used on input line 1115.
 
 (luatex.def)             Requested size: 192.0548pt x 159.35176pt.
-<assets/onlineSynthea.png, id=697, 581.54765pt x 472.01344pt>
+<assets/onlineSynthea.png, id=704, 581.54765pt x 472.01344pt>
 File: assets/onlineSynthea.png Graphic file (type png)
 <use assets/onlineSynthea.png>
-Package luatex.def Info: assets/onlineSynthea.png  used on input line 1053.
+Package luatex.def Info: assets/onlineSynthea.png  used on input line 1121.
 (luatex.def)             Requested size: 192.0548pt x 155.88014pt.
 
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 1045--1057
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 1113--1125
 []$[]$ $[]$ 
  []
 
-Package cleveref Info: loaded `german language definitions on input line 1059.
-[31<./assets/paperLaufzeit.PNG><./assets/onlineSkript.png>]
-<assets/OfflineEicuMimic.png, id=719, 558.96329pt x 458.08641pt>
+Package cleveref Info: loaded `german language definitions on input line 1127.
+[33]
+<assets/OfflineEicuMimic.png, id=727, 558.96329pt x 458.08641pt>
 File: assets/OfflineEicuMimic.png Graphic file (type png)
 <use assets/OfflineEicuMimic.png>
-Package luatex.def Info: assets/OfflineEicuMimic.png  used on input line 1069.
+Package luatex.def Info: assets/OfflineEicuMimic.png  used on input line 1137.
 (luatex.def)             Requested size: 192.0548pt x 157.38992pt.
-
-Underfull \hbox (badness 6893) in paragraph at lines 1070--1070
-[]\TU/TeXGyrePagella(0)/m/n/11 Ab-bil-dung 4.5: |Off-line-zei-ten Si-cher-heits-
-
- []
-
-<assets/onlineEicuMimic.png, id=720, 564.23297pt x 460.34485pt>
+<assets/onlineEicuMimic.png, id=728, 564.23297pt x 460.34485pt>
 File: assets/onlineEicuMimic.png Graphic file (type png)
 <use assets/onlineEicuMimic.png>
-Package luatex.def Info: assets/onlineEicuMimic.png  used on input line 1075.
+Package luatex.def Info: assets/onlineEicuMimic.png  used on input line 1143.
 (luatex.def)             Requested size: 192.0548pt x 156.69078pt.
 
-Underfull \hbox (badness 7273) in paragraph at lines 1076--1076
-[]\TU/TeXGyrePagella(0)/m/n/11 Ab-bil-dung 4.6: |On-line-zei-ten Si-cher-heits-
- []
-
-
-Overfull \hbox (1.66667pt too wide) in paragraph at lines 1067--1079
+Overfull \hbox (1.66667pt too wide) in paragraph at lines 1135--1147
 []$[]$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1062--1083
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1153
 
  []
 
-Package cleveref Info: loaded `german language definitions on input line 1083.
-[32<./assets/OfflinezeitSynthea.png><./assets/onlineSynthea.png>]
-Package cleveref Info: loaded `german language definitions on input line 1083.
- [33<./assets/OfflineEicuMimic.png><./assets/onlineEicuMimic.png>]
-Package cleveref Info: loaded `german language definitions on input line 1084.
- [34]
+
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1153
+
+ []
+
+
+Overfull \hbox (0.21371pt too wide) in paragraph at lines 1130--1153
+\TU/TeXGyrePagella(0)/m/n/11 Unter die-sen Be-din-gun-gen wür-de An-ge-ro-na in
+ kaum ei-nem rea-len An-wen-dungs-fall nutz-
+ []
+
+Package cleveref Info: loaded `german language definitions on input line 1153.
+[34<./assets/paperLaufzeit.PNG><./assets/onlineSkript.png><./assets/OfflinezeitS
+ynthea.png><./assets/onlineSynthea.png>]
+Package cleveref Info: loaded `german language definitions on input line 1153.
+ [35]
+Package cleveref Info: loaded `german language definitions on input line 1154.
+ [36<./assets/OfflineEicuMimic.png><./assets/onlineEicuMimic.png>]
 Kapitel 5.
-[35
-
-] (./Template_for_the_LaTeX_Class_uzl-thesis.tdo)
-\tf@tdo=\write7
-
-\openout7 = Template_for_the_LaTeX_Class_uzl-thesis.tdo
- [36
+[37
 
 ]
 
@@ -2480,11 +2443,11 @@ Package biblatex Warning: Name format 'last-first' deprecated.
 (biblatex)                Please use 'family-given' instead.
 (biblatex)                Using 'family-given' now.
 
-[37
+[38
 
 ]
-Package cleveref Info: loaded `german language definitions on input line 1206.
- [38] (./Template_for_the_LaTeX_Class_uzl-thesis.aux
+Package cleveref Info: loaded `german language definitions on input line 1274.
+ [39] (./Template_for_the_LaTeX_Class_uzl-thesis.aux
 Package cleveref Info: loaded `german language definitions on input line 29.
 Package cleveref Info: loaded `german language definitions on input line 30.
 Package cleveref Info: loaded `german language definitions on input line 31.
@@ -2497,12 +2460,9 @@ Package cleveref Info: loaded `german language definitions on input line 37.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `Template_for_the_LaTeX_Class_uzl-thesis.out' 
 has not changed.
-(rerunfilecheck)             Checksum: D3E919E6E8966AD27116748E4B5C0997;2744.
+(rerunfilecheck)             Checksum: B4C6694317408F5FAC600357F73B9363;2746.
 Package logreq Info: Writing requests to 'Template_for_the_LaTeX_Class_uzl-thesi
 s.run.xml'.
 
@@ -2510,34 +2470,34 @@ s.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 49408 strings out of 478830
- 244174,1977958 words of node,token memory allocated
- 1233 words of node memory still in use:
-   23 hlist, 2 vlist, 10 rule, 1 dir, 5 glue, 4 kern, 1 glyph, 70 attribute, 75 
-glue_spec, 61 attribute_list, 2 write, 16 pdf_literal, 5 pdf_action, 16 pdf_colo
-rstack nodes
-   avail lists: 1:7,2:5548,3:796,4:682,5:3306,6:98,7:12792,8:128,9:8025,10:24,11
-:1142
- 67070 multiletter control sequences out of 65536+200000
- 218 fonts using 38415143 bytes
- 108i,12n,125p,1853b,2443s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48827 strings out of 478830
+ 244189,1977958 words of node,token memory allocated
+ 737 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 1 dir, 5 glue, 4 kern, 1 glyph, 26 attribute, 75 gl
+ue_spec, 15 attribute_list, 2 write, 7 pdf_action nodes
+   avail lists: 1:6,2:5548,3:816,4:683,5:3296,6:102,7:12516,8:129,9:8023,10:23,1
+1:1117
+ 66532 multiletter control sequences out of 65536+200000
+ 178 fonts using 33075703 bytes
+ 108i,12n,125p,1853b,2441s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/Programme/Miktex/fonts/opentype/public/lm/lmmonoprop10-regular.otf><D:/Progr
-amme/Miktex/fonts/opentype/public/lm/lmmono10-regular.otf>{D:/Programme/Miktex/f
-onts/enc/dvips/mnsymbol/MnSymbolA.enc}{D:/Programme/Miktex/fonts/enc/dvips/mnsym
-bol/MnSymbolC.enc}{D:/Programme/Miktex/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}<D
-:/Programme/Miktex/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf>{
-D:/Programme/Miktex/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}<D:/Programme/Miktex/
-fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf><D:/Programme/Miktex
-/fonts/opentype/public/lm/lmmono12-regular.otf><D:/Programme/Miktex/fonts/openty
-pe/public/tex-gyre/texgyrepagella-regular.otf><D:/Programme/Miktex/fonts/opentyp
-e/public/tex-gyre/texgyrepagella-italic.otf><D:/Programme/Miktex/fonts/opentype/
-public/tex-gyre/texgyrepagella-bold.otf><D:/Programme/Miktex/fonts/type1/public/
-mnsymbol/MnSymbol10.pfb><D:/Programme/Miktex/fonts/type1/public/mnsymbol/MnSymbo
-l8.pfb>
-Output written on Template_for_the_LaTeX_Class_uzl-thesis.pdf (42 pages, 744419
+amme/Miktex/fonts/opentype/public/lm/lmmono10-regular.otf><D:/Programme/Miktex/f
+onts/opentype/public/tex-gyre-math/texgyrepagella-math.otf>{D:/Programme/Miktex/
+fonts/enc/dvips/mnsymbol/MnSymbolA.enc}{D:/Programme/Miktex/fonts/enc/dvips/mnsy
+mbol/MnSymbolC.enc}{D:/Programme/Miktex/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}<
+D:/Programme/Miktex/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf>
+{D:/Programme/Miktex/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}<D:/Programme/Miktex
+/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf><D:/Programme/Mikte
+x/fonts/opentype/public/lm/lmmono12-regular.otf><D:/Programme/Miktex/fonts/opent
+ype/public/tex-gyre/texgyrepagella-regular.otf><D:/Programme/Miktex/fonts/openty
+pe/public/tex-gyre/texgyrepagella-italic.otf><D:/Programme/Miktex/fonts/opentype
+/public/tex-gyre/texgyrepagella-bold.otf><D:/Programme/Miktex/fonts/type1/public
+/mnsymbol/MnSymbol10.pfb><D:/Programme/Miktex/fonts/type1/public/mnsymbol/MnSymb
+ol8.pfb>
+Output written on Template_for_the_LaTeX_Class_uzl-thesis.pdf (43 pages, 957445
  bytes).
 
-PDF statistics: 859 PDF objects out of 1000 (max. 8388607)
- 395 named destinations out of 1000 (max. 131072)
- 312 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 876 PDF objects out of 1000 (max. 8388607)
+ 402 named destinations out of 1000 (max. 131072)
+ 152 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -17,29 +17,115 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
-  \entry{14}{inproceedings}{}
-    \name{author}{1}{}{%
-      {{hash=ABDKEEDEM}{%
-         family={Andrei\bibnamedelima Barasch},
-         familyi={A\bibinitperiod\bibinitdelim B\bibinitperiod},
-         suffix={Douglas E.\bibnamedelima Morse},
-         suffixi={D\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim
-  M\bibinitperiod},
-         given={David 1. Krutchkof Ellen\bibnamedelima Eisenberg},
-         giveni={D\bibinitperiod\bibinitdelim \bibinitperiod\bibinitdelim
-  K\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim E\bibinitperiod},
+  \entry{13}{article}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{8}{}{%
+      {{hash=AK}{%
+         family={Ahmed},
+         familyi={A\bibinitperiod},
+         given={Kawsar},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=KAA}{%
+         family={Kawsar},
+         familyi={K\bibinitperiod},
+         given={Abdullah-Al},
+         giveni={A\bibinithyphendelim A\bibinitperiod},
+      }}%
+      {{hash=KE}{%
+         family={Kawsar},
+         familyi={K\bibinitperiod},
+         given={Emran},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=EAA}{%
+         family={Emran},
+         familyi={E\bibinitperiod},
+         given={Abdullah-Al},
+         giveni={A\bibinithyphendelim A\bibinitperiod},
+      }}%
+      {{hash=JT}{%
+         family={Jesmin},
+         familyi={J\bibinitperiod},
+         given={Tasnuba},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=MRF}{%
+         family={Mukti},
+         familyi={M\bibinitperiod},
+         given={Roushney\bibnamedelima Fatima},
+         giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=RM}{%
+         family={Rahman},
+         familyi={R\bibinitperiod},
+         given={Md},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=AF}{%
+         family={Ahmed},
+         familyi={A\bibinitperiod},
+         given={Farzana},
+         giveni={F\bibinitperiod},
       }}%
     }
-    \strng{namehash}{ABDEMDKEE1}
-    \strng{fullhash}{ABDEMDKEE1}
+    \list{publisher}{1}{%
+      {{\copyright} 2013 Asian Pacific Journal of Cancer Prevention}%
+    }
+    \strng{namehash}{AK+1}
+    \strng{fullhash}{AKKAAKEEAAJTMRFRMAF+1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{A}
     \field{sortinithash}{A}
-    \field{subtitle}{A Case-Series Analysis}
-    \field{title}{Smoking, Gender, and Age as Risk Factors for Site-Specific
-  Intraoral Squamous Cell Carcinoma}
-    \field{year}{1993}
+    \field{title}{Early detection of lung cancer risk using data mining}
+    \field{year}{2013}
+  \endentry
+
+  \entry{14}{article}{}
+    \name{author}{4}{}{%
+      {{hash=BA}{%
+         family={Barasch},
+         familyi={B\bibinitperiod},
+         given={Andrei},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MDE}{%
+         family={Morse},
+         familyi={M\bibinitperiod},
+         given={Douglas\bibnamedelima E},
+         giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=KDJ}{%
+         family={Krutchkoff},
+         familyi={K\bibinitperiod},
+         given={David\bibnamedelima J},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=EE}{%
+         family={Eisenberg},
+         familyi={E\bibinitperiod},
+         given={Ellen},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{BA+1}
+    \strng{fullhash}{BAMDEKDJEE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{3}
+    \field{pages}{509\bibrangedash 513}
+    \field{title}{Smoking, gender, and age as risk factors for site-specific
+  intraoral squamous cell carcinoma. A case-series analysis}
+    \field{volume}{73}
+    \field{journaltitle}{Cancer}
+    \field{year}{1994}
   \endentry
 
   \entry{15}{book}{}
@@ -95,34 +181,6 @@
     \field{urlday}{12}
     \field{urlmonth}{01}
     \field{urlyear}{2021}
-  \endentry
-
-  \entry{22}{article}{}
-    \name{author}{2}{}{%
-      {{hash=FC}{%
-         family={Farkas},
-         familyi={F\bibinitperiod},
-         given={Csilla},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=JS}{%
-         family={Jajodia},
-         familyi={J\bibinitperiod},
-         given={Sushil},
-         giveni={S\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Association for Computing Machinery}%
-    }
-    \strng{namehash}{FCJS1}
-    \strng{fullhash}{FCJS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{F}
-    \field{sortinithash}{F}
-    \field{title}{The Inference Problem: A Survey}
-    \field{year}{2002}
   \endentry
 
   \entry{10}{inproceedings}{}
@@ -215,6 +273,9 @@
     \verb{url}
     \verb https://medicine.yale.edu/intmed/vacs/instruments/
     \endverb
+    \field{urlday}{22}
+    \field{urlmonth}{01}
+    \field{urlyear}{2020}
   \endentry
 
   \entry{9}{inproceedings}{}
@@ -227,7 +288,7 @@
       }}%
     }
     \list{publisher}{1}{%
-      {???}%
+      {Springer}%
     }
     \strng{namehash}{IA1}
     \strng{fullhash}{IA1}
@@ -237,62 +298,6 @@
     \field{sortinithash}{I}
     \field{title}{Das erste Jahr DSGVO - Eine Bestandsaufnahme}
     \field{year}{2019}
-  \endentry
-
-  \entry{19}{inproceedings}{}
-    \name{author}{1}{}{%
-      {{hash=JWJNAQCMDHCDKDTGSMMK}{%
-         family={Jason\bibnamedelima Walonoski},
-         familyi={J\bibinitperiod\bibinitdelim W\bibinitperiod},
-         suffix={Mark\bibnamedelima Kramer},
-         suffixi={M\bibinitperiod\bibinitdelim K\bibinitperiod},
-         given={Joseph Nichols Andre Quina Chris Moesel Dylan Hall Carlton
-  Duffett Kudakwashe Dube Thomas Gallagher Scott\bibnamedelima McLachlan},
-         giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim
-  A\bibinitperiod\bibinitdelim Q\bibinitperiod\bibinitdelim
-  C\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
-  D\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim
-  C\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
-  K\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
-  T\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim
-  S\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{JWMKJNAQCMDHCDKDTGSM1}
-    \strng{fullhash}{JWMKJNAQCMDHCDKDTGSM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{J}
-    \field{sortinithash}{J}
-    \field{title}{Synthea: An approach, method, and software mechanism for
-  generating synthetic patients and the synthetic lectronic health care record}
-    \field{year}{2017}
-  \endentry
-
-  \entry{13}{inproceedings}{}
-    \name{author}{1}{}{%
-      {{hash=KATJRFMMTRFAAAE}{%
-         family={Kawsar\bibnamedelima Ahmed},
-         familyi={K\bibinitperiod\bibinitdelim A\bibinitperiod},
-         suffix={Abdullah-Al-Emran},
-         suffixi={A\bibinithyphendelim A\bibinithyphendelim E\bibinitperiod},
-         given={Tasnuba Jesmin Rouhshney Fatima Mukti Md Tamilur Rahman
-  Farzana\bibnamedelima Ahmed},
-         giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
-  R\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim
-  M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
-  T\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
-  F\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{KAAAETJRFMMTRFA1}
-    \strng{fullhash}{KAAAETJRFMMTRFA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{K}
-    \field{sortinithash}{K}
-    \field{title}{Early Detection of Lung Cancer Risk Using Data Mining}
-    \field{year}{2013}
   \endentry
 
   \entry{2}{inproceedings}{}
@@ -375,31 +380,6 @@
     \field{year}{2007}
   \endentry
 
-  \entry{3}{book}{}
-    \name{author}{1}{}{%
-      {{hash=uPNSR}{%
-         prefix={und},
-         prefixi={u\bibinitperiod},
-         family={Peter\bibnamedelima Norvig},
-         familyi={P\bibinitperiod\bibinitdelim N\bibinitperiod},
-         given={Stuart\bibnamedelima Russel},
-         giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Pearson}%
-    }
-    \strng{namehash}{PNSRu1}
-    \strng{fullhash}{PNSRu1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{P}
-    \field{sortinithash}{P}
-    \field{edition}{Third Edition}
-    \field{title}{Artificial Intelligence, A Modern Approach}
-    \field{year}{2010}
-  \endentry
-
   \entry{5}{manual}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{P}
@@ -433,6 +413,31 @@
     \field{year}{2016}
   \endentry
 
+  \entry{3}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RS}{%
+         family={Russell},
+         familyi={R\bibinitperiod},
+         given={Stuart},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=NP}{%
+         family={Norvig},
+         familyi={N\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RSNP1}
+    \strng{fullhash}{RSNP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{Artificial intelligence: a modern approach}
+    \field{year}{2002}
+  \endentry
+
   \entry{6}{inproceedings}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{S}
@@ -446,6 +451,49 @@
     \field{urlyear}{2020}
   \endentry
 
+  \entry{24}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SM}{%
+         family={Sellami},
+         familyi={S\bibinitperiod},
+         given={Mokhtar},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HMS}{%
+         family={Hacid},
+         familyi={H\bibinitperiod},
+         given={Mohand-Said},
+         giveni={M\bibinithyphendelim S\bibinitperiod},
+      }}%
+      {{hash=G}{%
+         family={Gammoudi},
+         familyi={G\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mohsen},
+         familyi={M\bibinitperiod},
+         given={Mohamed},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{SM+1}
+    \strng{fullhash}{SMHMSGMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{4}
+    \field{pages}{543\bibrangedash 586}
+    \field{title}{A FCA framework for inference control in data integration
+  systems}
+    \field{volume}{37}
+    \field{journaltitle}{Distributed and Parallel Databases}
+    \field{year}{2019}
+  \endentry
+
   \entry{20}{manual}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{S}
@@ -454,29 +502,33 @@
     \verb{url}
     \verb https://github.com/synthetichealth/synthea
     \endverb
+    \field{year}{2016}
   \endentry
 
-  \entry{24}{inproceedings}{}
-    \name{author}{1}{}{%
-      {{hash=TSM}{%
-         family={Toapanta},
-         familyi={T\bibinitperiod},
-         given={Segundo\bibnamedelima Moisés},
-         giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {IEEE}%
-    }
-    \strng{namehash}{TSM1}
-    \strng{fullhash}{TSM1}
-    \field{labelnamesource}{author}
+  \entry{25}{manual}{}
     \field{labeltitlesource}{title}
-    \field{sortinit}{T}
-    \field{sortinithash}{T}
-    \field{title}{Analysis for the Evaluation and Security Management of a
-  Database in a Public Organization to Mitigate Cyber Attacks}
-    \field{year}{2020}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Synthea Module Gallery}
+    \verb{url}
+    \verb https://github.com/synthetichealth/synthea/wiki/Module-Gallery
+    \endverb
+    \field{day}{23}
+    \field{month}{01}
+    \field{year}{2021}
+  \endentry
+
+  \entry{26}{manual}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Synthea Module Gallery Osteoporosis}
+    \verb{url}
+    \verb https://synthetichealth.github.io/synthea/graphviz/osteoporosis.png
+    \endverb
+    \field{day}{15}
+    \field{month}{02}
+    \field{year}{2021}
   \endentry
 
   \entry{21}{manual}{}
@@ -489,6 +541,89 @@
     \endverb
     \warn{\item Invalid format of field 'date' \item Invalid format of field
   'date'}
+  \endentry
+
+  \entry{19}{article}{}
+    \name{author}{10}{}{%
+      {{hash=WJ}{%
+         family={Walonoski},
+         familyi={W\bibinitperiod},
+         given={Jason},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Kramer},
+         familyi={K\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=NJ}{%
+         family={Nichols},
+         familyi={N\bibinitperiod},
+         given={Joseph},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=QA}{%
+         family={Quina},
+         familyi={Q\bibinitperiod},
+         given={Andre},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MC}{%
+         family={Moesel},
+         familyi={M\bibinitperiod},
+         given={Chris},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Hall},
+         familyi={H\bibinitperiod},
+         given={Dylan},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=DC}{%
+         family={Duffett},
+         familyi={D\bibinitperiod},
+         given={Carlton},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=DK}{%
+         family={Dube},
+         familyi={D\bibinitperiod},
+         given={Kudakwashe},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Gallagher},
+         familyi={G\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={McLachlan},
+         familyi={M\bibinitperiod},
+         given={Scott},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Oxford University Press}%
+    }
+    \strng{namehash}{WJ+1}
+    \strng{fullhash}{WJKMNJQAMCHDDCDKGTMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{number}{3}
+    \field{pages}{230\bibrangedash 238}
+    \field{title}{Synthea: An approach, method, and software mechanism for
+  generating synthetic patients and the synthetic electronic health care
+  record}
+    \field{volume}{25}
+    \field{journaltitle}{Journal of the American Medical Informatics
+  Association}
+    \field{year}{2018}
   \endentry
 \enddatalist
 \endinput
