@@ -154,23 +154,68 @@
     \field{urlyear}{2021}
   \endentry
 
+  \entry{22}{article}{}
+    \name{author}{2}{}{%
+      {{hash=FC}{%
+         family={Farkas},
+         familyi={F\bibinitperiod},
+         given={Csilla},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=JS}{%
+         family={Jajodia},
+         familyi={J\bibinitperiod},
+         given={Sushil},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM New York, NY, USA}%
+    }
+    \strng{namehash}{FCJS1}
+    \strng{fullhash}{FCJS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{number}{2}
+    \field{pages}{6\bibrangedash 11}
+    \field{title}{The inference problem: a survey}
+    \field{volume}{4}
+    \field{journaltitle}{ACM SIGKDD Explorations Newsletter}
+    \field{year}{2002}
+  \endentry
+
   \entry{10}{article}{}
-    \name{author}{1}{}{%
+    \name{author}{3}{}{%
       {{hash=GP}{%
          family={Golibrzuch},
          familyi={G\bibinitperiod},
          given={Peter},
          giveni={P\bibinitperiod},
       }}%
+      {{hash=MR}{%
+         family={Möller},
+         familyi={M\bibinitperiod},
+         given={Ralf},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kaya},
+         familyi={K\bibinitperiod},
+         given={Atila},
+         giveni={A\bibinitperiod},
+      }}%
     }
-    \strng{namehash}{GP1}
-    \strng{fullhash}{GP1}
+    \strng{namehash}{GPMRKA1}
+    \strng{fullhash}{GPMRKA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{G}
     \field{sortinithash}{G}
     \field{title}{A study of the rough set approach for image understanding}
-    \field{year}{2007}
+    \field{month}{02}
+    \field{year}{2021}
   \endentry
 
   \entry{guarnieri2017securing}{inproceedings}{}
@@ -207,43 +252,6 @@
   Foundations Symposium}
     \field{pages}{343\bibrangedash 359}
     \field{title}{Securing Databases from Probabilistic Inference}
-    \field{year}{2017}
-  \endentry
-
-  \entry{6}{inproceedings}{}
-    \name{author}{3}{}{%
-      {{hash=GM}{%
-         family={Guarnieri},
-         familyi={G\bibinitperiod},
-         given={Marco},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=MS}{%
-         family={Marinovic},
-         familyi={M\bibinitperiod},
-         given={Srdjan},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=BD}{%
-         family={Basin},
-         familyi={B\bibinitperiod},
-         given={David},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \list{organization}{1}{%
-      {IEEE}%
-    }
-    \strng{namehash}{GMMSBD1}
-    \strng{fullhash}{GMMSBD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{G}
-    \field{sortinithash}{G}
-    \field{booktitle}{2017 IEEE 30th Computer Security Foundations Symposium
-  (CSF)}
-    \field{pages}{343\bibrangedash 359}
-    \field{title}{Securing databases from probabilistic inference}
     \field{year}{2017}
   \endentry
 
@@ -495,6 +503,19 @@
     \field{year}{2017}
   \endentry
 
+  \entry{6}{manual}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Marco Guarnieri Webseite}
+    \verb{url}
+    \verb https://mguarnieri.github.io/publication/csf2017/
+    \endverb
+    \field{urlday}{30}
+    \field{urlmonth}{12}
+    \field{urlyear}{2020}
+  \endentry
+
   \entry{5}{manual}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{P}
@@ -585,6 +606,7 @@
     \verb{url}
     \verb https://github.com/synthetichealth/synthea
     \endverb
+    \field{year}{2016}
     \field{urlday}{28}
     \field{urlmonth}{01}
     \field{urlyear}{2021}
@@ -598,9 +620,9 @@
     \verb{url}
     \verb https://github.com/synthetichealth/synthea/wiki/Module-Gallery
     \endverb
-    \field{urlday}{28}
+    \field{urlday}{23}
     \field{urlmonth}{01}
-    \field{urlyear}{2020}
+    \field{urlyear}{2021}
   \endentry
 
   \entry{26}{manual}{}
@@ -611,9 +633,9 @@
     \verb{url}
     \verb https://synthetichealth.github.io/synthea/graphviz/osteoporosis.png
     \endverb
-    \field{urlday}{28}
-    \field{urlmonth}{01}
-    \field{urlyear}{2020}
+    \field{urlday}{15}
+    \field{urlmonth}{02}
+    \field{urlyear}{2021}
   \endentry
 
   \entry{21}{manual}{}
@@ -624,6 +646,9 @@
     \verb{url}
     \verb https://www.census.gov/
     \endverb
+    \field{day}{21}
+    \field{month}{01}
+    \field{year}{2021}
     \field{urlday}{28}
     \field{urlmonth}{01}
     \field{urlyear}{2020}

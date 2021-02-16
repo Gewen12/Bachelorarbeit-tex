@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.12) (format=lualatex 2021.1.5)  16 FEB 2021 13:04
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.12) (format=lualatex 2021.1.5)  17 FEB 2021 00:31
  restricted system commands enabled.
 **Template_for_the_LaTeX_Class_uzl-thesis.tex
 (./Template_for_the_LaTeX_Class_uzl-thesis.tex
@@ -2117,12 +2117,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--57
 
 
 ]
-Package cleveref Info: loaded `german language definitions on input line 65.
+Package cleveref Info: loaded `german language definitions on input line 64.
  [2]
 Package cleveref Info: loaded `german language definitions on input line 70.
  [3]
 Kapitel 2.
-<System-model.PNG, id=153, 1299.35437pt x 572.89032pt>
+<System-model.PNG, id=155, 1299.35437pt x 572.89032pt>
 File: System-model.PNG Graphic file (type png)
 <use System-model.PNG>
 Package luatex.def Info: System-model.PNG  used on input line 75.
@@ -2141,7 +2141,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--92
 
 Package cleveref Info: loaded `german language definitions on input line 92.
 [5]
-<bayes-netz-bsp.PNG, id=174, 401.24907pt x 261.97874pt>
+<bayes-netz-bsp.PNG, id=176, 401.24907pt x 261.97874pt>
 File: bayes-netz-bsp.PNG Graphic file (type png)
 <use bayes-netz-bsp.PNG>
 Package luatex.def Info: bayes-netz-bsp.PNG  used on input line 97.
@@ -2166,25 +2166,24 @@ ut line 132.
 
 Package hyperref Warning: No autoref name for `algorithm' on input line 173.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--189
-
- []
-
-Package cleveref Info: loaded `german language definitions on input line 189.
+Package cleveref Info: loaded `german language definitions on input line 180.
 [8]
+Underfull \hbox (badness 10000) in paragraph at lines 181--189
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--189
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--189
+
+ []
+
 Package cleveref Info: loaded `german language definitions on input line 189.
- [9]
+[9]
 Package cleveref Info: loaded `german language definitions on input line 193.
  [10]
 Overfull \hbox (4.72191pt too wide) in paragraph at lines 198--201
@@ -2194,13 +2193,6 @@ Overfull \hbox (4.72191pt too wide) in paragraph at lines 198--201
 
 Package cleveref Info: loaded `german language definitions on input line 201.
 [11]
-Overfull \hbox (23.52774pt too wide) in paragraph at lines 219--274
-\TU/TeXGyrePagella(0)/m/n/11 Netz mit zwei Ab-hän-gig-kei-ten ist in []Ab-bil-d
-ung 2.3[][] und die da-zu-ge-hö-ri-ge \TU/LatinModernMono(0)/m/n/11 beliefProgr
-am.pbl
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 219--274
 
  []
@@ -2300,9 +2292,10 @@ Overfull \hbox (5.10822pt too wide) in paragraph at lines 804--807
  []
 
 
-Overfull \hbox (3.57787pt too wide) in paragraph at lines 804--807
-\TU/TeXGyrePagella(0)/m/n/11 [[]18[]] ei-ne be-lie-bi-ge öff-net. Im fol-gen-de
-n wird das An-grei-fer-mo-dell für die Krank-heit Osteo-
+Overfull \hbox (2.22435pt too wide) in paragraph at lines 804--807
+\TU/TeXGyrePagella(0)/m/n/11 Osteo-po-ro-se de-fi-niert. Aus der \TU/LatinModer
+nMono(0)/m/n/11 Module Gallery \TU/TeXGyrePagella(0)/m/n/11 in []Ab-bil-dung 3.4
+[][] geht her-vor, dass Osteo-
  []
 
 
@@ -2310,7 +2303,7 @@ Overfull \hbox (11.67146pt too wide) in paragraph at lines 892--893
  [][] 
  []
 
-<assets/osteoporosis.png, id=608, 1224.575pt x 1659.19875pt>
+<assets/osteoporosis.png, id=611, 1224.575pt x 1659.19875pt>
 File: assets/osteoporosis.png Graphic file (type png)
 <use assets/osteoporosis.png>
 Package luatex.def Info: assets/osteoporosis.png  used on input line 899.
@@ -2374,12 +2367,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1084--1085
 Package Listings Warning: Text dropped after begin of listing on input line 1085
 .
 
-<assets/paperLaufzeit.PNG, id=700, 754.31813pt x 589.4522pt>
+<assets/paperLaufzeit.PNG, id=704, 754.31813pt x 589.4522pt>
 File: assets/paperLaufzeit.PNG Graphic file (type png)
 <use assets/paperLaufzeit.PNG>
 Package luatex.def Info: assets/paperLaufzeit.PNG  used on input line 1103.
 (luatex.def)             Requested size: 192.0548pt x 150.07896pt.
-<assets/onlineSkript.png, id=703, 551.43515pt x 456.58078pt>
+<assets/onlineSkript.png, id=707, 551.43515pt x 456.58078pt>
 File: assets/onlineSkript.png Graphic file (type png)
 <use assets/onlineSkript.png>
 Package luatex.def Info: assets/onlineSkript.png  used on input line 1109.
@@ -2389,13 +2382,13 @@ Overfull \hbox (1.66667pt too wide) in paragraph at lines 1101--1113
 []$[]$ $[]$ 
  []
 
-<assets/OfflinezeitSynthea.png, id=706, 574.77234pt x 476.90672pt>
+<assets/OfflinezeitSynthea.png, id=710, 574.77234pt x 476.90672pt>
 File: assets/OfflinezeitSynthea.png Graphic file (type png)
 <use assets/OfflinezeitSynthea.png>
 Package luatex.def Info: assets/OfflinezeitSynthea.png  used on input line 1121.
 
 (luatex.def)             Requested size: 192.0548pt x 159.35176pt.
-<assets/onlineSynthea.png, id=707, 581.54765pt x 472.01344pt>
+<assets/onlineSynthea.png, id=711, 581.54765pt x 472.01344pt>
 File: assets/onlineSynthea.png Graphic file (type png)
 <use assets/onlineSynthea.png>
 Package luatex.def Info: assets/onlineSynthea.png  used on input line 1127.
@@ -2407,12 +2400,12 @@ Overfull \hbox (1.66667pt too wide) in paragraph at lines 1119--1131
 
 Package cleveref Info: loaded `german language definitions on input line 1133.
 [33]
-<assets/OfflineEicuMimic.png, id=729, 558.96329pt x 458.08641pt>
+<assets/OfflineEicuMimic.png, id=733, 558.96329pt x 458.08641pt>
 File: assets/OfflineEicuMimic.png Graphic file (type png)
 <use assets/OfflineEicuMimic.png>
 Package luatex.def Info: assets/OfflineEicuMimic.png  used on input line 1143.
 (luatex.def)             Requested size: 192.0548pt x 157.38992pt.
-<assets/onlineEicuMimic.png, id=730, 564.23297pt x 460.34485pt>
+<assets/onlineEicuMimic.png, id=734, 564.23297pt x 460.34485pt>
 File: assets/onlineEicuMimic.png Graphic file (type png)
 <use assets/onlineEicuMimic.png>
 Package luatex.def Info: assets/onlineEicuMimic.png  used on input line 1149.
@@ -2423,36 +2416,54 @@ Overfull \hbox (1.66667pt too wide) in paragraph at lines 1141--1153
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1136--1159
+Underfull \hbox (badness 10000) in paragraph at lines 1136--1160
 
  []
 
 
-Overfull \hbox (0.21371pt too wide) in paragraph at lines 1136--1159
+Overfull \hbox (0.21371pt too wide) in paragraph at lines 1136--1160
 \TU/TeXGyrePagella(0)/m/n/11 Unter die-sen Be-din-gun-gen wür-de An-ge-ro-na in
  kaum ei-nem rea-len An-wen-dungs-fall nutz-
  []
 
-Package cleveref Info: loaded `german language definitions on input line 1159.
-[34<./assets/paperLaufzeit.PNG><./assets/onlineSkript.png>]
-Package cleveref Info: loaded `german language definitions on input line 1159.
- [35<./assets/OfflinezeitSynthea.png><./assets/onlineSynthea.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 1136--1160
+
+ []
+
 Package cleveref Info: loaded `german language definitions on input line 1160.
+[34<./assets/paperLaufzeit.PNG><./assets/onlineSkript.png>]
+Package cleveref Info: loaded `german language definitions on input line 1160.
+ [35<./assets/OfflinezeitSynthea.png><./assets/onlineSynthea.png>]
+Package cleveref Info: loaded `german language definitions on input line 1161.
  [36<./assets/OfflineEicuMimic.png><./assets/onlineEicuMimic.png>]
 Kapitel 5.
+
+Overfull \hbox (2.83357pt too wide) in paragraph at lines 1162--1169
+\TU/TeXGyrePagella(0)/m/n/11 Eine Er-wei-te-rung, die das Lauf-zeit-ver-hal-ten eben-falls be-ein-flus-sen k
+önn-te, wä-re ein Grup-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1162--1169
+
+ []
+
 [37
 
 ]
+Package cleveref Info: loaded `german language definitions on input line 1283.
+ [38]
 
 Package biblatex Warning: Name format 'last-first' deprecated.
 (biblatex)                Please use 'family-given' instead.
 (biblatex)                Using 'family-given' now.
 
-[38
+[39
 
 ]
-Package cleveref Info: loaded `german language definitions on input line 1280.
- [39] (./Template_for_the_LaTeX_Class_uzl-thesis.aux
+Package cleveref Info: loaded `german language definitions on input line 1283.
+ [40] (./Template_for_the_LaTeX_Class_uzl-thesis.aux
 Package cleveref Info: loaded `german language definitions on input line 29.
 Package cleveref Info: loaded `german language definitions on input line 30.
 Package cleveref Info: loaded `german language definitions on input line 31.
@@ -2475,15 +2486,15 @@ s.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 48951 strings out of 478830
- 244184,1977958 words of node,token memory allocated
+ 48958 strings out of 478830
+ 244172,1977958 words of node,token memory allocated
  737 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 dir, 5 glue, 4 kern, 1 glyph, 26 attribute, 75 gl
 ue_spec, 15 attribute_list, 2 write, 7 pdf_action nodes
-   avail lists: 1:2,2:5551,3:731,4:682,5:3352,6:111,7:13220,8:129,9:8033,10:23,1
-1:1168
- 66627 multiletter control sequences out of 65536+200000
- 178 fonts using 33075703 bytes
+   avail lists: 1:5,2:5560,3:731,4:682,5:3352,6:112,7:11281,8:129,9:8033,10:24,1
+1:1211
+ 66632 multiletter control sequences out of 65536+200000
+ 178 fonts using 33075759 bytes
  108i,12n,125p,1853b,2441s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/Programme/Miktex/fonts/opentype/public/lm/lmmonoprop10-regular.otf><D:/Progr
 amme/Miktex/fonts/opentype/public/lm/lmmono10-regular.otf><D:/Programme/Miktex/f
@@ -2499,10 +2510,10 @@ pe/public/tex-gyre/texgyrepagella-italic.otf><D:/Programme/Miktex/fonts/opentype
 /public/tex-gyre/texgyrepagella-bold.otf><D:/Programme/Miktex/fonts/type1/public
 /mnsymbol/MnSymbol10.pfb><D:/Programme/Miktex/fonts/type1/public/mnsymbol/MnSymb
 ol8.pfb>
-Output written on Template_for_the_LaTeX_Class_uzl-thesis.pdf (43 pages, 956940
+Output written on Template_for_the_LaTeX_Class_uzl-thesis.pdf (44 pages, 962193
  bytes).
 
-PDF statistics: 877 PDF objects out of 1000 (max. 8388607)
- 404 named destinations out of 1000 (max. 131072)
+PDF statistics: 888 PDF objects out of 1000 (max. 8388607)
+ 406 named destinations out of 1000 (max. 131072)
  152 words of extra memory for PDF output out of 10000 (max. 100000000)
 

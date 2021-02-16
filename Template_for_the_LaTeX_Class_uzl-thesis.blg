@@ -24,66 +24,47 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: Template_for_the_LaTeX_Class_uzl-thesis-blx.bib
 Database file #2: Template_for_the_LaTeX_Class_uzl-thesis-bibtex-entries.bib
 Database file #3: thesis.bib
-I was expecting a `,' or a `}'---line 159 of file thesis.bib
- :   
- :   year = {2016}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 166 of file thesis.bib
- :  
- :  date = {2021-01-21}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 216 of file thesis.bib
- :  urldate =  {2020-01-28} 
- :                          = {2021-01-23}
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 222 of file thesis.bib
- :  urldate =  {2020-01-28} 
- :                          = {2021-02-15}
-I'm skipping whatever remains of this entry
 Biblatex version: 3.16
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 23 entries,
+You've used 24 entries,
             6393 wiz_defined-function locations,
-            1299 strings with 12533 characters,
-and the built_in function-call counts, 152548 in all, are:
-= -- 9583
-> -- 5671
-< -- 953
-+ -- 6395
-- -- 4016
-* -- 10526
-:= -- 17463
+            1307 strings with 12637 characters,
+and the built_in function-call counts, 160355 in all, are:
+= -- 9826
+> -- 6517
+< -- 1035
++ -- 7194
+- -- 4736
+* -- 10810
+:= -- 18500
 add.period$ -- 0
-call.type$ -- 23
-change.case$ -- 327
-chr.to.int$ -- 346
-cite$ -- 44
-duplicate$ -- 14897
-empty$ -- 12892
-format.name$ -- 1295
-if$ -- 28871
+call.type$ -- 24
+change.case$ -- 349
+chr.to.int$ -- 424
+cite$ -- 46
+duplicate$ -- 15552
+empty$ -- 13401
+format.name$ -- 1305
+if$ -- 29904
 int.to.chr$ -- 0
-int.to.str$ -- 47
+int.to.str$ -- 46
 missing$ -- 0
-newline$ -- 703
-num.names$ -- 724
-pop$ -- 7870
+newline$ -- 729
+num.names$ -- 733
+pop$ -- 8195
 preamble$ -- 1
-purify$ -- 435
+purify$ -- 459
 quote$ -- 0
-skip$ -- 3998
+skip$ -- 4181
 stack$ -- 0
-substring$ -- 17530
-swap$ -- 3590
-text.length$ -- 791
-text.prefix$ -- 22
+substring$ -- 18030
+swap$ -- 3812
+text.length$ -- 841
+text.prefix$ -- 23
 top$ -- 1
-type$ -- 770
+type$ -- 804
 warning$ -- 0
-while$ -- 2083
+while$ -- 2171
 width$ -- 0
-write$ -- 681
-(There were 4 error messages)
+write$ -- 706
